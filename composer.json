@@ -42,7 +42,8 @@
         "drupal/context": "^4.1",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drupal/core-recommended": "^9.4",
+        "drupal/crop": "^2.3"
     },
     "conflict": {
         "drupal/drupal": "*"
