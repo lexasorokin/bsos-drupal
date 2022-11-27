@@ -20,6 +20,7 @@
         "drupal/administerusersbyrole": "^3.3",
         "drupal/allowed_formats": "^2.0",
         "drupal/anchor_link": "^1.9",
+        "drupal/asset_injector": "^2.12",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4"
