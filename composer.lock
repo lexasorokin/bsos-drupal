@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ecdf3b520ad19cdf262dc5cb0394c93",
+    "content-hash": "17b1c2516fe1cd231496daef9c9ee45a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -877,6 +877,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
+            }
+        },
+        {
+            "name": "drupal/auto_height",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auto_height.git",
+                "reference": "566ff7cb056cda2f854f9a83cea5d75bf7fde28c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.x-dev",
+                    "datestamp": "1665661596",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Binu Varghese",
+                    "homepage": "https://www.drupal.org/u/binu-varghese",
+                    "email": "myinbox.binu@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Szczepan Musial (lamp5)",
+                    "homepage": "https://www.drupal.org/u/lamp5",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Dynamically adjust column heights, matching the biggest column in each Row.",
+            "homepage": "https://www.drupal.org/project/auto_height",
+            "support": {
+                "source": "https://git.drupalcode.org/project/auto_height"
             }
         },
         {
@@ -5222,7 +5270,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/auto_entitylabel": 10
+        "drupal/auto_entitylabel": 10,
+        "drupal/auto_height": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

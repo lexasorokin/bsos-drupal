@@ -22,6 +22,7 @@
         "drupal/anchor_link": "^1.9",
         "drupal/asset_injector": "^2.12",
         "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/auto_height": "2.0.x-dev@dev",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4"
