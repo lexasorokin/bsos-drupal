@@ -23,6 +23,7 @@
         "drupal/asset_injector": "^2.12",
         "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/auto_height": "2.0.x-dev@dev",
+        "drupal/backup_migrate": "^5.0",
         "drupal/bg_image_formatter": "^1.16",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
