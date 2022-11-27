@@ -38,6 +38,7 @@
         "drupal/computed_field": "^3.0@alpha",
         "drupal/config_rewrite": "^1.5",
         "drupal/config_update": "^1.7",
+        "drupal/content_sync": "^3.0@beta",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4"
