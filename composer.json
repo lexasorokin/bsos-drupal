@@ -47,7 +47,8 @@
         "drupal/cshs": "^3.6",
         "drupal/css_editor": "^2.0",
         "drupal/csv_serialization": "^1.5",
-        "drupal/ctools": "^3.13"
+        "drupal/ctools": "^3.13",
+        "drupal/custom_breadcrumbs": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
