@@ -49,7 +49,8 @@
         "drupal/csv_serialization": "^1.5",
         "drupal/ctools": "^3.13",
         "drupal/custom_breadcrumbs": "^1.0",
-        "drupal/devel": "^5.0"
+        "drupal/devel": "^5.0",
+        "drupal/devel_entity_updates": "^4.0"
     },
     "conflict": {
         "drupal/drupal": "*"
