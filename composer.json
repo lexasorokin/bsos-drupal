@@ -51,7 +51,8 @@
         "drupal/custom_breadcrumbs": "^1.0",
         "drupal/devel": "^5.0",
         "drupal/devel_entity_updates": "^4.0",
-        "drupal/diff": "^1.1"
+        "drupal/diff": "^1.1",
+        "drupal/ds": "^3.15"
     },
     "conflict": {
         "drupal/drupal": "*"
