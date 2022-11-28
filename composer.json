@@ -56,7 +56,8 @@
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/entity": "^1.4",
-        "drupal/entity_browser": "^2.8"
+        "drupal/entity_browser": "^2.8",
+        "drupal/entity_class_formatter": "^1.3"
     },
     "conflict": {
         "drupal/drupal": "*"
