@@ -67,7 +67,8 @@
         "drupal/feeds": "^3.0@beta",
         "drupal/fences": "^3.0",
         "drupal/field_group": "^3.4",
-        "drupal/field_permissions": "^1.2"
+        "drupal/field_permissions": "^1.2",
+        "drupal/file_delete": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
