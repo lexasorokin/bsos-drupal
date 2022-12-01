@@ -62,7 +62,8 @@
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/eva": "^3.0",
         "drupal/externalauth": "^1.4",
-        "drupal/extlink": "^1.7"
+        "drupal/extlink": "^1.7",
+        "drupal/features": "^3.12"
     },
     "conflict": {
         "drupal/drupal": "*"
