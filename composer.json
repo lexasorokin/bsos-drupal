@@ -93,7 +93,8 @@
         "drupal/menu_token": "^9.1@alpha",
         "drupal/metatag": "^1.22",
         "drupal/migrate_plus": "^6.0",
-        "drupal/migrate_tools": "^6.0"
+        "drupal/migrate_tools": "^6.0",
+        "drupal/migrate_upgrade": "^4.0"
     },
     "conflict": {
         "drupal/drupal": "*"
