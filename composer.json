@@ -70,7 +70,8 @@
         "drupal/field_permissions": "^1.2",
         "drupal/file_delete": "^2.0",
         "drupal/file_mdm": "^2.5",
-        "drupal/fontawesome": "^2.24"
+        "drupal/fontawesome": "^2.24",
+        "drupal/fullcalendar": "^1.0@alpha"
     },
     "conflict": {
         "drupal/drupal": "*"
