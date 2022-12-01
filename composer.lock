@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffdd588e8115f15b7352739bc1a04560",
+    "content-hash": "67852e03098f459ce65d57a6ebbc6089",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6063,6 +6063,54 @@
             "homepage": "https://www.drupal.org/project/image_effects",
             "support": {
                 "source": "https://git.drupalcode.org/project/image_effects"
+            }
+        },
+        {
+            "name": "drupal/image_formatter_link_to_image_style",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/image_formatter_link_to_image_style.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_formatter_link_to_image_style-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "4bd85282bd5e44774c45861c80319d37b09510dd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1635508473",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "facine",
+                    "homepage": "https://www.drupal.org/user/1169056"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                }
+            ],
+            "description": "Provides an additional formatter for image core field, to link to an image style.",
+            "homepage": "https://www.drupal.org/project/image_formatter_link_to_image_style",
+            "support": {
+                "source": "https://git.drupalcode.org/project/image_formatter_link_to_image_style"
             }
         },
         {
