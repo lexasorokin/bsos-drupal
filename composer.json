@@ -78,7 +78,8 @@
         "drupal/honeypot": "^2.1",
         "drupal/image_effects": "^3.4",
         "drupal/image_formatter_link_to_image_style": "^1.1",
-        "drupal/image_widget_crop": "^2.4"
+        "drupal/image_widget_crop": "^2.4",
+        "drupal/imce": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
