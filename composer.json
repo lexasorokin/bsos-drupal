@@ -97,7 +97,8 @@
         "drupal/migrate_upgrade": "^4.0",
         "drupal/module_filter": "^3.2",
         "drupal/modules_weight": "^1.9",
-        "drupal/nodeaccess": "^1.1"
+        "drupal/nodeaccess": "^1.1",
+        "drupal/noreqnewpass": "^1.3"
     },
     "conflict": {
         "drupal/drupal": "*"
