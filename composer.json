@@ -90,7 +90,8 @@
         "drupal/menu_admin_per_menu": "^1.5",
         "drupal/menu_block": "^1.10",
         "drupal/menu_breadcrumb": "^1.16",
-        "drupal/menu_token": "^9.1@alpha"
+        "drupal/menu_token": "^9.1@alpha",
+        "drupal/metatag": "^1.22"
     },
     "conflict": {
         "drupal/drupal": "*"
