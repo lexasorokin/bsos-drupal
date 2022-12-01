@@ -65,7 +65,8 @@
         "drupal/extlink": "^1.7",
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@beta",
-        "drupal/fences": "^3.0"
+        "drupal/fences": "^3.0",
+        "drupal/field_group": "^3.4"
     },
     "conflict": {
         "drupal/drupal": "*"
