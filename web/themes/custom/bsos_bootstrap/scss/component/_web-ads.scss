@@ -1,0 +1,88 @@
+.web-ads {
+  .gray-bg {
+    padding: 1px 1.5rem 1rem 1.5rem;
+  }
+
+  a {
+    background: url(../images/gray-lt-pattern.png) #f1f1f1;
+    border: 5px solid transparent;
+    display: block;
+    margin: 2.875rem 0 1rem;
+    padding: 2.875rem 0 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border: 5px solid $brand-primary;
+
+      .fas {
+        border: 5px solid $brand-primary;
+      }
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 900;
+      margin: 0;
+    }
+    p {
+      color: #222;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+      margin: 0;
+    }
+  }
+
+  .fas {
+    background: $umd-yellow;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: block;
+    font-size: 30px;
+    line-height: 1;
+    width: 4.735rem;
+    height: 4.735rem;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+.dept-web-ad {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  .paragraph--type--bsos-columns-two-uneven {
+    background: #444;
+  }
+  @media (min-width: 768px) {
+    .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(1),
+    .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(2) {
+      float: none;
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(1) {
+      float: left;
+      width: 66.66666667%;
+    }
+    .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(2) {
+      float: left;
+      width: 33.33333333%;
+    }
+  }
+}

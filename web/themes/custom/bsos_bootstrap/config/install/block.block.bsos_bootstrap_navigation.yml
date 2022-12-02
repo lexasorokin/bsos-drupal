@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - block_class
+    - menu_block
+    - user
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: bsos_bootstrap_navigation
+theme: bsos_bootstrap
+region: editor_tools
+weight: 0
+provider: null
+plugin: 'menu_block:tools'
+settings:
+  id: 'menu_block:tools'
+  label: Navigation
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'tools:'
+  suggestion: tools
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      faculty_member: faculty_member
+      staff: staff
+      testrole: testrole
+      webform_viewer: webform_viewer
+      order_approver: order_approver
+      order_purchaser_reviewer: order_purchaser_reviewer
+      project_creator: project_creator
+      project_editor: project_editor
+      publication_creator: publication_creator
+      publication_editor: publication_editor
+      area_about_us_contributing_editor: area_about_us_contributing_editor
+      area_students_contributing_editor: area_students_contributing_editor
+      area_graduate_contributing_editor: area_graduate_contributing_editor
+      area_news_events_contributing_editor: area_news_events_contributing_editor
+      area_about_us_editor: area_about_us_editor
+      area_students_editor: area_students_editor
+      area_graduate_editor: area_graduate_editor
+      area_faculty_staff_editor: area_faculty_staff_editor
+      area_alumni_giving_editor: area_alumni_giving_editor
+      area_academics_research_editor: area_academics_research_editor
+      area_news_events_editor: area_news_events_editor
+      area_diversity_editor: area_diversity_editor
+      area_oacs_editor: area_oacs_editor
+      profile_showcase_contributing_editor: profile_showcase_contributing_editor
+      profile_showcase_editor: profile_showcase_editor
+      items_of_interest_editor: items_of_interest_editor
+      news_creator: news_creator
+      news_contributing_editor: news_contributing_editor
+      news_editor: news_editor
+      events_editor: events_editor
+      user_profile_editor: user_profile_editor
+      user_editor: user_editor
+      department_web_editor: department_web_editor
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

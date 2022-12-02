@@ -1,0 +1,79 @@
+.btn {
+  text-decoration: none;
+}
+.btn-reverse {
+  background: #fff;
+  border: 5px solid $brand-primary;
+  color: $brand-primary;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: $brand-primary;
+    color: #fff;
+  }
+}
+.btn-reverse.btn-lg {
+  font-weight: bold;
+  padding: .75rem 1rem;
+  @media screen and (min-width: 368px) {
+    padding: .75rem 1.5rem;
+  }
+  @media screen and (min-width: #{$screen-sm-min}) {
+    padding: .75rem 4rem;
+  }
+}
+
+// button grid
+.btn-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 1px;
+
+  li {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    background: #444;
+    color: $umd-yellow;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 2px;
+    padding: .75rem;
+    border: .25rem solid #444;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    @media screen and (min-width: #{$screen-md-min}) {
+      padding: .75rem 1.25rem;
+    }
+
+    &:hover {
+      border: .25rem solid $umd-yellow;
+    }
+  }
+}
+.btn-grid-full {
+  .btn-grid {
+    li {
+      @media screen and (min-width: #{$screen-sm-min}) {
+        width: 50%;
+      }
+      @media screen and (min-width: #{$screen-md-min}) {
+        width: 33.33%;
+      }
+    }
+  }
+}
+.btn-grid-8-col {
+  .btn-grid {
+    li {
+      @media screen and (min-width: #{$screen-md-min}) {
+        width: 50%;
+      }
+    }
+  }
+}

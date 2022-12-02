@@ -1,0 +1,12 @@
+{%
+  set classes = [
+  'hidden',
+]
+%}
+{% if logged_in %}
+<div{{ attributes.addClass(classes) }}>
+  {{ content|without('field_bsos_hero_img', 'field_bsos_hero_msg') }}
+</div>
+{% endif %}
+{{ content.field_bsos_hero_img }}
+{{ content.field_bsos_hero_msg }}

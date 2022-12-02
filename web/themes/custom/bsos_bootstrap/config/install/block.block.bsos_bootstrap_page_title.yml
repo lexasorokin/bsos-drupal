@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+_core:
+  default_config_hash: _zZpXn_4TZPwCp5xs4AUuXcGigRbN-F72aZe_fmyOkM
+id: bsos_bootstrap_page_title
+theme: bsos_bootstrap
+region: title
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/facultyprofile/*\r\n/gsprofile/*\r\n/publication/*"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,338 @@
+// Default variables.
+@import "../default-variables";
+
+// Site variables.
+@import "../variables";
+
+.feature-carousel {
+  .owl-item {
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 1.3;
+      margin: 0;
+      padding: 1rem 2.5rem 2.5rem;
+      position: relative;
+      z-index: 5;
+    }
+    a {
+      background: $brand-primary;
+      color: #fff;
+      display: block;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      img {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+      }
+
+      &:hover,
+      &:focus {
+        background: #444;
+        color: $umd-yellow;
+        text-decoration: none;
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .feature-image {
+    overflow: hidden;
+  }
+  .owl-item:nth-of-type(even) {
+
+    a {
+      background: $umd-yellow;
+      color: #222;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background: #444;
+        color: $umd-yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    a {
+      flex-grow: 1;
+    }
+  }
+}
+
+.feature-count-1,
+.feature-count-2,
+.feature-count-3 {
+  .view-footer {
+    display: none;
+  }
+}
+.feature-count-1,
+.feature-count-2 {
+  .feature-carousel {
+    .owl-item {
+      a {
+        position: relative;
+
+        &:hover,
+        &:focus {
+          h3 {
+            background: #444;
+          }
+        }
+      }
+      h3 {
+        background: $brand-primary;
+        display: inline;
+        padding: .75rem 1rem;
+        position: absolute;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .owl-item:nth-of-type(even) {
+      h3 {
+        background: $umd-yellow;
+      }
+    }
+  }
+}
+.feature-count-1 {
+  .feature-carousel {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+.profile-carousel {
+  background: $umd-yellow;
+  padding: 2rem 1rem 3rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem !important;
+
+    a {
+      color: #444;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  img {
+    max-width: 185px;
+    height: auto;
+    margin: 0 auto 1rem;
+    border-radius: 100%;
+    border: 7px solid #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover,
+  a:focus {
+    img {
+      border: 7px solid #444;
+    }
+  }
+}
+
+.feature-controls,
+.profile-controls {
+  display: inline-block;
+
+  .owl-prev,
+  .owl-next {
+    background: #fff;
+    border: 5px solid $brand-primary;
+    color: $brand-primary;
+    display: inline-block;
+    margin: .5rem .125rem;
+    overflow: hidden;
+    padding: 50px 0 0 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+    vertical-align:middle;
+    &:before {
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: #fff;
+    }
+  }
+
+  .owl-prev:before {
+    content: "\f0d9";
+  }
+  .owl-next:before{
+    content: "\f0da";
+  }
+}
+
+.feature-single {
+  background: #f1f1f1;
+
+  .bsos-card-content {
+    border-bottom: 0;
+  }
+}
+.feature-single-title {
+  margin: .25rem 0 1.5rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.owl-view-all {
+  display: inline-block;
+  vertical-align:middle;
+}
+@media screen and (min-width: 368px) {
+  .owl-view-all {
+    margin-left: .375rem;
+  }
+}
+
+.carousel-view {
+  .view-footer {
+    background: rgba(255,255,255,.4);
+    padding: .5rem;
+    position: relative;
+    text-align: center;
+  }
+}
+
+
+.feature-timing-controls {
+  @media screen and (min-width: #{$screen-md-min}) {
+    left: .5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  a {
+    margin-left: .25rem;
+  }
+}
+.page-node-type-home-page .region-content .bsos-alerts .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.alerts-carousel-view {
+  padding: .875rem 0 .875rem 3.25rem;
+  position: relative;
+  @media screen and (min-width: #{$screen-sm-min}) {
+    padding: .875rem 10rem .875rem 3.25rem;
+  }
+  .view-content {
+    a {
+      color: #333;
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+  }
+  &:before {
+    background: #444;
+    border-radius: 50%;
+    color: $umd-yellow;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25rem;
+    content: "\f071";
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.75;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .view-footer {
+    margin: 1rem 0;
+    @media screen and (min-width: #{$screen-sm-min}) {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.field--name-field-multi-slide-caption {
+  padding: 1px 1rem;
+  a {
+    background: $brand-primary;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      background: darken($brand-primary, 5%);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.owl-multi {
+  .owl-nav {
+    button.owl-prev,
+    button.owl-next {
+      font-size: 48px;
+      line-height: 1;
+      background: rgba(0,0,0,.8);
+      color: $umd-yellow;
+      padding: 0 1rem .6125rem 1rem !important;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    button.owl-next {
+      right: 0;
+    }
+    button.owl-prev {
+      left: 0;
+    }
+  }
+}
+@media screen and (min-width: #{$screen-lg-min}) {
+  .path-frontpage .owl-multi .owl-stage-outer {
+    height: 550px;
+  }
+}

@@ -1,0 +1,51 @@
+.gray-bg {
+  background: #444;
+}
+.pattern-bg {
+  background: url(../images/gray-pattern.png) #888;
+}
+.yellow-bg {
+  background: $umd-yellow;
+}
+.red-bg {
+  .view-content {
+    background: $brand-primary;
+  }
+}
+.red-bg-sm {
+  background: $brand-primary;
+  @media screen and (min-width: #{$screen-sm-min}) {
+    background: none;
+  }
+}
+.padding-zero-top {
+  padding-top: 0 !important;
+}
+.padding-zero-bottom {
+  padding-bottom: 0 !important;
+}
+.margin-zero-top {
+  margin-top: 0 !important;
+}
+.margin-zero-bottom {
+  margin-bottom: 0 !important;
+}
+.margin-24-bottom {
+  margin-bottom: 1.5rem;
+}
+.margin-16-bottom {
+  margin-bottom: 1rem;
+}
+.inner-buffer-24 {
+  padding: 1.5rem;
+}
+.inner-buffer-20 {
+  padding: 1.25rem;
+}
+
+.el-inline {
+  display: inline-block;
+}
+.no-float {
+  float: none !important;
+}

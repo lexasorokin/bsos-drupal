@@ -1,0 +1,23 @@
+.featured-grid {
+
+}
+.featured-grid-item {
+  margin-bottom: 2rem;
+
+  a {
+    background: $gray-lighter;
+    display: block;
+    padding: .5rem 1.5rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: $brand-primary;
+      color: #fff;
+    }
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}

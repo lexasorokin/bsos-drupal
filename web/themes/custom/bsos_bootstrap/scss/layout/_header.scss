@@ -1,0 +1,72 @@
+.logo {
+  img {
+    max-height: 75px;
+  }
+}
+.branding-name-logo {
+  margin: 0;
+}
+.branding-name {
+  font-weight: bold;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.branding-slogan {
+  font-size: 1.25rem;
+}
+
+.bsos-top {
+  margin-top: 1rem;
+  max-width: 100%;
+  @media screen and (min-width: #{$screen-md-min}) {
+    margin-top: 0;
+  }
+}
+
+.header-branding {
+  background: rgba(255,255,255,.8);
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+  position: relative;
+  z-index: 20;
+
+  @media screen and (min-width: #{$screen-md-min}) {
+    &.row {
+      margin: 0;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.umd-globe {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .globe {
+    margin-right: 1rem;
+    vertical-align: top;
+  }
+}
+
+.page-title-container {
+  background: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 2;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+  }
+}

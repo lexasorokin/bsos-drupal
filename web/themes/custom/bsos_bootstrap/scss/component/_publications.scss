@@ -1,0 +1,82 @@
+.publications-featured {
+  a {
+    background: #e6e6e6;
+    color: #333;
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-bottom: .25rem;
+    padding: .75rem .75rem .75rem 5.625rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background: #444;
+      color: #fff;
+
+      &:before {
+        background: $brand-primary;
+      }
+    }
+    &:before {
+      background: #444;
+      color: $umd-yellow;
+      content: '\f15c';
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      padding: 1rem 1.5rem;
+      transition: all 0.5s ease-in-out;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+.view-publications {
+  .view-footer {
+    background: #e6e6e6;
+    padding: .5rem;
+  }
+}
+.view-all-publications {
+  display: block;
+  text-align: center;
+
+  .btn-reverse.btn-lg {
+    @media screen and (min-width: #{$screen-sm-min}) {
+      padding: .75rem 1.5rem;
+    }
+    @media screen and (min-width: #{$screen-lg-min}) {
+      padding: .75rem 4rem;
+    }
+  }
+}
+.publication-grid {
+  .view-content {
+    h3 {
+      margin: 1rem;
+      clear: both;
+    }
+    li {
+      display: block;
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+  }
+}
+.publication-grid-item {
+  background: $gray-lighter;
+  padding: 1rem;
+}

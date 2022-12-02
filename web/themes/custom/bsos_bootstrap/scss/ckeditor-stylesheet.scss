@@ -1,0 +1,28 @@
+// Default variables.
+@import "default-variables";
+
+// Site variables.
+@import "variables";
+
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import '../bootstrap/assets/stylesheets/bootstrap/mixins';
+@import "../bootstrap/assets/stylesheets/bootstrap/normalize";
+@import "../bootstrap/assets/stylesheets/bootstrap/glyphicons";
+@import '../bootstrap/assets/stylesheets/bootstrap/buttons';
+@import '../bootstrap/assets/stylesheets/bootstrap/type';
+@import '../bootstrap/assets/stylesheets/bootstrap/wells';
+
+@import 'component/tables';
+@import 'component/legacy-wysiwyg';
+
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #fddd4c;
+}
+a.btn {
+  text-decoration: none;
+}
+.lead {
+  font-weight: 300;
+  line-height: 1.4;
+}

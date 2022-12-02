@@ -1,0 +1,126 @@
+%btn-group{
+  margin:0;
+  padding:0;
+  list-style:none;
+  a{
+    padding: .375rem 1rem;
+    background:#f0f0f0;
+    text-decoration:none;
+    color:$brand-primary;
+    display:block;
+    float:left;
+    transition: all 0.5s ease;
+
+    &:hover{
+      color:white;
+      background:$brand-primary;
+    }
+  }
+}
+
+.btn-group-v{
+  @extend %btn-group;
+  li{
+    @include clearfix;
+    margin-bottom: .25rem;
+  }
+}
+.btn-group-h{
+  @extend %btn-group;
+  li{
+    display:inline-block;
+  }
+}
+.button{
+  @include clearfix;
+  font-size: 1.0625rem;
+
+  a{
+    padding: .3125rem 1rem;
+    float:left;
+    display:block;
+    background:$brand-primary;
+    color:white;
+    text-decoration:none;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background: darken($brand-primary, 8%);
+    }
+  }
+}
+
+%photo-caption{
+  font-size: .875rem;
+  padding: .5rem;
+  line-height:1.4;
+  background:#f0f0f0;
+  width:280px;
+  color:#555;
+  font-style:italic;
+}
+.photo-caption-l{
+  @extend %photo-caption;
+  margin: .75rem .75rem .75rem 0;
+  float:left;
+}
+.photo-caption-r{
+  @extend %photo-caption;
+  margin: .75rem 0rem .75rem .75rem;
+  float:right;
+}
+
+.intro{
+  font-size: 1.5rem;
+  margin-top: .625rem;
+}
+
+img.red-borders{
+  padding: .3125rem 0;
+  background:$brand-primary;
+}
+
+.float_right,
+.align-right {
+  margin: .5rem 0 .5rem .5rem;
+  float:right;
+}
+.float_left,
+.align-left {
+  margin: .5rem .75rem .5rem 0;
+  float:left;
+}
+.float_right_clear {
+  margin: .5rem 0;
+  float:right;
+  clear:both;
+}
+.float_left_clear {
+  margin: .5rem 0;
+  float:left;
+  clear:both;
+}
+.float_clear {clear:both;}
+
+.button-tan a {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.5;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+  }
+}

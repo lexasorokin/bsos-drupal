@@ -1,0 +1,269 @@
+/**
+ * Navbar styling.
+ */
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+$grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+
+body {
+  // Fix horizontal scrolling on iOS devices.
+  // http://drupal.org/node/1870076
+  position: relative;
+
+  &.navbar-is-static-top {
+    margin-top: 0;
+  }
+  &.navbar-is-fixed-top {
+    margin-top: ($navbar-height + ($grid-gutter-width / 2));
+  }
+  &.navbar-is-fixed-bottom {
+    padding-bottom: ($navbar-height + ($grid-gutter-width / 2));
+  }
+
+  @media #{$tablet} {
+    margin-top: ($grid-gutter-width / 2);
+  }
+  @media #{$mobile} {
+    &.toolbar-vertical {
+      &.navbar-is-fixed-top,
+      &.navbar-is-fixed-bottom {
+        .toolbar-bar {
+          position: fixed;
+        }
+        header {
+          z-index: 500;
+        }
+      }
+      // Default toolbar fixed height value.
+      // @see core/modules/toolbar/css/toolbar.icons.theme.css@261
+      &.navbar-is-fixed-top header {
+        top: 39px;
+      }
+    }
+  }
+}
+.navbar.container {
+  @media #{$tablet} {
+    max-width: (($container-sm - $grid-gutter-width));
+  }
+  @media #{$normal} {
+    max-width: (($container-md - $grid-gutter-width));
+  }
+  @media #{$wide} {
+    max-width: (($container-lg - $grid-gutter-width));
+  }
+}
+
+.site-header {
+  .navbar {
+    border: 0;
+    z-index: 20;
+
+    span {
+      display: block;
+    }
+
+    a,
+    span {
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .dropdown-menu {
+      a,
+      span {
+        font-size: 1rem;
+        font-weight: normal;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+      }
+      li {
+        border-bottom: 1px solid $gray-lighter;
+      }
+      li:last-child {
+        border: 0;
+      }
+    }
+  }
+  .navbar-inverse .navbar-nav>li> {
+    a:hover,
+    a:focus,
+    span:hover,
+    span:focus {
+      background: darken($brand-primary, 10%);
+    }
+  }
+}
+.nav-container {
+  background: $brand-primary;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  z-index: 20;
+}
+.block-superfishmain {
+  ul.sf-menu > li.sfHover > ul,
+  ul.sf-menu > li:hover > ul {
+    top: 48px;
+  }
+
+  span {
+    display: block;
+  }
+
+  a,
+  span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: darken($brand-primary, 10%);
+    }
+
+    &.menuparent:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: .25rem;
+      vertical-align: middle;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  }
+  ul {
+    a,
+    span {
+      &.is-active {
+        background: #600;
+        color: #fff;
+      }
+    }
+
+    ul {
+      background: #fff;
+
+      a,
+      span {
+        background-color: #fff;
+        color: $gray-darker;
+        font-size: 1rem;
+        font-weight: normal;
+
+        &:hover,
+        &:focus {
+          background: #f5f5f5;
+        }
+        &.is-active {
+          background: $brand-primary;
+          color: #fff;
+        }
+      }
+
+      li {
+        border-bottom: 1px solid darken($gray-lighter, 5%);
+      }
+      li:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+.sf-accordion {
+  > li a,
+  > li span {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+}
+.sf-accordion-toggle a {
+  display: block;
+  font-weight: normal;
+  padding: .75rem 25px;
+
+  span {
+    display: inline;
+    color: inherit;
+  }
+
+  &:before {
+    content: "\e236";
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+.region-sticky-navigation {
+  display: none;
+}
+
+.region-sidebar-first,
+.region-sidebar-second {
+  .nav li {
+    background: #444;
+    margin-bottom: 2px;
+  }
+  li li a,
+  li li span {
+    padding: .25rem 1.5rem .25rem 1.5rem !important;
+  }
+  li li li a,
+  li li li span {
+    padding-left: 2rem !important;
+  }
+  .nav a,
+  .nav span {
+    background: #444;
+    color: $umd-yellow;
+    display: block;
+    padding: .625rem 1.5rem .625rem 1rem;
+    position: relative;
+    text-decoration: none;
+
+    &.is-active,
+    &:hover,
+    &:focus {
+      background: #444;
+      &:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        content: "\e258";
+      }
+    }
+  }
+}
+ul.sf-menu a.menuparent,
+ul.sf-menu span.menuparent {
+  padding: 1rem 1.25rem 1rem 1.5rem;
+}
+.block-superfishmain {
+  .sf-clone-parent {
+    a.menuparent:after,
+    span.menuparent:after {
+      content: none;
+    }
+  }
+}
+.sf-menu a.menuparent.nolink + ul > .sf-clone-parent {
+  display: none;
+}

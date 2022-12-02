@@ -1,0 +1,44 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'BSOS Bootstrap'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
+
+regions:
+  header_branding: 'Header branding'
+  header_secondary: 'Header secondary'
+  sticky_navigation: 'Sticky navigation'
+  navigation_superfish: 'Main navigation'
+  search_container: 'Search container'
+  editor_tools: 'Editor tools'
+  header: 'Top Bar'
+  title: 'Page Title'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar primary'
+  sidebar_second: 'Sidebar secondary'
+  footer: 'Footer'
+  footer_menu: 'Footer menu'
+  subfooter: 'Sub footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'bsos_bootstrap/global-styling'
+  - 'bsos_bootstrap/bsos-bootstrap-scripts'
+  - 'bsos_bootstrap/bsos-bootstrap-modernizr'
+  - 'bsos_bootstrap/owl-carousel'
+  - 'bsos_bootstrap/bsos-paragraphs'
+
+libraries-extend:
+  bootstrap/framework:
+    - bsos_bootstrap/framework
+
+libraries-override:
+  core/modernizr: false
+
+ckeditor_stylesheets:
+  - css/ckeditor-stylesheet.css

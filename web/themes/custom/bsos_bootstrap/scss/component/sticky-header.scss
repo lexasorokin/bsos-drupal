@@ -1,0 +1,75 @@
+// Default variables.
+@import "../default-variables";
+
+// Site variables.
+@import "../variables";
+
+.header-fixed {
+  position: fixed;
+  height: 75px;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  .header-branding {
+    background: rgba(255,255,255,.9);
+    border-bottom: 2px solid rgba($brand-primary, .6);
+    min-height: 75px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    .logo img {
+      max-height: 59px;
+    }
+  }
+
+  .globe,
+  .region-header-secondary,
+  .nav-container,
+  .bsos-top {
+    display: none;
+  }
+  .region-sticky-navigation {
+    display: block;
+  }
+  .search-block-form {
+    display: none;
+  }
+}
+.region-sticky-navigation {
+  display: none;
+}
+.header-secondary {
+  position: relative;
+
+  @media screen and (min-width: #{$screen-md-min}) {
+    .sf-accordion-toggle {
+      text-align: right;
+    }
+  }
+  .sf-accordion-toggle a {
+    background: #fff;
+    border: 3px solid $brand-primary;
+    border-radius: 3px;
+    color: $brand-primary;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: .5rem;
+    padding: 5px 8px;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+  .sf-menu {
+    background: $brand-primary;
+    position: absolute !important;
+    max-width: 412px;
+  }
+}
+
+.header-search .header-secondary ul.sf-menu.sf-accordion {
+  width: 100%;
+}

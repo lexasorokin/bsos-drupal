@@ -1,0 +1,49 @@
+.header-search {
+  .nav-container .container {
+    position: relative;
+  }
+  .region-search-container {
+    .btn-primary {
+      background: $umd-red;
+      border-color: $umd-red;
+    }
+    .search-block-form {
+      width: 100%;
+      margin: .25rem 0;
+    }
+  }
+
+  @media screen and (min-width: 368px) {
+    .region-navigation-superfish {
+      padding-right: 14rem;
+    }
+    .region-search-container {
+      position: absolute;
+      right: 1.25rem;
+      top: 5px;
+
+      .search-block-form {
+        width: 13rem;
+        margin: 0;
+      }
+    }
+    ul.sf-menu.sf-accordion {
+      width: calc(100% + 14rem);
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  #search-block-form .description {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+}

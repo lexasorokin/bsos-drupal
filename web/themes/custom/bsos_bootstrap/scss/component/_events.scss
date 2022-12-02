@@ -1,0 +1,63 @@
+.event-grid-item {
+  width: 100%;
+  @media screen and (min-width: #{$screen-md-min}) {
+    width: 50%;
+  }
+
+  a {
+    background: #f1f1f1;
+    border: .25rem solid #f1f1f1;
+    display: block;
+    font-size: 1.25rem;
+    margin: 2px;
+    padding: 2rem;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      border: .25rem solid $brand-primary;
+    }
+
+    .events-list-date {
+      color: #444;
+    }
+  }
+}
+.path-frontpage {
+  .event-grid-item {
+    time {
+      display: none;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    time:first-child {
+      display: block;
+    }
+  }
+}
+
+.event-grid {
+  .view-header h2 {
+    margin: .5rem 0 1.5rem;
+  }
+
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 1px;
+  }
+
+  .view-footer {
+    background: #f1f1f1;
+    margin: 2px;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.view-all {
+  display: inline-block;
+  vertical-align: middle;
+}

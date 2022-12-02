@@ -1,0 +1,530 @@
+/* -----------------------------------------------------------------------------
+
+  Paragraph Section CSS.
+
+  Table of Contents:
+    Base Paragraph Styling
+    Nesting
+    Paragraph Types
+
+      The following classes are available if the different Paragraph types
+      need their own individual styling.
+
+      .paragraph.paragraph--type--bsos-accordion {} -- Is used below
+      .paragraph.paragraph--type--bsos-columns-equal {} -- Is used below
+      .paragraph.paragraph--type--bsos-columns-three-uneven {} -- Is used below
+      .paragraph.paragraph--type--bsos-columns-two-uneven {} -- Is used below
+      .paragraph.paragraph--type--bsos-image {}
+      .paragraph.paragraph--type--bsos-image-grid {}
+      .paragraph.paragraph--type--bsos-modal {} -- Is used below
+      .paragraph.paragraph--type--bsos-text {}
+      .paragraph.paragraph--type--bsos-tabs {} -- Is used below
+      .paragraph.paragraph--type--bsos-view {}
+
+----------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Base Paragraph Styling.                                                    */
+/* -------------------------------------------------------------------------- */
+/*.field--name-body {
+  margin: 1rem 0 2rem;
+}*/
+
+.paragraph {
+  position: relative;
+  min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .paragraph > section {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .paragraph > section {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .paragraph > section {
+    float: left;
+    width: 100%;
+  }
+}
+
+.paragraph--type--bsos-tabs,
+.paragraph--type--bsos-accordion {
+  margin-bottom: 1rem;
+}
+.panel-collapse > .paragraph {
+  padding: 16px 16px;
+}
+.tab-pane > .paragraph {
+  padding: 16px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Here we can customize the different Paragraph types.                       */
+/* -------------------------------------------------------------------------- */
+
+/* Columns Paragraph. */
+/* .field--paragraph--field-column-content.html.twig */
+/* Removes Padding on Columns (Padding is on columns inside). */
+.paragraph--type--bsos-columns-equal,
+.paragraph--type--bsos-columns-two-uneven,
+.paragraph--type--bsos-columns-three-uneven,
+.paragraph--type--bsos-image-grid {
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 1rem;
+}
+
+.grid-margin-zero .paragraph--type--bsos-columns-two-uneven {
+  margin: 0 !important;
+}
+.grid-margin-zero .paragraph--type--columns__2col {
+  padding: 0 !important;
+}
+
+.paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__4col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__4col {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__3col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__3col {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__2col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__2col {
+    float: left;
+    width: 50%;
+  }
+}
+.paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__1col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph.paragraph--type--bsos-columns-equal .paragraph--type--columns__1col {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* Two Uneven Columns Paragraph. */
+/* .paragraph--columns-two-uneven.html.twig */
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--75-25 .paragraph--type--columns__2col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--75-25 .paragraph--type--columns__2col:nth-of-type(1) {
+    float: left;
+    width: 75%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--75-25 .paragraph--type--columns__2col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--75-25 .paragraph--type--columns__2col:nth-of-type(2) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(1) {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--66-33 .paragraph--type--columns__2col:nth-of-type(2) {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--25-75 .paragraph--type--columns__2col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--25-75 .paragraph--type--columns__2col:nth-of-type(1) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--25-75 .paragraph--type--columns__2col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--25-75 .paragraph--type--columns__2col:nth-of-type(2) {
+    float: left;
+    width: 75%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--33-66 .paragraph--type--columns__2col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--33-66 .paragraph--type--columns__2col:nth-of-type(1) {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.paragraph--type--bsos-columns-two-uneven.paragraph--style--33-66 .paragraph--type--columns__2col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-two-uneven.paragraph--style--33-66 .paragraph--type--columns__2col:nth-of-type(2) {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+/* Three Uneven Columns Paragraph. */
+/* .paragraph--columns-three-uneven.html.twig */
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 50%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-50-25 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 50%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--50-25-25 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 25%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--25-25-50 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 50%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-66-16 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--66-16-16 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(1) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(1) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(2) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(2) {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(3) {
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--bsos-columns-three-uneven.paragraph--style--16-16-66 .paragraph--type--columns__3col:nth-of-type(3) {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+/* Modal Paragraph. */
+/* .paragraph--modal.html.twig */
+.paragraph--type--bsos-modal .btn.btn-modal {
+  display: block;
+}
+.modal .modal-header {
+  padding: 15px 30px;
+}
+.modal .modal-body,
+.modal .modal-footer {
+  padding: 15px 30px;
+}
+.modal .modal-title {
+  font-weight: bold;
+}
+.modal .modal-footer {
+  text-align: left;
+}
+.modal .modal-body .paragraph,
+.modal .modal-footer .paragraph {
+  display: table;
+  width: 100%;
+}
+/* Image paragraph */
+.paragraph--type--bsos-image section {
+  background: #f1f1f1;
+  padding: 3rem;
+}
+.paragraph--type--bsos-image .paragraph-caption {
+  font-size: 1.25rem;
+  margin: .25rem 0 .5rem;
+  text-align: center;
+}
+
+.paragraph--type--bsos-columns-equal .paragraph-caption,
+.paragraph--type--bsos-columns-two-uneven .paragraph-caption,
+.paragraph--type--bsos-columns-three-uneven .paragraph-caption {
+  font-size: 1rem;
+}
+
+.paragraph--type--bsos-columns-equal .paragraph--type--bsos-image section,
+.paragraph--type--bsos-columns-two-uneven .paragraph--type--bsos-image section,
+.paragraph--type--bsos-columns-three-uneven .paragraph--type--bsos-image section {
+  padding: 0;
+}
+
+.image-grid-item {
+  margin-bottom: 1rem;
+}
+.image-grid-caption {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.75em;
+  padding-top: .375em;
+}
+
+@media (min-width:768px) {
+  .image-grid-item:nth-child(2n+1) {
+    clear:left;
+  }
+}
+@media (min-width:992px) {
+  .image-grid-item:nth-child(2n+1) {
+    clear:none;
+  }
+  .image-grid-item:nth-child(3n+1) {
+    clear:left;
+  }
+}
+@media (min-width:1350px) {
+  .image-grid-item:nth-child(3n+1) {
+    clear:none;
+  }
+  .image-grid-item:nth-child(4n+1) {
+    clear:left;
+  }
+}

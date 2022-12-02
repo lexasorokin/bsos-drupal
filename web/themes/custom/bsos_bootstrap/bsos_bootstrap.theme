@@ -1,0 +1,172 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function bsos_bootstrap_preprocess_page(&$variables) {
+  // Add library for anonymous users.
+  $stick_header = theme_get_setting('sticky_header_active');
+
+  if ($stick_header && (\Drupal::currentUser()->isAnonymous())) {
+    $variables['#attached']['library'][] = 'bsos_bootstrap/sticky-header';
+  }
+
+  // Add umd logo variables.
+  $variables['umd_globe'] = theme_get_setting('globe_display');
+  $variables['bsos_top'] = theme_get_setting('bsos_top_display');
+  $variables['umd_workdmark_footer'] = theme_get_setting('wordmark_footer_display');
+  $variables['umd_workdmark_subfooter'] = theme_get_setting('wordmark_subfooter_display');
+
+  // Add hero image display.
+  $is_front = $variables['is_front'];
+  $add_hero_full = theme_get_setting('hero_image_full');
+  $add_hero_top = theme_get_setting('hero_image_top');
+  $hero_nid = theme_get_setting('hero_image_nid');
+
+  $hero_node = \Drupal::entityQuery('node')->condition('nid', $hero_nid)->execute();
+  $node_exists = !empty($hero_node);
+
+  if ($hero_nid && $node_exists) {
+
+    if ($is_front) {
+      $variables['hero_image_class'] = 'msg-hd-bg';
+      $view_mode = 'picture_full';
+    }
+    else {
+      $variables['hero_image_class'] = 'main-hd-bg';
+      $view_mode = 'picture_full_int';
+    }
+
+    if ($add_hero_full && $is_front) {
+      $variables['hero_image_class'] = 'fullscreen-header';
+    }
+
+    if ($add_hero_top && $is_front) {
+      $variables['hero_image_class'] = 'dept-hd-bg';
+      $view_mode = 'picture_full_int';
+    }
+
+    $nid = (int) $hero_nid;
+    $entity_type = 'node';
+
+    $view_builder = \Drupal::entityTypeManager()
+      ->getViewBuilder($entity_type);
+    $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+    $node = $storage->load($nid);
+    $build = $view_builder->view($node, $view_mode);
+    $output = render($build);
+
+    $variables['#attached']['library'][] = 'bsos_bootstrap/hero-full';
+    $variables['hero_image_output'] = $output;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * https://www.drupal.org/node/2521876#comment-10684366
+ */
+function bsos_bootstrap_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add content type suggestions.
+  if (($node = \Drupal::request()->attributes->get('node')) && (strpos($_SERVER['REQUEST_URI'], "revisions") == false)) {
+    array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
+  }
+}
+
+
+function bsos_bootstrap_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['bsos_bootstrap'] = array(
+    '#type' => 'vertical_tabs',
+    '#attached' => ['library' => ['bootstrap/theme-settings']],
+    '#prefix' => '<h2><small>' . t('BSOS Bootstrap Settings') . '</small></h2>',
+    '#default_tab' => 'hero_image',
+    '#weight' => -12,
+  );
+
+  $form['hero_image'] = array(
+    '#type' => 'details',
+    '#title' => t('Hero Image'),
+    '#group' => 'bsos_bootstrap',
+  );
+
+  $form['hero_image_full'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Image is fullscreen'),
+    '#default_value' => theme_get_setting('hero_image_full'),
+    '#group' => 'hero_image',
+  );
+
+  $form['hero_image_top'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Image is at top above heading'),
+    '#default_value' => theme_get_setting('hero_image_top'),
+    '#group' => 'hero_image',
+  );
+
+  $form['hero_image_top_message'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Image is at top (below header with home page message)'),
+    '#default_value' => theme_get_setting('hero_image_top_message'),
+    '#group' => 'hero_image',
+  );
+
+  $form['hero_image_nid'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Image NID'),
+    '#default_value' => theme_get_setting('hero_image_nid'),
+    '#description'   => t("Enter the ID of the node containing the image."),
+    '#group' => 'hero_image',
+  );
+
+  $form['umd_logos'] = array(
+    '#type' => 'details',
+    '#title' => t('UMD logo display'),
+    '#group' => 'bsos_bootstrap',
+  );
+
+  $form['globe_display'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Globe in header'),
+    '#default_value' => theme_get_setting('globe_display'),
+    '#group' => 'umd_logos',
+  );
+  $form['bsos_top_display'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Behavioral and Social Sciences as Secondary logo in the header'),
+    '#default_value' => theme_get_setting('bsos_top_display'),
+    '#group' => 'umd_logos',
+  );
+  $form['wordmark_footer_display'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Wordmark in footer'),
+    '#default_value' => theme_get_setting('wordmark_footer_display'),
+    '#group' => 'umd_logos',
+  );
+  $form['wordmark_subfooter_display'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Wordmark in subfooter'),
+    '#default_value' => theme_get_setting('wordmark_subfooter_display'),
+    '#group' => 'umd_logos',
+  );
+
+  $form['sticky_header'] = array(
+    '#type' => 'details',
+    '#title' => t('Sticky header'),
+    '#group' => 'bsos_bootstrap',
+  );
+
+  $form['sticky_header_active'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Make header stick'),
+    '#default_value' => theme_get_setting('sticky_header_active'),
+    '#group' => 'sticky_header',
+  );
+
+}

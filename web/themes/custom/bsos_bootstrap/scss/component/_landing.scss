@@ -1,0 +1,139 @@
+.path-landing {
+  background: $gray-lighter;
+
+  .main-container {
+    padding-bottom: 0;
+  }
+}
+.landing-description {
+  background: #fff;
+  flex-grow: 1;
+  max-width: 500px;
+  padding: 0 1.25rem;
+}
+
+.landing-section {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  h2 {
+    background: $umd-yellow;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+    max-width: 500px;
+    padding: 1rem 1.25rem 1.175rem;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style: none;
+    margin:0;
+    max-width: 500px;
+    padding: 0;
+
+    a {
+      background: $brand-primary;
+      border-bottom: 1px solid $umd-yellow;
+      color: #fff;
+      display: block;
+      font-size: 1.125rem;
+      padding: .375rem 1.25rem;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background: #444;
+        color: $umd-yellow;;
+      }
+    }
+  }
+}
+.landing-section-alt {
+  margin: 0 0 2rem;
+
+  &:nth-of-type(odd) {
+    background: #fff;
+  }
+  .landing-description {
+    background: none;
+    max-width: none;
+    padding: 0 1rem !important;
+  }
+  .landing-alt-img {
+    display: block;
+
+    @media screen and (min-width: #{$screen-md-min}) {
+      display: inline;
+      float: left;
+      margin-right: 1rem;
+      max-width: 240px;
+    }
+    @media screen and (min-width: #{$screen-lg-min}) {
+      max-width: 360px;
+    }
+  }
+  h2 {
+    margin-top: 1rem;
+    padding: 0 1rem !important;
+  }
+  .landing-alt-list {
+    ul{
+      background: $brand-primary;
+      margin: 0;
+      padding: 1px;
+    }
+
+    li {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+
+    a {
+      background: #444;
+      color: $umd-yellow;
+      display: block;
+      font-size: 1.125rem;
+      line-height: 1.2;
+      margin: 2px;
+      padding: .5rem;
+      border: .25rem solid #444;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+
+      &:hover,
+      &:focus {
+        border: .25rem solid $umd-yellow;
+      }
+    }
+  }
+}
+.landing-topic-links {
+  display: inline-block;
+  margin: 1rem 0;
+}
+.landing-topic-link a {
+  display: block;
+  background: #f1f1f1;
+  padding: .5em 1.5em;
+  margin: 4px 0;
+  text-decoration: none;
+  font-size: 1.125rem;
+  transition: all .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: $brand-primary;
+    color: #fff;
+  }
+}
+.landing-topic-description {
+  font-size: 1.125rem;
+}
