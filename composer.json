@@ -122,7 +122,8 @@
         "drupal/superfish": "^1.4",
         "drupal/svg_image": "^1.16",
         "drupal/swiftmailer": "^2.2",
-        "drupal/tac_lite": "^1.6"
+        "drupal/tac_lite": "^1.6",
+        "drupal/tawk_to": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
