@@ -127,7 +127,8 @@
         "drupal/term_reference_tree": "^1.1",
         "drupal/token": "^1.11",
         "drupal/twitter_block": "^3.0@alpha",
-        "drupal/typed_data": "^1.0@beta"
+        "drupal/typed_data": "^1.0@beta",
+        "drupal/video": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
