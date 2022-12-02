@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^2.4",
+        "drupal/admin_toolbar": "^3.3",
         "drupal/administerusersbyrole": "^3.3",
         "drupal/allowed_formats": "^2.0",
         "drupal/anchor_link": "^1.9",
