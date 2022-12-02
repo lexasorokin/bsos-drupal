@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a8b95a5ca4428fd8ea16fff9b4fc0ca",
+    "content-hash": "a9d5fbf98f3045c3f943b82275320366",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3012,27 +3012,27 @@
         },
         {
             "name": "drupal/checklistapi",
-            "version": "1.11.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "8.x-1.11"
+                "reference": "2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "78fcf8ff6edd02f2cdfc907981db119dfca795c2"
+                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "69acb461c13aa7d37a91da078c3ceb0818543b87"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^9.3 || ^10",
                 "php": ">=5.6.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1586540246",
+                    "version": "2.1.1",
+                    "datestamp": "1659116985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

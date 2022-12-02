@@ -32,7 +32,7 @@
         "drupal/broken_link": "^3.1",
         "drupal/captcha": "^1.8",
         "drupal/cas": "^1.7",
-        "drupal/checklistapi": "^1.11",
+        "drupal/checklistapi": "^2.1",
         "drupal/ckeditor_bootstrap_buttons": "^2.0",
         "drupal/ckeditor_tableresize": "^1.1",
         "drupal/clientside_validation": "^4.0",
