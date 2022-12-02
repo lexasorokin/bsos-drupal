@@ -124,7 +124,8 @@
         "drupal/swiftmailer": "^2.2",
         "drupal/tac_lite": "^1.6",
         "drupal/tawk_to": "^3.0",
-        "drupal/term_reference_tree": "^1.1"
+        "drupal/term_reference_tree": "^1.1",
+        "drupal/token": "^1.11"
     },
     "conflict": {
         "drupal/drupal": "*"
