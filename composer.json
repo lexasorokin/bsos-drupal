@@ -137,7 +137,8 @@
         "drupal/views_field_view": "^1.0@beta",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/vppr": "^1.2",
-        "drupal/webform": "^6.1"
+        "drupal/webform": "^6.1",
+        "drupal/workbench": "^1.4"
     },
     "conflict": {
         "drupal/drupal": "*"
