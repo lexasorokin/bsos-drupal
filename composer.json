@@ -36,7 +36,7 @@
         "drupal/ckeditor_bootstrap_buttons": "^2.0",
         "drupal/ckeditor_tableresize": "^1.1",
         "drupal/clientside_validation": "^4.0",
-        "drupal/computed_field": "^3.0@alpha",
+        "drupal/computed_field": "3.x-dev@dev",
         "drupal/config_rewrite": "^1.5",
         "drupal/config_update": "^1.7",
         "drupal/content_sync": "^3.0@beta",
