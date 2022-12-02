@@ -111,7 +111,8 @@
         "drupal/quicktabs": "^3.0@alpha",
         "drupal/recaptcha": "^3.1",
         "drupal/redirect": "^1.8",
-        "drupal/role_delegation": "^1.2"
+        "drupal/role_delegation": "^1.2",
+        "drupal/select_or_other": "^4.0"
     },
     "conflict": {
         "drupal/drupal": "*"
