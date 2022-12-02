@@ -131,7 +131,8 @@
         "drupal/video": "^3.0",
         "drupal/video_embed_field": "^2.4",
         "drupal/viewfield": "^3.0@beta",
-        "drupal/views_bulk_operations": "^4.2"
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/views_conditional": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"
