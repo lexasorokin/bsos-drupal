@@ -138,7 +138,8 @@
         "drupal/viewsreference": "^2.0@beta",
         "drupal/vppr": "^1.2",
         "drupal/webform": "^6.1",
-        "drupal/workbench": "^1.4"
+        "drupal/workbench": "^1.4",
+        "drupal/workflow": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"
