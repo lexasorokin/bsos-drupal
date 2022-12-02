@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: bsos_grid_large
+label: 'Grid large (950hw)'
+effects:
+  bsos_paragraphs_grid_large_scale:
+    uuid: bsos_paragraphs_grid_large_scale
+    id: image_scale
+    weight: 1
+    data:
+      width: 950
+      height: 950
+      upscale: false

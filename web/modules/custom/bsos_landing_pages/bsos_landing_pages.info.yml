@@ -1,0 +1,17 @@
+name: BSOS Landing Pages
+description: Landing page view and new configuration.
+type: module
+core: 8.x
+dependencies:
+  - crop
+  - config_rewrite
+  - fences
+  - field
+  - image
+  - image_widget_crop
+  - link
+  - system
+  - text
+  - views
+version: 8.x-1.x-dev
+package: bsos

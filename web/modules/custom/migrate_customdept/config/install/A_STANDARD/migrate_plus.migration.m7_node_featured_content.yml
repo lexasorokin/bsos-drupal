@@ -1,0 +1,106 @@
+id: m7_node_featured_content
+label: 'Featured Content custom'
+migration_tags:
+  - 'Drupal 7'
+migration_group: customdept
+
+langcode: en
+status: true
+
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+source:
+  plugin: d7_node
+  node_type: featured_content
+
+process:
+  # If you are using this file to build a custom migration consider removing
+  # the nid and vid fields to allow incremental migrations.
+  # In D7, nodes always have a tnid, but it's zero for untranslated nodes.
+  # We normalize it to equal the nid in that case.
+  # @see \Drupal\node\Plugin\migrate\source\d7\Node::prepareRow().
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: en
+  title: title
+  body:
+    plugin: sub_process
+    source: body
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_slideshow_image:
+    plugin: sub_process
+    source: field_slideshow_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_fc_weight: field_fc_weight
+  moderation_state:
+    -
+      plugin: default_value
+      default_value: draft
+      source: moderation_state
+    -
+      plugin: static_map
+      map:
+        4: archived
+        10: archived
+        15: archived
+        19: archived
+        2: in_review
+        8: in_review
+        13: in_review
+        22: in_review
+        3: published
+        9: published
+        14: published
+        18: published
+        20: not_accepted_for_publication
+        21: not_accepted_for_publication
+        23: not_accepted_for_publication
+        5: draft
+        7: draft
+        12: draft
+        17: draft
+        1: draft
+        6: draft
+        11: draft
+        16: draft
+        '': draft
+      default_value: draft
+    -
+      plugin: default_value
+      default_value: draft
+  uid: node_uid
+  created: created
+  changed: changed
+  promote: promote
+  status: status
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+destination:
+  plugin: 'entity:node'
+  default_bundle: featured_content
+migration_dependencies:
+  required: {  }
+  optional: {  }

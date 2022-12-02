@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_page.field_featured_story_section
+    - field.field.node.home_page.field_main
+    - field.field.node.home_page.field_side_content
+    - node.type.home_page
+  module:
+    - user
+_core:
+  default_config_hash: loXpvPPU5qHa4iR-33UDlUdeh91vYpySYcj5WfXgqkI
+id: node.home_page.teaser
+targetEntityType: node
+bundle: home_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_featured_story_section: true
+  field_main: true
+  field_side_content: true
+  langcode: true

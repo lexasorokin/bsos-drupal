@@ -1,0 +1,24 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bsos_hero_img.field_bsos_hero_img
+    - field.field.node.bsos_hero_img.field_bsos_hero_msg
+    - node.type.bsos_hero_img
+  module:
+    - user
+_core:
+  default_config_hash: Y6kPJVKp6duhckgd0blRt08Wu0ruvnAIym3_uYHE-D0
+id: node.bsos_hero_img.teaser
+targetEntityType: node
+bundle: bsos_hero_img
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_bsos_hero_img: true
+  field_bsos_hero_msg: true
+  langcode: true

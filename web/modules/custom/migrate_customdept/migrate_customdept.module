@@ -1,0 +1,134 @@
+<?php
+
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Row;
+// use Drupal\migrate_plus\Entity\MigrationGroup;
+// use Drupal\migrate_plus\Event\MigrateEvents;
+ use Drupal\migrate_plus\Event\MigratePrepareRowEvent;
+
+/**
+ * Implements hook_migrate_MIGRATION_ID_prepare_row().
+ */
+function migrate_customdept_migrate_d7_node_fsprofile_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) { 
+    echo("\n\n -------------------------------------\n");
+    $values = $row->getSourceProperty('field_degrees_held');
+    $value_new = [];
+    if ($values) {
+      print_r($values);
+      echo("\n -------------------------------------\n");
+      foreach ($values as $value) {
+        $value_new[] = ['item_id' => $value['value']];
+      }
+      $row->setSourceProperty('field_degrees_held_new', $value_new);
+    }
+    print_r($row);
+    echo("\n\n -------------------------------------\n");
+
+  // field_fac_grad_advisee source it's value/revision_id like key.
+  $values = $row->getSourceProperty('field_fac_grad_advisee');
+  $value_new = [];
+  if ($values) {
+    foreach ($values as $value) {
+      $value_new[] = ['item_id' => $value['value']];
+    }
+    $row->setSourceProperty('field_fac_grad_advisee', $value_new);
+  }
+}
+
+function migrate_customdept_migrate_d7_profile_faculty_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+//    echo("\n\n -------------------------------------\n");
+//    $values = $row->getSourceProperty('field_degrees_held');
+//    $value_new = [];
+//    if ($values) {
+//      print_r($values);
+//      echo("\n -------------------------------------\n");
+//      foreach ($values as $value) {
+//        $value_new[] = ['item_id' => $value['value']];
+//      }
+//      $row->setSourceProperty('field_degrees_held_new', $value_new);
+//    }
+    print_r($row);
+    echo("\n\n -------------------------------------\n");
+  //
+  // field_fac_grad_advisee source it's value/revision_id like key.
+  //  $values = $row->getSourceProperty('field_fac_grad_advisee');
+  //$value_new = [];
+  //if ($values) {
+  //  foreach ($values as $value) {
+  //    $value_new[] = ['item_id' => $value['value']];
+  //  }
+  //  $row->setSourceProperty('field_fac_grad_advisee', $value_new);
+  //}
+
+  // test info coming through with profile_faculty migration 
+  //    echo("\n\n -------------------------------------\n");
+  //  $values = $row->getSourceProperty('field_lastname');
+  //  if ($values) {
+  //    print_r($row);
+  //  }
+  //  echo("\n\n -------------------------------------\n");
+
+}
+
+
+function migrate_customdept_migrate_d7_field_collection_degrees_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  print_r($row);
+}
+
+function migrate_customdept_migrate_m7_node_news_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+  //print_r($row);
+}
+
+function migrate_customdept_migrate_m7_node_partners_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+  //print_r($row);
+}
+
+function migrate_customdept_migrate_m7_node_event_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+  //print_r($row);
+}
+
+function migrate_customdept_migrate_m7_node_featured_content_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+}
+
+function migrate_customdept_migrate_d7_node_feature_stoc_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+  print_r($row);
+}
+
+function migrate_customdept_migrate_d7_node_linkstous_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  migrate_customdept_get_moderation_state($row, $source);
+  print_r($row);
+}
+
+function migrate_customdept_migrate_d7_field_collection_researchers_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  print_r($row);
+}
+
+function migrate_customdept_migrate_m7_field_collection_conferences_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  print_r($row);
+}
+
+function migrate_customdept_migrate_m7_field_collection_fac_grad_advisee_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  print_r($row);
+}
+
+function migrate_customdept_get_moderation_state(Row $row, MigrateSourceInterface $source) {
+  $query = $source->getDatabase()
+    ->select('workflow_node', 'wn')
+    ->fields('wn', ['sid'])
+    ->condition('wn.nid', $row->getSourceProperty('nid'))
+    ->orderBy('wn.stamp', 'DESC')
+    ->range(0, 1);
+
+  $value = $query->execute()->fetchField();
+  if($value) {
+    $row->setSourceProperty('moderation_state', $value);
+  }
+  return $row;
+}
+

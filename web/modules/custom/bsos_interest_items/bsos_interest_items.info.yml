@@ -1,0 +1,11 @@
+name: BSOS Items of Interest
+description: Items of interest view.
+type: module
+core: 8.x
+dependencies:
+  - field
+  - link
+  - system
+  - views
+version: 8.x-1.x-dev
+package: bsos

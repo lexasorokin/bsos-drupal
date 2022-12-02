@@ -1,0 +1,4 @@
+services:
+  plugin.manager.visual_editor:
+    class: Drupal\visual_editor\VisualEditorManager
+    parent: default_plugin_manager

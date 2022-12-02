@@ -1,0 +1,81 @@
+id: m7_node_courseprofile
+label: 'Course Profiles'
+migration_tags:
+  - 'Drupal 7'
+migration_group: customdept
+
+langcode: en
+status: true
+
+dependencies: {  }
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+source:
+  plugin: d7_node
+  node_type: course_profile
+
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_course_profile/0/status: comment
+  body:
+    plugin: sub_process
+    source: body
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_prerequisites_rules:
+    plugin: get
+    source: field_prerequisites_rules
+  field_coursename:
+    plugin: get
+    source: field_coursename
+  field_credits:
+    plugin: get
+    source: field_credits
+  field_coursetitle:
+    plugin: get
+    source: field_coursetitle
+  field_testudo_link:
+    plugin: field_link
+    source: field_testudo_link
+  field_grading_method:
+    plugin: get
+    source: field_grading_method
+  field_degree_category:
+    plugin: get
+    source: field_degree_category
+destination:
+  plugin: 'entity:node'
+  default_bundle: course_profile
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+  optional:
+    - upgrade_d7_node_type
+    - upgrade_d7_field_instance
+

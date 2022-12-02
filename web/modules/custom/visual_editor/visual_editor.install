@@ -1,0 +1,14 @@
+<?php
+function visual_editor_update_8002(){  
+  if (\Drupal::moduleHandler()->moduleExists('views')) {
+    $config_path = drupal_get_path('module', 'visual_editor') . '/config/install/views.view.media_browser.yml';
+    $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+    \Drupal::configFactory()->getEditable('views.view.media_browser')->setData($data)->save(TRUE);
+  }
+  
+  if (\Drupal::moduleHandler()->moduleExists('entity_browser')) {
+    $config_path = drupal_get_path('module', 'visual_editor') . '/config/install/entity_browser.browser.files.yml';
+    $data = \Symfony\Component\Yaml\Yaml::parse($config_path);
+    \Drupal::configFactory()->getEditable('entity_browser.browser.files')->setData($data)->save(TRUE);
+  }
+}

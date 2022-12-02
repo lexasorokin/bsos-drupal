@@ -1,0 +1,5 @@
+name: ECON Breadcrumbs
+type: module
+description: Breadcrumbs for those who want to make things complicated.
+core: 8.x
+package: Custom

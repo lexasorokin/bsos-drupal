@@ -1,0 +1,15 @@
+name: BSOS Links to Us
+description: Links to us views and new configuration.
+type: module
+core: 8.x
+dependencies:
+  - config_rewrite
+  - fences
+  - field
+  - fontawesome
+  - link
+  - system
+  - text
+  - views
+version: 8.x-1.x-dev
+package: bsos

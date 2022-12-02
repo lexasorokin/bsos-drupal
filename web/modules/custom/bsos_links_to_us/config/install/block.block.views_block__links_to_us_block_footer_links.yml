@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.links_to_us
+  module:
+    - block_class
+    - views
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+_core:
+  default_config_hash: pApLfSJRMXsk1NMJgsEWLs3QtOOH_16YJr38H6A50WU
+id: views_block__links_to_us_block_footer_links
+theme: bsos_bootstrap
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'views_block:links_to_us-block_footer_links'
+settings:
+  id: 'views_block:links_to_us-block_footer_links'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

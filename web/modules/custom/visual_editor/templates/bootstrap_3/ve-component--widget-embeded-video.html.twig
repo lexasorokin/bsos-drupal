@@ -1,0 +1,9 @@
+{%
+  set embed_class = [
+    'embed-responsive',
+    'embed-responsive-' ~ settings.content.aspect_ratio
+  ]
+%}
+<div{{ attributes.addClass(embed_class) }}>
+  <iframe class="embed-responsive-item" src="{{ content.embed_url }}"></iframe>
+</div>

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.visual_editor
+  module:
+    - visual_editor
+format: visual_editor
+editor: visual_editor
+settings:
+  popup_button_text: 'Open visual editor'

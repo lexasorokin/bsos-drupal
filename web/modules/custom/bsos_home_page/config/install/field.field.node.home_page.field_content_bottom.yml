@@ -1,0 +1,115 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_bottom
+    - node.type.home_page
+    - paragraphs.paragraphs_type.bsos_columns_equal
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+    - paragraphs.paragraphs_type.bsos_columns_two_uneven
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_content_bottom
+field_name: field_content_bottom
+entity_type: node
+bundle: home_page
+label: 'Content bottom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_columns_equal: bsos_columns_equal
+      bsos_columns_three_uneven: bsos_columns_three_uneven
+      bsos_columns_two_uneven: bsos_columns_two_uneven
+    target_bundles_drag_drop:
+      awards_fc:
+        weight: -57
+        enabled: false
+      bsos_accordion_section:
+        weight: -56
+        enabled: false
+      bsos_columns_equal:
+        enabled: true
+        weight: -55
+      bsos_columns_three_uneven:
+        enabled: true
+        weight: -54
+      bsos_columns_two_uneven:
+        enabled: true
+        weight: -53
+      bsos_block:
+        weight: -52
+        enabled: false
+      bsos_drupal_block:
+        weight: -51
+        enabled: false
+      bsos_accordion:
+        weight: -50
+        enabled: false
+      bsos_image:
+        weight: -49
+        enabled: false
+      bsos_image_grid:
+        weight: -48
+        enabled: false
+      bsos_image_grid_image:
+        weight: -47
+        enabled: false
+      bsos_modal:
+        weight: -46
+        enabled: false
+      bsos_tabs:
+        weight: -45
+        enabled: false
+      bsos_tab_section:
+        weight: -44
+        enabled: false
+      bsos_text:
+        weight: -43
+        enabled: false
+      bsos_video:
+        weight: -42
+        enabled: false
+      bsos_view:
+        weight: -41
+        enabled: false
+      conferences_fc:
+        weight: -40
+        enabled: false
+      course_information:
+        weight: -39
+        enabled: false
+      degrees_held:
+        weight: -38
+        enabled: false
+      faculty_advisors:
+        weight: -37
+        enabled: false
+      fac_grad_advisee:
+        weight: -36
+        enabled: false
+      formerstudent_info:
+        weight: -35
+        enabled: false
+      graduate_researchers:
+        weight: -34
+        enabled: false
+      projref_coi:
+        weight: -33
+        enabled: false
+      projref_co_pi:
+        weight: -32
+        enabled: false
+      researchers:
+        weight: -31
+        enabled: false
+      service_information:
+        weight: -30
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_drupal_block
+label: 'Drupal Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

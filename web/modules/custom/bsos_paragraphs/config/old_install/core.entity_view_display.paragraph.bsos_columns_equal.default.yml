@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_equal.field_bsos_column_content
+    - paragraphs.paragraphs_type.bsos_columns_equal
+  module:
+    - entity_reference_revisions
+id: paragraph.bsos_columns_equal.default
+targetEntityType: paragraph
+bundle: bsos_columns_equal
+mode: default
+content:
+  field_bsos_column_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

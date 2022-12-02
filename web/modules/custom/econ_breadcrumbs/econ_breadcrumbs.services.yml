@@ -1,0 +1,5 @@
+services:
+  econ_breadcrumbs.breadcrumbs:
+    class: Drupal\econ_breadcrumbs\econBreadcrumbBuilder
+    tags:
+     - { name: breadcrumb_builder, priority: 100 }

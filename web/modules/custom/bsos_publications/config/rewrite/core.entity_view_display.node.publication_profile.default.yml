@@ -1,0 +1,188 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publication_profile.field_citation_cont
+    - field.field.node.publication_profile.field_citation_full
+    - field.field.node.publication_profile.field_fc_weight
+    - field.field.node.publication_profile.field_pub_document
+    - field.field.node.publication_profile.field_pub_year
+    - field.field.node.publication_profile.field_publication_short_title
+    - field.field.node.publication_profile.field_researchers
+    - field.field.node.publication_profile.field_show_on_home_page
+    - field.field.node.publication_profile.field_year_only
+    - field.field.node.publication_profile.taxonomy_vocabulary_4
+    - node.type.publication_profile
+  module:
+    - ds
+    - entity_reference_revisions
+    - fences
+    - field_group
+    - file
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - group_row
+        - node_title
+        - field_pub_document
+        - field_researchers
+        - group_main
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: above
+        formatter: default
+        settings:
+          wrapper: ''
+          class: ''
+          link: false
+        ft:
+          id: expert
+          settings:
+            lb: 'Publication Profile'
+            prefix: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: p
+            fi-cl: ''
+            fi-at: ''
+            suffix: '[node:field_citation_cont]'
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+  field_group:
+    group_row:
+      children:
+        - group_main
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+      region: content
+    group_main:
+      children:
+        - node_title
+        - field_pub_document
+        - field_researchers
+      parent_name: group_row
+      weight: 5
+      format_type: html_element
+      format_settings:
+        label: main
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-lg-9
+      label: main
+      region: content
+id: node.publication_profile.default
+targetEntityType: node
+bundle: publication_profile
+mode: default
+content:
+  field_citation_full:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_pub_document:
+    label: hidden
+    weight: 2
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_researchers:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: above
+    settings:
+      view_mode: reset
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: 'Links to Researchers'
+            prefix: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+hidden:
+  field_citation_cont: true
+  field_fc_weight: true
+  field_pub_year: true
+  field_publication_short_title: true
+  field_show_on_home_page: true
+  field_year_only: true
+  langcode: true
+  links: true
+  taxonomy_vocabulary_4: true

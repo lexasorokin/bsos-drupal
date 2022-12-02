@@ -1,0 +1,12 @@
+name: BSOS Display Suite
+description: Adds display suite fields, settings and view modes.
+type: module
+core: 8.x
+dependencies:
+  - block
+  - system
+  - ds
+  - ds_extras
+
+version: 8.x-1.x-dev
+package: bsos

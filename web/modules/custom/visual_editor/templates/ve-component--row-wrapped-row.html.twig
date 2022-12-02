@@ -1,0 +1,10 @@
+{%
+  set container = settings.content.container_fluid?'container-fluid':'container'
+%}
+<section{{ attributes }}>
+  <section class="{{ container }}">
+    <div class="row {{ settings.content.row_class }}">
+      {{ content }}
+    </div>
+  </section>
+</section>

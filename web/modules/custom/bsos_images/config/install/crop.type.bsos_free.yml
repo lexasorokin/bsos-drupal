@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: g0V9LDDubNFF_Fd1jR5ZaxaeXIxZuILc42eZlsExbAs
+label: Free
+id: bsos_free
+description: ''
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

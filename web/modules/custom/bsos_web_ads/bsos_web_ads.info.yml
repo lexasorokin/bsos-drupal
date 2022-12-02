@@ -1,0 +1,14 @@
+name: BSOS Web Ads
+description: Web ads view and configuraton.
+type: module
+core: 8.x
+dependencies:
+  - fences
+  - field
+  - field_group
+  - link
+  - system
+  - text
+  - views
+version: 8.x-1.x-dev
+package: bsos

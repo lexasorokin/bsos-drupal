@@ -1,0 +1,171 @@
+<?php
+define('VE_COMPONENT_FORM_WRAP', 'visual-editor-component-form-wrapper');
+define('VE_COMPONENT_UTILITY_FORM', 'visual-editor-component-utility-form');
+define('YOUTUBE_REGX', "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/");
+define('VIMEO_REGX', "/(https?:\/\/)?(www\.)?(player\.)?vimeo\.com\/([a-z]*\/)*([‌​0-9]{6,11})[?]?.*/");
+define('ALLOWED_TEXT_FORMATS', serialize([
+  'full_html',
+  'basic_html',
+  'restricted_html',
+]));
+
+/**
+ * Implements hook_field_widget_form_alter()
+ * @param type $element
+ * @param type $form_state
+ * @param type $context
+ */
+function visual_editor_field_widget_form_alter(&$element, &$form_state, $context) {
+  // Add a css class to widget form elements for all fields of type text_format.
+  if (isset($element['#type']) && $element['#type'] == 'text_format') {
+    // Be sure not to overwrite existing attributes.
+    $element['visual_editor'] = [
+      '#type' => 'hidden',
+      '#attributes' => [
+        'class' => [
+          'visual-editor-config'
+        ]
+      ]
+    ];
+  }
+}
+
+/**
+ * Alter the list of attached files for the editor depending on the fields conf.
+ *
+ * @param $attachments
+ *   #attached array returned by the editor attachments callback.
+ * @param $editor_id
+ *   ID of the currently used editor.
+ */
+function visual_editor_quickedit_editor_attachments_alter(&$attachments, $editor_id) {
+  if ($editor_id === 'visual_editor') {
+    $attachments['library'][] = ['core', 'jquery.form'];
+    $attachments['library'][] = ['core', 'jquery.ui.sortable'];
+    $attachments['library'][] = ['core', 'drupal.vertical-tabs'];
+    $attachments['library'][] = ['core', 'drupal.dialog.ajax'];
+    $attachments['library'][] = ['core', 'drupal.dialog'];
+    $attachments['library'][] = ['visual_editor', 'drupal.visual_editor'];
+    $attachments['library'][] = ['visual_editor', 'visual_editor.fontawesome'];
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function visual_editor_theme($existing, $type, $theme, $path) {
+  $frontend_config = \Drupal::config('visual_editor.config')->get('frontend');
+  $theme_path = (!empty($frontend_config['framework']))?$frontend_config['framework']:'bootstrap_3';
+  $variables = [
+    'content' => NULL,
+    'attributes' => NULL,
+    'settings' => NULL,
+  ];
+  $suggestions = [];
+  $suggestions['ve_component'] = [
+    'variables' => $variables,
+  ];
+  $suggestions['ve_wrapped_row'] = [
+    'variables' => $variables,
+    'template' => 've-component--row-wrapped-row'
+  ];
+  $suggestions['ve_link'] = [
+    'variables' => $variables,
+    'template' => 've-component--widget-link'
+  ];
+  $suggestions['ve_pricing_table'] = [
+    'variables' => $variables,
+    'template' => 've-component--widget-pricing-table'
+  ];
+  $suggestions['ve_profile_card'] = [
+    'variables' => $variables,
+    'template' => 've-component--widget-profile-card'
+  ];  
+  $suggestions['ve_icon_content'] = [
+    'variables' => $variables,
+    'template' => 've-component--widget-icon-content'
+  ];
+  $suggestions['ve_embeded_video'] = [
+    'variables' => $variables,
+    'path' => $path . '/templates/'.$theme_path,
+    'template' => 've-component--widget-embeded-video'
+  ];
+  $suggestions['ve_accordions'] = [
+    'variables' => $variables,
+    'path' => $path . '/templates/'.$theme_path,
+    'template' => 've-component--widget-accordions'
+  ];
+  $suggestions['ve_tabs'] = [
+    'variables' => $variables,
+    'path' => $path . '/templates/'.$theme_path,
+    'template' => 've-component--widget-tabs'
+  ];
+  $suggestions['ve_skillbars'] = [
+    'variables' => $variables,
+    'path' => $path . '/templates/'.$theme_path,
+    'template' => 've-component--widget-skillbars'
+  ];
+  $suggestions['ve_image_carousel'] = [
+    'variables' => $variables,
+    'path' => $path . '/templates/'.$theme_path,
+    'template' => 've-component--widget-image-carousel'
+  ];
+
+  return $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ *  Add template suggestions.
+ */
+function visual_editor_theme_suggestions_ve_component($variables) {
+  $suggestions = [];
+  $settings = $variables['settings'];
+  $suggestions[] = 've_component__' . $settings['type'];
+  $suggestions[] = 've_component__' . $settings['type'] . '_' . $settings['id'];
+  return $suggestions;
+}
+
+/**
+ * Implements hook_libraries_info_alter()
+ */
+function visual_editor_library_info_alter(&$libraries, $extension) {
+  $theme = \Drupal::service('theme.manager')->getActiveTheme();
+  $config = \Drupal::service('config.factory')->getEditable('visual_editor.settings');
+  $lib_uuid = $config->get('libraries');
+  if (!empty($lib_uuid) && $extension == $theme->getName()) {
+    global $base_url;
+    $dirname = 'public://visual-editor/';
+    foreach ($lib_uuid as $key => $lib) {
+      if (isset($lib['css']) && $lib['css']) {
+        $path = $dirname . 'css/' . $key . '.css';
+        $path = file_create_url($path);
+        $path = str_replace($base_url, '', $path);
+        $libraries[$key]['css']['theme'][$path] = [];
+      }
+
+      if (isset($lib['js']) && $lib['js']) {
+        $path = $dirname . 'js/' . $key . '.js';
+        $path = file_create_url($path);
+        $path = str_replace($base_url, '', $path);
+        $libraries[$key]['js'][$path] = [];
+      }
+      if (isset($lib['path'])) {
+        $is_valid_path = \Drupal::service('path.validator')->getUrlIfValidWithoutAccessCheck($lib['path']);
+        if (isset($lib['css']) && $lib['css'] && !$is_valid_path) {
+          $path = drupal_realpath($dirname . 'css/' . $key . '.css');
+          file_unmanaged_delete($path);
+        }
+
+        if (isset($lib['js']) && $lib['js'] && !$is_valid_path) {
+          $path = drupal_realpath($dirname . 'js/' . $key . '.js');
+          file_unmanaged_delete($path);
+        }
+        if(!$is_valid_path){
+          unset($lib_uuid[$key]);
+        }
+      }
+    }
+    $config->set('libraries', $lib_uuid)->save();
+  }
+}

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: npwm2ZthOI8Ni-iO2KQozUpUH2sWR_t2BGIBhCUBD6s
+name: 500w
+label: 500w
+effects:
+  scale-500w_feature:
+    uuid: scale_500w_feature
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: false

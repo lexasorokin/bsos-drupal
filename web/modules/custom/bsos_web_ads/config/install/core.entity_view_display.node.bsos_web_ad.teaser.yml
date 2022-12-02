@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bsos_web_ad.field_bsos_fa_icon_class
+    - field.field.node.bsos_web_ad.field_bsos_url
+    - field.field.node.bsos_web_ad.field_bsos_webad_desc
+    - node.type.bsos_web_ad
+  module:
+    - user
+_core:
+  default_config_hash: z9Rn1vpWVCfgDKH-43upY2HToqVm9TMI-kB_ncQAE6w
+id: node.bsos_web_ad.teaser
+targetEntityType: node
+bundle: bsos_web_ad
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_bsos_fa_icon_class: true
+  field_bsos_url: true
+  field_bsos_webad_desc: true
+  langcode: true

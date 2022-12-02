@@ -1,0 +1,173 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_datetime
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_release_date
+    - field.field.node.event.field_send_to_bsos
+    - image.style.500w
+    - node.type.event
+  module:
+    - datetime
+    - datetime_range
+    - ds
+    - fences
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_main
+        - group_side
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+      region: content
+    group_main:
+      children:
+        - field_event_datetime
+        - field_event_date_and_time
+        - field_event_location
+        - body
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Main
+      region: content
+    group_side:
+      children:
+        - field_event_image
+      parent_name: group_row
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Side
+      region: content
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_date_and_time:
+    weight: 4
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: daterange_default
+    region: content
+  field_event_datetime:
+    label: inline
+    weight: 3
+    type: datetime_default
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    region: content
+  field_event_image:
+    label: hidden
+    weight: 7
+    type: image
+    settings:
+      image_style: 500w
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+  field_event_location:
+    label: inline
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: margin-24-bottom
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    region: content
+hidden:
+  field_release_date: true
+  field_send_to_bsos: true
+  langcode: true
+  links: true

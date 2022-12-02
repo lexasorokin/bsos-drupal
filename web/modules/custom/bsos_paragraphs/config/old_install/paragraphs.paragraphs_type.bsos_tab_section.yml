@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_tab_section
+label: 'Tab section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

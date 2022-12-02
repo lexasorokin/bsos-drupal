@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3
+  module:
+    - crop
+_core:
+  default_config_hash: YLd773G7dw2kKhFo6CERTNdV6pzQSSKrPTXYoH6im7s
+name: 434w_326h_crop
+label: '434w 326h crop (feature carousel)'
+effects:
+  feature_manual_crop_4_3:
+    uuid: feature_manual_crop_4_3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '4_3'
+  feature_scale_crop_434w_326h:
+    uuid: feature_scale_crop_434w_326h
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 434
+      height: 326

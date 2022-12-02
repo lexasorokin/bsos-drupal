@@ -1,0 +1,13 @@
+name: BSOS Home Page
+description: Home page configuraton.
+type: module
+core: 8.x
+dependencies:
+  - fences
+  - field
+  - field_group
+  - link
+  - system
+  - text
+version: 8.x-1.x-dev
+package: bsos

@@ -1,0 +1,16 @@
+<div{{ attributes.addClass('profile-card') }}>
+  {{ content.image }}
+  <div class="profile-content">
+    <h4>{{ content.name }}</h4> 
+    <p>{{ content.designation }}</p>
+    <ul class="profile-social-links list-unstyled">
+      {% for social_link in content.social_links %}
+      <li>
+        <a href="{{ social_link.url }}" class="fa fa-{{ social_link.platform }}" target="_blank">
+          <span class="sr-only">{{ social_link.platform }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

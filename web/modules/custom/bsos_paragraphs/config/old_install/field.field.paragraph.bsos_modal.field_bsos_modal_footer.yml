@@ -1,0 +1,92 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_modal_footer
+    - paragraphs.paragraphs_type.bsos_accordion
+    - paragraphs.paragraphs_type.bsos_block
+    - paragraphs.paragraphs_type.bsos_columns_equal
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+    - paragraphs.paragraphs_type.bsos_columns_two_uneven
+    - paragraphs.paragraphs_type.bsos_image
+    - paragraphs.paragraphs_type.bsos_image_grid
+    - paragraphs.paragraphs_type.bsos_modal
+    - paragraphs.paragraphs_type.bsos_tabs
+    - paragraphs.paragraphs_type.bsos_text
+    - paragraphs.paragraphs_type.bsos_video
+    - paragraphs.paragraphs_type.bsos_view
+  module:
+    - entity_reference_revisions
+id: paragraph.bsos_modal.field_bsos_modal_footer
+field_name: field_bsos_modal_footer
+entity_type: paragraph
+bundle: bsos_modal
+label: 'Modal footer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_text: bsos_text
+      bsos_columns_equal: bsos_columns_equal
+      bsos_columns_three_uneven: bsos_columns_three_uneven
+      bsos_columns_two_uneven: bsos_columns_two_uneven
+      bsos_video: bsos_video
+      bsos_image: bsos_image
+      bsos_image_grid: bsos_image_grid
+      bsos_accordion: bsos_accordion
+      bsos_tabs: bsos_tabs
+      bsos_block: bsos_block
+      bsos_view: bsos_view
+    target_bundles_drag_drop:
+      bsos_text:
+        enabled: true
+        weight: -31
+      bsos_columns_equal:
+        enabled: true
+        weight: -30
+      bsos_columns_three_uneven:
+        enabled: true
+        weight: -29
+      bsos_columns_two_uneven:
+        enabled: true
+        weight: -28
+      bsos_video:
+        enabled: true
+        weight: -27
+      bsos_image:
+        enabled: true
+        weight: -26
+      bsos_image_grid:
+        enabled: true
+        weight: -25
+      bsos_accordion:
+        enabled: true
+        weight: -24
+      bsos_tabs:
+        enabled: true
+        weight: -23
+      bsos_block:
+        enabled: true
+        weight: -22
+      bsos_view:
+        enabled: true
+        weight: -21
+      bsos_modal:
+        weight: -20
+        enabled: false
+      bsos_accordion_section:
+        weight: -19
+        enabled: false
+      bsos_button_list:
+        weight: -18
+        enabled: false
+      bsos_tab_section:
+        weight: -17
+        enabled: false
+field_type: entity_reference_revisions

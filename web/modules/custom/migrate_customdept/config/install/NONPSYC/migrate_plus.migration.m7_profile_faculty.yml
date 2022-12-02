@@ -1,0 +1,232 @@
+id: m7_profile_faculty
+label: 'Faculty/Staff Profile'
+migration_tags:
+  - 'Drupal 7'
+migration_group: customdept
+
+langcode: en
+status: true
+
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+
+source:
+  plugin: d7_profile
+  key: migrate
+  profile_type: profile_faculty
+
+process:
+# NOTE that profiles were not Content in D7, so they need a new nid
+  #  nid: nid
+  #  vid: vid
+  #  profile_id: pid
+  #  type: type
+  #  is_default:
+  #    plugin: default_value
+  #    default_value: 1
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: en
+  uid: uid
+  status:
+    plugin: default_value
+    default_value: 1
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body:
+    plugin: sub_process
+    source: field_bio_summary
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_firstname: field_firstname
+  copy_firstname: 
+    plugin: extract
+    source: field_firstname
+    index:
+      - 0
+      - value
+  field_lastname: field_lastname
+  copy_lastname: 
+    plugin: extract
+    source: field_lastname
+    index:
+      - 0
+      - value
+  title: 
+    plugin: concat
+    source:
+      - '@copy_lastname'
+      - '@copy_firstname'
+      - pid
+    delimiter: ', '
+  field_is_graduatefaculty: field_is_graduatefaculty
+  field_alternate_feature_profile: field_alternate_feature_profile
+  field_faculty_staff_category: field_faculty_staff_category
+  field_position_title: field_position_title
+  field_image_profile:
+    plugin: sub_process
+    source: field_image_profile
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_room_building: field_room_building
+  field_email_profile:
+    plugin: sub_process
+    source: field_email_profile
+    process:
+      value: email
+  field_phone: field_phone
+  field_officehours: field_officehours
+  field_cv:
+    plugin: sub_process
+    source: field_cv
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_cv_link:
+    plugin: sub_process
+    source: field_cv_link
+    process:
+      uri: url
+      title: title
+  field_bio_summary:
+    plugin: sub_process
+    source: field_bio_summary
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_website_personal:
+    plugin: sub_process
+    source: field_website_personal
+    process:
+      uri: url
+      title: title
+  field_research_philosophy: 
+    plugin: sub_process
+    source: field_fac_research_philosphy
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_researchinterest: field_researchinterest
+  field_fac_teaching_philosophy: field_fac_teaching_philosophy
+  field_teaching_philosophy: 
+    plugin: sub_process
+    source: field_fac_teaching_philosophy
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  field_fac_service_philosophy: field_fac_service_philosophy
+  field_service_philosophy:
+    plugin: sub_process
+    source: field_fac_service_philosophy
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  service_information:
+    plugin: sub_process
+    source: field_service_information
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: m7_field_collection_service
+        source: value
+  field_service_information:
+    plugin: sub_process
+    source: '@service_information'
+    process:
+      target_id: target_id/0
+      target_revision_id: target_id/1
+  degrees_held:
+    plugin: sub_process
+    source: field_degrees_held
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: m7_field_collection_degrees
+        source: value
+  field_degrees_held:
+    plugin: sub_process
+    source: '@degrees_held'
+    process:
+      target_id: target_id/0
+      target_revision_id: target_id/1
+  formerstudent_info:
+    plugin: sub_process
+    source: field_formerstudent_info
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: m7_field_collection_formerstu
+        source: value
+  field_formerstudent_info:
+    plugin: sub_process
+    source: '@formerstudent_info'
+    process:
+      target_id: target_id/0
+      target_revision_id: target_id/1
+  field_d7_profile_id: pid
+  field_profile_owner: uid
+  field_profile_userid: uid
+  field_admin: field_admin
+  taxonomy_vocabulary_4: taxonomy_vocabulary_4  
+  fac_grad_advisee:
+    plugin: sub_process
+    source: field_fac_grad_advisee
+    process: 
+      target_id:
+        plugin: migration_lookup
+        migration: m7_field_collection_fac_grad_advisee
+        source: value
+  field_fac_grad_advisee:
+    plugin: sub_process
+    source: '@fac_grad_advisee'
+    process:
+      target_id:  target_id/0
+      target_revision_id: target_id/1
+#    -
+#      plugin: migration_lookup
+#      migration: field_collection_fac_grad_advisee
+#      source: field_fac_grad_advisee
+#    -
+#      plugin: sub_process
+#      process:
+#        target_id: '0'
+#        target_revision_id: '1'
+destination:
+  plugin: entity:node
+  default_bundle: fsprofile
+migration_dependencies:
+  optional:
+    - d7_user
+    - d7_node_type
+    - d7_field_instance
+    - d7_filter_format
+    - m7_field_collection_fac_grad_advisee

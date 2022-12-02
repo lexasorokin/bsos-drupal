@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_accordion.field_bsos_accordion_section
+    - paragraphs.paragraphs_type.bsos_accordion
+  module:
+    - content_moderation
+    - paragraphs
+_core:
+  default_config_hash: gDxNRZ2bn4GkiWsSQnmlGL-dORdn6XS0bV3T2rCbb2c
+id: paragraph.bsos_accordion.default
+targetEntityType: paragraph
+bundle: bsos_accordion
+mode: default
+content:
+  field_bsos_accordion_section:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: 'Accordion section'
+      title_plural: 'Accordion sections'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: bsos_accordion_section
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

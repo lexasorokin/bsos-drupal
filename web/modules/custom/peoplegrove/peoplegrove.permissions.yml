@@ -1,0 +1,4 @@
+administer peoplegrove configuration:
+  title: 'Administer peoplegrove configuration'
+  description: 'Optional description.'
+  restrict access: true

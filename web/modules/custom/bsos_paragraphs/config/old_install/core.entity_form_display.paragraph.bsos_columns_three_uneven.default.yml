@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_content_3
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_style_3
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+  module:
+    - paragraphs
+id: paragraph.bsos_columns_three_uneven.default
+targetEntityType: paragraph
+bundle: bsos_columns_three_uneven
+mode: default
+content:
+  field_bsos_column_content_3:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Column
+      title_plural: Columns
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_bsos_column_style_3:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

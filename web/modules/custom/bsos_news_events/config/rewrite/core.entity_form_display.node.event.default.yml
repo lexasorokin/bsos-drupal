@@ -1,0 +1,106 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_datetime
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_release_date
+    - field.field.node.event.field_send_to_bsos
+    - image.style.thumbnail
+    - node.type.event
+  module:
+    - content_moderation
+    - datetime
+    - datetime_range
+    - image_widget_crop
+    - imce
+    - text
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    weight: 5
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_event_date_and_time:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_event_datetime:
+    weight: 2
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_image:
+    weight: 1
+    type: image_widget_crop
+    settings:
+      show_default_crop: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - square
+      progress_indicator: throbber
+      show_crop_area: false
+      warn_multiple_usages: false
+    third_party_settings:
+      imce:
+        enabled: false
+    region: content
+  field_event_location:
+    weight: 4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_release_date:
+    weight: 6
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_send_to_bsos:
+    weight: 7
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: moderation_state_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

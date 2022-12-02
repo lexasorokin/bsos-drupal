@@ -1,0 +1,48 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dept_items_of_interest.field_dept_item_link
+    - field.field.node.dept_items_of_interest.field_dept_item_weight
+    - node.type.dept_items_of_interest
+  module:
+    - link
+id: node.dept_items_of_interest.default
+targetEntityType: node
+bundle: dept_items_of_interest
+mode: default
+content:
+  field_dept_item_link:
+    weight: 1
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_dept_item_weight:
+    weight: 2
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

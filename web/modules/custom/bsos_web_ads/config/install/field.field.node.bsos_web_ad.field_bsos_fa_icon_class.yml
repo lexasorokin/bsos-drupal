@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bsos_fa_icon_class
+    - node.type.bsos_web_ad
+_core:
+  default_config_hash: 4wZ8kxVeMsGGUZHPweQlPlMIrnxTNIyrrWmmdSL3lc4
+id: node.bsos_web_ad.field_bsos_fa_icon_class
+field_name: field_bsos_fa_icon_class
+entity_type: node
+bundle: bsos_web_ad
+label: 'Icon class'
+description: 'Find a list of icons at <a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a>. Choose only from the <strong>Solid Icons</strong> section. Enter the full class. Examples: fa-graduation-cap, fa-pencil, fa-map-o.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

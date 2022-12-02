@@ -1,0 +1,160 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_profile.body
+    - field.field.node.project_profile.field_graduate_researchers
+    - field.field.node.project_profile.field_project_image
+    - field.field.node.project_profile.field_project_sponsor
+    - field.field.node.project_profile.field_project_website
+    - field.field.node.project_profile.field_projref_co_pi
+    - field.field.node.project_profile.field_projref_coi
+    - field.field.node.project_profile.field_projref_pi
+    - field.field.node.project_profile.field_researchers
+    - field.field.node.project_profile.taxonomy_vocabulary_4
+    - image.style.thumbnail
+    - node.type.project_profile
+  module:
+    - image
+    - link
+    - paragraphs
+    - path
+    - text
+id: node.project_profile.default
+targetEntityType: node
+bundle: project_profile
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_graduate_researchers:
+    weight: 8
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_project_image:
+    weight: 9
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_project_sponsor:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_project_website:
+    weight: 10
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_projref_co_pi:
+    weight: 5
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_projref_coi:
+    weight: 6
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_projref_pi:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_researchers:
+    weight: 7
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_4:
+    weight: 1
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  promote: true
+  status: true
+  sticky: true
+  url_redirects: true

@@ -1,0 +1,60 @@
+id: m7_node_items_of_interest
+label: 'Items of Interest'
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: customdept
+
+langcode: en
+status: true
+
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+dependencies: {  }
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+
+source:
+  plugin: d7_node
+  node_type: dept_items_of_interest
+
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_dept_items_of_interest/0/status: comment
+  field_dept_item_link:
+    plugin: field_link
+    source: field_dept_item_link
+  field_dept_item_weight:
+    plugin: get
+    source: field_dept_item_weight
+destination:
+  plugin: 'entity:node'
+  default_bundle: dept_items_of_interest
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+  optional:
+    - upgrade_d7_node_type
+    - upgrade_d7_field_instance

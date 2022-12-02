@@ -1,0 +1,8 @@
+name: FullCalendar Example
+type: module
+description: FullCalendar configuration example.
+core: 8.x
+package: FullCalendar
+dependencies:
+  - fullcalendar
+  - fullcalendar_options

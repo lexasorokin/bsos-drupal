@@ -1,0 +1,18 @@
+<div{{ attributes }}>
+  <ul class="nav nav-tabs">
+    {% for tab in content %}
+      {% set active_class = loop.index0 == 0? 'active':'' %}
+      <li class="{{ active_class }}">
+        <a aria-controls="{{ tab.id }}" role="tab" data-toggle="tab" href="#{{ tab.id }}">{{ tab.title|raw }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="tab-content">
+    {% for tab in content %}
+      {% set active_class = loop.index0 == 0? 'in active':'' %}
+      <div role="tabpanel" id="{{ tab.id }}" class="tab-pane fade {{ active_class }}">
+        {{ tab.content }}
+      </div>
+    {% endfor %}
+  </div>
+</div>

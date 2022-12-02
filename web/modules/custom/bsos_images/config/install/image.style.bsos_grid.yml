@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: bsos_grid
+label: 'Grid (480x320)'
+effects:
+  bsos_paragraphs_grid_scale_crop:
+    uuid: bsos_paragraphs_grid_scale_crop
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 480
+      height: 320
+  bsos_paragraphs_grid_manual_crop:
+    uuid: bsos_paragraphs_grid_manual_crop
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: bsos_grid

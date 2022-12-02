@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_text.field_bsos_text
+    - paragraphs.paragraphs_type.bsos_text
+  module:
+    - text
+_core:
+  default_config_hash: '-JY8Ttd8XoEBLBrLhZF--mfhCjdcEMSzAdP6vLEEyFs'
+id: paragraph.bsos_text.default
+targetEntityType: paragraph
+bundle: bsos_text
+mode: default
+content:
+  field_bsos_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

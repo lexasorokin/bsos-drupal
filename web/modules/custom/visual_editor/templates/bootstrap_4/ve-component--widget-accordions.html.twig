@@ -1,0 +1,15 @@
+<div{{ attributes }} id="{{ content.accordions_id }}">
+  {% for accordion in content.accordion %}
+    <div class="card">
+      <div class="card-header" id="heading-{{ accordion.id }}">
+        <a class="card-link" data-toggle="collapse" href="#{{ accordion.id }}">
+          {{ accordion.title }}
+        </a>
+      </div>
+      <div id="{{ accordion.id }}" class="collapse {% if accordion.is_collapsed %}show{% endif %}" 
+           data-parent="#{{ content.accordions_id }}">
+        <div class="card-body">{{ accordion.content }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

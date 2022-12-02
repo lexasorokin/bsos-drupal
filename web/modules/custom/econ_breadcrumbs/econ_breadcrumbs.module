@@ -1,0 +1,24 @@
+<?php
+/**
+* @file
+* Contains ECON Breadcrumb module.
+*/
+
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+* Implements hook_help().
+*/
+function econ_breadcrumbs_help($route_name, RouteMatcheInterface $route_match) {
+	switch ($route_name) {
+		case 'help.page.econ_breadcrumbs':
+			$output = '';
+			$output .= '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('Setting breadcrumbs for custom stuff') . '</p>';
+			return $output;
+
+		default:
+	}
+}

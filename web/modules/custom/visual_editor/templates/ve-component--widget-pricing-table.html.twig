@@ -1,0 +1,39 @@
+<div{{ attributes.addClass('plan-single') }}>
+  <div class="pricing-header">
+    <h4 class="no-margin">{{ content.plan_title }}</h4>
+    {% if content.plan_subtitle is not empty %}
+    <p class="no-margin">{{ content.plan_subtitle }}</p>
+    {% endif %}
+  </div>
+  <div class="price">
+    <div class="price-per-cycle">
+      {{ content.currency }}{{ content.price }}<sub class="duration">/{{ content.cycle }}</sub>
+    </div>
+  </div>
+  <div class="pricing-content">
+    <ul class="list-unstyled">
+      {% for feature in content.features %}
+        <li>{{ feature.title }}
+          {% if feature.availability == '[y]' %}
+            <span><i class="fa fa-check"></i></span>
+          {% elseif feature.availability == '[n]' %}
+            <span><i class="fa fa-close"></i></span>
+          {% else %}
+            <span>{{ feature.availability }}</span>
+          {% endif%}
+        </li>
+      {% endfor %}
+    </ul>
+    {% if content.button_url %}
+      <div class="pricing-footer">
+        <a href="{{ content.button_url }}" class="btn {{ content.button_class }}">
+          <i class="{{ content.button_icon }}" aria-hidden="true"></i>
+          {{ content.button_title }}
+          {% if content.button_subtitle is not empty %}
+          <span>{{ content.button_subtitle }}</span>
+          {% endif %}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>

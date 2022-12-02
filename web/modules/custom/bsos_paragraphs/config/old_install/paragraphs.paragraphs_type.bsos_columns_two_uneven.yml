@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_columns_two_uneven
+label: 'Columns (two uneven)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

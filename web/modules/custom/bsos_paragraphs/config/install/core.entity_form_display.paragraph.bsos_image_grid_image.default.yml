@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_image_grid_image.field_bsos_caption
+    - field.field.paragraph.bsos_image_grid_image.field_bsos_image_grid_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bsos_image_grid_image
+  module:
+    - image_widget_crop
+_core:
+  default_config_hash: s6fI3ARaWB1JqqCPGUxkjbOpX_Z1zgPHbMLW8gXEXoI
+id: paragraph.bsos_image_grid_image.default
+targetEntityType: paragraph
+bundle: bsos_image_grid_image
+mode: default
+content:
+  field_bsos_caption:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bsos_image_grid_image:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - bsos_grid
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

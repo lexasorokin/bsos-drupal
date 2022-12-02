@@ -1,0 +1,11 @@
+<div{{ attributes }}>
+  {% for skillbar in content.skillbars %}
+    <div>{{ skillbar.title }}</div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="{{ skillbar.percent }}"
+      aria-valuemin="0" aria-valuemax="100" style="width:{{ skillbar.percent }}%; background-color:{{ skillbar.color }}">
+        {{ skillbar.percent }}%
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bsos_url
+    - node.type.bsos_web_ad
+  module:
+    - link
+_core:
+  default_config_hash: t34EPPD3Ww0gJwXSTM7WMJzIxucJgwNe5Wsr-cJ-S1g
+id: node.bsos_web_ad.field_bsos_url
+field_name: field_bsos_url
+entity_type: node
+bundle: bsos_web_ad
+label: URL
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

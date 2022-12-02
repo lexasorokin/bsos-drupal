@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_modal_button_text
+    - paragraphs.paragraphs_type.bsos_modal
+id: paragraph.bsos_modal.field_bsos_modal_button_text
+field_name: field_bsos_modal_button_text
+entity_type: paragraph
+bundle: bsos_modal
+label: 'Modal button text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

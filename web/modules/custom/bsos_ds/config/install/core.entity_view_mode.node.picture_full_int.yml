@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: raJhkJt8tg1pjD2tT8yTlT28dSi1dW_PVhjZB2CGza8
+id: node.picture_full_int
+label: 'Picture full interior'
+targetEntityType: node
+cache: true

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_image_grid
+label: 'Image grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

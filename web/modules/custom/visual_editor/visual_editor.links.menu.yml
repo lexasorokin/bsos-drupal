@@ -1,0 +1,5 @@
+visual_editor.config:
+  title: 'Visual Editor'
+  parent: system.admin_config_content
+  route_name: 'visual_editor.config'
+  description: 'Manage Visual Editor configuration.'

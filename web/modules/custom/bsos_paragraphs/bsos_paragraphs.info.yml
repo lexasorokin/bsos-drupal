@@ -1,0 +1,25 @@
+name: BSOS Paragraphs
+description: A suite of Paragraph bundles made with the Boostrap framework.
+type: module
+core: 8.x
+dependencies:
+  - crop
+  - entity_reference_revisions
+  - fences
+  - field
+  - file
+  - filter
+  - image
+  - image_formatter_link_to_image_style
+  - image_widget_crop
+  - link
+  - options
+  - paragraphs
+  - system
+  - text
+  - user
+  - video_embed_field
+  - views
+  - viewsreference
+version: 8.x-1.x-dev
+package: bsos

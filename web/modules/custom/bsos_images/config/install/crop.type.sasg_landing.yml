@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8Nmcw6uO18DJQzkGSJ00uBg3QK6sRWOmaG1Ft4c2ke8
+label: '5:3 Landing'
+id: sasg_landing
+description: ''
+aspect_ratio: '5:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

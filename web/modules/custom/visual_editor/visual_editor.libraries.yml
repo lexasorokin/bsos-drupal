@@ -1,0 +1,52 @@
+drupal.visual_editor:
+  js:
+    js/bootstrap.min.js: {}
+    js/visual-editor.js: {}
+  css:
+    component:
+      css/bootstrap.min.css: {}  
+      css/visual-editor.css: {}  
+      
+visual_editor.fontawesome:
+  css:
+    theme:
+      /libraries/font-awesome/css/font-awesome.min.css: {}
+      
+visual_editor.pickicon:
+  js:
+    js/jquery.pickicon.js: {}
+  css:
+    component:
+      css/pickicon.css: {}
+      
+visual_editor.front:
+  js:
+    js/visual-editor-front.js: {}
+  css:
+    theme:
+      css/visual-editor-front.css: {}
+  dependencies:
+    - core/drupalSettings
+      
+visual_editor.gmap:
+  js:
+    js/jquery.gmap.js: {}
+    
+visual_editor.animate:
+  dependencies:
+    - visual_editor/visual_editor.front
+  js:
+    /libraries/waypoints/lib/jquery.waypoints.min.js: {}
+  css:
+    component:
+      /libraries/animate.css/animate.min.css: {}
+      
+visual_editor.codemirror:
+  css:
+    component:
+      /libraries/codemirror/lib/codemirror.css: {}
+  js:
+    /libraries/codemirror/lib/codemirror.js: {}
+    /libraries/codemirror/mode/javascript/javascript.js: {}
+    /libraries/codemirror/mode/css/css.js: {}
+    

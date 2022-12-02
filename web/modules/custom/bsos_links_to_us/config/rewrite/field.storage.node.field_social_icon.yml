@@ -1,0 +1,62 @@
+config_rewrite: replace
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_social_icon
+field_name: field_social_icon
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'fab fa-blogger-b'
+      label: blogger
+    -
+      value: 'fab fa-facebook-f'
+      label: facebook
+    -
+      value: 'fab fa-flickr'
+      label: flickr
+    -
+      value: 'fab fa-google-plus-g'
+      label: 'google plus'
+    -
+      value: 'fab fa-instagram'
+      label: instagram
+    -
+      value: 'fab fa-linkedin-in'
+      label: linkedin
+    -
+      value: 'fab fa-pinterest-p'
+      label: pinterest
+    -
+      value: 'fab fa-tumblr'
+      label: tumblr
+    -
+      value: 'fab fa-twitter'
+      label: twitter
+    -
+      value: 'fab fa-vimeo-v'
+      label: vimeo
+    -
+      value: 'fab fa-youtube'
+      label: youtube
+    -
+      value: 'fas fa-external-link-alt'
+      label: other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
+uuid: aebc93f7-ecc6-4f49-8ecb-ec095b9a4425

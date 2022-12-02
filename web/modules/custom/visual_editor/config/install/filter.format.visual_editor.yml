@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - visual_editor
+name: 'Visual editor'
+format: visual_editor
+weight: 0
+filters:
+  visual_editor_filter:
+    id: visual_editor_filter
+    provider: visual_editor
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,14 @@
+<div{{ attributes.addClass('panel-group') }} id="{{ content.accordions_id }}">
+  {% for accordion in content.accordion %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#{{ content.accordions_id }}" href="#{{ accordion.id }}">{{ accordion.title }}</a>
+        </h4>
+      </div>
+      <div id="{{ accordion.id }}" class="panel-collapse collapse {% if accordion.is_collapsed %}in{% endif %}">
+        <div class="panel-body">{{ accordion.content }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

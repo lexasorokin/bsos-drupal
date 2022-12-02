@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_columns_three_uneven
+label: 'Columns (three uneven)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

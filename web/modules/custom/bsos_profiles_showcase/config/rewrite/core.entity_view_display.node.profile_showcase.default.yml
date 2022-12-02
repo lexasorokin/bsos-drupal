@@ -1,0 +1,104 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_body_headline
+    - field.field.node.profile_showcase.field_display_text
+    - field.field.node.profile_showcase.field_image_profile
+    - field.field.node.profile_showcase.field_satelllite_profiles
+    - image.style.500w
+    - node.type.profile_showcase
+  module:
+    - fences
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_main_content
+        - group_side_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+    group_main_content:
+      children:
+        - body
+      parent_name: group_row
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Main content'
+    group_side_content:
+      children:
+        - field_image_profile
+      parent_name: group_row
+      weight: 4
+      format_type: html_element
+      format_settings:
+        label: 'Side content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-md-4
+      label: 'Side content'
+id: node.profile_showcase.default
+targetEntityType: node
+bundle: profile_showcase
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_profile:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: 500w
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    region: content
+hidden:
+  field_body_headline: true
+  field_display_text: true
+  field_satelllite_profiles: true
+  langcode: true
+  links: true

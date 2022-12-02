@@ -1,0 +1,9 @@
+tag: span
+method: webfonts
+use_cdn: true
+external_svg_location: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css'
+use_shim: true
+external_shim_location: 'https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js'
+_core:
+  default_config_hash: acZMPh6rP4Ickz3nWwg2IyUCD3rjRgDfa79_xmPkkZk
+allow_pseudo_elements: false

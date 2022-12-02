@@ -1,0 +1,18 @@
+name: BSOS News and Events
+description: News/events view and new configuration.
+type: module
+core: 8.x
+dependencies:
+  - crop
+  - config_rewrite
+  - fences
+  - field
+  - field_group
+  - image
+  - image_widget_crop
+  - link
+  - system
+  - text
+  - views
+version: 8.x-1.x-dev
+package: bsos

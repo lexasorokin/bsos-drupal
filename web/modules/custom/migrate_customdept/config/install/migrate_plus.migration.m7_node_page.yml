@@ -1,0 +1,68 @@
+id: m7_node_page
+label: 'Page nodes'
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: customdept
+
+langcode: en
+status: true
+
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+dependencies: {  }
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+
+source:
+  plugin: d7_node
+  node_type: page
+
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_page/0/status: comment
+  body:
+    plugin: sub_process
+    source: body
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: basic_html
+  taxonomy_vocabulary_2:
+    plugin: get
+    source: taxonomy_vocabulary_2
+  field_public_or_not:
+    plugin: get
+    source: field_public_or_not
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+  optional:
+    - upgrade_d7_node_type
+    - upgrade_d7_field_instance

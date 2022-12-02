@@ -1,0 +1,15 @@
+name: BSOS Hero Image
+description: Hero image configuraton.
+type: module
+core: 8.x
+dependencies:
+  - fences
+  - field
+  - image
+  - link
+  - responsive_image
+  - system
+  - text
+  - views
+version: 8.x-1.x-dev
+package: bsos

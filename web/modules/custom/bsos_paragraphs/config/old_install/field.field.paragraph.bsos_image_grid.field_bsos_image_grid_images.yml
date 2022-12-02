@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_image_grid_images
+    - paragraphs.paragraphs_type.bsos_image_grid
+    - paragraphs.paragraphs_type.bsos_image_grid_image
+  module:
+    - entity_reference_revisions
+id: paragraph.bsos_image_grid.field_bsos_image_grid_images
+field_name: field_bsos_image_grid_images
+entity_type: paragraph
+bundle: bsos_image_grid
+label: Image(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_image_grid_image: bsos_image_grid_image
+    target_bundles_drag_drop:
+      bsos_image_grid_image:
+        enabled: true
+        weight: -33
+      bsos_accordion:
+        weight: -32
+        enabled: false
+      bsos_accordion_section:
+        weight: -31
+        enabled: false
+      bsos_block:
+        weight: -30
+        enabled: false
+      bsos_button_list:
+        weight: -29
+        enabled: false
+      bsos_columns_equal:
+        weight: -28
+        enabled: false
+      bsos_columns_three_uneven:
+        weight: -27
+        enabled: false
+      bsos_columns_two_uneven:
+        weight: -26
+        enabled: false
+      bsos_image:
+        weight: -25
+        enabled: false
+      bsos_image_grid:
+        weight: -24
+        enabled: false
+      bsos_modal:
+        weight: -23
+        enabled: false
+      bsos_tab_section:
+        weight: -22
+        enabled: false
+      bsos_tabs:
+        weight: -21
+        enabled: false
+      bsos_text:
+        weight: -20
+        enabled: false
+      bsos_video:
+        weight: -19
+        enabled: false
+      bsos_view:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

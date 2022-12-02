@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.sasg_landing
+  module:
+    - crop
+_core:
+  default_config_hash: i43OiVtGQ0Tx4zLfJM8OlFgQYDJ7RZC-KNj6E5Kx-KI
+name: 500w_300h_crop
+label: '500w 300h crop (landing)'
+effects:
+  landing_manual_crop_sasg_landing:
+    uuid: landing_manual_crop_sasg_landing
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: sasg_landing
+  landing_scale_crop_500w_300h:
+    uuid: landing_scale_crop_500w_300h
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 500
+      height: 300

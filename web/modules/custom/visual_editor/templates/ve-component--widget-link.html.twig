@@ -1,0 +1,9 @@
+<a href="{{ content.button_url }}"{{ attributes }}>
+  {% if content.button_icon is not empty %}
+  <i class="{{ content.button_icon }}" aria-hidden="true"></i>
+  {% endif %}
+  {{ content.button_title }}
+  {% if content.button_subtitle is not empty %}
+  <span>{{ content.button_subtitle }}</span>
+  {% endif %}
+</a>

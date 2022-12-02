@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_text.field_bsos_text
+    - paragraphs.paragraphs_type.bsos_text
+  module:
+    - text
+id: paragraph.bsos_text.default
+targetEntityType: paragraph
+bundle: bsos_text
+mode: default
+content:
+  field_bsos_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

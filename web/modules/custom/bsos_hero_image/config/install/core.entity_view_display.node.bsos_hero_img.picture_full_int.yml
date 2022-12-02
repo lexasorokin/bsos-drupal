@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.picture_full_int
+    - field.field.node.bsos_hero_img.field_bsos_hero_img
+    - field.field.node.bsos_hero_img.field_bsos_hero_msg
+    - node.type.bsos_hero_img
+    - responsive_image.styles.fullscreen
+  module:
+    - fences
+    - responsive_image
+    - user
+_core:
+  default_config_hash: BRC_2l7j2wVrcNoKHTRwiuuS_YHf-PaLyUmdU85r7yY
+id: node.bsos_hero_img.picture_full_int
+targetEntityType: node
+bundle: bsos_hero_img
+mode: picture_full_int
+content:
+  field_bsos_hero_img:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: fullscreen
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: main-hd-bg-img
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: responsive_image
+    region: content
+hidden:
+  field_bsos_hero_msg: true
+  langcode: true
+  links: true

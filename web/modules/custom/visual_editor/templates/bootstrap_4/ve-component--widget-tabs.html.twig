@@ -1,0 +1,22 @@
+<div{{ attributes }}>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    {% for tab in content %}
+      {% set active_class = loop.index0 == 0? 'active':'' %}
+      <a class="nav-item nav-link {{ active_class }}" id="nav-{{ tab.id }}" 
+         data-toggle="tab" href="#{{ tab.id }}" role="tab" aria-controls="nav-{{ tab.id }}" 
+         aria-selected="true" >
+      {{ tab.title|raw }}
+      </a>
+    {% endfor %}
+    </div>
+  </nav>
+  <div class="tab-content">
+    {% for tab in content %}
+      {% set active_class = loop.index0 == 0? 'show active':'' %}
+      <div role="tabpanel" id="{{ tab.id }}" class="tab-pane fade show {{ active_class }}">
+        {{ tab.content }}
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<?php
+/**
+ * Implements hook_user_cancel().
+ */
+function user_delete_to_admin_user_cancel($edit, $account, $method) {
+  switch ($method) {
+    case 'user_delete_to_admin_assign_to_admin':
+      // Assign nodes to admin user.
+      module_load_include('inc', 'node', 'node.admin');
+      $nodes = \Drupal::entityQuery('node')
+        ->condition('uid', $account->id())
+        ->execute();
+      node_mass_update($nodes, ['uid' => 1], NULL, TRUE);
+      // Change old revisions.
+      db_update('node_field_revision')
+        ->fields(['uid' => 1])
+        ->condition('uid', $account->id())
+        ->execute();
+      db_update('node_revision')
+        ->fields(['revision_uid' => 1])
+        ->condition('revision_uid', $account->id())
+        ->execute();
+//      $account->delete();
+      break;
+  }
+}
+/**
+ * Implements hook_user_cancel_methods_alter().
+ */
+function user_delete_to_admin_user_cancel_methods_alter(&$methods) {
+  // The unset line below removes the "Assign to Anonymous User" option that creates a security hole (by letting Anonymous users own content)
+  unset($methods['user_cancel_reassign']);
+  $account = \Drupal::currentUser();
+  // Add a custom method.
+  $methods['user_delete_to_admin_assign_to_admin'] = [
+    'title' => t('Disable the account and make its content belong to the Admin user. **USE THIS OPTION FOR SUPERUSERS BEING REMOVED**'),
+    'description' => t('All contents will be assigned to Admin user.'),
+    // access should be used for administrative methods only.
+    'access' => $account->hasPermission('administer users'),
+  ];
+
+}

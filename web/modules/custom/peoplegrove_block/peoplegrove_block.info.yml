@@ -1,0 +1,8 @@
+name: PeopleGrove
+description: Adds a peoplegrove block for UMD.
+core: 8.x
+type: module
+package: Custom
+version: 8.x-2.4
+dependencies:
+  - block

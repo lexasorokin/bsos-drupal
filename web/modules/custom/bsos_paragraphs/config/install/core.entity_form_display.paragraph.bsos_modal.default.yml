@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_modal.field_bsos_modal_body
+    - field.field.paragraph.bsos_modal.field_bsos_modal_button_text
+    - field.field.paragraph.bsos_modal.field_bsos_modal_footer
+    - field.field.paragraph.bsos_modal.field_bsos_modal_title
+    - paragraphs.paragraphs_type.bsos_modal
+  module:
+    - paragraphs
+_core:
+  default_config_hash: UPFDudw_qYqnMy7qBM20l4fYdffVN81IGFgLKjjkBSM
+id: paragraph.bsos_modal.default
+targetEntityType: paragraph
+bundle: bsos_modal
+mode: default
+content:
+  field_bsos_modal_body:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: 'Modal content'
+      title_plural: 'Modal content'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_bsos_modal_button_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bsos_modal_footer:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: 'Modal content'
+      title_plural: 'Modal content'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_bsos_modal_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

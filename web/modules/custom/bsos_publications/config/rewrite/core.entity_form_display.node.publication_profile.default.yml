@@ -1,0 +1,151 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publication_profile.field_citation_cont
+    - field.field.node.publication_profile.field_citation_full
+    - field.field.node.publication_profile.field_fc_weight
+    - field.field.node.publication_profile.field_pub_document
+    - field.field.node.publication_profile.field_pub_year
+    - field.field.node.publication_profile.field_publication_short_title
+    - field.field.node.publication_profile.field_researchers
+    - field.field.node.publication_profile.field_show_on_home_page
+    - field.field.node.publication_profile.field_year_only
+    - field.field.node.publication_profile.taxonomy_vocabulary_4
+    - node.type.publication_profile
+  module:
+    - content_moderation
+    - datetime
+    - file
+    - paragraphs
+    - path
+id: node.publication_profile.default
+targetEntityType: node
+bundle: publication_profile
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_citation_cont:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_citation_full:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_fc_weight:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_pub_document:
+    weight: 7
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_pub_year:
+    weight: 4
+    type: datetime_datelist
+    settings:
+      date_order: YMD
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    region: content
+  field_publication_short_title:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_researchers:
+    weight: 6
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_show_on_home_page:
+    weight: 8
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_year_only:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 14
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_4:
+    weight: 5
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 255
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  status: true
+  sticky: true

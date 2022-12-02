@@ -1,0 +1,419 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_profile.body
+    - field.field.node.project_profile.field_graduate_researchers
+    - field.field.node.project_profile.field_project_image
+    - field.field.node.project_profile.field_project_sponsor
+    - field.field.node.project_profile.field_project_website
+    - field.field.node.project_profile.field_projref_co_pi
+    - field.field.node.project_profile.field_projref_coi
+    - field.field.node.project_profile.field_projref_pi
+    - field.field.node.project_profile.field_researchers
+    - field.field.node.project_profile.taxonomy_vocabulary_4
+    - image.style.500w
+    - node.type.project_profile
+  module:
+    - ds
+    - entity_reference_revisions
+    - fences
+    - field_group
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_main:
+      children:
+        - body
+        - field_projref_pi
+        - field_projref_co_pi
+        - field_projref_coi
+        - field_researchers
+        - field_graduate_researchers
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: main
+      region: content
+    group_side:
+      children:
+        - field_project_image
+        - field_project_sponsor
+        - field_project_website
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: side
+      region: content
+    group_row:
+      children:
+        - group_main
+        - group_side
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+      region: content
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - group_row
+        - group_main
+        - group_side
+        - field_project_image
+        - field_project_sponsor
+        - field_project_website
+        - body
+        - field_projref_pi
+        - field_projref_co_pi
+        - field_projref_coi
+        - field_researchers
+        - field_graduate_researchers
+id: node.project_profile.default
+targetEntityType: node
+bundle: project_profile
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_graduate_researchers:
+    label: above
+    weight: 20
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: reset
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+    region: content
+  field_project_image:
+    label: hidden
+    weight: 4
+    type: image
+    settings:
+      image_style: 500w
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: margin-16-bottom
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+  field_project_sponsor:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: margin-16-bottom
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+  field_project_website:
+    type: link
+    weight: 11
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: margin-16-bottom
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_projref_co_pi:
+    label: above
+    weight: 17
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: reset
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+    region: content
+  field_projref_coi:
+    label: above
+    weight: 18
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: reset
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+    region: content
+  field_projref_pi:
+    weight: 16
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: 'Principal Investigator'
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+    type: entity_reference_label
+    region: content
+  field_researchers:
+    label: above
+    weight: 19
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: reset
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+    region: content
+hidden:
+  langcode: true
+  links: true
+  taxonomy_vocabulary_4: true

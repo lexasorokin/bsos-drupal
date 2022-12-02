@@ -1,0 +1,11 @@
+id: service
+label: Service
+ui_limit: 'service_information|*'
+properties:
+  content:
+    value: '<strong>[paragraph:field_service_category]</strong> [paragraph:field_fac_service]'
+    format: '2'
+type: token
+type_label: 'Token field'
+entities:
+  paragraph: paragraph

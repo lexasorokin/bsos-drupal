@@ -1,0 +1,15 @@
+peoplegrove.example:
+  path: '/peoplegrove/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\peoplegrove\Controller\PeoplegroveController::build'
+  requirements:
+    _permission: 'access content'
+
+peoplegrove.settings_form:
+  path: '/admin/config/system/peoplegrove'
+  defaults:
+    _title: 'peoplegrove settings'
+    _form: 'Drupal\peoplegrove\Form\SettingsForm'
+  requirements:
+    _permission: 'administer peoplegrove configuration'

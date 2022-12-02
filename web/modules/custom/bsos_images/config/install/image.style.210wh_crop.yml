@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.square
+  module:
+    - crop
+_core:
+  default_config_hash: Rnd_WuGCrnCCu_OZYvlUIhLiGm16G9MabzJI8uuVwWQ
+name: 210wh_crop
+label: '210wh crop'
+effects:
+  6baccd6f-fea2-42bb-b127-798c9adb2d06:
+    uuid: 6baccd6f-fea2-42bb-b127-798c9adb2d06
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: square
+  b2b0dcf7-8d87-45eb-bf15-98b5d5599fb5:
+    uuid: b2b0dcf7-8d87-45eb-bf15-98b5d5599fb5
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 210
+      height: 210

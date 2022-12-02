@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_block.field_bsos_block
+    - paragraphs.paragraphs_type.bsos_block
+  module:
+    - content_moderation
+    - entity_reference_revisions
+_core:
+  default_config_hash: qPJWOnmcwO3gPsVE2hY9ExTLsmgWP5O779oIIKEBbuc
+id: paragraph.bsos_block.default
+targetEntityType: paragraph
+bundle: bsos_block
+mode: default
+content:
+  field_bsos_block:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,57 @@
+id: m7_field_collection_researchers
+label: Researchers
+migration_tags:
+  - 'Drupal 7'
+migration_group: customdept
+
+langcode: en
+status: true
+
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+
+# the forced dependency below causes the migration definition to reload when un/install the custom module  #
+dependencies:
+  enforced:
+    module:
+      - migrate_customdept
+
+source:
+  plugin: d7_field_collection_item
+  key: migrate
+  field_name: field_researchers
+
+process:
+  field_researcher:
+    plugin: sub_process
+    source: field_projref_researcher
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: 
+          - m7_profile_faculty
+          - m7_grad_student_profile
+        source: target_id
+#        source_ids: 
+#          m7_profile_faculty:
+#            - target_id
+#          m7_grad_student_profile:
+#            - target_id
+##  field_projref_researcher:
+##    plugin: sub_process
+##    source: '@projref_researcher'
+##    process:
+##      target_id: target_id
+    bundle: bundle
+    deleted: deleted
+    entity_id: entity_id
+    revision_id: revision_id
+    langcode: 'en'
+    delta: delta
+destination:
+  plugin: 'entity_reference_revisions:paragraph'
+  default_bundle: researchers
+migration_dependencies:
+  required: {  }
+  optional: {  }

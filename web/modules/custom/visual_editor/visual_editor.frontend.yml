@@ -1,0 +1,86 @@
+bootstrap_3:
+  device:
+    xs: 'Extra small'
+    sm: 'Small'
+    md: 'Medium'
+    lg: 'Large'
+  device_offset:
+    xs: 'col-xs-offset-'
+    sm: 'col-sm-offset-'
+    md: 'col-md-offset-'
+    lg: 'col-lg-offset-'
+  col_size:
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    10: 10
+    11: 11
+    12: 12
+  col_offset_size:
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    10: 10
+    11: 11
+  aspect_ratio:
+    16by9: '16 by 9'
+    4by3: '4 by 3'
+    
+bootstrap_4:
+  device:
+    xs: 'Extra small'
+    sm: 'Small'
+    md: 'Medium'
+    lg: 'Large'
+    xl: 'Extra Large'
+  device_offset:
+    xs: 'offset-xs-'
+    sm: 'offset-sm-'
+    md: 'offset-md-'
+    lg: 'offset-lg-'
+    xl: 'offset-xl-'
+  col_size:
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    10: 10
+    11: 11
+    12: 12
+    auto: 'Auto'
+  col_offset_size:
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    10: 10
+    11: 11
+  aspect_ratio:
+    21by9: '21 by 9'
+    16by9: '16 by 9'
+    4by3: '4 by 3'
+    1by1: '1 by 1'

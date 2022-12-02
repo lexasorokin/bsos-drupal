@@ -1,0 +1,10 @@
+name: BSOS Images
+description: Adds crop types and image styles.
+type: module
+core: 8.x
+dependencies:
+  - block
+  - system
+
+version: 8.x-1.x-dev
+package: bsos

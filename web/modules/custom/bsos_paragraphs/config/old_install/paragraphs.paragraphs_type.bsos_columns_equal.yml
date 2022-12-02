@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: bsos_columns_equal
+label: 'Columns (equal)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

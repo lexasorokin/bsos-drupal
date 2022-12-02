@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.links_to_us
+  module:
+    - block_class
+    - views
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: social-links-block
+_core:
+  default_config_hash: Ui0BKv5jf7IGOzAdU93pvQ9kxOpP7DhDtadxIqQ4Cys
+id: views_block__links_to_us_block_social_links
+theme: bsos_bootstrap
+region: header_secondary
+weight: 0
+provider: null
+plugin: 'views_block:links_to_us-block_social_links'
+settings:
+  id: 'views_block:links_to_us-block_social_links'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

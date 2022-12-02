@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_image_grid.field_bsos_image_grid_images
+    - paragraphs.paragraphs_type.bsos_image_grid
+  module:
+    - paragraphs
+id: paragraph.bsos_image_grid.default
+targetEntityType: paragraph
+bundle: bsos_image_grid
+mode: default
+content:
+  field_bsos_image_grid_images:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Image
+      title_plural: Images
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: bsos_image_grid_image
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

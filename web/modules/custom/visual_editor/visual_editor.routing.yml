@@ -1,0 +1,16 @@
+component.form:
+ path: '/visual-editor/component/form/{method}'
+ defaults:
+   _title: 'Component form'
+   _controller: '\Drupal\visual_editor\Controller\ComponentController::content'
+ requirements:
+   _access: 'TRUE'
+   method: 'nojs|ajax'
+   
+visual_editor.config:
+  path: '/admin/config/content/visual_editor'
+  defaults:
+    _form: '\Drupal\visual_editor\Form\VisualEditorConfigForm'
+    _title: 'Visual Editor Configuration'
+  requirements:
+    _permission: 'administer site configuration'
