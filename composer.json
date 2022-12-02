@@ -135,7 +135,8 @@
         "drupal/views_conditional": "^1.5",
         "drupal/views_data_export": "^1.2",
         "drupal/views_field_view": "^1.0@beta",
-        "drupal/viewsreference": "^2.0@beta"
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/vppr": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
