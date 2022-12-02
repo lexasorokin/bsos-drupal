@@ -105,7 +105,8 @@
         "drupal/panels": "^4.7",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
-        "drupal/permission_spreadsheet": "^2.0"
+        "drupal/permission_spreadsheet": "^2.0",
+        "drupal/permissions_by_term": "^3.1"
     },
     "conflict": {
         "drupal/drupal": "*"
