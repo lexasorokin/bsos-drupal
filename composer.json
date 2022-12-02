@@ -116,7 +116,8 @@
         "drupal/shs": "^2.0@RC",
         "drupal/simple_sitemap": "^4.1",
         "drupal/social_api": "^3.1",
-        "drupal/social_post": "^3.0"
+        "drupal/social_post": "^3.0",
+        "drupal/social_post_twitter": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"
