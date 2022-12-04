@@ -3,4 +3,5 @@ description: 'Provides an option to delete a user and assign content to Admin'
 package: Custom
 type: module
 core: '8.x'
+core_version_requirement: ^8 || ^9
 
