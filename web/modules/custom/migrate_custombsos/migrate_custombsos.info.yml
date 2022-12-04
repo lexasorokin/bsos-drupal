@@ -3,6 +3,7 @@ description: Custom BSOS migration module for migrating data from a Drupal 7 sit
 package: Migrations
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - migrate
   - migrate_drupal

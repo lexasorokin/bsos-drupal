@@ -1,6 +1,7 @@
 name: Visual editor
 description: Create pages/blocks having complex layout with little knowledge of HTML.
 core: 8.x
+core_version_requirement: ^8 || ^9
 type: module
 package: Custom
 version: 8.x-2.4
