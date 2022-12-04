@@ -1,4 +1,4 @@
-uuid: e51d302b-8720-476a-9c6c-5ee3b8f7d6a8
+uuid: 812404c6-54ff-44ae-9285-9e0360b18627
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - filter.format.basic_html
   module:
     - ckeditor
+_core:
+  default_config_hash: YDLLsjMDd08L1yOEjafHLrdFMWV0HnM9yKtYSDGJErc
 format: basic_html
 editor: ckeditor
 settings:
@@ -17,65 +19,35 @@ settings:
           items:
             - Bold
             - Italic
-            - Superscript
-            - Subscript
-            - Format
-            - Blockquote
-            - HorizontalRule
-            - Styles
-            - RemoveFormat
         -
-          name: Links
+          name: Linking
           items:
             - DrupalLink
             - DrupalUnlink
-            - Anchor
-            - btbutton
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
-            - Outdent
-            - Indent
-            - Table
         -
           name: Media
           items:
+            - Blockquote
             - DrupalImage
-            - video_embed
         -
-          name: Editing
+          name: 'Block Formatting'
           items:
-            - Cut
-            - Copy
-            - Paste
-            - PasteText
-            - PasteFromWord
+            - Format
         -
           name: Tools
           items:
             - Source
-  plugins:
-    stylescombo:
-      styles: "p.lead|Intro\r\ndiv.well|Well\r\nimg.float_right|Image right\r\nimg.float_left|Image left"
-    language:
-      language_list: un
-    drupallink:
-      linkit_enabled: true
-      linkit_profile: default
-    video_embed:
-      defaults:
-        children:
-          autoplay: false
-          responsive: true
-          width: '854'
-          height: '480'
+  plugins: {  }
 image_upload:
-  status: false
+  status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

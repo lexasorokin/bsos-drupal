@@ -1,9 +1,0 @@
-uuid: e357b617-2c91-4c88-8f65-3491a691b2d4
-langcode: en
-status: true
-dependencies: {  }
-id: course_information
-label: 'Course information'
-icon_uuid: null
-description: 'Migrated from field_collection field_course_information'
-behavior_plugins: {  }

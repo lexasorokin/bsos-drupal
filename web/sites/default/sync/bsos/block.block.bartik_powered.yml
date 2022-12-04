@@ -1,4 +1,4 @@
-uuid: 28bd2b9f-d66f-400f-9399-284ebc399a3b
+uuid: f0fc85a6-c2b7-47c0-9aca-c006baa00f20
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - bartik
 _core:
-  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
 id: bartik_powered
 theme: bartik
 region: footer_fifth
@@ -17,6 +17,6 @@ plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
   label: 'Powered by Drupal'
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

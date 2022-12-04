@@ -1,4 +1,4 @@
-uuid: 164182a6-029e-4490-bc1f-1ca431956756
+uuid: f2781fe3-5f19-400c-b9ff-edecf5e225c4
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - seven
 _core:
-  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+  default_config_hash: bZvFlENVti4PpqT6kqoC86B5_lXp6aE-d4nrvLMU4CY
 id: seven_messages
 theme: seven
 region: highlighted
@@ -17,6 +17,6 @@ plugin: system_messages_block
 settings:
   id: system_messages_block
   label: 'Status messages'
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

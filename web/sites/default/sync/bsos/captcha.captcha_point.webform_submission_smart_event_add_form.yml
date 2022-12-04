@@ -1,7 +1,0 @@
-uuid: 29fd17e8-b56b-46a1-9b34-9eb2b8995cfb
-langcode: en
-status: true
-dependencies: {  }
-formId: webform_submission_smart_event_add_form
-captchaType: captcha/Math
-label: webform_submission_smart_event_add_form

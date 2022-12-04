@@ -1,23 +1,15 @@
-uuid: 49417901-6a41-48ac-b013-16caeeee09fa
+uuid: 4c7ceadb-3792-425c-9947-9d843896a027
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.ldap_user_current_dn
-    - field.field.user.user.ldap_user_last_checked
-    - field.field.user.user.ldap_user_ldap_exclude
-    - field.field.user.user.ldap_user_prov_entries
-    - field.field.user.user.ldap_user_puid
-    - field.field.user.user.ldap_user_puid_property
-    - field.field.user.user.ldap_user_puid_sid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
-    - path
     - user
 _core:
-  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -26,46 +18,21 @@ content:
   account:
     weight: -10
     region: content
-    settings: {  }
-    third_party_settings: {  }
   contact:
     weight: 5
-    region: content
-  google_analytics:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
     region: content
   language:
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
-    settings: {  }
-    third_party_settings: {  }
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
-hidden:
-  langcode: true
-  ldap_user_current_dn: true
-  ldap_user_last_checked: true
-  ldap_user_ldap_exclude: true
-  ldap_user_prov_entries: true
-  ldap_user_puid: true
-  ldap_user_puid_property: true
-  ldap_user_puid_sid: true
+hidden: {  }

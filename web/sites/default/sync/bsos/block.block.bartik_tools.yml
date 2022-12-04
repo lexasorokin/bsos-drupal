@@ -1,4 +1,4 @@
-uuid: 7fcb1932-d24d-4182-ba4d-dbf3e615a357
+uuid: fc86fa1b-b2f6-4b26-badc-d5252a11a20c
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
   theme:
     - bartik
 _core:
-  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+  default_config_hash: TszJ7dH_11Qjmo_OpMzqznaED4Bvy1XfVnBzTC9LZXE
 id: bartik_tools
 theme: bartik
 region: sidebar_first
@@ -19,8 +19,8 @@ plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
   label: Tools
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

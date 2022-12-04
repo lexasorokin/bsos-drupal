@@ -1,15 +1,14 @@
-uuid: 0aa0bf42-5cb0-4b3b-9793-885ec0c73374
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 2b4021f8-ed22-42be-8d81-bd75dcf1f214
 name: 'Behavioral & Social Sciences College'
 mail: bsos-drupal@umd.edu
-slogan: BSOS
+slogan: ''
 page:
-  403: /node/3732
-  404: /node/3733
-  front: /node/3731
+  403: ''
+  404: ''
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-mail_notification: ''

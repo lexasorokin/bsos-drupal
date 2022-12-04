@@ -1,8 +1,0 @@
-uuid: fed46fda-0c5f-495b-83a5-627188f66a6a
-langcode: en
-status: true
-dependencies: {  }
-id: month_day
-label: 'Month day'
-locked: false
-pattern: 'M j'

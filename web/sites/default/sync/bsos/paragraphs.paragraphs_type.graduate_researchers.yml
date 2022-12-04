@@ -1,9 +1,0 @@
-uuid: cfa92c60-d6ba-4c7e-b537-75f505ffd447
-langcode: en
-status: true
-dependencies: {  }
-id: graduate_researchers
-label: 'Graduate researchers'
-icon_uuid: null
-description: 'Migrated from field_collection field_graduate_researchers'
-behavior_plugins: {  }

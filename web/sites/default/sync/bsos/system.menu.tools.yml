@@ -1,10 +1,10 @@
-uuid: 905bf36d-2bbb-4a40-aa40-e058590e2c7a
+uuid: ad0f71a8-30c7-495d-b424-f2e2ead4cc1f
 langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
 id: tools
-label: Navigation
-description: 'The navigation menu is provided by Drupal and is the main interactive menu for any site. It is usually the only menu that contains personalized links for authenticated users, and is often not even visible to anonymous users.'
+label: Tools
+description: 'User tool links, often added by modules'
 locked: true
