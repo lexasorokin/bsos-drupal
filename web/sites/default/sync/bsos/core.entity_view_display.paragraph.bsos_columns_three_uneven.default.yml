@@ -1,0 +1,35 @@
+uuid: 62327195-83de-49fb-88fa-a91bcd4b4de2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_content_3
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_style_3
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+  module:
+    - entity_reference_revisions
+    - options
+_core:
+  default_config_hash: lTEjHuwSSqMh9n8kXeNBatSVkhMk2LqqmP5xn9eqZhc
+id: paragraph.bsos_columns_three_uneven.default
+targetEntityType: paragraph
+bundle: bsos_columns_three_uneven
+mode: default
+content:
+  field_bsos_column_content_3:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_bsos_column_style_3:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

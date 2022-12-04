@@ -1,0 +1,21 @@
+uuid: d3593099-b04d-44cc-87da-faef9a7473b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_officehours
+    - node.type.gsprofile
+_core:
+  default_config_hash: RN90TU_2zn7x1pu_5RTWhPqGfXepFMnAe9C4U6pONr4
+id: node.gsprofile.field_officehours
+field_name: field_officehours
+entity_type: node
+bundle: gsprofile
+label: 'Office Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,64 @@
+uuid: 4d3cf802-c8ed-49dc-bfb2-22dfc7f56591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projref_coi
+    - node.type.project_profile
+    - paragraphs.paragraphs_type.projref_coi
+  module:
+    - entity_reference_revisions
+id: node.project_profile.field_projref_coi
+field_name: field_projref_coi
+entity_type: node
+bundle: project_profile
+label: Co-Investigators
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      projref_coi: projref_coi
+    target_bundles_drag_drop:
+      projref_coi:
+        enabled: true
+        weight: 1
+      awards_fc:
+        enabled: false
+        weight: 2
+      conferences_fc:
+        enabled: false
+        weight: 3
+      course_information:
+        enabled: false
+        weight: 4
+      degrees_held:
+        enabled: false
+        weight: 5
+      faculty_advisors:
+        enabled: false
+        weight: 6
+      fac_grad_advisee:
+        enabled: false
+        weight: 7
+      formerstudent_info:
+        enabled: false
+        weight: 8
+      graduate_researchers:
+        enabled: false
+        weight: 9
+      primary_classification:
+        enabled: false
+        weight: 10
+      researchers:
+        enabled: false
+        weight: 11
+      service_information:
+        enabled: false
+        weight: 12
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

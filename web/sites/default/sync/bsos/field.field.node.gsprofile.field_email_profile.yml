@@ -1,0 +1,21 @@
+uuid: b5cb1b6d-e8b0-4198-a824-e0bc015bf2a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_profile
+    - node.type.gsprofile
+_core:
+  default_config_hash: zbeGvVu08hxTxsynJ32a9VthJIvWelZGXFwnskbg2ac
+id: node.gsprofile.field_email_profile
+field_name: field_email_profile
+entity_type: node
+bundle: gsprofile
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

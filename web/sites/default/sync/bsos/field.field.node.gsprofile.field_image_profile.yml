@@ -1,0 +1,40 @@
+uuid: 2ea78490-a99a-487a-b63b-7a7c3e2bec5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_profile
+    - node.type.gsprofile
+  module:
+    - image
+_core:
+  default_config_hash: uNSi1i9AAhGXF7r8dlMsJXzCFlOn2YU8Vl0M5ZeZieU
+id: node.gsprofile.field_image_profile
+field_name: field_image_profile
+entity_type: node
+bundle: gsprofile
+label: 'Profile Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 935f349d-d515-4c47-89bc-95d2289d675e
+    alt: 'UM Globe'
+    title: ''
+    width: 240
+    height: 360
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

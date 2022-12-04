@@ -1,0 +1,14 @@
+uuid: 12a7289e-ec87-42b4-ad26-0a33df29e3f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_news_events_editor
+  module:
+    - user
+id: user_add_role_action.area_news_events_editor
+label: 'Add the Area News Events Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: area_news_events_editor

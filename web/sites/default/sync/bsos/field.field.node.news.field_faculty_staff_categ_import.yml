@@ -1,0 +1,30 @@
+uuid: d01fb688-5202-4682-936f-e4b7c8ce6611
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faculty_staff_categ_import
+    - node.type.news
+    - taxonomy.vocabulary.bsos_drupal_sites
+id: node.news.field_faculty_staff_categ_import
+field_name: field_faculty_staff_categ_import
+entity_type: node
+bundle: news
+label: 'Faculty/Staff Category Import'
+description: 'Unit from which this item feeds'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bsos_drupal_sites: bsos_drupal_sites
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

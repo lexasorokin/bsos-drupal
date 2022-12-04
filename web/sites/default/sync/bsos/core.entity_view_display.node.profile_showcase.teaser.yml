@@ -1,0 +1,39 @@
+uuid: 4c3e3108-1e30-42b8-8acc-6203c240fbca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_body_headline
+    - field.field.node.profile_showcase.field_display_text
+    - field.field.node.profile_showcase.field_image_profile
+    - field.field.node.profile_showcase.field_satelllite_profiles
+    - node.type.profile_showcase
+  module:
+    - text
+    - user
+id: node.profile_showcase.teaser
+targetEntityType: node
+bundle: profile_showcase
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_body_headline: true
+  field_display_text: true
+  field_image_profile: true
+  field_satelllite_profiles: true
+  langcode: true

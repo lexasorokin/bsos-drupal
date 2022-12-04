@@ -1,0 +1,47 @@
+uuid: 5d47faf7-11ec-490e-b54b-91ff3a557df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.news.body
+    - field.field.node.news.field_faculty_staff_categ_import
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_release_date
+    - field.field.node.news.field_satellite_faculty_in_the_n
+    - field.field.node.news.field_send_to_bsos
+    - node.type.news
+  module:
+    - image
+    - user
+id: node.news.token
+targetEntityType: node
+bundle: news
+mode: token
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_news_image:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_faculty_staff_categ_import: true
+  field_release_date: true
+  field_satellite_faculty_in_the_n: true
+  field_send_to_bsos: true
+  langcode: true

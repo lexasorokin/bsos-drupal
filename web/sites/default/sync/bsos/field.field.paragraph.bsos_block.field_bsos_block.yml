@@ -1,0 +1,32 @@
+uuid: 7ae45081-b0a1-4a2b-9fa9-d3f838ed8abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.paragraph.field_bsos_block
+    - paragraphs.paragraphs_type.bsos_block
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: t0HzMaQkuVMbSAV9n_EZX1Y7opmxUdFqODabHMdGge4
+id: paragraph.bsos_block.field_bsos_block
+field_name: field_bsos_block
+entity_type: paragraph
+bundle: bsos_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

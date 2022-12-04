@@ -1,0 +1,13 @@
+uuid: 92ccc713-233c-46c6-aec4-125e34e50884
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.site_error_page
+_core:
+  default_config_hash: 5g0meXBKmOiLlmORIL_Kss9QfOzlP7RhgDrac8gwJQA
+id: node.site_error_page
+target_entity_type_id: node
+target_bundle: site_error_page
+default_langcode: site_default
+language_alterable: false

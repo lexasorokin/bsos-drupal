@@ -1,0 +1,11 @@
+uuid: ac4f995d-6100-435d-a176-7c8753b2739b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JdLeMRWSAb06DWEHdHrVRugUekSZtjB7GjCAaMrtEkI
+id: degrees_held
+label: 'Degrees held'
+icon_uuid: null
+description: 'Migrated from field_collection field_degrees_held'
+behavior_plugins: {  }

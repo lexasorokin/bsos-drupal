@@ -1,0 +1,15 @@
+uuid: 5b397b5a-42ec-4ee0-9274-be70079719cd
+langcode: en
+status: true
+dependencies: {  }
+name: featured_story
+label: featured_story
+effects:
+  9bbb89c0-2f20-4156-82f2-4ff5a22eb955:
+    uuid: 9bbb89c0-2f20-4156-82f2-4ff5a22eb955
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: true

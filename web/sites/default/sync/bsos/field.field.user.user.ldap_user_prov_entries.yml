@@ -1,0 +1,20 @@
+uuid: defe214f-8a44-4acc-b5c5-bbf038639c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.ldap_user_prov_entries
+  module:
+    - user
+id: user.user.ldap_user_prov_entries
+field_name: ldap_user_prov_entries
+entity_type: user
+bundle: user
+label: 'LDAP Entries that have been provisioned from this Drupal user.'
+description: 'This field should not be edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

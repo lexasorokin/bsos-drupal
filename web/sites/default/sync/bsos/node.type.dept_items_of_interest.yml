@@ -1,0 +1,17 @@
+uuid: 0e788da6-3647-4677-99a5-e6b4ea85a5f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Items of Interest'
+type: dept_items_of_interest
+description: 'Customizable block for the department, for the home page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

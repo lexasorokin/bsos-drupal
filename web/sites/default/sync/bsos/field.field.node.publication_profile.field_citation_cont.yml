@@ -1,0 +1,19 @@
+uuid: 0bcdf8af-137f-4018-8d5c-3cd235f83870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_citation_cont
+    - node.type.publication_profile
+id: node.publication_profile.field_citation_cont
+field_name: field_citation_cont
+entity_type: node
+bundle: publication_profile
+label: 'Citation Continuation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

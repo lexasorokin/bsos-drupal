@@ -1,0 +1,108 @@
+uuid: 0a577255-9d7f-4895-8cc9-7077d71d3b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_topic.body
+    - field.field.node.landing_topic.field_imagelanding
+    - field.field.node.landing_topic.field_landingtopic_order
+    - field.field.node.landing_topic.field_links_landing
+    - field.field.node.landing_topic.taxonomy_vocabulary_2
+    - image.style.thumbnail
+    - node.type.landing_topic
+  module:
+    - image_widget_crop
+    - imce
+    - link
+    - path
+    - text
+id: node.landing_topic.default
+targetEntityType: node
+bundle: landing_topic
+mode: default
+content:
+  body:
+    weight: 1
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagelanding:
+    weight: 2
+    type: image_widget_crop
+    settings:
+      show_default_crop: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - sasg_landing
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+      warn_multiple_usages: false
+    third_party_settings:
+      imce:
+        enabled: true
+    region: content
+  field_landingtopic_order:
+    weight: 5
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_links_landing:
+    weight: 4
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_2:
+    weight: 3
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  moderation_state: true
+  promote: true
+  status: true
+  sticky: true
+  url_redirects: true

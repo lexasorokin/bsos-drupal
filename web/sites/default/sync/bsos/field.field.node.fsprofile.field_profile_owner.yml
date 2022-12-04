@@ -1,0 +1,31 @@
+uuid: a63ebcd2-f2cf-43ac-ad86-efccd9fdd9be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_owner
+    - node.type.fsprofile
+_core:
+  default_config_hash: RqHryEY-Ft8Mx-LfWM6qizXy347sWjv4NF4vARks4RA
+id: node.fsprofile.field_profile_owner
+field_name: field_profile_owner
+entity_type: node
+bundle: fsprofile
+label: 'Profile Owner'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

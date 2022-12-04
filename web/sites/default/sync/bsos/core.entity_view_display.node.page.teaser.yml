@@ -1,0 +1,41 @@
+uuid: 3f65d4e4-c347-4c1e-884a-d2490b682cb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_bsos_page_elements
+    - field.field.node.page.field_page_image
+    - field.field.node.page.field_supplemental_content
+    - field.field.node.page.taxonomy_vocabulary_2
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bsos_page_elements: true
+  field_page_image: true
+  field_supplemental_content: true
+  langcode: true
+  taxonomy_vocabulary_2: true

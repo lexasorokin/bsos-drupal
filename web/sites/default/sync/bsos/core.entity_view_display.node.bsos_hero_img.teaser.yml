@@ -1,0 +1,27 @@
+uuid: dea008a1-f8ab-4ce5-840c-7d3b1db50469
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bsos_hero_img.field_bsos_hero_img
+    - field.field.node.bsos_hero_img.field_bsos_hero_msg
+    - node.type.bsos_hero_img
+  module:
+    - user
+_core:
+  default_config_hash: yfyFCfHCQOsglOPqfRGR3B1JcS58RXi2FqGMWX_i6Ds
+id: node.bsos_hero_img.teaser
+targetEntityType: node
+bundle: bsos_hero_img
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bsos_hero_img: true
+  field_bsos_hero_msg: true
+  langcode: true

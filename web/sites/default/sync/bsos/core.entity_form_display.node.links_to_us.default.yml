@@ -1,0 +1,71 @@
+uuid: c026a4f6-65b6-4d06-9235-16379144e118
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.links_to_us.field_order_in_list
+    - field.field.node.links_to_us.field_social_icon
+    - field.field.node.links_to_us.field_sort_order
+    - field.field.node.links_to_us.field_url
+    - field.field.node.links_to_us.field_url_text
+    - node.type.links_to_us
+id: node.links_to_us.default
+targetEntityType: node
+bundle: links_to_us
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_social_icon:
+    weight: 2
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sort_order:
+    weight: 3
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_url:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_order_in_list: true
+  field_url_text: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  url_redirects: true

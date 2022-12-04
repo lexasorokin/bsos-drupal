@@ -1,0 +1,21 @@
+uuid: 53983f7c-ccf2-4539-a757-415a87d2171b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: x9VH04pyS-U6EUkncgKsnmFRf20SsuuuS3pyy3tRhjg
+id: node.field_fac_service_philosophy
+field_name: field_fac_service_philosophy
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

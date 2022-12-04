@@ -1,0 +1,32 @@
+uuid: 042d2fbd-4b3b-4a4a-89cb-1795478eaf8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternate_feature_profile
+    - node.type.fsprofile
+    - taxonomy.vocabulary.bsos_drupal_sites
+_core:
+  default_config_hash: oGEuWWtAYiKbz_IpnV5FWHGemCAyeaBX_bQg3qFp3qk
+id: node.fsprofile.field_alternate_feature_profile
+field_name: field_alternate_feature_profile
+entity_type: node
+bundle: fsprofile
+label: 'Alternate Feature Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bsos_drupal_sites: bsos_drupal_sites
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

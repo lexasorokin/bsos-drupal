@@ -1,0 +1,7 @@
+overview_left: 'workbench_current_user:block_1'
+overview_right: 'workbench_edited:block_1'
+overview_main: 'aggregator_rss_feed:default'
+edits_main: 'workbench_edited:embed_1'
+all_main: 'aggregator_rss_feed:default'
+_core:
+  default_config_hash: aGR45_bxRagev3Ecuwgjvr3x2Ccgsmsk-Evv-SIkwQM

@@ -1,0 +1,26 @@
+uuid: 0899f96b-30cf-4d91-a8d9-ff2328325503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_view.field_bsos_view
+    - paragraphs.paragraphs_type.bsos_view
+  module:
+    - viewsreference
+_core:
+  default_config_hash: ievzJDehOR5KwMbqzWzp_sNxHXRnDoT9LBp7jokeB2A
+id: paragraph.bsos_view.default
+targetEntityType: paragraph
+bundle: bsos_view
+mode: default
+content:
+  field_bsos_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

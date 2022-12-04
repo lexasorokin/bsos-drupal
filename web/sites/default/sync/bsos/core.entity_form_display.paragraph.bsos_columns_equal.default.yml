@@ -1,0 +1,32 @@
+uuid: c48a6f26-c97b-416e-9b2a-24e2c85d112e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_equal.field_bsos_column_content
+    - paragraphs.paragraphs_type.bsos_columns_equal
+  module:
+    - paragraphs
+_core:
+  default_config_hash: A_w5On0DXMUqT9owv6WWgLaIja2LUKSxUMKnKkfoWhg
+id: paragraph.bsos_columns_equal.default
+targetEntityType: paragraph
+bundle: bsos_columns_equal
+mode: default
+content:
+  field_bsos_column_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Column
+      title_plural: Columns
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,38 @@
+uuid: ba064574-6ab3-46a8-a6f5-5fc2febcdcd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_profile_image
+    - node.type.external_profiles
+  module:
+    - image
+id: node.external_profiles.field_external_profile_image
+field_name: field_external_profile_image
+entity_type: node
+bundle: external_profiles
+label: 'External Profile Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: false
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

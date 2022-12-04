@@ -1,0 +1,66 @@
+uuid: aab66cd4-5a8a-405a-a323-52ce2307949d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_grad_advisee
+    - node.type.fsprofile
+    - paragraphs.paragraphs_type.fac_grad_advisee
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: m1FAW8AypFIw8Pw9HX621emME7s_wCRuP5UB_movKl0
+id: node.fsprofile.field_fac_grad_advisee
+field_name: field_fac_grad_advisee
+entity_type: node
+bundle: fsprofile
+label: 'Grad Student Advisee'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      fac_grad_advisee: fac_grad_advisee
+    target_bundles_drag_drop:
+      fac_grad_advisee:
+        enabled: true
+        weight: 1
+      awards_fc:
+        enabled: false
+        weight: 2
+      conferences_fc:
+        enabled: false
+        weight: 3
+      course_information:
+        enabled: false
+        weight: 4
+      degrees_held:
+        enabled: false
+        weight: 5
+      faculty_advisors:
+        enabled: false
+        weight: 6
+      formerstudent_info:
+        enabled: false
+        weight: 7
+      graduate_researchers:
+        enabled: false
+        weight: 8
+      projref_coi:
+        enabled: false
+        weight: 9
+      projref_co_pi:
+        enabled: false
+        weight: 10
+      researchers:
+        enabled: false
+        weight: 11
+      service_information:
+        enabled: false
+        weight: 12
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+uuid: 2482d02b-d2ca-4b4e-8221-e3b11c59f843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_userid
+    - node.type.gsprofile
+_core:
+  default_config_hash: MrfZV7e7Je601IyNTCrzA7TTtOd_H1hEbF-YRVbWDmM
+id: node.gsprofile.field_profile_userid
+field_name: field_profile_userid
+entity_type: node
+bundle: gsprofile
+label: 'Profile UserID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

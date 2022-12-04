@@ -1,0 +1,23 @@
+uuid: 37f46602-2d8b-4c21-9f2f-550cac09718c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_icon
+    - node.type.links_to_us
+  module:
+    - options
+_core:
+  default_config_hash: TreozDma4HSkDLJ_AHeYhss4lt4PiBCRijWAiYeZBkM
+id: node.links_to_us.field_social_icon
+field_name: field_social_icon
+entity_type: node
+bundle: links_to_us
+label: 'Social icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

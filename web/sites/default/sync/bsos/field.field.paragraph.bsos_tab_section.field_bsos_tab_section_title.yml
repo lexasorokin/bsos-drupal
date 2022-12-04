@@ -1,0 +1,21 @@
+uuid: 5b90192d-9a25-4391-9c9d-33069b3f6864
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_tab_section_title
+    - paragraphs.paragraphs_type.bsos_tab_section
+_core:
+  default_config_hash: kJiDCbzbMbKRRXWjn7TU6USPqlJ8D6_4YvuemQKVD4A
+id: paragraph.bsos_tab_section.field_bsos_tab_section_title
+field_name: field_bsos_tab_section_title
+entity_type: paragraph
+bundle: bsos_tab_section
+label: 'Tab name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

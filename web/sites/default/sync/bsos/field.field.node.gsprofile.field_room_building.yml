@@ -1,0 +1,21 @@
+uuid: 28c9fb06-4123-42fa-a3f8-441dac008878
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_building
+    - node.type.gsprofile
+_core:
+  default_config_hash: YlmHSrXPJDiUgfyU1muotxqGw__KU7F5qAjLWCTqkxU
+id: node.gsprofile.field_room_building
+field_name: field_room_building
+entity_type: node
+bundle: gsprofile
+label: 'Room and Building'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

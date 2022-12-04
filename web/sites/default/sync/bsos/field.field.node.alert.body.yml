@@ -1,0 +1,23 @@
+uuid: 2780757e-7a3e-4c92-960f-4d4d11b1ab27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.alert
+  module:
+    - text
+id: node.alert.body
+field_name: body
+entity_type: node
+bundle: alert
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

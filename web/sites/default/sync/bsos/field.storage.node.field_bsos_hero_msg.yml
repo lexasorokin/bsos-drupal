@@ -1,0 +1,23 @@
+uuid: 6c5960d4-a08a-44d0-b8c1-f8d3f362f742
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fOXzSK6ygPrpO99-E3z2GzBB0FEn9lKqyj6zf_tTevE
+id: node.field_bsos_hero_msg
+field_name: field_bsos_hero_msg
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

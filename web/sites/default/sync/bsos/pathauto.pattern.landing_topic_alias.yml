@@ -1,0 +1,22 @@
+uuid: ec76b2c6-3046-43f4-9dc7-e6d3b5c5e03e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: landing_topic_alias
+label: 'Landing Topic Alias'
+type: 'canonical_entities:node'
+pattern: '[node:taxonomy_vocabulary_2]/landingtopic/[node:title]'
+selection_criteria:
+  853417d9-6aeb-4b37-a4e9-0ce9e21cdcfc:
+    id: node_type
+    bundles:
+      landing_topic: landing_topic
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 853417d9-6aeb-4b37-a4e9-0ce9e21cdcfc
+selection_logic: and
+weight: -5
+relationships: {  }

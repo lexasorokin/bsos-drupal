@@ -1,0 +1,376 @@
+uuid: 3a3ef1bd-ce6a-40c8-8f67-6171fa32fea3
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: facilities_request
+title: 'BSOS Facilities'
+description: ''
+category: ''
+elements: |-
+  facilities_mission:
+    '#type': webform_markup
+    '#markup': |
+      <div>
+      <h4>Mission and Purpose</h4>
+      
+      <p>Our office supports BSOS by serving as a liaison between Facilities Management (FM) and various units/departments within the college, with a particular focus on units in the Dean&rsquo;s Office. We are responsible for maintaining and enhancing academic, research and administrative spaces in BSOS, as well as the infrastructure supporting them. Our mission is to help create and support well-maintained facilities with a strong commitment to both BSOS and the University of Maryland as a whole.</p>
+      &nbsp;
+      
+      <h4>General Contact Information</h4>
+      
+      <p>Please email <a href="mailto:bsosfacilities@umd.edu">bsosfacilities@umd.edu</a> with any general questions you may have and one of our team members will follow-up with you directly to address your inquiry.<br />
+      <br />
+      The form below is used for the following requests:</p>
+      
+      <ul>
+      	<li>Non-billable services</li>
+      	<li>Recurring problems in your space</li>
+      	<li>Renovation inquiries</li>
+      	<li>General facilities information</li>
+      	<li>Swipe access request (UID, name, and all contact information, specific locations requested)</li>
+      </ul>
+      
+      <p><br />
+      For emergencies, call the Customer Response Center directly at&nbsp;x5-2222 and state the specific location (room # and building) and that it is an emergency providing specific details of the incident that you are reporting. Afterwards please follow up with our office so we may reach out to the appropriate contacts for follow-up and action.</p>
+      &nbsp;
+      
+      <h4>Our Team</h4>
+      
+      <ul class="list-inline">
+      	<li>
+      	<p>Dona Morgan<br />
+      	<em>Director</em><br />
+      	<a href="mailto:dmorgan@umd.edu">dmorgan@umd.edu</a><br />
+      	301-405-1687</p>
+      	</li>
+      	<li>
+      	<p>Jessica Montresor-Lopez<br />
+      	<em>Facilities Coordinator</em><br />
+      	<a href="mailto:jmontres@umd.edu">jmontres@umd.edu</a><br />
+      	301-405-2606</p>
+      	</li>
+      </ul>
+      &nbsp;
+      
+      <h4>Location</h4>
+      
+      <p>0127 Tydings Hall<br />
+      7343 Preinkert Dr., College Park, MD 20742</p>
+      </div>
+      <br />
+      &nbsp;
+      
+  form_fields:
+    '#type': container
+    '#attributes':
+      style: 'box-shadow: 0 0 12px 1px; padding: 2rem;'
+    markup:
+      '#type': webform_markup
+      '#wrapper_attributes':
+        style: 'text-align: center;'
+      '#markup': |
+        <h3>Create a Facilities Request</h3>
+        
+        <h5 style="color:#900">***For emergencies (e.g., mold, water) please call the Customer Response Center at 5-2222***</h5>
+        
+    name:
+      '#type': textfield
+      '#title': Name
+      '#required': true
+    contact_email:
+      '#type': email
+      '#title': 'Contact Email'
+      '#required': true
+    contact_phone:
+      '#type': textfield
+      '#title': 'Contact Phone'
+    service:
+      '#type': select
+      '#title': Service
+      '#options':
+        Maintenance: Maintenance
+        Renovations: Renovations
+        Security: Security
+        Other: Other..
+      '#required': true
+    building_or_nearest_building:
+      '#type': select
+      '#title': 'Building or Nearest Building'
+      '#options':
+        '038 - LeFrak': '038 - LeFrak'
+        '040 - Morrill': '040 - Morrill'
+        '042 - Tydings': '042 - Tydings'
+        '043 - Taliaferro': '043 - Taliaferro'
+        '046 - Marie Mount': '046 - Marie Mount'
+        '047 - Woods': '047 - Woods'
+        '059 - Chincoteague': '059 - Chincoteague'
+        '144 - Biology-Psychology': '144 - Biology-Psychology'
+        '146 - Parren Mitchell': '146 - Parren Mitchell'
+        '147 - Hornbake': '147 - Hornbake'
+        '162 - Cole Student Activities': '162 - Cole Student Activities'
+        '795 - Avrum Gudelsky': '795 - Avrum Gudelsky'
+      '#required': true
+    room_number_or_location:
+      '#type': textarea
+      '#title': 'Room Number or Location'
+      '#maxlength': 140
+      '#placeholder': 'e.g. 1208 -or- first room before 1st floor stairwell.'
+      '#required': true
+    description_of_request:
+      '#type': textarea
+      '#title': 'Description of Request'
+      '#description': 'Provide a detailed explanation of your request. For billable task, provide an account number.'
+      '#title_display': before
+      '#description_display': before
+      '#placeholder': 'Provide a detailed explanation of your request. For billable task, provide an account number.'
+      '#required': true
+    upload_file_image:
+      '#type': managed_file
+      '#title': 'Upload File/Image'
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#attributes':
+        style: 'text-align: center'
+      '#submit__label': Submit
+    sla_warning:
+      '#type': processed_text
+      '#display_on': both
+      '#text': |
+        <h4 style="color:red; text-align:center;"><strong><em>Please allow at least 48 business hours for processing requests.</em></strong></h4>
+        
+      '#format': 2
+  captcha:
+    '#type': captcha
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: ''
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: bsos_facilities
+  page_confirm_path: bsos_facilities/done
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - facilities_manager
+      - administrator
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles:
+      - facilities_manager
+      - administrator
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles:
+      - facilities_manager
+      - administrator
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles:
+      - facilities_manager
+      - administrator
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles:
+      - facilities_manager
+      - administrator
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: 'Email for Subs'
+    notes: ''
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: bsosfacilities@umd.edu
+      to_options: {  }
+      cc_mail: jmontres@umd.edu
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

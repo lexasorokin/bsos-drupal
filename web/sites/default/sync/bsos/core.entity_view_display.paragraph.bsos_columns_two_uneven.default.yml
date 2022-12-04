@@ -1,0 +1,35 @@
+uuid: 16639b41-ccbe-439e-9841-99af114173b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_two_uneven.field_bsos_column_content_2
+    - field.field.paragraph.bsos_columns_two_uneven.field_bsos_column_style_2
+    - paragraphs.paragraphs_type.bsos_columns_two_uneven
+  module:
+    - entity_reference_revisions
+    - options
+_core:
+  default_config_hash: uqB2koFQcJIYqVteNqJan9-SZVY6gm20Uc7kzYz_RkE
+id: paragraph.bsos_columns_two_uneven.default
+targetEntityType: paragraph
+bundle: bsos_columns_two_uneven
+mode: default
+content:
+  field_bsos_column_content_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_bsos_column_style_2:
+    type: list_key
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

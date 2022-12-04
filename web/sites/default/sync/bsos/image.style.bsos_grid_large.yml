@@ -1,0 +1,17 @@
+uuid: 70ef7fec-4be6-4a6c-9ba9-fd6ab86d4658
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b4LumOAqz0A48NLYB7q8bf7SiOwQGzS1q623uedmfew
+name: bsos_grid_large
+label: 'Grid large (950hw)'
+effects:
+  bsos_paragraphs_grid_large_scale:
+    uuid: bsos_paragraphs_grid_large_scale
+    id: image_scale
+    weight: 1
+    data:
+      width: 950
+      height: 950
+      upscale: false

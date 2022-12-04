@@ -1,0 +1,25 @@
+uuid: 73b5aa80-45fa-480c-a846-58dd81f6a01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_graduatefaculty
+    - node.type.fsprofile
+_core:
+  default_config_hash: 6_878Ik_T0bStqDAkK5o0VUpHnwJ0x9LLeFNugRoTpo
+id: node.fsprofile.field_is_graduatefaculty
+field_name: field_is_graduatefaculty
+entity_type: node
+bundle: fsprofile
+label: 'is Graduate Faculty'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

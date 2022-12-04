@@ -1,0 +1,40 @@
+uuid: 3ba62cb4-2eb4-4007-8fb0-a1b7f94320c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - twitter_block
+  theme:
+    - bartik
+third_party_settings:
+  block_class:
+    classes: ''
+id: twitterblock
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: 'Twitter block'
+  provider: twitter_block
+  label_display: '0'
+  username: bsosumd
+  theme: ''
+  link_color: ''
+  width: ''
+  height: '650'
+  chrome:
+    noheader: '0'
+    nofooter: '0'
+    noborders: '0'
+    noscrollbar: '0'
+    transparent: '0'
+  border_color: ''
+  language: ''
+  tweet_limit: ''
+  related: ''
+  polite: polite
+visibility: {  }

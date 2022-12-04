@@ -1,0 +1,38 @@
+uuid: c9f4c495-2abb-4e04-a8c4-eef766e60b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_image
+    - node.type.event
+  module:
+    - image
+id: node.event.field_event_image
+field_name: field_event_image
+entity_type: node
+bundle: event
+label: 'Event Image'
+description: 'Add an image associated with this event, if available.  (will be resized automatically)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

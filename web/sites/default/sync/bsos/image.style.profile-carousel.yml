@@ -1,0 +1,15 @@
+uuid: d15b6637-00ca-4881-9ef2-84b34af0ea5a
+langcode: en
+status: true
+dependencies: {  }
+name: profile-carousel
+label: profile-carousel
+effects:
+  de0c3aa9-d0e6-4403-939f-cae5ed225d14:
+    uuid: de0c3aa9-d0e6-4403-939f-cae5ed225d14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 203
+      height: 270
+      anchor: center-center

@@ -1,0 +1,11 @@
+uuid: 54a7489d-6f79-4aa8-a3d6-24109c1a5d97
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5OEBTi6K9HT0Tk8DdKv0FHWpz-9aiyqbwJdsh5Hn8XY
+id: bsos_image_grid_image
+label: 'Image in grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,15 @@
+uuid: a1544acd-a681-41da-bcd0-06b828a3898d
+langcode: en
+status: true
+dependencies: {  }
+name: width235
+label: width235
+effects:
+  d0b7c19c-495b-4c57-bbb9-21c8a5c007b9:
+    uuid: d0b7c19c-495b-4c57-bbb9-21c8a5c007b9
+    id: image_scale
+    weight: 1
+    data:
+      width: 235
+      height: null
+      upscale: true

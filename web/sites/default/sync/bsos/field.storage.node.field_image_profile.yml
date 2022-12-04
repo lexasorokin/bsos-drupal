@@ -1,0 +1,32 @@
+uuid: 49803054-e2ad-4b2f-8685-c3b65a2cd38b
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+    - image
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: Ap4PlFL04c8F2L2PfoCkUkkz0S2E-oFpACGzlwBy75c
+id: node.field_image_profile
+field_name: field_image_profile
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

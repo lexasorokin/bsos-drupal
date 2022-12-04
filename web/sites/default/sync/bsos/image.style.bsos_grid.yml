@@ -1,0 +1,27 @@
+uuid: 5806d51e-70be-4449-8443-aa727fae3a8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.bsos_grid
+  module:
+    - crop
+_core:
+  default_config_hash: p-p92_FdWk5DucwWBAlJTgBhj9HQ1mMKgYAmwmCb6WA
+name: bsos_grid
+label: 'Grid (480x320)'
+effects:
+  bsos_paragraphs_grid_scale_crop:
+    uuid: bsos_paragraphs_grid_scale_crop
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 480
+      height: 320
+      anchor: center-center
+  bsos_paragraphs_grid_manual_crop:
+    uuid: bsos_paragraphs_grid_manual_crop
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: bsos_grid

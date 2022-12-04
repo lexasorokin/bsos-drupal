@@ -1,0 +1,39 @@
+uuid: 6b35d82c-3e56-488f-a44f-71ed1589a1b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_content_3
+    - field.field.paragraph.bsos_columns_three_uneven.field_bsos_column_style_3
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+  module:
+    - paragraphs
+_core:
+  default_config_hash: MELaC2vPEpJLQqKKkqh9-uh78_sBxTD861IFgS8ssyw
+id: paragraph.bsos_columns_three_uneven.default
+targetEntityType: paragraph
+bundle: bsos_columns_three_uneven
+mode: default
+content:
+  field_bsos_column_content_3:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Column
+      title_plural: Columns
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_bsos_column_style_3:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

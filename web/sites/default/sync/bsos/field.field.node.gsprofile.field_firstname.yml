@@ -1,0 +1,21 @@
+uuid: 961c429d-76a0-4d2f-b607-2649d3d47e0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_firstname
+    - node.type.gsprofile
+_core:
+  default_config_hash: _hnrZsjH10nRKaQ01cu84140GyL9xaVyxbJuUpsGsXU
+id: node.gsprofile.field_firstname
+field_name: field_firstname
+entity_type: node
+bundle: gsprofile
+label: 'First Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

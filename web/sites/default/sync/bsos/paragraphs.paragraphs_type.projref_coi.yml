@@ -1,0 +1,9 @@
+uuid: bfb593a9-c0bd-4c6a-9f16-cac686fc359e
+langcode: en
+status: true
+dependencies: {  }
+id: projref_coi
+label: 'Projref coi'
+icon_uuid: null
+description: 'Migrated from field_collection field_projref_coi'
+behavior_plugins: {  }

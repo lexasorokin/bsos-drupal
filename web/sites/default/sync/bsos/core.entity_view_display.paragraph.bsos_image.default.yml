@@ -1,0 +1,51 @@
+uuid: c20c0a0d-b6db-4abc-a635-b97d9d5937ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_image.field_bsos_caption
+    - field.field.paragraph.bsos_image.field_bsos_image_full
+    - image.style.bsos_full
+    - paragraphs.paragraphs_type.bsos_image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: bauysDkqXUDlwiZjBF8FYmftwXOzqaMBOsPmBvz2v3k
+id: paragraph.bsos_image.default
+targetEntityType: paragraph
+bundle: bsos_image
+mode: default
+content:
+  field_bsos_caption:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: paragraph-caption
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_bsos_image_full:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: bsos_full
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    type: image
+    region: content
+hidden: {  }

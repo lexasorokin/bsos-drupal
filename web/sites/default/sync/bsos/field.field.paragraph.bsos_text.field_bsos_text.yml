@@ -1,0 +1,23 @@
+uuid: 891fe031-00c1-409c-b36f-eb3be293103c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_text
+    - paragraphs.paragraphs_type.bsos_text
+  module:
+    - text
+_core:
+  default_config_hash: l7KCfnR5PQYSmP2ivDfdKBxQ9IHspcD69L4sVjUoGIo
+id: paragraph.bsos_text.field_bsos_text
+field_name: field_bsos_text
+entity_type: paragraph
+bundle: bsos_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

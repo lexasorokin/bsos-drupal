@@ -1,0 +1,11 @@
+uuid: 3c962600-788a-4ffc-b7bd-b469a994c4d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bsos_web_ad
+id: node.bsos_web_ad
+target_entity_type_id: node
+target_bundle: bsos_web_ad
+default_langcode: site_default
+language_alterable: false

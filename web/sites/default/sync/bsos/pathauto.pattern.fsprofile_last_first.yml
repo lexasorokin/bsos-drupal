@@ -1,0 +1,22 @@
+uuid: 792a67bf-44ad-472e-b4e7-95bddaa56507
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+id: fsprofile_last_first
+label: 'FSProfile Last First'
+type: 'canonical_entities:node'
+pattern: 'facultyprofile/[node:field_lastname]/[node:field_firstname]'
+selection_criteria:
+  c85fcec0-b796-41a4-b962-4b53151fc3f6:
+    id: node_type
+    bundles:
+      fsprofile: fsprofile
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c85fcec0-b796-41a4-b962-4b53151fc3f6
+selection_logic: and
+weight: -5
+relationships: {  }

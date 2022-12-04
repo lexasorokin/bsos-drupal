@@ -1,0 +1,26 @@
+uuid: 04befd5a-3605-4195-8057-5546f5b36714
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.degrees_held.field_degree_details
+    - field.field.paragraph.degrees_held.field_degree_type
+    - paragraphs.paragraphs_type.degrees_held
+id: paragraph.degrees_held.default
+targetEntityType: paragraph
+bundle: degrees_held
+mode: default
+content:
+  field_degree_details:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 160
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_degree_type: true
+  status: true
+  uid: true

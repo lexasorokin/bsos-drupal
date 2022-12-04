@@ -1,0 +1,66 @@
+uuid: 134da567-13e2-49ee-890d-8a00d1ecbe88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_classification
+    - node.type.fsprofile
+    - paragraphs.paragraphs_type.primary_classification
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: _6s_5PgnacWCVOz2p4TZOR3-z7mrzIouId32cPLkoFM
+id: node.fsprofile.field_primary_classification
+field_name: field_primary_classification
+entity_type: node
+bundle: fsprofile
+label: 'Primary Classification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      primary_classification: primary_classification
+    target_bundles_drag_drop:
+      primary_classification:
+        enabled: true
+        weight: 1
+      awards_fc:
+        enabled: false
+        weight: 2
+      conferences_fc:
+        enabled: false
+        weight: 3
+      course_information:
+        enabled: false
+        weight: 4
+      degrees_held:
+        enabled: false
+        weight: 5
+      faculty_advisors:
+        enabled: false
+        weight: 6
+      fac_grad_advisee:
+        enabled: false
+        weight: 7
+      formerstudent_info:
+        enabled: false
+        weight: 8
+      graduate_researchers:
+        enabled: false
+        weight: 9
+      projref_coi:
+        enabled: false
+        weight: 10
+      researchers:
+        enabled: false
+        weight: 11
+      service_information:
+        enabled: false
+        weight: 12
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

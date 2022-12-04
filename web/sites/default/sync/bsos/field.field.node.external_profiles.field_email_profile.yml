@@ -1,0 +1,19 @@
+uuid: 47aa0118-f1b1-4be3-ad7b-d7431aab93e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_profile
+    - node.type.external_profiles
+id: node.external_profiles.field_email_profile
+field_name: field_email_profile
+entity_type: node
+bundle: external_profiles
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

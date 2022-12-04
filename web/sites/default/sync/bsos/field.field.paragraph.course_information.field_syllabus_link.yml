@@ -1,0 +1,23 @@
+uuid: 8424d2ee-53dd-47ea-bcfa-a67d4b057d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_syllabus_link
+    - paragraphs.paragraphs_type.course_information
+  module:
+    - link
+id: paragraph.course_information.field_syllabus_link
+field_name: field_syllabus_link
+entity_type: paragraph
+bundle: course_information
+label: Syllabus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

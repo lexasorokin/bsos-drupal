@@ -1,0 +1,18 @@
+uuid: 03da4318-c7b5-4aff-a215-db2e57b8f719
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Alert
+type: alert
+description: 'An important informational item, for bringing quick attention to an issue, downtime, or system events'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

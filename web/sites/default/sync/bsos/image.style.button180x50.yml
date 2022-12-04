@@ -1,0 +1,15 @@
+uuid: fce718ab-f484-46fc-85ce-232257f782dc
+langcode: en
+status: true
+dependencies: {  }
+name: button180x50
+label: button180x50
+effects:
+  bf10f3da-a8ad-4141-baa4-6b448c9e9fbc:
+    uuid: bf10f3da-a8ad-4141-baa4-6b448c9e9fbc
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: 50
+      upscale: false

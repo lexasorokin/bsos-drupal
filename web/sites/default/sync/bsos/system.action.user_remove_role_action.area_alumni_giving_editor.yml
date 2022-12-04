@@ -1,0 +1,14 @@
+uuid: 2eca3b84-47cc-4c89-8685-cf829b5a9137
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_alumni_giving_editor
+  module:
+    - user
+id: user_remove_role_action.area_alumni_giving_editor
+label: 'Remove the Area Alumni Giving Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_alumni_giving_editor

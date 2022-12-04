@@ -1,0 +1,35 @@
+uuid: c1bc5035-d99d-4d73-b153-43b8f4c9d786
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.fs_profile
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__fs_profile_fs_profile_title
+theme: bsos_bootstrap
+region: title
+weight: 0
+provider: null
+plugin: 'views_block:fs_profile-fs_profile_title'
+settings:
+  id: 'views_block:fs_profile-fs_profile_title'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/facultyprofile/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,12 @@
+uuid: c0f04af0-ab99-40ab-86d0-160c3e472327
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  description: '[node:summary]'
+  title: '[current-page:title] | [site:slogan] | [site:name] | University of Maryland'
+  canonical_url: '[node:url]'

@@ -1,0 +1,23 @@
+uuid: 2a6a3cba-2497-4094-86c1-569bfcd56b63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_column_style_3
+    - paragraphs.paragraphs_type.bsos_columns_three_uneven
+  module:
+    - options
+_core:
+  default_config_hash: dHOFZQtJXtF1WRIORPmq37DT-bUenChsB983ZUjnjHg
+id: paragraph.bsos_columns_three_uneven.field_bsos_column_style_3
+field_name: field_bsos_column_style_3
+entity_type: paragraph
+bundle: bsos_columns_three_uneven
+label: 'Column style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

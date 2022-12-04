@@ -1,0 +1,13 @@
+uuid: 10123f84-b7d5-42f3-b3a5-a989aa5afc4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - cacheflush_ui
+_core:
+  default_config_hash: 0Iati1DoiMtMHhCFsiDsTPn4d1siE7qN_1MRMxX-pjE
+id: cacheflush_publish_action
+label: 'Publish entity'
+type: cacheflush
+plugin: cacheflush_publish_action
+configuration: {  }

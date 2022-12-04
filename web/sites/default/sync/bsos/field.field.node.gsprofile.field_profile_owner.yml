@@ -1,0 +1,30 @@
+uuid: 91cb37f3-1d76-4b8c-8ad3-210ab0e9d547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_owner
+    - node.type.gsprofile
+_core:
+  default_config_hash: 8bkiAIP5h5Iq0XumlndSmyC-O8NWQYlhUNRvDamOLps
+id: node.gsprofile.field_profile_owner
+field_name: field_profile_owner
+entity_type: node
+bundle: gsprofile
+label: 'Profile Owner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

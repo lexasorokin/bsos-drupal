@@ -1,0 +1,11 @@
+uuid: a9f87717-8cf4-4291-a573-2190198cff0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dept_items_of_interest
+id: node.dept_items_of_interest
+target_entity_type_id: node
+target_bundle: dept_items_of_interest
+default_langcode: site_default
+language_alterable: false

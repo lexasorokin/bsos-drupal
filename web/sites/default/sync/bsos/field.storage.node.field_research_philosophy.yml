@@ -1,0 +1,25 @@
+uuid: aeb3fd98-33fc-4b43-b8bc-5834d3cdf68e
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: OMKUwGqdDaBTMvBGGzHsjOOFK_pakGxSRh_xWTcaAJY
+id: node.field_research_philosophy
+field_name: field_research_philosophy
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+uuid: 8471336a-b6b9-41d4-81b9-dfa3b90aa658
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.landing_topic.body
+    - field.field.node.landing_topic.field_imagelanding
+    - field.field.node.landing_topic.field_landingtopic_order
+    - field.field.node.landing_topic.field_links_landing
+    - field.field.node.landing_topic.taxonomy_vocabulary_2
+    - node.type.landing_topic
+  module:
+    - image
+    - user
+id: node.landing_topic.rss
+targetEntityType: node
+bundle: landing_topic
+mode: rss
+content:
+  field_imagelanding:
+    label: above
+    weight: -3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_landingtopic_order: true
+  field_links_landing: true
+  langcode: true
+  taxonomy_vocabulary_2: true

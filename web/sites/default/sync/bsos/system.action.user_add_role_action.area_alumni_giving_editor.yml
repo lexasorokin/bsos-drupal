@@ -1,0 +1,14 @@
+uuid: b8ce462f-4784-49c5-ba98-8c04382e1252
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_alumni_giving_editor
+  module:
+    - user
+id: user_add_role_action.area_alumni_giving_editor
+label: 'Add the Area Alumni Giving Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: area_alumni_giving_editor

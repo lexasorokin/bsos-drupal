@@ -1,0 +1,11 @@
+uuid: 89d5efb6-7a01-443d-bc53-180348686e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.departments_and_programs
+id: node.departments_and_programs
+target_entity_type_id: node
+target_bundle: departments_and_programs
+default_langcode: site_default
+language_alterable: false

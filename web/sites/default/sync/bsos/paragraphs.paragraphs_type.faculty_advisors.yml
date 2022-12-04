@@ -1,0 +1,11 @@
+uuid: 3025a619-71ae-439f-9619-3853b6489cd6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NrN4blIfUm1p-D_S1bnOazyHypocP4zh_M7DNZvVpd0
+id: faculty_advisors
+label: 'Faculty advisors'
+icon_uuid: null
+description: 'Migrated from field_collection field_faculty_advisors'
+behavior_plugins: {  }

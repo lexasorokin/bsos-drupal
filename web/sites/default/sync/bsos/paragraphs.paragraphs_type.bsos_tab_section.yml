@@ -1,0 +1,11 @@
+uuid: 61a37ba8-e37d-4fea-84cb-755475b76830
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 29Wfk6mtAHtyMqCFvqgYzqBHAycaxsCB526-6c11vaw
+id: bsos_tab_section
+label: 'Tab section'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

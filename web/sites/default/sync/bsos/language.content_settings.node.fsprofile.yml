@@ -1,0 +1,11 @@
+uuid: b48c8de9-bd19-452d-aadd-04d690c4041e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fsprofile
+id: node.fsprofile
+target_entity_type_id: node
+target_bundle: fsprofile
+default_langcode: site_default
+language_alterable: false

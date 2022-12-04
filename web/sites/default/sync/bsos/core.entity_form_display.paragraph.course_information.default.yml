@@ -1,0 +1,44 @@
+uuid: f7e1bb82-e513-46ac-abda-c6f704100087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.course_information.field_coursename
+    - field.field.paragraph.course_information.field_coursetitle
+    - field.field.paragraph.course_information.field_syllabus_link
+    - paragraphs.paragraphs_type.course_information
+  module:
+    - link
+id: paragraph.course_information.default
+targetEntityType: paragraph
+bundle: course_information
+mode: default
+content:
+  field_coursename:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_coursetitle:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_syllabus_link:
+    weight: 3
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

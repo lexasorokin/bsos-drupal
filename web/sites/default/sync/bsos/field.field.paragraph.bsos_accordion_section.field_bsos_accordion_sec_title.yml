@@ -1,0 +1,21 @@
+uuid: 5335d1c5-7dd5-4f79-ad1b-6b750e450e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_accordion_sec_title
+    - paragraphs.paragraphs_type.bsos_accordion_section
+_core:
+  default_config_hash: iWEw94bFvRrZnDdXWdeY0d8KpKiyGpRrwQZfgiumh4w
+id: paragraph.bsos_accordion_section.field_bsos_accordion_sec_title
+field_name: field_bsos_accordion_sec_title
+entity_type: paragraph
+bundle: bsos_accordion_section
+label: 'Accordion title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 7c50c199-f7b6-47db-be6d-dd0aa3545148
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_fac_service
+field_name: field_fac_service
+entity_type: paragraph
+type: string
+settings:
+  max_length: 100
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

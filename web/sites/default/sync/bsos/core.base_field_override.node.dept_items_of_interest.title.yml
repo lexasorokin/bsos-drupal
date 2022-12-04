@@ -1,0 +1,18 @@
+uuid: 0aa4a498-c379-48dd-ad3a-2e54b42f8eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dept_items_of_interest
+id: node.dept_items_of_interest.title
+field_name: title
+entity_type: node
+bundle: dept_items_of_interest
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 575e4c7b-3cad-497e-9345-0e198da187d1
+langcode: en
+status: true
+dependencies: {  }
+id: facilities_webform_new_sub
+label: 'Facilities Webform - New sub'
+events:
+  -
+    event_name: 'rules_entity_insert:webform_submission'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule

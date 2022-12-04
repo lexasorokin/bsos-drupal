@@ -1,0 +1,14 @@
+uuid: 365b7dee-3641-453c-bd35-01293598af67
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: stkE6zDQZTFESQ0HcZmzdrSye40vqUZ2IHUxyMyvmHI
+label: Free
+id: bsos_free
+description: ''
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,25 @@
+uuid: c7d221af-28b6-443a-866b-a01fffdcb16d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_userid
+    - node.type.fsprofile
+_core:
+  default_config_hash: LwbtEpxQk30xogb7ONito1gPgWnr_icItRg-v4Fyzg8
+id: node.fsprofile.field_profile_userid
+field_name: field_profile_userid
+entity_type: node
+bundle: fsprofile
+label: 'Profile UserID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,26 @@
+uuid: 066dad67-53be-4257-8c5d-9de86cffc812
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_block.field_bsos_block
+    - paragraphs.paragraphs_type.bsos_block
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: rUgxZaz4iYQtprDXjYFeHiRuGXE39y8VU3_Fz0IfdBQ
+id: paragraph.bsos_block.default
+targetEntityType: paragraph
+bundle: bsos_block
+mode: default
+content:
+  field_bsos_block:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

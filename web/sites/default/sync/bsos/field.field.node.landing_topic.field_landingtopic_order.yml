@@ -1,0 +1,23 @@
+uuid: 18568eae-3fc7-4dcf-ae48-498cdfb0da80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landingtopic_order
+    - node.type.landing_topic
+id: node.landing_topic.field_landingtopic_order
+field_name: field_landingtopic_order
+entity_type: node
+bundle: landing_topic
+label: 'Order in Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,24 @@
+uuid: 5227b619-ec30-45a3-9d83-bd51c6b1ad01
+langcode: en
+status: true
+dependencies: {  }
+id: superuser_profile
+label: 'Superuser profile'
+description: 'IMCE file Configuration for Superusers'
+conf:
+  extensions: 'jpg png gif txt pdf docx'
+  maxsize: !!float 2
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 0
+  folders:
+    -
+      path: .
+      permissions:
+        browse_files: true
+        browse_subfolders: true
+        create_subfolders: true
+        upload_files: true
+        delete_files: true
+        resize_images: true

@@ -1,0 +1,11 @@
+uuid: a7e3a50d-a72e-40d4-b98e-b85727b7d23b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1NYZ7oPw1-QqAFccKTe-txFErOGn-WlZgpWQPoLDy0M
+id: bsos_image_grid
+label: 'Image grid'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

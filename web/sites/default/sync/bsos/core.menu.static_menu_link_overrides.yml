@@ -1,0 +1,45 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  node__add_page:
+    weight: -34
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  aggregator__feed_add:
+    weight: -35
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  filter__tips_all:
+    weight: -36
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  search__view:
+    weight: -38
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  aggregator__page_last:
+    weight: -37
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
+  standard__front_page:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: 0
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

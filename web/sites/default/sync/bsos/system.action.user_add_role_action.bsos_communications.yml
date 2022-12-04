@@ -1,0 +1,14 @@
+uuid: 08285552-038b-425c-9b20-53d95e12c9fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.bsos_communications
+  module:
+    - user
+id: user_add_role_action.bsos_communications
+label: 'Add the BSOS Communications role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: bsos_communications

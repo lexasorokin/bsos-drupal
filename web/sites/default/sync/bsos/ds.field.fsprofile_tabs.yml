@@ -1,0 +1,11 @@
+id: fsprofile_tabs
+label: 'FSprofile tabs'
+ui_limit: 'fsprofile|*'
+properties:
+  content:
+    value: "<ul class=\"nav nav-tabs\" role=\"tablist\">\r\n  <li role=\"presentation\" class=\"active\"><a href=\"#tab-biography\" aria-controls=\"tab-biography\" role=\"tab\" data-toggle=\"tab\">Biography</a></li>\r\n  <li role=\"presentation\"><a href=\"#tab-teaching\" aria-controls=\"profile\" role=\"tab-teaching\" data-toggle=\"tab\">Teaching</a></li>\r\n  <li role=\"presentation\"><a href=\"#tab-research\" aria-controls=\"messages\" role=\"tab-research\" data-toggle=\"tab\">Research</a></li>\r\n  <li role=\"presentation\"><a href=\"#tab-publications\" aria-controls=\"profile\" role=\"tab-publications\" data-toggle=\"tab\">Publications</a></li>\r\n  <li role=\"presentation\"><a href=\"#tab-service\" aria-controls=\"profile\" role=\"tab-service\" data-toggle=\"tab\">Service</a></li>\r\n  <li role=\"presentation\"><a href=\"#tab-grad-students\" aria-controls=\"messages\" role=\"tab-grad-students\" data-toggle=\"tab\">Grad Students</a></li>\r\n</ul>"
+    format: '2'
+type: token
+type_label: 'Token field'
+entities:
+  node: node

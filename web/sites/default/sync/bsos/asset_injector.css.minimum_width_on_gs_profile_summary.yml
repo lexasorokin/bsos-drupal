@@ -1,0 +1,17 @@
+uuid: 257d8179-9794-4d0a-991a-63c6956cd9f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: minimum_width_on_gs_profile_summary
+label: 'Minimum width on GS profile summary'
+code: ".view-gs-profile-summary img {\r\n    min-width: 100px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/grad*'
+    negate: false
+conditions_require_all: true

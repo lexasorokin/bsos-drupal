@@ -1,0 +1,32 @@
+uuid: 76bcf389-d2e4-4c28-81c6-81b35672168f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department_status
+    - node.type.gsprofile
+    - taxonomy.vocabulary.graduate_student_category
+_core:
+  default_config_hash: dleIKRi15mILBfcGIwK6g-pxBcaEgoTClS2Ummr1ENo
+id: node.gsprofile.field_department_status
+field_name: field_department_status
+entity_type: node
+bundle: gsprofile
+label: 'Department Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      graduate_student_category: graduate_student_category
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

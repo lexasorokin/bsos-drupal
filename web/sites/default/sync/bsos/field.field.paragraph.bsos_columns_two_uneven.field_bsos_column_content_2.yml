@@ -1,0 +1,92 @@
+uuid: 1b4241df-7b40-4bd2-ab95-573562a410a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_column_content_2
+    - paragraphs.paragraphs_type.bsos_accordion
+    - paragraphs.paragraphs_type.bsos_block
+    - paragraphs.paragraphs_type.bsos_columns_two_uneven
+    - paragraphs.paragraphs_type.bsos_drupal_block
+    - paragraphs.paragraphs_type.bsos_image
+    - paragraphs.paragraphs_type.bsos_tabs
+    - paragraphs.paragraphs_type.bsos_text
+    - paragraphs.paragraphs_type.bsos_video
+    - paragraphs.paragraphs_type.bsos_view
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: l0pONJEzhZq90pFJiCz4sahni6DgwTcTd7vKm3J3ZfU
+id: paragraph.bsos_columns_two_uneven.field_bsos_column_content_2
+field_name: field_bsos_column_content_2
+entity_type: paragraph
+bundle: bsos_columns_two_uneven
+label: 'Column content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_text: bsos_text
+      bsos_video: bsos_video
+      bsos_image: bsos_image
+      bsos_accordion: bsos_accordion
+      bsos_tabs: bsos_tabs
+      bsos_block: bsos_block
+      bsos_drupal_block: bsos_drupal_block
+      bsos_view: bsos_view
+    target_bundles_drag_drop:
+      bsos_text:
+        enabled: true
+        weight: -33
+      bsos_video:
+        enabled: true
+        weight: -32
+      bsos_image:
+        enabled: true
+        weight: -31
+      bsos_accordion:
+        enabled: true
+        weight: -30
+      bsos_tabs:
+        enabled: true
+        weight: -29
+      bsos_block:
+        enabled: true
+        weight: -28
+      bsos_drupal_block:
+        enabled: true
+        weight: -27
+      bsos_view:
+        enabled: true
+        weight: -26
+      bsos_image_grid:
+        weight: -25
+        enabled: false
+      bsos_accordion_section:
+        weight: -24
+        enabled: false
+      bsos_columns_equal:
+        weight: -23
+        enabled: false
+      bsos_columns_three_uneven:
+        weight: -22
+        enabled: false
+      bsos_columns_two_uneven:
+        weight: -21
+        enabled: false
+      bsos_tab_section:
+        weight: -20
+        enabled: false
+      bsos_image_grid_image:
+        weight: -19
+        enabled: false
+      bsos_modal:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

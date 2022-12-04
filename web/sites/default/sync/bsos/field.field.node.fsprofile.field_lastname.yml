@@ -1,0 +1,21 @@
+uuid: cccc3640-f709-46f4-b9a2-3cecbfcc5865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lastname
+    - node.type.fsprofile
+_core:
+  default_config_hash: GCKQgSS7gtu_Yz6NAUHEE14FdqeWQ3gQMJRAkzIOq3Y
+id: node.fsprofile.field_lastname
+field_name: field_lastname
+entity_type: node
+bundle: fsprofile
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

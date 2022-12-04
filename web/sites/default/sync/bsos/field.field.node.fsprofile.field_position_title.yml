@@ -1,0 +1,21 @@
+uuid: 36a1d34f-8704-4de1-a79a-db86f81e53ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_title
+    - node.type.fsprofile
+_core:
+  default_config_hash: NLxt_0E7D2-BFDEjW3A_0P3sU3BptrlI8Vxw_sUXqpU
+id: node.fsprofile.field_position_title
+field_name: field_position_title
+entity_type: node
+bundle: fsprofile
+label: 'Position Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

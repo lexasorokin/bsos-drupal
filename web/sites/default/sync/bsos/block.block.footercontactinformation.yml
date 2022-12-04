@@ -1,0 +1,29 @@
+uuid: 4d0e7392-d575-4b0c-b7e6-669732de85e7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3dc23ff8-ecd6-473c-bc5e-8c28255c230f'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - bsos_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: footercontactinformation
+theme: bsos_bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:3dc23ff8-ecd6-473c-bc5e-8c28255c230f'
+settings:
+  id: 'block_content:3dc23ff8-ecd6-473c-bc5e-8c28255c230f'
+  label: 'Footer Contact Information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

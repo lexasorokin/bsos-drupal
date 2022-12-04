@@ -1,0 +1,24 @@
+uuid: 5f13b044-b289-4d23-b7f8-ee362f765e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_drupal_block.field_bsos_drupal_block
+    - paragraphs.paragraphs_type.bsos_drupal_block
+_core:
+  default_config_hash: sp9LDca36XZCPQWNMHlRS-9x_yemZNmgXtybNHMfqF4
+id: paragraph.bsos_drupal_block.default
+targetEntityType: paragraph
+bundle: bsos_drupal_block
+mode: default
+content:
+  field_bsos_drupal_block:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

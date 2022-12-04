@@ -1,0 +1,8 @@
+uuid: 4488826f-3d88-4822-b350-5e4078e5f64c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Landing Topics'
+vid: vocabulary_2
+description: 'Category topics to be displayed on the Landing pages.  Each Landing Topic includes a Title, Photo, Description, and related Links.'
+weight: -3

@@ -1,0 +1,120 @@
+uuid: b6483278-dee2-4b55-b8a9-4ee995bb92e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bsos_top_content
+    - node.type.home_page
+    - paragraphs.paragraphs_type.bsos_block
+    - paragraphs.paragraphs_type.bsos_columns_two_uneven
+    - paragraphs.paragraphs_type.bsos_drupal_block
+    - paragraphs.paragraphs_type.bsos_text
+    - paragraphs.paragraphs_type.bsos_view
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_bsos_top_content
+field_name: field_bsos_top_content
+entity_type: node
+bundle: home_page
+label: 'Top content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_block: bsos_block
+      bsos_columns_two_uneven: bsos_columns_two_uneven
+      bsos_drupal_block: bsos_drupal_block
+      bsos_text: bsos_text
+      bsos_view: bsos_view
+    target_bundles_drag_drop:
+      awards_fc:
+        weight: 29
+        enabled: false
+      bsos_accordion:
+        weight: 30
+        enabled: false
+      bsos_accordion_section:
+        weight: 31
+        enabled: false
+      bsos_block:
+        enabled: true
+        weight: 32
+      bsos_columns_equal:
+        weight: 33
+        enabled: false
+      bsos_columns_three_uneven:
+        weight: 34
+        enabled: false
+      bsos_columns_two_uneven:
+        enabled: true
+        weight: 35
+      bsos_drupal_block:
+        enabled: true
+        weight: 36
+      bsos_image:
+        weight: 37
+        enabled: false
+      bsos_image_grid:
+        weight: 38
+        enabled: false
+      bsos_image_grid_image:
+        weight: 39
+        enabled: false
+      bsos_modal:
+        weight: 40
+        enabled: false
+      bsos_tabs:
+        weight: 41
+        enabled: false
+      bsos_tab_section:
+        weight: 42
+        enabled: false
+      bsos_text:
+        enabled: true
+        weight: 43
+      bsos_video:
+        weight: 44
+        enabled: false
+      bsos_view:
+        enabled: true
+        weight: 45
+      conferences_fc:
+        weight: 46
+        enabled: false
+      course_information:
+        weight: 47
+        enabled: false
+      degrees_held:
+        weight: 48
+        enabled: false
+      faculty_advisors:
+        weight: 49
+        enabled: false
+      fac_grad_advisee:
+        weight: 50
+        enabled: false
+      formerstudent_info:
+        weight: 51
+        enabled: false
+      graduate_researchers:
+        weight: 52
+        enabled: false
+      primary_classification:
+        weight: 53
+        enabled: false
+      projref_coi:
+        weight: 54
+        enabled: false
+      researchers:
+        weight: 55
+        enabled: false
+      service_information:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

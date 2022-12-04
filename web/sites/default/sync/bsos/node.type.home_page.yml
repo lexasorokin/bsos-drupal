@@ -1,0 +1,20 @@
+uuid: 4683af0a-f053-410e-b2cd-c378a56bbf5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: EQYT8X3heLiQxIGn60vaT_OQ609yPEByuCOd4apsftg
+name: 'Home page'
+type: home_page
+description: 'Page broken into field groups for columns. Typically only used for a site home page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

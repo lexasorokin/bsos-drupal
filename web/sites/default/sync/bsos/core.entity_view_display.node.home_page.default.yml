@@ -1,0 +1,228 @@
+uuid: ab530fc0-5910-4bc5-a84e-6c5c55f4c656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.field_bsos_bottom_content
+    - field.field.node.home_page.field_bsos_top_content
+    - field.field.node.home_page.field_featured_story_section
+    - field.field.node.home_page.field_main
+    - field.field.node.home_page.field_side_content
+    - node.type.home_page
+  module:
+    - entity_reference_revisions
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_feature:
+      children:
+        - group_feature_row
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: pattern-bg
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Feature
+      region: content
+    group_feature_row:
+      children:
+        - field_featured_story_section
+      parent_name: group_feature
+      weight: 10
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Feature row'
+      region: content
+    group_content_container:
+      children:
+        - group_content_row
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content container'
+      region: content
+    group_content_row:
+      children:
+        - group_main_content
+        - group_side_content
+      parent_name: group_content_container
+      weight: 5
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content row'
+      region: content
+    group_main_content:
+      children:
+        - field_main
+      parent_name: group_content_row
+      weight: 6
+      format_type: html_element
+      format_settings:
+        label: 'Main content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-md-6
+      label: 'Main content'
+      region: content
+    group_side_content:
+      children:
+        - field_side_content
+      parent_name: group_content_row
+      weight: 8
+      format_type: html_element
+      format_settings:
+        label: 'Side content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-md-6
+      label: 'Side content'
+      region: content
+    group_top_content:
+      children:
+        - field_bsos_top_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'container grid-margin-zero red-bg-sm btn-grid-8-col dept-web-ad'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Top content'
+      region: content
+    group_gray_bg:
+      children:
+        - group_bottom_content
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: gray-bg
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Gray bg'
+      region: content
+    group_bottom_content:
+      children:
+        - field_bsos_bottom_content
+      parent_name: group_gray_bg
+      weight: 4
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Bottom content'
+      region: content
+_core:
+  default_config_hash: GEH8MQPZr2B0UHm1ZFWNnMsuJhQBPU3nrMEe-6agBlw
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  field_bsos_bottom_content:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_bsos_top_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_featured_story_section:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_main:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_side_content:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true

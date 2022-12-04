@@ -1,0 +1,11 @@
+uuid: 693a68ec-1964-4d99-8970-0031b6407671
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NmDXX4RZgW3BkHdWoNeBrvHU4iEc72nk7Of0zVw9Q5g
+id: bsos_text
+label: Text
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

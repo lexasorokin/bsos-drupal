@@ -1,0 +1,11 @@
+uuid: ca5b64f3-b906-43af-9833-674db5866579
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bsos_hero_img
+id: node.bsos_hero_img
+target_entity_type_id: node
+target_bundle: bsos_hero_img
+default_langcode: site_default
+language_alterable: false

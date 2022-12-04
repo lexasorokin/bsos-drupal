@@ -1,0 +1,84 @@
+uuid: 84126372-91f7-48c2-80c5-6d91606ae0db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_side_content
+    - node.type.home_page
+    - paragraphs.paragraphs_type.bsos_block
+    - paragraphs.paragraphs_type.bsos_drupal_block
+    - paragraphs.paragraphs_type.bsos_text
+    - paragraphs.paragraphs_type.bsos_view
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 6j6BfH-DCtkCYxYNRtyN5Hic_YCuqyCkdQnUk3l081U
+id: node.home_page.field_side_content
+field_name: field_side_content
+entity_type: node
+bundle: home_page
+label: 'Side content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_view: bsos_view
+      bsos_drupal_block: bsos_drupal_block
+      bsos_block: bsos_block
+      bsos_text: bsos_text
+    target_bundles_drag_drop:
+      bsos_view:
+        enabled: true
+        weight: -33
+      bsos_drupal_block:
+        enabled: true
+        weight: -32
+      bsos_block:
+        enabled: true
+        weight: -31
+      bsos_text:
+        enabled: true
+        weight: -30
+      bsos_accordion:
+        weight: -29
+        enabled: false
+      bsos_accordion_section:
+        weight: -28
+        enabled: false
+      bsos_columns_equal:
+        weight: -27
+        enabled: false
+      bsos_columns_three_uneven:
+        weight: -26
+        enabled: false
+      bsos_columns_two_uneven:
+        weight: -25
+        enabled: false
+      bsos_image:
+        weight: -24
+        enabled: false
+      bsos_image_grid:
+        weight: -23
+        enabled: false
+      bsos_image_grid_image:
+        weight: -22
+        enabled: false
+      bsos_modal:
+        weight: -21
+        enabled: false
+      bsos_tab_section:
+        weight: -20
+        enabled: false
+      bsos_tabs:
+        weight: -19
+        enabled: false
+      bsos_video:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

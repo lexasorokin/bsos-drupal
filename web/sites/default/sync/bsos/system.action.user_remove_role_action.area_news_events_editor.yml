@@ -1,0 +1,14 @@
+uuid: 47b20329-4ec6-4f77-bb61-56ef3c29b803
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_news_events_editor
+  module:
+    - user
+id: user_remove_role_action.area_news_events_editor
+label: 'Remove the Area News Events Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_news_events_editor

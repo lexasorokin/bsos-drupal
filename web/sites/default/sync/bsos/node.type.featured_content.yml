@@ -1,0 +1,17 @@
+uuid: 0bbbd5ff-bf42-4e7e-9cc2-523c930e7e64
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Featured Content'
+type: featured_content
+description: 'A featured story to appear on the home page or another page.  Includes text and/or a graphic.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

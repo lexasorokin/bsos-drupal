@@ -1,0 +1,21 @@
+uuid: 3f12edb9-de47-44f4-b0ad-211df4528ba0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: Ntj8y3rE5sLfiAzYPXXyIGyw-OxwXAJb--CrtS97-CU
+id: paragraph.field_bsos_text
+field_name: field_bsos_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

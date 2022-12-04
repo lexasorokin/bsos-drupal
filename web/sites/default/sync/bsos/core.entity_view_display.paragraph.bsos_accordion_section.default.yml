@@ -1,0 +1,35 @@
+uuid: 3159f29e-867f-4386-be42-584e72262ef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_accordion_section.field_bsos_accordion_sec_body
+    - field.field.paragraph.bsos_accordion_section.field_bsos_accordion_sec_title
+    - paragraphs.paragraphs_type.bsos_accordion_section
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Y9gmDBZKTPD3CJIsE9oLE5oiJ7JreJD_vmwXK9TDXYM
+id: paragraph.bsos_accordion_section.default
+targetEntityType: paragraph
+bundle: bsos_accordion_section
+mode: default
+content:
+  field_bsos_accordion_sec_body:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_bsos_accordion_sec_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

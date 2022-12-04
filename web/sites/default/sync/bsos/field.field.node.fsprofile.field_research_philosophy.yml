@@ -1,0 +1,23 @@
+uuid: bbb46cd9-db74-4f0d-b585-97e12ce36b60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_research_philosophy
+    - node.type.fsprofile
+  module:
+    - text
+_core:
+  default_config_hash: 1rTMUTWO4wtW4gBu1AblQOzJNbNRNIshp6F1f8rgSkg
+id: node.fsprofile.field_research_philosophy
+field_name: field_research_philosophy
+entity_type: node
+bundle: fsprofile
+label: 'Research Philosophy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

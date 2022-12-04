@@ -1,0 +1,33 @@
+uuid: e92f5803-6747-40fa-b9a7-86eb3a3467d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.site_error_page.body
+    - node.type.site_error_page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: qZAeVaOQNuQMIVXryzFgngHcfpNRTGLgk_ruQrsUXFE
+id: node.site_error_page.teaser
+targetEntityType: node
+bundle: site_error_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

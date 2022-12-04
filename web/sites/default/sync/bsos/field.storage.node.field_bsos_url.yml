@@ -1,0 +1,25 @@
+uuid: e1506edd-5372-4446-a7f9-3f96ff6f4518
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - link
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: DnspX_S07KSwjObOF1wd85yrZtWQlxwMQSYht5YnE44
+id: node.field_bsos_url
+field_name: field_bsos_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

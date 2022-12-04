@@ -1,0 +1,29 @@
+uuid: 6277af27-2fee-426d-bab9-2f7ad38e6673
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supplemental_content
+    - node.type.full_width_page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    plain_text: plain_text
+    full_html: full_html
+    4: '0'
+    2: '0'
+id: node.full_width_page.field_supplemental_content
+field_name: field_supplemental_content
+entity_type: node
+bundle: full_width_page
+label: 'Supplemental content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

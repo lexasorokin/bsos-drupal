@@ -1,0 +1,100 @@
+uuid: cb7dd051-df2b-4c01-8955-e4249ef84e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event
+    - node.type.featured_content
+    - node.type.news
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T_JxNjYlfoRBi7Bj1zs5Xv9xv1btuBkKp5C1tNrjMhI
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      published: true
+      default_revision: true
+      label: Archived
+      weight: -7
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -10
+    in_review:
+      published: false
+      default_revision: true
+      label: 'Editor Review'
+      weight: -9
+    not_accepted_for_publication:
+      published: false
+      default_revision: true
+      label: 'Not Accepted for Publication (from unit)'
+      weight: 0
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: -8
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - archived
+        - published
+      to: archived
+      weight: -7
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+        - in_review
+      to: draft
+      weight: -6
+    archived_published:
+      label: 'Restore to Published'
+      from:
+        - archived
+      to: published
+      weight: -5
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -8
+      from:
+        - draft
+        - published
+    publish:
+      label: Publish
+      to: published
+      weight: -10
+      from:
+        - draft
+        - in_review
+        - published
+    refuse_story:
+      label: 'Refuse Story'
+      from:
+        - draft
+        - in_review
+      to: not_accepted_for_publication
+      weight: 0
+    send_for_review:
+      label: 'Send for Review'
+      from:
+        - draft
+        - in_review
+        - not_accepted_for_publication
+        - published
+      to: in_review
+      weight: -9
+  entity_types:
+    node:
+      - event
+      - featured_content
+      - news
+  default_moderation_state: draft

@@ -1,0 +1,25 @@
+uuid: 951e42ca-7f2f-410e-a9d7-cbdfac6173a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_order
+    - node.type.fsprofile
+id: node.fsprofile.field_listing_order
+field_name: field_listing_order
+entity_type: node
+bundle: fsprofile
+label: 'Listing Order'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

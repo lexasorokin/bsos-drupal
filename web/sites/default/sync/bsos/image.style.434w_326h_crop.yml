@@ -1,0 +1,27 @@
+uuid: 39dab0f3-43bc-40ec-a012-9c90ac409cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3
+  module:
+    - crop
+_core:
+  default_config_hash: EfjIOa5Vat5rvIFrlMUMDCeoDHAZvMw6hXJXN7AzMGQ
+name: 434w_326h_crop
+label: '434w 326h crop (feature carousel)'
+effects:
+  feature_manual_crop_4_3:
+    uuid: feature_manual_crop_4_3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '4_3'
+  feature_scale_crop_434w_326h:
+    uuid: feature_scale_crop_434w_326h
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 434
+      height: 326
+      anchor: center-center

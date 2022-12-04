@@ -1,0 +1,43 @@
+uuid: dc625a07-28e9-4fe3-9818-2acf51342c66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.featured_content.body
+    - field.field.node.featured_content.field_fc_weight
+    - field.field.node.featured_content.field_satellite_featured_stories
+    - field.field.node.featured_content.field_slideshow_image
+    - node.type.featured_content
+  module:
+    - image
+    - user
+id: node.featured_content.token
+targetEntityType: node
+bundle: featured_content
+mode: token
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slideshow_image:
+    label: inline
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_fc_weight: true
+  field_satellite_featured_stories: true
+  langcode: true

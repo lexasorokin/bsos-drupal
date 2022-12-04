@@ -1,0 +1,801 @@
+uuid: dc831f2e-3dbc-40f4-a5f0-f29a2bf7c4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fsprofile.body
+    - field.field.node.fsprofile.field_admin
+    - field.field.node.fsprofile.field_alternate_feature_profile
+    - field.field.node.fsprofile.field_cv
+    - field.field.node.fsprofile.field_cv_link
+    - field.field.node.fsprofile.field_d7_profile_id
+    - field.field.node.fsprofile.field_degrees_held
+    - field.field.node.fsprofile.field_email_profile
+    - field.field.node.fsprofile.field_fac_grad_advisee
+    - field.field.node.fsprofile.field_fac_service_philosophy
+    - field.field.node.fsprofile.field_fac_teaching_philosophy
+    - field.field.node.fsprofile.field_faculty_staff_category
+    - field.field.node.fsprofile.field_firstname
+    - field.field.node.fsprofile.field_formerstudent_info
+    - field.field.node.fsprofile.field_image_profile
+    - field.field.node.fsprofile.field_is_graduatefaculty
+    - field.field.node.fsprofile.field_lastname
+    - field.field.node.fsprofile.field_listing_order
+    - field.field.node.fsprofile.field_officehours
+    - field.field.node.fsprofile.field_phone
+    - field.field.node.fsprofile.field_position_title
+    - field.field.node.fsprofile.field_primary_classification
+    - field.field.node.fsprofile.field_profile_owner
+    - field.field.node.fsprofile.field_profile_userid
+    - field.field.node.fsprofile.field_research_philosophy
+    - field.field.node.fsprofile.field_researchinterest
+    - field.field.node.fsprofile.field_room_building
+    - field.field.node.fsprofile.field_service_information
+    - field.field.node.fsprofile.field_website_personal
+    - field.field.node.fsprofile.taxonomy_vocabulary_4
+    - image.style.width320
+    - node.type.fsprofile
+  module:
+    - ds
+    - entity_reference_revisions
+    - fences
+    - field_group
+    - image
+    - link
+    - spamspan
+    - telephone
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_main_content
+        - group_secondary_content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+      region: content
+    group_main_content:
+      children:
+        - 'dynamic_token_field:node-fsprofile_tabs'
+        - group_tab_section
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Main content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-md-9 bsos-profile-tabs'
+      label: 'Main content'
+      region: content
+    group_secondary_content:
+      children:
+        - field_image_profile
+        - field_room_building
+        - field_phone
+        - field_email_profile
+        - field_officehours
+      parent_name: group_row
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: 'Secondary content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-md-3
+      label: 'Secondary content'
+      region: content
+    group_tab_section:
+      children:
+        - group_tab_biography
+        - group_tab_teaching
+        - group_tab_research
+        - group_tab_publications
+        - group_tab_services
+        - group_tab_grad_students
+      parent_name: group_main_content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: tab-content
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Tab section'
+      region: content
+    group_tab_biography:
+      children:
+        - fs_profile_entity_view_1
+        - body
+        - field_researchinterest
+        - field_website_personal
+        - field_degrees_held
+      parent_name: group_tab_section
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: tab-biography
+        classes: 'tab-pane active'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+      label: 'Tab Biography'
+      region: content
+    group_tab_teaching:
+      children:
+        - field_fac_teaching_philosophy
+      parent_name: group_tab_section
+      weight: 4
+      format_type: html_element
+      format_settings:
+        id: tab-teaching
+        classes: tab-pane
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+      label: 'Tab Teaching'
+      region: content
+    group_tab_services:
+      children:
+        - field_fac_service_philosophy
+        - field_service_information
+      parent_name: group_tab_section
+      weight: 7
+      format_type: html_element
+      format_settings:
+        label: 'Tab Service'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+        id: tab-service
+        classes: tab-pane
+      label: 'Tab Service'
+      region: content
+    group_tab_research:
+      children:
+        - field_research_philosophy
+      parent_name: group_tab_section
+      weight: 5
+      format_type: html_element
+      format_settings:
+        id: tab-research
+        classes: tab-pane
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+      label: 'Tab Research'
+      region: content
+    group_tab_grad_students:
+      children:
+        - field_fac_grad_advisee
+        - field_formerstudent_info
+      parent_name: group_tab_section
+      weight: 8
+      format_type: html_element
+      format_settings:
+        id: tab-grad-students
+        classes: tab-pane
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+      label: 'Tab Grad Students'
+      region: content
+    group_tab_publications:
+      children: {  }
+      parent_name: group_tab_section
+      weight: 6
+      format_type: html_element
+      format_settings:
+        id: tab-publications
+        classes: tab-pane
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'role="tabpanel"'
+        effect: none
+        speed: fast
+      label: 'Tab Publications'
+      region: content
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - group_row
+        - group_main_content
+        - field_image_profile
+        - field_room_building
+        - group_tab_biography
+        - field_phone
+        - group_secondary_content
+        - field_email_profile
+        - group_tab_teaching
+        - 'dynamic_token_field:node-fsprofile_tabs'
+        - fs_profile_entity_view_1
+        - group_tab_research
+        - field_research_philosophy
+        - field_officehours
+        - group_tab_publications
+        - field_fac_teaching_philosophy
+        - body
+        - group_tab_section
+        - group_tab_services
+        - field_researchinterest
+        - field_website_personal
+        - group_tab_grad_students
+        - field_fac_grad_advisee
+        - field_degrees_held
+        - field_formerstudent_info
+        - field_fac_service_philosophy
+        - field_service_information
+    fields:
+      'dynamic_token_field:node-fsprofile_tabs':
+        plugin_id: 'dynamic_token_field:node-fsprofile_tabs'
+        weight: 5
+        label: hidden
+        formatter: default
+        ft:
+          id: reset
+          settings:
+            lb: ''
+id: node.fsprofile.default
+targetEntityType: node
+bundle: fsprofile
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+  field_degrees_held:
+    type: entity_reference_revisions_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: Degrees
+            prefix: ''
+            lbw: true
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_email_profile:
+    type: email_spamspan
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      spamspan_at: ' [at] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_dot: ' [dot] '
+      spamspan_use_form: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+    third_party_settings: {  }
+  field_fac_grad_advisee:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: 'Current Students'
+            prefix: ''
+            lbw: true
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_fac_service_philosophy:
+    type: basic_string
+    weight: 26
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: p
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_fac_teaching_philosophy:
+    type: basic_string
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: p
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_formerstudent_info:
+    type: entity_reference_revisions_entity_view
+    weight: 9
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_image_profile:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: width320
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_listing_order:
+    weight: 28
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_officehours:
+    type: string
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_link
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_research_philosophy:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: p
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_researchinterest:
+    type: string
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_room_building:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_service_information:
+    type: entity_reference_revisions_entity_view
+    weight: 27
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis: true
+            fis-el: ul
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis-def-at: false
+            fi-def-at: false
+  field_website_personal:
+    type: link
+    weight: 8
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      rel: ''
+      target: ''
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+  fs_profile_alternate_profile:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_copy_entity_view_contact:
+    weight: 10
+    region: content
+  fs_profile_copy_entity_view_research_co_pl:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_copy_entity_view_research_pl:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_cv:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_entity_view_1:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_grad_researchers:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_publications:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_research_co_i:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_research_co_pi:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_research_pi:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_research_researchers:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_teaching_courses:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  fs_profile_teaching_courses_co:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_admin: true
+  field_alternate_feature_profile: true
+  field_cv: true
+  field_cv_link: true
+  field_d7_profile_id: true
+  field_faculty_staff_category: true
+  field_firstname: true
+  field_is_graduatefaculty: true
+  field_lastname: true
+  field_position_title: true
+  field_primary_classification: true
+  field_profile_owner: true
+  field_profile_userid: true
+  fs_profile_copy_entity_view_biography: true
+  fs_profile_copy_entity_view_education: true
+  fs_profile_copy_entity_view_research: true
+  fs_profile_copy_entity_view_research_co_pi: true
+  fs_profile_copy_entity_view_research_pi: true
+  fs_profile_copy_entity_view_teaching: true
+  fs_profile_copy_entity_view_teaching_courses: true
+  langcode: true
+  links: true
+  taxonomy_vocabulary_4: true

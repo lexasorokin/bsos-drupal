@@ -1,0 +1,21 @@
+uuid: f35c8967-acce-445f-ac02-a1b5618f490b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_building
+    - node.type.fsprofile
+_core:
+  default_config_hash: V1Q104G0jtUe053oeX1tAjA96VARcC68VbdyozLZaxU
+id: node.fsprofile.field_room_building
+field_name: field_room_building
+entity_type: node
+bundle: fsprofile
+label: 'Room and Building'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

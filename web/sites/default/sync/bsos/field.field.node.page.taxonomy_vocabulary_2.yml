@@ -1,0 +1,30 @@
+uuid: a82fd6c3-0aae-47b3-b57f-a2ee350299f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_2
+    - node.type.page
+    - taxonomy.vocabulary.vocabulary_2
+id: node.page.taxonomy_vocabulary_2
+field_name: taxonomy_vocabulary_2
+entity_type: node
+bundle: page
+label: 'Landing Area'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_2: vocabulary_2
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

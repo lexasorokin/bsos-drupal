@@ -1,0 +1,11 @@
+uuid: 207f5f74-5b39-4bac-8c72-2bfca243fd54
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: u5rQGGt8Riv1o4tOg8iyErpp25PgzZG2lVifA1EvlKE
+id: bsos_view
+label: View
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

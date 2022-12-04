@@ -1,0 +1,30 @@
+uuid: 8a9c7838-8a8f-4034-96c2-aa88d3aa4c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_4
+    - node.type.publication_profile
+    - taxonomy.vocabulary.vocabulary_4
+id: node.publication_profile.taxonomy_vocabulary_4
+field_name: taxonomy_vocabulary_4
+entity_type: node
+bundle: publication_profile
+label: 'Research Topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_4: vocabulary_4
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

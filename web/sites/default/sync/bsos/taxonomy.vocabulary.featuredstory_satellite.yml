@@ -1,0 +1,8 @@
+uuid: 82305817-1346-4021-a9ae-dae7f0f09c39
+langcode: en
+status: true
+dependencies: {  }
+name: 'FeaturedStory Satellite'
+vid: featuredstory_satellite
+description: ''
+weight: -6

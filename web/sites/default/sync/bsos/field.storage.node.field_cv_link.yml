@@ -1,0 +1,21 @@
+uuid: e23770c7-8ba9-4162-8473-050b3cb29f56
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: 0cjcrJw8SHkJ7i1Jm0Th-qDeXvbrAfGq9lA1Jaj_K5k
+id: node.field_cv_link
+field_name: field_cv_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

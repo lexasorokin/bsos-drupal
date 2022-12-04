@@ -1,0 +1,40 @@
+uuid: 80e0b10e-0b4a-4bf0-85b1-c0daf556f71e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.bsos_drupal_sites.field_site_abbrev
+    - field.field.taxonomy_term.bsos_drupal_sites.field_unit_abbreviation
+    - taxonomy.vocabulary.bsos_drupal_sites
+  module:
+    - text
+id: taxonomy_term.bsos_drupal_sites.default
+targetEntityType: taxonomy_term
+bundle: bsos_drupal_sites
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_site_abbrev:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_unit_abbreviation:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

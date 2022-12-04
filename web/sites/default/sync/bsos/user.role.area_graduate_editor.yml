@@ -1,0 +1,27 @@
+uuid: 323de32f-f105-4ba1-a992-3628dcefcc6b
+langcode: en
+status: true
+dependencies: {  }
+id: area_graduate_editor
+label: 'Area Graduate Editor'
+weight: -3
+is_admin: null
+permissions:
+  - 'access workflow summary views'
+  - 'administer panelizer node page content'
+  - 'administer panelizer node page layout'
+  - 'administer panelizer node page overview'
+  - 'create landing_topic content'
+  - 'create page content'
+  - 'delete any landing_topic content'
+  - 'delete any page content'
+  - 'delete landing_topic revisions'
+  - 'delete page revisions'
+  - 'edit any landing_topic content'
+  - 'edit any page content'
+  - 'participate in workflow'
+  - 'revert landing_topic revisions'
+  - 'revert page revisions'
+  - 'use text format 1'
+  - 'view landing_topic revisions'
+  - 'view page revisions'

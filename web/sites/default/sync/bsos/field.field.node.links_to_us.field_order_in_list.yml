@@ -1,0 +1,25 @@
+uuid: b4b1a143-f1b1-41ec-8376-44bce1feea7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order_in_list
+    - node.type.links_to_us
+_core:
+  default_config_hash: HkiLESjLlT00P0AMdrCnkGg8S67Nwn4-c7u9hj5BIUw
+id: node.links_to_us.field_order_in_list
+field_name: field_order_in_list
+entity_type: node
+bundle: links_to_us
+label: 'Order in List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -10
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

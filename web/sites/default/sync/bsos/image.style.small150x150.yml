@@ -1,0 +1,15 @@
+uuid: e4df68ac-d45a-40e5-a63f-c7e6b968a90b
+langcode: en
+status: true
+dependencies: {  }
+name: small150x150
+label: small150x150
+effects:
+  7a380bc4-0e21-45a1-aab0-3a665423f6da:
+    uuid: 7a380bc4-0e21-45a1-aab0-3a665423f6da
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      upscale: false

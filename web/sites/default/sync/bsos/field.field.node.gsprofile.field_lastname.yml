@@ -1,0 +1,21 @@
+uuid: d4eb2a14-5380-4d7a-865a-7d5ffc85c49c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lastname
+    - node.type.gsprofile
+_core:
+  default_config_hash: Xp5Uf3ko9OhLvyzTIlsTFlOqZmR6U9Uy_5Cti_4oZtE
+id: node.gsprofile.field_lastname
+field_name: field_lastname
+entity_type: node
+bundle: gsprofile
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

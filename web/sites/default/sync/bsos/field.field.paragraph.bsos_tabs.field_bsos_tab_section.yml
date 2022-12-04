@@ -1,0 +1,48 @@
+uuid: 60fbf613-9e10-48a0-9e5b-bb448bbb2d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bsos_tab_section
+    - paragraphs.paragraphs_type.bsos_tab_section
+    - paragraphs.paragraphs_type.bsos_tabs
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: K6GkZJwC39Ccws91g8sJ9yBIj_RYyCSxUYJp55BEzWo
+id: paragraph.bsos_tabs.field_bsos_tab_section
+field_name: field_bsos_tab_section
+entity_type: paragraph
+bundle: bsos_tabs
+label: Tab
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bsos_tab_section: bsos_tab_section
+    target_bundles_drag_drop:
+      accordion:
+        weight: 7
+        enabled: false
+      bsos_accordion_section:
+        weight: 8
+        enabled: false
+      bsos_tab_section:
+        enabled: true
+        weight: 9
+      bsos_tabs:
+        weight: 10
+        enabled: false
+      bsos_text:
+        weight: 11
+        enabled: false
+      bsos_view:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

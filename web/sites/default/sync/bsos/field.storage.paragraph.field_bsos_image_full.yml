@@ -1,0 +1,32 @@
+uuid: 6296d695-4b5d-4674-b07b-fd869dd2f2db
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+_core:
+  default_config_hash: PjF8TzlNdr1J5-Ub33pUXwIxfteEum6-1TVnvxC-Y78
+id: paragraph.field_bsos_image_full
+field_name: field_bsos_image_full
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

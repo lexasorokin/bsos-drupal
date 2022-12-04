@@ -1,0 +1,53 @@
+uuid: a676607e-32c6-4342-9d9b-dd83fdad01f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_image_grid_image.field_bsos_caption
+    - field.field.paragraph.bsos_image_grid_image.field_bsos_image_grid_image
+    - paragraphs.paragraphs_type.bsos_image_grid_image
+  module:
+    - fences
+    - image_formatter_link_to_image_style
+_core:
+  default_config_hash: F_Dh-4tmGDoSoajuGowfSEUIibubx4nAjs9BWGxMRtg
+id: paragraph.bsos_image_grid_image.default
+targetEntityType: paragraph
+bundle: bsos_image_grid_image
+mode: default
+content:
+  field_bsos_caption:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: string
+    region: content
+  field_bsos_image_grid_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: bsos_grid
+      image_link_style: bsos_grid_large
+      image_link_class: ''
+      image_link_rel: ''
+      image_link_image_class: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    type: image_formatter_link_to_image_style
+    region: content
+hidden: {  }

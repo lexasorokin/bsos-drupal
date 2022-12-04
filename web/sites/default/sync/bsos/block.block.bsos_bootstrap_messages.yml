@@ -1,0 +1,22 @@
+uuid: 15f9dce5-96e6-478e-9d47-3a6072b2297c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bsos_bootstrap
+_core:
+  default_config_hash: 9NUt4ZP59L2es3LnGhjkhsPAhhMwQ_UOyoBwoozi5jk
+id: bsos_bootstrap_messages
+theme: bsos_bootstrap
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

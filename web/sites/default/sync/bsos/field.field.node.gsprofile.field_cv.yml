@@ -1,0 +1,29 @@
+uuid: 1bb9c1d3-6497-4c34-8099-d385a2e3da97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cv
+    - node.type.gsprofile
+  module:
+    - file
+_core:
+  default_config_hash: 276r-2PcZv4UgLTWT-AIqwkALOgxIu-DYxTO7DEoUow
+id: node.gsprofile.field_cv
+field_name: field_cv
+entity_type: node
+bundle: gsprofile
+label: CV
+description: 'Please upload your CV'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: cv
+  file_extensions: 'txt pdf doc docx rtf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

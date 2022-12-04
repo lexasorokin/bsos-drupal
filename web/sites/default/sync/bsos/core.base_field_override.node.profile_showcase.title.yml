@@ -1,0 +1,18 @@
+uuid: 125d342e-9b90-4110-b0da-200584ee6fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile_showcase
+id: node.profile_showcase.title
+field_name: title
+entity_type: node
+bundle: profile_showcase
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

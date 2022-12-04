@@ -1,0 +1,25 @@
+uuid: 15a88dc2-1b22-45a4-99df-856716909d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_personal
+    - node.type.gsprofile
+  module:
+    - link
+_core:
+  default_config_hash: Dnc7U6LPILZcvbdyppxNxgjODC-ku15CfuoD2g64h18
+id: node.gsprofile.field_website_personal
+field_name: field_website_personal
+entity_type: node
+bundle: gsprofile
+label: 'Personal Website'
+description: 'If you have an external website, enter the link information here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

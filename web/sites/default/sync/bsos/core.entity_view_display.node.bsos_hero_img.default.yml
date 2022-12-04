@@ -1,0 +1,39 @@
+uuid: f0fec69f-7869-461f-9ce7-89eb0bb2e3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bsos_hero_img.field_bsos_hero_img
+    - field.field.node.bsos_hero_img.field_bsos_hero_msg
+    - image.style.large
+    - node.type.bsos_hero_img
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: XN6k7i9ONemzGHKdZDYnm3LTN8iGzTud7epiVTRjVxw
+id: node.bsos_hero_img.default
+targetEntityType: node
+bundle: bsos_hero_img
+mode: default
+content:
+  field_bsos_hero_img:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_bsos_hero_msg:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  links: true

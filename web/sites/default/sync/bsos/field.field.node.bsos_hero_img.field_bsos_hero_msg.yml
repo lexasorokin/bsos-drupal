@@ -1,0 +1,21 @@
+uuid: 3423cba1-750d-4819-a4de-6f902bee16e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bsos_hero_msg
+    - node.type.bsos_hero_img
+_core:
+  default_config_hash: KlGdKen5naEz2xz4zwEH7ata4ekVDJQi3EcDbf1dkBA
+id: node.bsos_hero_img.field_bsos_hero_msg
+field_name: field_bsos_hero_msg
+entity_type: node
+bundle: bsos_hero_img
+label: 'Homepage message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

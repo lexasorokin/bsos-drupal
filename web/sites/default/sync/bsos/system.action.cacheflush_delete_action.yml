@@ -1,0 +1,13 @@
+uuid: 00bb14e3-380e-4fd7-b2ca-64eac4002ac4
+langcode: en
+status: true
+dependencies:
+  module:
+    - cacheflush_ui
+_core:
+  default_config_hash: GTH53dtHxKVe_ijClirdnJ-0zzDrlukPbNJBQnYH74c
+id: cacheflush_delete_action
+label: 'Delete entity'
+type: cacheflush
+plugin: cacheflush_delete_action
+configuration: {  }

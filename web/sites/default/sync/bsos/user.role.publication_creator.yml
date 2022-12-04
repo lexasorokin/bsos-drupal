@@ -1,0 +1,13 @@
+uuid: b8f05909-66ba-4bda-ad0c-435c27b85ea5
+langcode: en
+status: true
+dependencies: {  }
+id: publication_creator
+label: 'Publication Creator'
+weight: -9
+is_admin: null
+permissions:
+  - 'create publication_profile content'
+  - 'participate in workflow'
+  - 'use text format 1'
+  - 'view media'

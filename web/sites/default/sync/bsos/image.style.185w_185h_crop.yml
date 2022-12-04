@@ -1,0 +1,27 @@
+uuid: bd9573ae-f54f-4c75-bb2a-9ac5e99543d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.square
+  module:
+    - crop
+_core:
+  default_config_hash: uf_N5diKLDoNhS2-Z6OYUu02TdrZxpN3U6I1egPmmUM
+name: 185w_185h_crop
+label: '185w 185h crop (profile carousel)'
+effects:
+  da22c6ba-f097-417a-82db-ca12780e672c:
+    uuid: da22c6ba-f097-417a-82db-ca12780e672c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: square
+  1c07a0c5-c9aa-44b0-8ef4-1d5dc27ce981:
+    uuid: 1c07a0c5-c9aa-44b0-8ef4-1d5dc27ce981
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 185
+      height: 185
+      anchor: center-center

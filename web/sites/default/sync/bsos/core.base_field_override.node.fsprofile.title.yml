@@ -1,0 +1,18 @@
+uuid: 1a9e925b-55e7-46a9-9305-fb3f65b47b45
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fsprofile
+id: node.fsprofile.title
+field_name: title
+entity_type: node
+bundle: fsprofile
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

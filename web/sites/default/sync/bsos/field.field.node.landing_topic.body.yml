@@ -1,0 +1,23 @@
+uuid: 7554bcc9-81b3-48b0-bf07-13646d96c002
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.landing_topic
+  module:
+    - text
+id: node.landing_topic.body
+field_name: body
+entity_type: node
+bundle: landing_topic
+label: Description
+description: 'Topic category for the Landing page - will contain a title, and image, a description, and related links'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

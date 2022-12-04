@@ -1,0 +1,66 @@
+uuid: e816a5f6-a3f3-43aa-a5f2-679100f92371
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_information
+    - node.type.fsprofile
+    - paragraphs.paragraphs_type.service_information
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: zNZjaK0cxFgkH4t3IiiJMiMqooB5MX9A-ghvVvF0bww
+id: node.fsprofile.field_service_information
+field_name: field_service_information
+entity_type: node
+bundle: fsprofile
+label: 'Service Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      service_information: service_information
+    target_bundles_drag_drop:
+      service_information:
+        enabled: true
+        weight: 1
+      awards_fc:
+        enabled: false
+        weight: 2
+      conferences_fc:
+        enabled: false
+        weight: 3
+      course_information:
+        enabled: false
+        weight: 4
+      degrees_held:
+        enabled: false
+        weight: 5
+      faculty_advisors:
+        enabled: false
+        weight: 6
+      fac_grad_advisee:
+        enabled: false
+        weight: 7
+      formerstudent_info:
+        enabled: false
+        weight: 8
+      graduate_researchers:
+        enabled: false
+        weight: 9
+      projref_coi:
+        enabled: false
+        weight: 10
+      projref_co_pi:
+        enabled: false
+        weight: 11
+      researchers:
+        enabled: false
+        weight: 12
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

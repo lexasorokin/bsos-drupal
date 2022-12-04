@@ -1,0 +1,113 @@
+uuid: a30cd8a1-424c-460d-bc17-e44d0781a2ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_faculty_staff_categ_import
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_release_date
+    - field.field.node.news.field_satellite_faculty_in_the_n
+    - field.field.node.news.field_send_to_bsos
+    - image.style.500w
+    - node.type.news
+  module:
+    - fences
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_main
+        - group_side
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+      region: content
+    group_main:
+      children:
+        - body
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Main
+      region: content
+    group_side:
+      children:
+        - field_news_image
+      parent_name: group_row
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Side
+      region: content
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_news_image:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: 500w
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+hidden:
+  field_faculty_staff_categ_import: true
+  field_release_date: true
+  field_satellite_faculty_in_the_n: true
+  field_send_to_bsos: true
+  langcode: true
+  links: true

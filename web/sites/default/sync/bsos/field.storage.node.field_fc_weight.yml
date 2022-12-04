@@ -1,0 +1,20 @@
+uuid: efbf2955-70a4-466e-8bbe-a330831872c6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_fc_weight
+field_name: field_fc_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

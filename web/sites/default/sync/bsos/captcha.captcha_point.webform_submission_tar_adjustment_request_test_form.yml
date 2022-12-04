@@ -1,0 +1,7 @@
+uuid: 06dd7a25-ca4c-4c48-87a2-f093ad306489
+langcode: en
+status: true
+dependencies: {  }
+formId: webform_submission_tar_adjustment_request_test_form
+captchaType: captcha/Math
+label: webform_submission_tar_adjustment_request_test_form

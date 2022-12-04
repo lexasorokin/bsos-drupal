@@ -1,0 +1,27 @@
+uuid: 96386396-eea2-485e-97ac-8b6411812ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.bsos_free
+  module:
+    - crop
+_core:
+  default_config_hash: i4yqXipcEpYA7rtBjAKM02VISo80zVUvoKz3OF48TNY
+name: bsos_full
+label: 'Full width (1200w)'
+effects:
+  bsos_paragraphs_full_width_scale_width:
+    uuid: bsos_paragraphs_full_width_scale_width
+    id: image_scale
+    weight: -9
+    data:
+      width: 1200
+      height: null
+      upscale: false
+  bsos_paragraphs_full_width_manual_crop:
+    uuid: bsos_paragraphs_full_width_manual_crop
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: bsos_free

@@ -1,0 +1,54 @@
+uuid: 0c195fb0-9536-4540-a4e0-59ce4ad49eaf
+langcode: en
+status: true
+dependencies: {  }
+id: owner_config_before_saving
+label: 'Owner Config Before Saving'
+events:
+  -
+    event_name: 'rules_entity_presave:node'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 7ceec6c7-6c89-4797-8d0a-369983433b1e
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 50ea7c00-d47e-47a2-836a-bca76bb44739
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 8a04db64-2f75-40e6-b61e-1e1c7b11481c
+        weight: 0
+        context_values:
+          type: node
+          bundle: fsprofile
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_entity_is_of_bundle
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: 322bd47a-1f50-4eea-a4d8-16b9d5ac12da
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 40f6d534-a936-40ce-8e10-8761b741d4ce
+        weight: 0
+        context_values: {  }
+        context_mapping:
+          data: node.uid.entity
+          value: node.field_profile_owner.entity
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: rules_data_set

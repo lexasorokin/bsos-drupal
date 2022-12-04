@@ -1,0 +1,59 @@
+uuid: 2531036b-68b9-4638-b3f0-12bbc5bb5ac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date_and_time
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_exclude_from_all_bsos_emai
+    - field.field.node.event.field_faculty_staff_categ_import
+    - field.field.node.event.field_host
+    - field.field.node.event.field_notes
+    - field.field.node.event.field_release_date
+    - field.field.node.event.field_send_to_bsos
+    - field.field.node.event.field_speaker
+    - field.field.node.event.field_topic
+    - node.type.event
+  module:
+    - image
+    - user
+id: node.event.token
+targetEntityType: node
+bundle: event
+mode: token
+content:
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_image:
+    label: above
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_event_date_and_time: true
+  field_event_location: true
+  field_exclude_from_all_bsos_emai: true
+  field_faculty_staff_categ_import: true
+  field_host: true
+  field_notes: true
+  field_release_date: true
+  field_send_to_bsos: true
+  field_speaker: true
+  field_topic: true
+  langcode: true

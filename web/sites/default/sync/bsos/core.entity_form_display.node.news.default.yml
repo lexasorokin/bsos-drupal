@@ -1,0 +1,117 @@
+uuid: 6df80a64-891d-4d16-b94f-0882f64caa21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_faculty_staff_categ_import
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_release_date
+    - field.field.node.news.field_satellite_faculty_in_the_n
+    - field.field.node.news.field_send_to_bsos
+    - image.style.thumbnail
+    - node.type.news
+  module:
+    - content_moderation
+    - datetime
+    - image_widget_crop
+    - imce
+    - text
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    weight: 1
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_faculty_staff_categ_import:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+  field_news_image:
+    weight: 2
+    type: image_widget_crop
+    settings:
+      show_default_crop: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - square
+      progress_indicator: throbber
+      show_crop_area: false
+      warn_multiple_usages: false
+      crop_types_required: {  }
+    third_party_settings:
+      imce:
+        enabled: false
+    region: content
+  field_release_date:
+    weight: 3
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_satellite_faculty_in_the_n:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_send_to_bsos:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: moderation_state_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  url_redirects: true

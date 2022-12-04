@@ -1,0 +1,21 @@
+uuid: 8c2d0e53-99e8-4a9d-8b90-84e21b4e9f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pub_year
+    - node.type.publication_profile
+  module:
+    - datetime
+id: node.publication_profile.field_pub_year
+field_name: field_pub_year
+entity_type: node
+bundle: publication_profile
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

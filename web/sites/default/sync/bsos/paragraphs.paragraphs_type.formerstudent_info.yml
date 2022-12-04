@@ -1,0 +1,11 @@
+uuid: 1f0d4f65-5397-421d-9e16-853ebf8fc043
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: l8cqrfexfXtAjE7AY1eAdb9_OjL6hd8uyhC0icgiSlc
+id: formerstudent_info
+label: 'Formerstudent info'
+icon_uuid: null
+description: 'Migrated from field_collection field_formerstudent_info'
+behavior_plugins: {  }

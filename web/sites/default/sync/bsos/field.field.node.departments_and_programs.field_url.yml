@@ -1,0 +1,25 @@
+uuid: cf134455-ee90-4359-a0bf-ad1b3aa3e60f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.departments_and_programs
+  module:
+    - link
+_core:
+  default_config_hash: WB71pTefbsW8GYr12v3EQiuJL3vgu3YtTNioI7rCgk4
+id: node.departments_and_programs.field_url
+field_name: field_url
+entity_type: node
+bundle: departments_and_programs
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

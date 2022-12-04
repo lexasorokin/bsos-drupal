@@ -1,0 +1,9 @@
+uuid: e2c481d7-f6aa-4746-a7e5-f180852895b5
+langcode: en
+status: true
+dependencies: {  }
+id: researchers
+label: Researchers
+icon_uuid: null
+description: 'Migrated from field_collection field_researchers'
+behavior_plugins: {  }

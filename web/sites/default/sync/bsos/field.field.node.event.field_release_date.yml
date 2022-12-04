@@ -1,0 +1,24 @@
+uuid: 4096a65f-4c65-480a-b98f-d60cea53335e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_date
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_release_date
+field_name: field_release_date
+entity_type: node
+bundle: event
+label: 'Release Date'
+description: 'First date for event to appear in Events feed'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

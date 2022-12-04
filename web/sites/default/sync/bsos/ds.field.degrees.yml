@@ -1,0 +1,11 @@
+id: degrees
+label: Degrees
+ui_limit: 'degrees_held|*'
+properties:
+  content:
+    value: '<strong>[paragraph:field_degree_type]</strong> [paragraph:field_degree_details]'
+    format: '2'
+type: token
+type_label: 'Token field'
+entities:
+  paragraph: paragraph

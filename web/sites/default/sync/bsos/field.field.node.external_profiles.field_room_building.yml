@@ -1,0 +1,19 @@
+uuid: 02203974-bb61-4967-bca9-70c0cac28346
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_building
+    - node.type.external_profiles
+id: node.external_profiles.field_room_building
+field_name: field_room_building
+entity_type: node
+bundle: external_profiles
+label: 'Room and Building'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

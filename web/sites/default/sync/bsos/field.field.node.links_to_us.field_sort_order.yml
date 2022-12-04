@@ -1,0 +1,23 @@
+uuid: f968d2a6-bb22-4836-87bd-660e8bd41c5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_order
+    - node.type.links_to_us
+id: node.links_to_us.field_sort_order
+field_name: field_sort_order
+entity_type: node
+bundle: links_to_us
+label: 'Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

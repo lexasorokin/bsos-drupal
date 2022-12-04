@@ -1,0 +1,21 @@
+uuid: 105cec52-e677-49ee-bc70-c3a79c432f0e
+langcode: en
+status: true
+dependencies: {  }
+id: dwe_super_user_profile
+label: 'Superuser profile DWE'
+description: 'IMCE file Configuration for Superuser DWE'
+conf:
+  extensions: 'jpg png gif txt pdf docx'
+  maxsize: !!float 128
+  quota: null
+  maxwidth: null
+  maxheight: null
+  replace: 0
+  thumbnail_style: ''
+  thumbnail_grid_style: false
+  folders:
+    -
+      path: .
+      permissions:
+        all: true

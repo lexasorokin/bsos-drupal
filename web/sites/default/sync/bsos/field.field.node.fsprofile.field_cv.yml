@@ -1,0 +1,29 @@
+uuid: 60bb56ec-89de-4126-bfa5-7d481d647244
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cv
+    - node.type.fsprofile
+  module:
+    - file
+_core:
+  default_config_hash: KEbz6Zmmj1VAeeXHv7PpwtG-Hh3q2yMY_RfXQ3H-NO0
+id: node.fsprofile.field_cv
+field_name: field_cv
+entity_type: node
+bundle: fsprofile
+label: CV
+description: 'Please upload your CV'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: cv
+  file_extensions: 'txt pdf doc docx rtf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

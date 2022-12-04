@@ -1,0 +1,11 @@
+uuid: dc47723c-3fb5-472c-9869-3db28624d821
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Wl6UOetJYgasVnbu6WLxMDJnTsNKdT8kM_aR8fcto64
+id: bsos_tabs
+label: Tabs
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

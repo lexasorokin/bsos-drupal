@@ -1,0 +1,34 @@
+uuid: 7bb136e8-5669-474d-af08-401d3c71d892
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Tt8DtxZ3Nooo0PoWPpJvszA3R_5d8MmpUW7LM_R-BzY
+id: default
+label: Default
+description: 'A default Linkit profile'
+matchers:
+  556010a3-e317-48b3-b4ed-854c10f4b950:
+    uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
+    id: 'entity:node'
+    weight: 0
+    settings:
+      metadata: 'by [node:author] | [node:created:medium]'
+      bundles:
+        bsos_web_ad: bsos_web_ad
+        departments_and_programs: departments_and_programs
+        dept_items_of_interest: dept_items_of_interest
+        event: event
+        featured_content: featured_content
+        fsprofile: fsprofile
+        gsprofile: gsprofile
+        landing_topic: landing_topic
+        links_to_us: links_to_us
+        news: news
+        page: page
+        profile_showcase: profile_showcase
+      group_by_bundle: false
+      include_unpublished: false
+      substitution_type: canonical

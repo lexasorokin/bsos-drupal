@@ -1,0 +1,33 @@
+uuid: f5bb3d19-cca2-49cd-800b-b6dec0b5b63b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools_block
+  theme:
+    - seven
+third_party_settings:
+  block_class:
+    classes: ''
+id: maincontent
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_main'
+settings:
+  id: 'entity_field:node:field_main'
+  label: 'Main content'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: above
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

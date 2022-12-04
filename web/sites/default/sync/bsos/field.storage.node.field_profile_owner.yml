@@ -1,0 +1,26 @@
+uuid: 23ffa436-bb0e-40fd-8b29-8d64d84d3755
+langcode: und
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: mbio5vm_9mfg2ftmlHkpNERfRTM_Rpkq2c84hZhf4EA
+id: node.field_profile_owner
+field_name: field_profile_owner
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

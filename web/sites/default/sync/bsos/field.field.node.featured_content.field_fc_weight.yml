@@ -1,0 +1,25 @@
+uuid: d5b03eb2-eb7e-43a2-bc16-a65f212ffe90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fc_weight
+    - node.type.featured_content
+id: node.featured_content.field_fc_weight
+field_name: field_fc_weight
+entity_type: node
+bundle: featured_content
+label: 'Order / Weight'
+description: 'Select the order (or weight, smaller numbers appear first) of the featured content item'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: -9
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

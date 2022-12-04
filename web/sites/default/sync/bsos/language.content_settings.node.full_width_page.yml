@@ -1,0 +1,11 @@
+uuid: 1d50160c-6b40-4316-ba28-a2acf9edad38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.full_width_page
+id: node.full_width_page
+target_entity_type_id: node
+target_bundle: full_width_page
+default_langcode: site_default
+language_alterable: false

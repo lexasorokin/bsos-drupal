@@ -1,0 +1,19 @@
+uuid: ec2af691-2116-4de7-8154-6f3abb220fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_text
+    - node.type.links_to_us
+id: node.links_to_us.field_url_text
+field_name: field_url_text
+entity_type: node
+bundle: links_to_us
+label: 'URL Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

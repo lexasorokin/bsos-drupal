@@ -1,0 +1,21 @@
+uuid: 222932e6-431b-46fc-9cc4-357e5737a614
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: av29F7So42F1lUVH6FpUl25kPk6vD99KAp53HAxLH60
+id: node.field_fac_teaching_philosophy
+field_name: field_fac_teaching_philosophy
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

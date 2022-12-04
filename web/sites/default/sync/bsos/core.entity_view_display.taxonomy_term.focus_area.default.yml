@@ -1,0 +1,32 @@
+uuid: 6c7dcb2a-7bb4-4584-a497-45b4579c8b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.focus_area.field_dept_item_weight
+    - taxonomy.vocabulary.focus_area
+  module:
+    - text
+id: taxonomy_term.focus_area.default
+targetEntityType: taxonomy_term
+bundle: focus_area
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dept_item_weight:
+    label: above
+    weight: 0
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

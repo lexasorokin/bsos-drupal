@@ -1,0 +1,10 @@
+uuid: 57d06630-f66f-4ef6-87c7-2c931d37c2be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: r1FTbjfPvxCl9vAoMhV9LWKc7I8ieURTxJyUMIgn6xA
+name: 'Faculty/Staff Category'
+vid: vocabulary_faculty_staff_categor
+description: 'Subgroup in which the faculty/staff member belongs'
+weight: -7

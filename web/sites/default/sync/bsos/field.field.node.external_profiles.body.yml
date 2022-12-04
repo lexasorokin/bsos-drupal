@@ -1,0 +1,23 @@
+uuid: f78f509c-0ade-4054-95a2-afce662f5598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.external_profiles
+  module:
+    - text
+id: node.external_profiles.body
+field_name: body
+entity_type: node
+bundle: external_profiles
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

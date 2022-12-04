@@ -1,0 +1,23 @@
+uuid: 17451f20-dd8b-4f52-86dc-20a1d31d662d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.frequently_asked_questions
+  module:
+    - text
+id: node.frequently_asked_questions.body
+field_name: body
+entity_type: node
+bundle: frequently_asked_questions
+label: Answer
+description: 'Answer to the FAQ Question, and/or a link to a detailed answer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

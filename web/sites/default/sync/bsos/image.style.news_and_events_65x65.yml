@@ -1,0 +1,15 @@
+uuid: a7bec324-2088-40d6-acb2-e116527aa162
+langcode: en
+status: true
+dependencies: {  }
+name: news_and_events_65x65
+label: news_and_events_65x65
+effects:
+  1bb07df2-a62a-4003-9306-41fd2c732bd4:
+    uuid: 1bb07df2-a62a-4003-9306-41fd2c732bd4
+    id: image_scale
+    weight: 1
+    data:
+      width: 65
+      height: null
+      upscale: false

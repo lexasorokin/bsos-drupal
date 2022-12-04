@@ -1,0 +1,19 @@
+uuid: be766e4c-f866-4a03-8845-4eb99687d053
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_title
+    - node.type.external_profiles
+id: node.external_profiles.field_position_title
+field_name: field_position_title
+entity_type: node
+bundle: external_profiles
+label: 'Position Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

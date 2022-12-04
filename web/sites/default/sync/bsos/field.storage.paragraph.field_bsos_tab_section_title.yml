@@ -1,0 +1,23 @@
+uuid: 3ed61dd4-e312-4367-aae8-7292de47f05b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: RSqIrp-3_peNS6GPjkcwZBDFa-X0zIJ7a5A-PHMGzNk
+id: paragraph.field_bsos_tab_section_title
+field_name: field_bsos_tab_section_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

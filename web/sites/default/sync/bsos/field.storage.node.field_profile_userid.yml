@@ -1,0 +1,22 @@
+uuid: a185500e-8dfd-4f41-8b0d-3b145ff8120f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ZxCDooZ07uZS90WUg4YO0CbD4Y2-wETiWr7-x0-_tOI
+id: node.field_profile_userid
+field_name: field_profile_userid
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

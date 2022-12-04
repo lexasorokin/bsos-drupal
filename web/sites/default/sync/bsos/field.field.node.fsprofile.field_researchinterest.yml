@@ -1,0 +1,21 @@
+uuid: 392722a5-9d81-4ffb-8ce3-1c4627ad796b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_researchinterest
+    - node.type.fsprofile
+_core:
+  default_config_hash: fXS9YWehDb5ByAL3mVUPg4dFKG4Y_mrNLrYkQEmMEgo
+id: node.fsprofile.field_researchinterest
+field_name: field_researchinterest
+entity_type: node
+bundle: fsprofile
+label: 'Areas of Interest'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,41 @@
+uuid: dd9842ad-9fdf-4639-9009-c3b107b5ac20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bsos_tab_section.field_bsos_tab_section_body
+    - field.field.paragraph.bsos_tab_section.field_bsos_tab_section_title
+    - paragraphs.paragraphs_type.bsos_tab_section
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Kg2On2PXX2y3z9Q4f7TkXdHdNSVH6CNoEqekdCXhScc
+id: paragraph.bsos_tab_section.default
+targetEntityType: paragraph
+bundle: bsos_tab_section
+mode: default
+content:
+  field_bsos_tab_section_body:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_bsos_tab_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

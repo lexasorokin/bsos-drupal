@@ -1,0 +1,14 @@
+uuid: dedba3f2-0cb8-430d-a04e-002886c4d8b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.project_editor
+  module:
+    - user
+id: user_remove_role_action.project_editor
+label: 'Remove the Project Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: project_editor

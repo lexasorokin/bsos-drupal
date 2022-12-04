@@ -1,0 +1,27 @@
+uuid: 143f92a2-bc57-4677-b328-975770f806d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pub_document
+    - node.type.publication_profile
+  module:
+    - file
+id: node.publication_profile.field_pub_document
+field_name: field_pub_document
+entity_type: node
+bundle: publication_profile
+label: 'Publication Document'
+description: 'Upload a PDF or the text of the publication, if available'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pubs
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

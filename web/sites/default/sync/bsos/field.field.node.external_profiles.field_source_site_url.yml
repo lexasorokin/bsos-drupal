@@ -1,0 +1,23 @@
+uuid: ea50d1b6-96e8-42ef-a129-e42e40e9d62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_site_url
+    - node.type.external_profiles
+  module:
+    - link
+id: node.external_profiles.field_source_site_url
+field_name: field_source_site_url
+entity_type: node
+bundle: external_profiles
+label: 'Source Site URL'
+description: 'Link back to the unit site from which this profile feeds'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

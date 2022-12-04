@@ -1,0 +1,109 @@
+uuid: 8bca4c53-4809-4297-bcc1-6da8b014d5b7
+langcode: en
+status: true
+dependencies: {  }
+id: ndews_events_importer
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'Import NDEWS Events'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  urls: 'https://ndews.umd.edu/events/feed'
+  data_parser_plugin: simple_xml
+  item_selector: /response/item
+  fields:
+    -
+      name: guid
+      label: GUID
+      selector: Node-UUID
+    -
+      name: title
+      label: Title
+      selector: Title
+    -
+      name: event_date_start
+      label: 'Event Date Start'
+      selector: Event-Date-and-Time-Start
+    -
+      name: event_date_end
+      label: 'Event Date End'
+      selector: Event-Date-and-Time-End
+    -
+      name: details
+      label: 'Event Details'
+      selector: Details
+    -
+      name: location
+      label: Location
+      selector: Location
+    -
+      name: release_date
+      label: 'Release Date'
+      selector: Release-Date
+    -
+      name: created
+      label: created
+      selector: created
+    -
+      name: event_image
+      label: 'Event Image'
+      selector: Event-Image
+  constants:
+    destination_uri: 'public://imported_images/image.jpg'
+  ids:
+    guid:
+      type: string
+process:
+  title: title
+  body: details
+  field_event_location: location
+  field_release_date/value:
+    plugin: format_date
+    source: release_date
+    from_format: Y-m-d
+    to_format: Y-m-d
+    from_timezone: America/New_York
+    to_timezone: UTC
+  field_event_date_and_time/value:
+    plugin: format_date
+    source: event_date_start
+    from_format: 'Y-m-d\TH:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    from_timezone: America/New_York
+    to_timezone: UTC
+  field_event_date_and_time/end_value:
+    plugin: format_date
+    source: event_date_end
+    from_format: 'Y-m-d\TH:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    from_timezone: America/New_York
+    to_timezone: UTC
+  field_faculty_staff_categ_import:
+    plugin: default_value
+    default_value: 99
+  moderation_state:
+    plugin: default_value
+    default_value: in_review
+  uid:
+    plugin: default_value
+    default_value: 1
+  created:
+    plugin: format_date
+    source: created
+    from_format: 'Y-m-d\TH:i:sO'
+    to_format: 'Y-m-d\TH:i:s'
+    from_timezone: America/New_York
+    to_timezone: UTC
+  status:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: event
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

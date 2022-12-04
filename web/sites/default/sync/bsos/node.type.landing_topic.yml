@@ -1,0 +1,18 @@
+uuid: b15596b2-390d-4eaf-b541-a687a2c82ce1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Landing Topic'
+type: landing_topic
+description: 'Topic category for the Landing page - will contain a title, and image, a description, and related links'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

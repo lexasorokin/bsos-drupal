@@ -1,0 +1,19 @@
+uuid: 1ec79859-3557-4b47-9b71-299994b3ab8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_from_department
+    - node.type.external_profiles
+id: node.external_profiles.field_from_department
+field_name: field_from_department
+entity_type: node
+bundle: external_profiles
+label: 'From Department'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

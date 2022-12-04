@@ -1,0 +1,44 @@
+uuid: 940efeea-5f08-4d32-b0ce-ab9c4ab971ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.degrees_held.field_degree_details
+    - field.field.paragraph.degrees_held.field_degree_type
+    - paragraphs.paragraphs_type.degrees_held
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_degree_type
+        - field_degree_details
+id: paragraph.degrees_held.default
+targetEntityType: paragraph
+bundle: degrees_held
+mode: default
+content:
+  field_degree_details:
+    type: string
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_degree_type:
+    type: string
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

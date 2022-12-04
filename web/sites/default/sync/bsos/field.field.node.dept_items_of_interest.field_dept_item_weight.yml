@@ -1,0 +1,23 @@
+uuid: d2fe8d18-c50e-43f3-9f23-1fce30c60053
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dept_item_weight
+    - node.type.dept_items_of_interest
+id: node.dept_items_of_interest.field_dept_item_weight
+field_name: field_dept_item_weight
+entity_type: node
+bundle: dept_items_of_interest
+label: 'Item Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

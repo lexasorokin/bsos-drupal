@@ -1,0 +1,13 @@
+uuid: 6617c3a4-c04a-47de-a7c2-58a046b951df
+langcode: en
+status: true
+dependencies:
+  module:
+    - cacheflush_ui
+_core:
+  default_config_hash: cTkXq8rrl04hdPONtL_5eRUFjwKcuPtfply8Yd6i0E8
+id: cacheflush_unpublish_action
+label: 'Unpublish entity'
+type: cacheflush
+plugin: cacheflush_unpublish_action
+configuration: {  }

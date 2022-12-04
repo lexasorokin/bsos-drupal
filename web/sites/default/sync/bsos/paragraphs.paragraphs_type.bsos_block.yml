@@ -1,0 +1,11 @@
+uuid: d5f3ae29-6cde-4a9e-bab3-d8564133fad3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b_zbhmnuxPIGs_NhlwzicvyLWuFcznuTixpU1NQcMIo
+id: bsos_block
+label: 'Custom Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

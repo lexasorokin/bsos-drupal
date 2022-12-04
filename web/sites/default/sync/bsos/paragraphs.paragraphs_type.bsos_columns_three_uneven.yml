@@ -1,0 +1,11 @@
+uuid: 2cd3efdb-2a83-418c-8ee9-94c325d5b411
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Yyft_RNAaXrf_9jizi39NtyRpIzqTlyFmWLMh7FbY6s
+id: bsos_columns_three_uneven
+label: 'Columns (three uneven)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

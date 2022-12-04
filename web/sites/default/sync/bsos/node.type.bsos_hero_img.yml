@@ -1,0 +1,19 @@
+uuid: 044a87ca-f502-49e5-ba92-7292128cfad1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: gG5j7Cfa9jWrnbgeqbvQ7RZisWIptcfgY8oppHiSd-k
+name: 'Hero Image'
+type: bsos_hero_img
+description: 'Sitewide background image'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 2024dcc1-b522-424b-9ab4-f89428a799ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: KrOvfAgMf-f9n_-qPWa6LTlx0gGshcSENgh5_EAkFOs
+id: paragraph.field_bsos_modal_title
+field_name: field_bsos_modal_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
