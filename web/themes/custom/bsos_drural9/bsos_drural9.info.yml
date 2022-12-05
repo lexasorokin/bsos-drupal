@@ -10,27 +10,30 @@ libraries:
   - bsos_drural9/global-styling
 libraries-override:
   bsos_drural9/global-styling: false
+
 regions:
-  top_header: 'Top header'
-  top_header_form: 'Top header form'
-  header: Header
-  header_form: 'Header form'
+  topbar: Topbar
+  # Header
+  header_logo: Header Logo
   primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
+  header_right: 'Right Header'
+  # Mobile Menu
+  mobile_menu: 'Mobile menu'
+  # Content
   highlighted: Highlighted
-  featured_top: 'Featured top'
   breadcrumb: Breadcrumb
+  page_title: Page Title
   content: Content
   sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
-  featured_bottom_first: 'Featured bottom first'
-  featured_bottom_second: 'Featured bottom second'
-  featured_bottom_third: 'Featured bottom third'
+  # Footer
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
-  footer_fourth: 'Footer fourth'
-  footer_fifth: 'Footer fifth'
-
+  footer_four: 'Footer four'
+  bottom_footer: 'Bottom Footer'
+  # Hidden
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+regions_hidden:
+  page_top: 'Page Top'
+  page_bottom: 'Page bottom'
