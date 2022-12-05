@@ -1,0 +1,39 @@
+{
+  "extends": ["../../../core/.eslintrc.json"],
+  "globals": {
+    "context": true,
+    "settings": true,
+    "once": true,
+    "bootstrap": true,
+    "gsap": true,
+    "ScrollTrigger": true,
+    "ScrollToPlugin": true,
+    "TextPlugin": true,
+    "Typed": true,
+    "Cleave": true,
+    "Swiper": true,
+    "bodyScrollLock": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "quotes": ["error", "single"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "MemberExpression[property.name = 'once']",
+        "message": "jQuery once is not allowed. Use native Drupal once implementation."
+      }
+    ]
+  }
+}
