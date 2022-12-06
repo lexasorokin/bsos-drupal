@@ -9,7 +9,7 @@ _core:
 id: bsos_drural9_local_actions
 theme: bsos_drural9
 region: content
-weight: -20
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

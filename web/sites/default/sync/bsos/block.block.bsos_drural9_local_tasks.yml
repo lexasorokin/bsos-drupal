@@ -9,7 +9,7 @@ _core:
 id: bsos_drural9_local_tasks
 theme: bsos_drural9
 region: content
-weight: -40
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

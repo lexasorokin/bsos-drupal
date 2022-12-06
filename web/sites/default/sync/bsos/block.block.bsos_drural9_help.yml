@@ -11,7 +11,7 @@ _core:
 id: bsos_drural9_help
 theme: bsos_drural9
 region: content
-weight: -30
+weight: -4
 provider: null
 plugin: help_block
 settings:

@@ -12,8 +12,8 @@ _core:
   default_config_hash: pnCK21YFjH7iB4XDeokSq3N3XSr6qX8BsqMs9nmip6E
 id: bsos_drural9_footer
 theme: bsos_drural9
-region: topbar
-weight: 0
+region: footer_third
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

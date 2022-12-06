@@ -12,7 +12,7 @@ _core:
   default_config_hash: jzu74Q7R0QWgw8IniA9HZRSb_a8RPak1M0q5J-VGkZI
 id: bsos_drural9_account_menu
 theme: bsos_drural9
-region: topbar
+region: content
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'
