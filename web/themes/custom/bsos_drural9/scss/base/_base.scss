@@ -1,0 +1,52 @@
+html {
+  overflow-x: hidden;
+
+  &.is-fixed {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-base;
+  background: $body-gray;
+  padding-top: 65px;
+
+  @include media-breakpoint-down(xl) {
+    padding-top: 70px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 53px;
+  }
+
+  &.toolbar-fixed {
+    padding-top: 158px !important;
+
+    @media screen and (max-width: 975px) {
+      padding-top: 93px !important;
+    }
+
+    .toolbar-bar {
+      z-index: 9999;
+    }
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $light-blue;
+  }
+}

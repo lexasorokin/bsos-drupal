@@ -1,0 +1,100 @@
+// Mixins
+
+@mixin fs($name) {
+    $name: map-get($ui-kit-font-sizes, $name);
+    $properties: map-get($name, properties);
+
+    @if $properties {
+        @each $property, $value in $properties {
+        $property: $value;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        @include font-size(map-get($name, desktop));
+    }
+
+    font-size: map-get($name, mobile);
+
+    @include media-breakpoint-up(md) {
+        line-height: (map-get($properties));
+    }
+
+    line-height: map-get($properties);
+}
+  
+@mixin page-headers {
+    font-weight: $font-weight-normal;
+}
+  
+@mixin css-triangle(
+$triangle-size,
+$triangle-color,
+$triangle-direction
+) {
+    display: block;
+    width: 0;
+    height: 0;
+
+    border: inset $triangle-size;
+
+    content: '';
+
+    @if ($triangle-direction == down) {
+        border-bottom-width: 0;
+        border-top-style: solid;
+        border-color: $triangle-color transparent transparent;
+    }
+    @if ($triangle-direction == up) {
+        border-top-width: 0;
+        border-bottom-style: solid;
+        border-color: transparent transparent $triangle-color;
+    }
+    @if ($triangle-direction == right) {
+        border-right-width: 0;
+        border-left-style: solid;
+        border-color: transparent transparent transparent $triangle-color;
+    }
+    @if ($triangle-direction == left) {
+        border-left-width: 0;
+        border-right-style: solid;
+        border-color: transparent $triangle-color transparent transparent;
+    }
+}
+  
+@mixin placeholder {
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+  
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+@mixin horizontal-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

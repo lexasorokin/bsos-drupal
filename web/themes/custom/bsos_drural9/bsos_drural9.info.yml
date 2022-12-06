@@ -16,7 +16,6 @@ regions:
   # Header
   header_logo: Header Logo
   primary_menu: 'Primary menu'
-  header_right: 'Right Header'
   # Mobile Menu
   mobile_menu: 'Mobile menu'
   # Content
@@ -29,7 +28,6 @@ regions:
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
-  footer_four: 'Footer four'
   bottom_footer: 'Bottom Footer'
   # Hidden
   page_top: 'Page top'

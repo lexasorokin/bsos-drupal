@@ -1,0 +1,86 @@
+// Buttons
+.btn,
+.btn-primary,
+.btn-secondary {
+  color: $white;
+  background: $blue;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0.75rem 2rem;
+  justify-content: center;
+
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    width: 100%;
+    min-height: 44px;
+    height: auto;
+    padding: 0.75rem 2rem;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+  }
+}
+
+.btn.btn-primary {
+  &:hover,
+  &:active,
+  &:focus {
+    background: $green;
+    color: $white;
+  }
+}
+
+// Extended Buttons
+.btn__text {
+  letter-spacing: 1px;
+  border-color: #343434;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.btn.btn--square {
+  border-radius: 0;
+}
+
+// Get Started Button
+.btn-getstarted {
+  background: $green;
+  border-color: $green;
+  font-family: $font-family-base;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  max-width: 180px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(xl) {
+    padding: 8px 15px;
+  }
+
+  &:hover {
+    background: $green-hover;
+    color: $white;
+  }
+}
+
+// Button Container
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  @include media-breakpoint-down(md) {
+    justify-content: space-between;
+  }
+}
