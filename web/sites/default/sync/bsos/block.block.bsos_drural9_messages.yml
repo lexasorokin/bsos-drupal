@@ -1,0 +1,22 @@
+uuid: d8d43a0a-f03d-4b7b-95de-b3c10f6bd8c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bsos_drural9
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: bsos_drural9_messages
+theme: bsos_drural9
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

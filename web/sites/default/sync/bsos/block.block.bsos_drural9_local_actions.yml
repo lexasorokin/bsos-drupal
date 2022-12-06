@@ -1,0 +1,20 @@
+uuid: a43055fe-fa6f-41a9-b7dd-c7130014793c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bsos_drural9
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: bsos_drural9_local_actions
+theme: bsos_drural9
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
