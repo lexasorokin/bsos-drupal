@@ -1,7 +1,6 @@
-/* 
+/*
 Import contrib styles
 */
-
 
 // Include functions first (so you can manipulate colors, SVGs, calc, etc).
 @import './node_modules/bootstrap/scss/functions';
@@ -12,13 +11,13 @@ Import contrib styles
 // BS Setting
 
 // UI
-@import "ui/typography";
+@import 'ui/typography';
 
 // Helpers
-@import "helpers/variables";
-@import "helpers/mixins";
+@import 'helpers/variables';
+@import 'helpers/mixins';
 
 // Base
-@import "base/base";
-@import "base/buttons";
-
+@import 'base/base';
+@import 'base/author_custom_styles';
+@import 'base/buttons';
