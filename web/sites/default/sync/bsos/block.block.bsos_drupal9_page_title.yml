@@ -1,0 +1,20 @@
+uuid: 964f53ab-5c50-4bc0-a68d-aaa6f7e003b0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bsos_drupal9
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: bsos_drupal9_page_title
+theme: bsos_drupal9
+region: page_title
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

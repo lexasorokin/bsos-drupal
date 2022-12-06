@@ -1,0 +1,22 @@
+uuid: 46d9c542-1008-40bf-b28f-7ac147d633db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bsos_drupal9
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: bsos_drupal9_breadcrumbs
+theme: bsos_drupal9
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

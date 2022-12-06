@@ -1,0 +1,50 @@
+
+{# Header #}
+<header role="banner" class="fixed-top">
+
+  <div class="container-header">
+    <div class="d-flex flex-wrap align-items-center justify-content-start">
+
+      {# Logo #}
+      {{ page.header_logo }}
+
+      {# Menu #}
+      {{ page.primary_menu }}
+
+      {# Signup Button #}
+      <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-lg-block">
+        <a href="/signup" class="btn btn--square btn-getstarted">
+          <span class="btn__text">{{ 'Get Started'|t }}</span>
+        </a>
+      </div>
+
+      {# Right Header #}
+      <div class="text-end d-none d-lg-block">
+        {{ page.header_right }}
+      </div>
+
+      {# Contact #}
+      <div class="text-end d-none d-lg-block">
+        <div class="nav-icons right">
+          <a href="/contact" class="nav-function">
+            <i class="icon-Mail icon icon--sm"></i>
+          </a>
+        </div>
+      </div>
+
+      {# Mobile Button #}
+      <div class="nav-mobile-toggle d-lg-none">
+        <img class="mobile-toggle" alt="Menu" src="/{{ directory }}/images/icons/menu-toggler.svg" width="28" height="17">
+        <img class="mobile-close" alt="Menu Close" src="/{{ directory }}/images/icons/menu-close.svg" width="16" height="16">
+      </div>
+
+    </div>
+  </div>
+
+  {# Mobile Container #}
+  <div class="container-header--mobile">
+    {{ page.mobile_menu }}
+  </div>
+
+</header>
+{# Header End #}

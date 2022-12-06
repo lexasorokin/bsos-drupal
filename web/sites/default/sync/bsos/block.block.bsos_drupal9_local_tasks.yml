@@ -1,0 +1,22 @@
+uuid: 77df828c-c310-4c49-b6ae-ea9fc6b5bd2b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bsos_drupal9
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: bsos_drupal9_local_tasks
+theme: bsos_drupal9
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

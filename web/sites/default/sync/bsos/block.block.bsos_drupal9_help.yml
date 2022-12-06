@@ -1,0 +1,22 @@
+uuid: 7778546b-f028-47d2-8dec-bdbfb687cf79
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bsos_drupal9
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: bsos_drupal9_help
+theme: bsos_drupal9
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
