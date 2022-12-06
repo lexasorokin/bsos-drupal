@@ -4,7 +4,8 @@ description: 'BSOS New Drupal 9 Theme'
 # version: VERSION
 core: 8.x
 core_version_requirement: ^8 || ^9 || ^10
-base theme: false
+#base theme: false
+base theme: claro
 
 libraries:
   - bsos_drural9/global-styling
