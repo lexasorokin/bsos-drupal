@@ -1,250 +1,145 @@
 /* TYPOGRAPHY */
 
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-BoldItalic.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-BoldItalic.woff') format('woff'),
+    url('../fonts/SourceSansPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+    url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Italic.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Italic.woff') format('woff'),
+    url('../fonts/SourceSansPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/SourceSansPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Light.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Light.woff') format('woff'),
+    url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-LightItalic.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-LightItalic.woff') format('woff'),
+    url('../fonts/SourceSansPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-SemiBold.woff') format('woff'),
+    url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-Bold.woff2') format('woff2'),
+    url('../fonts/CrimsonText-Bold.woff') format('woff'),
+    url('../fonts/CrimsonText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-Italic.woff2') format('woff2'),
+    url('../fonts/CrimsonText-Italic.woff') format('woff'),
+    url('../fonts/CrimsonText-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-BoldItalic.woff2') format('woff2'),
+    url('../fonts/CrimsonText-BoldItalic.woff') format('woff'),
+    url('../fonts/CrimsonText-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/CrimsonText-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/CrimsonText-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-Regular.woff2') format('woff2'),
+    url('../fonts/CrimsonText-Regular.woff') format('woff'),
+    url('../fonts/CrimsonText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/CrimsonText-SemiBold.woff2') format('woff2'),
+    url('../fonts/CrimsonText-SemiBold.woff') format('woff'),
+    url('../fonts/CrimsonText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 // font families
-$font-montserrat: "Montserrat", sans-serif;
-$font-lora: "Lora", sans-serif;
-$font-open-sans: "Open Sans", sans-serif;
-
-// Fonts
-$font-family-base: $font-montserrat;
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-size-lg: $font-size-base * 1.25;
-$font-size-sm: $font-size-base * 0.875;
-$font-size-xs: $font-size-base * 0.75;
-$font-weight-normal: normal;
-$font-weight-bold: bold;
-$font-weight-extra-bold: 800;
-$font-weight-base: $font-weight-normal;
-$line-height-base: 1.5;
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base;
-
-// Base Font Values
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: $font-montserrat;
-}
-
-a,
-p,
-span:not(.btn__text),
-ul,
-blockquote,
-figcaption,
-input[type],
-textarea {
-  font-family: $font-open-sans;
-}
-
-/*
-// .typography
-*/
-.typography {
-  line-height: 1.625;
-}
-
-.typography a:hover {
-  text-decoration: underline;
-}
-
-.typography h1,
-.typography h2,
-.typography h3,
-.typography h4,
-.typography h5,
-.typography h6 {
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
-}
-
-.typography h2,
-.typography h3 {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.typography h3 {
-  padding-bottom: 6px;
-}
-
-.typography p {
-  margin-bottom: 1.5em;
-}
-
-.typography ol,
-.typography ul {
-  margin: 1.5em 0;
-}
-
-[dir="ltr"] .typography ol,
-[dir="ltr"] .typography ul {
-  padding-left: 2.5rem;
-}
-
-[dir="rtl"] .typography ol,
-[dir="rtl"] .typography ul {
-  padding-right: 2.5rem;
-}
-
-.typography li {
-  margin-bottom: 0.5em;
-}
-
-.typography hr {
-  position: relative;
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  border: none;
-  background: #d9d9d9;
-  margin: 2.5em auto;
-}
-
-.typography hr:after,
-.typography hr:before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: inherit;
-}
-
-.typography hr:after {
-  left: -30px;
-}
-
-.typography hr:before {
-  right: -30px;
-}
-
-.typography blockquote {
-  margin: 2.25rem 0;
-  text-align: center;
-  font-size: 18px;
-  font-style: italic;
-  background: #f7f7f7;
-  border-radius: 4px;
-  padding: 2.25em 2.25em 2em;
-}
-
-.typography blockquote cite {
-  margin-top: -0.5em;
-  color: #6c757d;
-  display: block;
-  font-size: 15px;
-  font-style: normal;
-}
-
-.typography blockquote p {
-  margin-bottom: 1.25em;
-}
-
-.typography blockquote > *:first-child {
-  margin-top: 0;
-}
-
-.typography blockquote > *:last-child {
-  margin-bottom: 0;
-}
-
-.typography > *:first-child {
-  margin-top: 0;
-}
-
-.typography > *:last-child {
-  margin-bottom: 0;
-}
-
-.typography img {
-  max-width: 100%;
-  border-radius: 2px;
-}
-
-.typography figure {
-  margin: 1.875rem 0 2.25rem;
-}
-
-.typography figcaption {
-  font-size: 14px;
-  text-align: center;
-  color: #6c757d;
-  padding-top: 0.875rem;
-}
-
-@media (max-width: 575.98px) {
-  .typography {
-    font-size: 15px;
-    line-height: 1.75;
-  }
-  .typography h1,
-  .typography h2,
-  .typography h3,
-  .typography h4,
-  .typography h5,
-  .typography h6 {
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
-  }
-  .typography h2 {
-    font-size: 28px;
-  }
-  .typography h3 {
-    font-size: 24px;
-  }
-  .typography h4 {
-    font-size: 20px;
-  }
-  .typography h5 {
-    font-size: 18px;
-  }
-  .typography p {
-    margin-bottom: 1em;
-  }
-  .typography ol,
-  .typography ul {
-    margin: 1.25em 0;
-  }
-  [dir="ltr"] .typography ol,
-  [dir="ltr"] .typography ul {
-    padding-left: 2rem;
-  }
-  [dir="rtl"] .typography ol,
-  [dir="rtl"] .typography ul {
-    padding-right: 2rem;
-  }
-  .typography hr {
-    margin: 1.5em auto;
-  }
-  .typography blockquote {
-    padding: 1em;
-    font-size: 16px;
-    margin: 1.5rem 0;
-  }
-  .typography blockquote p {
-    margin-bottom: 0.75em;
-  }
-  .typography figure {
-    margin: 1.5rem 0 1.5rem;
-  }
-}
+$font-source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-crimson-text: 'Crimson Text', sans-serif;

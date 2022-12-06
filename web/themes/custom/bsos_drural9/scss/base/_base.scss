@@ -1,52 +1,49 @@
 html {
-  overflow-x: hidden;
-
-  &.is-fixed {
-    overflow: hidden;
-  }
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-img {
-  display: inline-block;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+img,
+audio,
+video,
+canvas {
   max-width: 100%;
   height: auto;
-}
-
-body {
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  font-family: $font-family-base;
-  background: $body-gray;
-  padding-top: 65px;
-
-  @include media-breakpoint-down(xl) {
-    padding-top: 70px;
-  }
-
-  @include media-breakpoint-down(lg) {
-    padding-top: 53px;
-  }
-
-  &.toolbar-fixed {
-    padding-top: 158px !important;
-
-    @media screen and (max-width: 975px) {
-      padding-top: 93px !important;
-    }
-
-    .toolbar-bar {
-      z-index: 9999;
-    }
-  }
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-
-  &:hover {
-    color: $light-blue;
-  }
 }

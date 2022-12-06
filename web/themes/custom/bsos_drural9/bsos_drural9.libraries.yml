@@ -1,11 +1,12 @@
 global-styling:
   version: VERSION
   js:
-    js/bootstrap.min.js: { weight: -48 }
+    #js/bootstrap.min.js: { weight: -48 }
     js/custom.js: {}
   css:
     component:
-      css/bootstrap.min.css: {}
+      #css/bootstrap.min.css: {}
+      vendor/normalize.css: {}
       css/style.css: {}
   dependencies:
     - core/jquery
