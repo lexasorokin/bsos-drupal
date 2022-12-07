@@ -48,34 +48,23 @@
   }
 }
 
-// Social Icons
-.socials.in-footer {
-  padding-top: 30px;
+/* Title Divider  */
+.fearless-divider {
+  margin: 0 0 50px;
+  width: 100%;
+  position: relative;
+  height: 10px;
+  background-image: url(/img/fearless-divider.png);
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.socials ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
+.fearless-divider.on-left {
+  background-position: left center;
 }
-.socials a {
-  display: block;
-}
-.socials svg {
-  width: 18px;
-  height: 18px;
-  margin: 0 5px;
-  fill: #fff;
-  display: block;
-}
-.socials.in-header a {
-  padding: 6px;
-}
-.socials.in-header svg {
-  fill: rgb(255 255 255 / 51%);
-}
-.socials.in-header a:hover svg {
-  fill: #fff;
+
+@media (min-width: 700px) {
+  .fearless-divider {
+    height: 13px;
+  }
 }
