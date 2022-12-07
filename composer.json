@@ -128,6 +128,7 @@
         "drupal/tawk_to": "^3.0",
         "drupal/term_reference_tree": "^1.1",
         "drupal/token": "^1.11",
+        "drupal/twig_tweak": "^3.2",
         "drupal/twitter_block": "^3.0@alpha",
         "drupal/typed_data": "^1.0@beta",
         "drupal/video": "^3.0",
