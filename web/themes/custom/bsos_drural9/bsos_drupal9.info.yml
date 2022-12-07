@@ -28,7 +28,6 @@ regions:
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
-  bottom_footer: 'Bottom Footer'
   # Hidden
   page_top: 'Page top'
   page_bottom: 'Page bottom'

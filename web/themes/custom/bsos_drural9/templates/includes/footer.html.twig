@@ -1,34 +1,9 @@
 {# Footer #}
-<footer role="banner">
-
-  <div class="top-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">{{ page.footer_first }}</div>
-        <div class="col-12 col-md-3 col-lg-2">{{ page.footer_second }}</div>
-        <div class="col-12 col-md-3 col-lg-3">{{ page.footer_third }}</div>
-        <div class="col-12 col-md-12 col-lg-4">{{ page.footer_four }}</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bottom-footer">
-    <div class="container">
-      <div class="footer-copyright">
-        <span >Copyright ©
-          <a href="/legal" title="B2B Terms">B2B Trade Payment Services AB</a>
-          2017-{{ 'now' | date('Y') }}. All Rights Reserved</span>
-      </div>
-      {{ page.bottom_footer }}
-    </div>
-  </div>
-
-
-</footer>
-{# Footer End #}
-
-
-// Main footer file for the template
+{#
+{{ page.footer_first }}
+{{ page.footer_second }}
+{{ page.footer_third }}
+#}
 
 <footer class="site-footer">
 
@@ -144,10 +119,12 @@
 
     <div class="top-border">
       <div class="copyright">
-        @{{ 'now' | date('Y') }} College of Behavorial & Social Sciences. All Rights Reserved.
+        © {{ 'now' | date('Y') }} {{ 'College of Behavorial & Social Sciences. All Rights Reserved.'|t }}
+        {# (start from 2023) © 2022 - {{ 'now' | date('Y') }} {{ 'College of Behavorial & Social Sciences. All Rights Reserved.'|t }} #}
       </div>
     </div>
 
   </div>
 
 </footer>
+{# Footer End #}
