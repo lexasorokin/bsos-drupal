@@ -1,0 +1,16 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://bsos-white-logo.png'
+favicon:
+  use_default: 1
+facebook_url: ''
+twitter_url: ''
+instagram_url: cdcd
+youtube_url: cdcdc
+linkedin_url: cdcd
+zenfolio_url: cdcd
