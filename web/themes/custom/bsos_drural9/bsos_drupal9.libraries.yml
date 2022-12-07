@@ -7,6 +7,7 @@ global-styling:
     component:
       #css/bootstrap.min.css: {}
       vendor/normalize.css: {}
+      vendor/owl-carousel.css: {}
       css/style.css: {}
   dependencies:
     - core/jquery
