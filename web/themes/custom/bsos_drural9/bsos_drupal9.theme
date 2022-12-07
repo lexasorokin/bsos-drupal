@@ -10,13 +10,60 @@ use Drupal\system\Form\ThemeSettingsForm;
 use Drupal\Core\Form;
 use Drupal\block\Entity\Block;
 
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ */
+function bsos_drupal9_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['bsos_drupal9_settings']['social_icon']['facebook_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook Link'),
+    '#default_value' => theme_get_setting('facebook_url', 'bsos_drupal9'),
+  );
+  $form['bsos_drupal9_settings']['social_icon']['twitter_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Twitter Link'),
+    '#default_value' => theme_get_setting('twitter_url', 'bsos_drupal9'),
+  );
+  $form['bsos_drupal9_settings']['social_icon']['instagram_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Instagram Link'),
+    '#default_value' => theme_get_setting('instagram_url', 'bsos_drupal9'),
+  );
+  $form['bsos_drupal9_settings']['social_icon']['youtube_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Youtube Link'),
+    '#default_value' => theme_get_setting('youtube_url', 'bsos_drupal9'),
+  );
+  $form['bsos_drupal9_settings']['social_icon']['linkedin_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Link'),
+    '#default_value' => theme_get_setting('linkedin_url', 'bsos_drupal9'),
+  );
+  $form['bsos_drupal9_settings']['social_icon']['custom_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Custom Link'),
+    '#default_value' => theme_get_setting('custom_url', 'bsos_drupal9'),
+  );
+}
 
+// TO-DO:
+// Deprecate theme_get_setting()
+// https://www.drupal.org/project/drupal/issues/3035288
 
+// Render Theme Variables
+function bsos_drupal9_preprocess_page(&$variables) {
+  $variables['facebook_url'] = theme_get_setting('facebook_url','bsos_drupal9');
+  $variables['twitter_url'] = theme_get_setting('twitter_url','bsos_drupal9');
+  $variables['instagram_url'] = theme_get_setting('instagram_url','bsos_drupal9');
+  $variables['youtube_url'] = theme_get_setting('youtube_url','bsos_drupal9');
+  $variables['linkedin_url'] = theme_get_setting('linkedin_url','bsos_drupal9');
+  $variables['custom_url'] = theme_get_setting('custom_url','bsos_drupal9');
+}
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function bsos_drural9_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $variables) {
 
   // Block by Region
   if (!empty($variables['elements']['#id'])) {
