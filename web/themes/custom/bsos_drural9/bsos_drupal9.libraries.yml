@@ -6,6 +6,7 @@ global-styling:
   css:
     component:
       #css/bootstrap.min.css: {}
+      vendor/bootstrap-grid.css: {}
       vendor/normalize.css: {}
       vendor/owl-carousel.css: {}
       css/style.css: {}
