@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
 settings:
   id: 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
-  label: 'Contact Us - Footer'
+  label: 'Contact Us'
   label_display: visible
   provider: block_content
   status: true
