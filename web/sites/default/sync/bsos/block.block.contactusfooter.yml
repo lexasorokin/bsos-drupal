@@ -1,0 +1,25 @@
+uuid: 2eee1072-5d5d-4e1a-906a-495fb1fca05b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_contact:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
+  module:
+    - block_content
+  theme:
+    - bsos_drupal9
+id: contactusfooter
+theme: bsos_drupal9
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
+settings:
+  id: 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
+  label: 'Contact Us - Footer'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

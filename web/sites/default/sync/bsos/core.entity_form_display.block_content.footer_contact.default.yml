@@ -1,0 +1,52 @@
+uuid: cd0b61e4-e945-42ff-a7f9-e2f8f89c4f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact
+    - field.field.block_content.footer_contact.body
+    - field.field.block_content.footer_contact.field_link
+    - field.field.block_content.footer_contact.field_phone
+  module:
+    - link
+    - text
+id: block_content.footer_contact.default
+targetEntityType: block_content
+bundle: footer_contact
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 28
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_phone:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
