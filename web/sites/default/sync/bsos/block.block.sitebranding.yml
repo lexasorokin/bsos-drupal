@@ -1,4 +1,4 @@
-uuid: 588aab03-27dc-4160-a743-300e122d8d56
+uuid: 5e2daf5c-2d76-4295-93bf-68d7a7e203dd
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - bsos_drupal9
-_core:
-  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
-id: bsos_drupal9_branding
+id: sitebranding
 theme: bsos_drupal9
-region: header_logo
-weight: -6
+region: footer_first
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

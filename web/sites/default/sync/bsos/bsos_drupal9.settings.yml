@@ -1,0 +1,17 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://bsos-white-logo.png'
+favicon:
+  use_default: 1
+facebook_url: facebook-bsosumd
+twitter_url: bsosumd
+instagram_url: bsosumd
+youtube_url: bsosumd
+linkedin_url: groups/4261230
+zenfolio_url: bsosumd.zenfolio.com
+custom_url: bsosumd.zenfolio.com

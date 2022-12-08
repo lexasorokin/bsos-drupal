@@ -1,0 +1,8 @@
+uuid: 1b8f3069-f852-4a4b-8f79-a4de187f8fb9
+langcode: en
+status: true
+dependencies: {  }
+id: footer_contact
+label: 'Footer Contact'
+revision: 0
+description: 'Footer Contact Block'
