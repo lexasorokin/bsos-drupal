@@ -34,6 +34,7 @@
         "drupal/cas": "^1.7",
         "drupal/checklistapi": "^2.1",
         "drupal/ckeditor_bootstrap_buttons": "^2.0",
+        "drupal/ckeditor_breaktag": "^1.0",
         "drupal/ckeditor_tableresize": "^1.1",
         "drupal/clientside_validation": "^4.0",
         "drupal/computed_field": "3.x-dev@dev",

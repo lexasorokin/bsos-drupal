@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1d4e35b13081127974f2065d9d0f154",
+    "content-hash": "92ae337e2f6c3ba559e4d0cd66c3c5dd",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3218,6 +3218,51 @@
                 "source": "http://cgit.drupalcode.org/ckeditor_bootstrap_buttons",
                 "issues": "https://www.drupal.org/project/issues/ckeditor_bootstrap_buttons",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_breaktag",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_breaktag.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_breaktag-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "4354e06751792682fe25f41ca7b97dc325c4f0d4"
+            },
+            "require": {
+                "drupal/ckeditor": "*",
+                "drupal/core": "^8.8.0 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1647930128",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chakkche",
+                    "homepage": "https://www.drupal.org/user/3699435"
+                }
+            ],
+            "description": "To include breaktag between text in ckeditor.",
+            "homepage": "https://www.drupal.org/project/ckeditor_breaktag",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_breaktag"
             }
         },
         {
