@@ -8,6 +8,8 @@
 
         <div class="socials in-footer">
           <ul>
+
+            {% if facebook_url %}
             <li>
               <a title="Facebook" href="https://facebook.com/{{ facebook_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -17,6 +19,9 @@
                 <span class="sr-only">Facebook</span>
               </a>
             </li>
+            {% endif %}
+
+            {% if twitter_url %}
             <li>
               <a title="Twitter" href="https://twitter.com/{{ twitter_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -26,6 +31,9 @@
                 <span class="sr-only">Twitter</span>
               </a>
             </li>
+            {% endif %}
+
+            {% if instagram_url %}
             <li>
               <a title="Instagram" href="https://instagram.com/{{ instagram_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -35,6 +43,9 @@
                 <span class="sr-only">Instagram</span>
               </a>
             </li>
+            {% endif %}
+
+            {% if youtube_url %}
             <li>
               <a title="YouTube" href="https://youtube.com/{{ youtube_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -44,6 +55,9 @@
                 <span class="sr-only">YouTube</span>
               </a>
             </li>
+            {% endif %}
+
+            {% if linkedin_url %}
             <li>
               <a title="LinkedIn" href="https://linkedin.com/{{ linkedin_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -53,8 +67,11 @@
                 <span class="sr-only">LinkedIn</span>
               </a>
             </li>
+            {% endif %}
+
+            {% if custom_url %}
             <li>
-              <a title="Zenfolio" href="https://{{ zenfolio_url }}" target="_blank" rel="noopener">
+              <a title="Zenfolio" href="https://{{ custom_url }}" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
@@ -62,6 +79,8 @@
                 <span class="sr-only">Zenfolio</span>
               </a>
             </li>
+            {% endif %}
+
           </ul>
         </div>
         {# social footer end #}
@@ -75,14 +94,12 @@
     </div>
   </div>
   <div class="container lower-footer text-center">
-
     <div class="top-border">
       <div class="copyright">
         © {{ 'now' | date('Y') }} {{ 'College of Behavorial & Social Sciences. All Rights Reserved.'|t }}
         {# (start from 2023) © 2022 - {{ 'now' | date('Y') }} {{ 'College of Behavorial & Social Sciences. All Rights Reserved.'|t }} #}
       </div>
     </div>
-
   </div>
 </footer>
 {# Footer End #}

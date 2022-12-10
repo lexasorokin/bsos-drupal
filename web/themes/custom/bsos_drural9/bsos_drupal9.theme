@@ -64,7 +64,6 @@ function bsos_drupal9_preprocess_page(&$variables) {
  * Implements hook_theme_suggestions_HOOK_alter().
  */
 function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-
   // Block by Region
   if (!empty($variables['elements']['#id'])) {
     $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
@@ -82,7 +81,6 @@ function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $
     $suggestions[] = 'block__' . $region;
   }
 
-
   // Block Content
   if (!empty($variables['elements']['content']['#block_content'])) {
     $block_content = $variables['elements']['content']['#block_content'];
@@ -96,5 +94,4 @@ function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $
       $suggestions[] = $base . '__' . $bundle . '__' . str_replace('-', '_', $variables['elements']['#component_attributes']['block_attributes']['id']);
     }
   }
-
 }
