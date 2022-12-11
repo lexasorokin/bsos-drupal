@@ -10,10 +10,7 @@
   <div class="top-header">
     <div class="container">
       <div class="logo">
-        <a class="header-logo" href="/">
-          <img class="white-logo" src="img/bsos-white-logo.png" alt="UMD College of Behavorial & Social Sciences">
-          <img class="black-logo" src="img/bsos-black-logo.png" alt="UMD College of Behavorial & Social Sciences">
-        </a>
+        {{ page.header_logo }}
       </div>
       <div id="menu-toggle" class="menu-toggle" tabindex="0" role="button">
         <span class="menu-slice"></span>
@@ -74,7 +71,7 @@
                         </li>
                       </ul>
                       <div class="menu-image">
-                        <img src="/img/menu-image.jpg" alt="About Us" />
+                        <img src="/{{ directory }}/img/menu-image.jpg" alt="About Us" />
                       </div>
                     </div>
                   </div>

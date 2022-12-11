@@ -1,0 +1,8 @@
+uuid: 5c4fd2d6-8726-4627-be62-ce44d8c96e00
+langcode: en
+status: true
+dependencies: {  }
+id: header_logo
+label: 'Header Logo'
+revision: 0
+description: 'Custom Header Logo Block'
