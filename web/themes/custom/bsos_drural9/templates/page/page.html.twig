@@ -42,7 +42,7 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div class="layout-container site">
 
   {# Header #}
   {% include '@bsos_drupal9/includes/header.html.twig' %}
@@ -50,12 +50,11 @@
   {{ page.highlighted }}
   {{ page.breadcrumb }}
 
-  {{ page.page_title }}
-
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
+      {{ page.page_title }}
       {{ page.content }}
     </div>{# /.layout-content #}
 

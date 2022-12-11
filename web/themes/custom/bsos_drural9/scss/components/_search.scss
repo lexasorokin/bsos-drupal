@@ -1,0 +1,109 @@
+// Search
+
+/* Search Trigger in Desktop Menu  */
+.search-trigger-link {
+  display: block;
+  padding: 12px 3px;
+  line-height: 1;
+  color: #fff;
+}
+.search-trigger-link svg {
+  display: block;
+  width: 23px;
+  height: auto;
+}
+/* Search form in overlay */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+body.search-overlay-open .search-overlay {
+  display: flex;
+  opacity: 1;
+}
+.search-overlay .close-button {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' /%3E%3C/svg%3E%0A");
+  width: 40px;
+  height: 40px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#search-block-form {
+  background: #fff;
+}
+.search-helper {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#search-block-form .input-group {
+  border: 2px solid #a4a4a4;
+  display: flex;
+  overflow: hidden;
+}
+.offcanvas-menu #search-block-form .input-group {
+  border: 2px solid #f1f1f1;
+}
+#search-block-form input[type='search'],
+#search-block-form button[type='submit'] {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  min-width: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#search-block-form button[type='submit'] {
+  min-width: 40px;
+  min-height: 40px;
+  color: #000;
+  background-color: #ffd302;
+  border-radius: 0;
+}
+#search-block-form button[type='submit'] svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+}
+#search-block-form input[type='search'] {
+  padding-left: calc(40px / 3);
+  padding-right: calc(40px / 3);
+  min-height: 40px;
+}
+/* #search-block-form input[type="search"]::placeholder {
+  color: rgb(255 255 255 / 55%);
+  opacity: 1;
+} */
+
+/* #search-block-form input[type="search"]::-ms-input-placeholder {
+  color: rgb(255 255 255 / 55%);
+} */

@@ -1,0 +1,32 @@
+uuid: e27623bf-39db-45b5-aa31-85e1a22e8185
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_logo
+    - field.field.block_content.header_logo.field_black_logo
+    - field.field.block_content.header_logo.field_white_logo
+  module:
+    - svg_image
+id: block_content.header_logo.default
+targetEntityType: block_content
+bundle: header_logo
+mode: default
+content:
+  field_black_logo:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_white_logo:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

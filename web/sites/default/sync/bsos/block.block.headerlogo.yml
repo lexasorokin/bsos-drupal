@@ -1,0 +1,25 @@
+uuid: 8b29309d-7d56-46ce-b867-2c425e0041cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_logo:39a033ff-7f62-48f8-b19b-a79b1f4cca04'
+  module:
+    - block_content
+  theme:
+    - bsos_drupal9
+id: headerlogo
+theme: bsos_drupal9
+region: header_logo
+weight: 0
+provider: null
+plugin: 'block_content:39a033ff-7f62-48f8-b19b-a79b1f4cca04'
+settings:
+  id: 'block_content:39a033ff-7f62-48f8-b19b-a79b1f4cca04'
+  label: 'Header Logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

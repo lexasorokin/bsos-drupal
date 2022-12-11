@@ -1,0 +1,41 @@
+uuid: fdf3732d-4bda-4e36-8773-065c92ee0250
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_logo
+    - field.field.block_content.header_logo.field_black_logo
+    - field.field.block_content.header_logo.field_white_logo
+    - image.style.thumbnail
+  module:
+    - svg_image
+id: block_content.header_logo.default
+targetEntityType: block_content
+bundle: header_logo
+mode: default
+content:
+  field_black_logo:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_white_logo:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

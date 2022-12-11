@@ -1,50 +1,371 @@
+{#
+{{ page.header_logo }}
+{{ page.primary_menu }}
+{{ page.mobile_menu }}
+#}
 
 {# Header #}
-<header role="banner" class="fixed-top">
+<header id="masthead" class="site-header">
 
-  <div class="container-header">
-    <div class="d-flex flex-wrap align-items-center justify-content-start">
-
-      {# Logo #}
-      {{ page.header_logo }}
-
-      {# Menu #}
-      {{ page.primary_menu }}
-
-      {# Signup Button #}
-      <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-lg-block">
-        <a href="/signup" class="btn btn--square btn-getstarted">
-          <span class="btn__text">{{ 'Get Started'|t }}</span>
-        </a>
+  <div class="top-header">
+    <div class="container">
+      <div class="logo">
+        {{ page.header_logo }}
       </div>
-
-      {# Right Header #}
-      <div class="text-end d-none d-lg-block">
-        {{ page.header_right }}
+      <div id="menu-toggle" class="menu-toggle" tabindex="0" role="button">
+        <span class="menu-slice"></span>
+        MENU
       </div>
+      <div class="two-menus">
+        <div class="top-small-menu">
+          <ul class="small-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Faculty & Staff</a></li>
+            <li><a href="#">Alumni & Giving</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu-n-search">
+          <nav class="desktop-nav">
+            <div class="container">
+              <ul id="desktop-menu" class="header-menu">
 
-      {# Contact #}
-      <div class="text-end d-none d-lg-block">
-        <div class="nav-icons right">
-          <a href="/contact" class="nav-function">
-            <i class="icon-Mail icon icon--sm"></i>
-          </a>
+
+                <li id="main-menu-link-contentf1537499-eae3-4932-8892-e6d3e7b7e88e" class=" menuparent"><a
+                    href="/landing/Undergraduate" class=" menuparent">Undergraduate</a>
+                  <div class="desktop-dropdown">
+                    <div class="desktop-dropdown-inner">
+                      <ul class="submenu">
+                        <li id="main-menu-link-contentaf8c62d6-8fbf-4643-abcf-58bb372bc8ae"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/undergraduate-education" class="sf-depth-2">Undergraduate Education
+                            Welcome</a>
+                        </li>
+                        <li id="main-menu-link-contenta6e1ac78-52f8-42a3-9824-9acaaf309a2b"
+                          class="sf-depth-2 menuparent">
+                          <a href="/landingtopic/academic-programs" class="sf-depth-2">Academic Programs</a>
+                          <ul>
+                            <li><a href="#">Majors</a></li>
+                            <li><a href="#">Minors</a></li>
+                            <li><a href="#">Bachelors/Masters Programs</a></li>
+                            <li><a href="#">Living & Learning Programs</a></li>
+                            <li><a href="#">BSOS Solutions Lab</a></li>
+                            <li><a href="#">Academic Honors & Awards</a></li>
+                          </ul>
+                        </li>
+                        <li id="main-menu-link-content5a62a141-f48c-4fb9-8dcd-a24f45c5746e"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/feller-center" class="sf-depth-2">Feller Center</a>
+                        </li>
+                        <li id="main-menu-link-contentfe894332-9ecb-46d8-80dc-d8fedf0a2fea"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/prospective-new-students" class="sf-depth-2">Prospective &amp; New
+                            Students</a>
+                        </li>
+                        <li id="main-menu-link-content4c02be37-1d85-48a5-af9d-9f822a8e7371"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/current-students-0" class="sf-depth-2">Current Students</a>
+                        </li>
+                        <li id="main-menu-link-content4d425c94-b791-4017-bcb1-b6c7410963fc"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/resources-forms" class="sf-depth-2">Resources &amp; Forms</a>
+                        </li>
+                      </ul>
+                      <div class="menu-image">
+                        <img src="/{{ directory }}/img/menu-image.jpg" alt="About Us" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="main-menu-link-contentc2913842-d6be-4e27-97ed-31064eec542e" class=" menuparent"><a
+                    href="/landing/Graduate" title="" class=" menuparent">Graduate</a>
+                  <div class="desktop-dropdown">
+                    <div class="desktop-dropdown-inner">
+                      <ul class="submenu">
+                        <li id="main-menu-link-content6fc534d2-2d2a-4239-a5a4-21df15ddf35d"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/graduate-studies-welcome" class="sf-depth-2">Graduate Studies
+                            Welcome</a>
+                        </li>
+                        <li id="main-menu-link-content63b26b60-a3e2-4dc5-bfd6-51b320a64215"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/our-degree-programs" class="sf-depth-2">Our Degree Programs</a>
+                        </li>
+                        <li id="main-menu-link-content6fed37ee-a082-45dd-acd2-8520b844c956"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/graduate-school-university" class="sf-depth-2">The Graduate School at
+                            the
+                            University of Maryland</a>
+                        </li>
+                        <li id="main-menu-link-content86572c37-2313-4d1c-a947-986f0a5a4e07"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/graduate-student-resources-and" class="sf-depth-2">Graduate Student
+                            Resources
+                            and
+                            Points of Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="main-menu-link-content7b1a9639-8b6d-4259-941a-072497baa8f2" class=" menuparent"><a
+                    href="/landing/Academics%20%26%20Research" title="" class=" menuparent">Academics &amp;
+                    Research</a>
+                  <div class="desktop-dropdown">
+                    <div class="desktop-dropdown-inner">
+                      <ul class="submenu">
+                        <li id="main-menu-link-content7c87c84f-52f1-4d26-a9c6-8da3792b3d9f"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/research-spotlight" class="sf-depth-2">Research Spotlight</a>
+                        </li>
+                        <li id="main-menu-link-content7f9e8e7d-8f85-4921-85f0-d8dab3c2efb5"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/academic-and-research" class="sf-depth-2">Academic and Research
+                            Opportunities</a>
+                        </li>
+                        <li id="main-menu-link-content091906a5-0d0e-4e7d-b2fb-d836a8cb5e4d"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/centers" class="sf-depth-2">Centers</a>
+                        </li>
+                        <li id="main-menu-link-contentb737d673-4ae9-47a0-96a5-0c63783916b2"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/endowed-chairs" class="sf-depth-2">Endowed Chairs</a>
+                        </li>
+                        <li id="main-menu-link-contentfd6072c2-c6c7-4e06-8f30-c9e880f5411d"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/research-administration" class="sf-depth-2">Research Administration</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="main-menu-link-contentfa6e39d3-978a-4d05-8169-6442281a0edc" class=" menuparent"><a
+                    href="/landing/Diversity" class=" menuparent">Diversity</a>
+                  <div class="desktop-dropdown">
+                    <div class="desktop-dropdown-inner">
+                      <ul class="submenu">
+                        <li id="main-menu-link-contentf559e128-f252-4d51-997e-cffbe9dabbcb"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/summer-research-initiative" class="sf-depth-2">Summer Research
+                            Initiative</a>
+                        </li>
+                        <li id="main-menu-link-content50413333-2ca3-46ac-943b-531029505bc6"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/bsosterrapinstronghome" class="sf-depth-2">BSOS TerrapinSTRONG Together Home</a>
+                        </li>
+                        <li id="main-menu-link-content3ad4ef76-10de-45d9-9398-77696355e28a"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/priority-anti-black-racism" class="sf-depth-2">Priority: Anti-Black
+                            Racism</a>
+                        </li>
+                        <li id="main-menu-link-content0ffc8159-07bf-471d-bb1d-457120cee5b5"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/diversity-resources" class="sf-depth-2">Diversity Resources</a>
+                        </li>
+                        <li id="main-menu-link-contentaa5c2ca7-7b57-4ae4-b94f-18242c939449"
+                          class="sf-depth-2 sf-no-children">
+                          <a href="/landingtopic/mission-principles-and" class="sf-depth-2">Mission, Principles and
+                            Leadership</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </nav><!-- .desktop-nav -->
+          <div class="search-trigger">
+            <a href="/search" class="search-trigger-link" aria-label="Open search form">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              <span class="sr-only">Search</span>
+            </a>
+          </div>
         </div>
       </div>
-
-      {# Mobile Button #}
-      <div class="nav-mobile-toggle d-lg-none">
-        {#<img class="mobile-toggle" alt="Menu" src="/{{ directory }}/images/icons/menu-toggler.svg" width="28" height="17">
-        <img class="mobile-close" alt="Menu Close" src="/{{ directory }}/images/icons/menu-close.svg" width="16" height="16">#}
-      </div>
-
     </div>
   </div>
 
-  {# Mobile Container #}
-  <div class="container-header--mobile">
-    {{ page.mobile_menu }}
-  </div>
+  <div class="offcanvas-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile Main Navigation">
+      <ul id="mobile-menu" class="header-menu">
+
+        <li id="" class=" menuparent">
+          <a href="/landing/About%20Us" title="" class=" menuparent">About Us</a>
+          <ul>
+            <li id="" class="sf-depth-2 menuparent">
+              <a href="/landingtopic/welcome-and-overview" class="sf-depth-2">Welcome and Overview</a>
+              <ul>
+                <li><a href="/landingtopic/welcome-and-overview">Test Third Level</a></li>
+                <li><a href="/landingtopic/welcome-and-overview">Test Third Level</a></li>
+                <li><a href="/landingtopic/welcome-and-overview">Test Third Level</a></li>
+              </ul>
+            </li>
+            <li id="" class="sf-depth-2 sf-no-children">
+              <a href="/landingtopic/mission-and-strategic-plan" class="sf-depth-2">Mission and Strategic Plan</a>
+            </li>
+            <li id="main-menu-link-contentc821dc00-0327-413f-845b-157eb375a1c9" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/history-and-highlights" class="sf-depth-2">History and Highlights</a></li>
+            <li id="main-menu-link-contentd89c7c1d-ff6c-4771-9145-fc60c1301de0" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/people-and-leadership" class="sf-depth-2">People and Leadership</a></li>
+            <li id="main-menu-link-contentf4750337-102c-4c50-94bd-9c66a688649e" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/location-directions-contacts" class="sf-depth-2">Location, Directions, Contacts,
+                and Resources</a></li>
+          </ul>
+        </li>
+        <li id="main-menu-link-contentf1537499-eae3-4932-8892-e6d3e7b7e88e" class=" menuparent"><a
+            href="/landing/Undergraduate" class=" menuparent">Undergraduate</a>
+          <ul>
+            <li id="main-menu-link-contentaf8c62d6-8fbf-4643-abcf-58bb372bc8ae" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/undergraduate-education" class="sf-depth-2">Undergraduate Education Welcome</a>
+            </li>
+            <li id="main-menu-link-contenta6e1ac78-52f8-42a3-9824-9acaaf309a2b" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/academic-programs" class="sf-depth-2">Academic Programs</a></li>
+            <li id="main-menu-link-content5a62a141-f48c-4fb9-8dcd-a24f45c5746e" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/feller-center" class="sf-depth-2">Feller Center</a></li>
+            <li id="main-menu-link-contentfe894332-9ecb-46d8-80dc-d8fedf0a2fea" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/prospective-new-students" class="sf-depth-2">Prospective &amp; New Students</a>
+            </li>
+            <li id="main-menu-link-content4c02be37-1d85-48a5-af9d-9f822a8e7371" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/current-students-0" class="sf-depth-2">Current Students</a></li>
+            <li id="main-menu-link-content4d425c94-b791-4017-bcb1-b6c7410963fc" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/resources-forms" class="sf-depth-2">Resources &amp; Forms</a></li>
+          </ul>
+        </li>
+        <li id="main-menu-link-contentc2913842-d6be-4e27-97ed-31064eec542e" class=" menuparent"><a
+            href="/landing/Graduate" title="" class=" menuparent">Graduate</a>
+          <ul>
+            <li id="main-menu-link-content6fc534d2-2d2a-4239-a5a4-21df15ddf35d" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/graduate-studies-welcome" class="sf-depth-2">Graduate Studies Welcome</a></li>
+            <li id="main-menu-link-content63b26b60-a3e2-4dc5-bfd6-51b320a64215" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/our-degree-programs" class="sf-depth-2">Our Degree Programs</a></li>
+            <li id="main-menu-link-content6fed37ee-a082-45dd-acd2-8520b844c956" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/graduate-school-university" class="sf-depth-2">The Graduate School at the
+                University of Maryland</a></li>
+            <li id="main-menu-link-content86572c37-2313-4d1c-a947-986f0a5a4e07" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/graduate-student-resources-and" class="sf-depth-2">Graduate Student Resources
+                and
+                Points of Contact</a></li>
+          </ul>
+        </li>
+        <li id="main-menu-link-content9534b224-6e21-49ca-8d62-770b94141e1e" class=" menuparent"><a
+            href="/landing/Faculty%20%26%20Staff" title="" class=" menuparent">Faculty &amp; Staff</a>
+          <ul>
+            <li id="main-menu-link-content4485d600-c82b-432e-875c-a51591d94266" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/faculty" class="sf-depth-2">Faculty</a></li>
+            <li id="main-menu-link-content05968038-099a-4577-b8a1-fb2bbc0a754f" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/administration-and-staff" class="sf-depth-2">Administration and Staff</a></li>
+            <li id="main-menu-link-content362a0731-73e8-4af3-93ae-6add892402fb" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/faculty-staff-resources" class="sf-depth-2">Resources for Faculty and Staff</a>
+            </li>
+          </ul>
+        </li>
+        <li id="main-menu-link-content8499cb9f-2ae1-45b3-8990-490c17100601" class=" menuparent"><a
+            href="/landing/Alumni%20%26%20Giving" title="" class=" menuparent">Alumni &amp; Giving</a>
+          <ul>
+            <li id="main-menu-link-content30beddec-9f8b-4583-9209-12348378f2bc" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/alumni-events-opportunities" class="sf-depth-2">Alumni Events &amp;
+                Opportunities</a></li>
+            <li id="main-menu-link-content0b8182da-453c-4741-ba16-3b53ba490436" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/bsos-alumni" class="sf-depth-2">BSOS Alumni</a></li>
+            <li id="main-menu-link-content5c607b88-8c12-418c-b4a3-32d4d98c441e" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/giving" class="sf-depth-2">Giving</a></li>
+          </ul>
+        </li>
+        <li id="main-menu-link-content7b1a9639-8b6d-4259-941a-072497baa8f2" class=" menuparent"><a
+            href="/landing/Academics%20%26%20Research" title="" class=" menuparent">Academics &amp;
+            Research</a>
+          <ul>
+            <li id="main-menu-link-content7c87c84f-52f1-4d26-a9c6-8da3792b3d9f" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/research-spotlight" class="sf-depth-2">Research Spotlight</a></li>
+            <li id="main-menu-link-content7f9e8e7d-8f85-4921-85f0-d8dab3c2efb5" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/academic-and-research" class="sf-depth-2">Academic and Research
+                Opportunities</a>
+            </li>
+            <li id="main-menu-link-content091906a5-0d0e-4e7d-b2fb-d836a8cb5e4d" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/centers" class="sf-depth-2">Centers</a></li>
+            <li id="main-menu-link-contentb737d673-4ae9-47a0-96a5-0c63783916b2" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/endowed-chairs" class="sf-depth-2">Endowed Chairs</a></li>
+            <li id="main-menu-link-contentfd6072c2-c6c7-4e06-8f30-c9e880f5411d" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/research-administration" class="sf-depth-2">Research Administration</a></li>
+          </ul>
+        </li>
+        <li id="main-menu-link-contentfa6e39d3-978a-4d05-8169-6442281a0edc" class=" menuparent"><a
+            href="/landing/Diversity" class=" menuparent">Diversity</a>
+          <ul>
+            <li id="main-menu-link-contentf559e128-f252-4d51-997e-cffbe9dabbcb" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/summer-research-initiative" class="sf-depth-2">Summer Research Initiative</a>
+            </li>
+            <li id="main-menu-link-content50413333-2ca3-46ac-943b-531029505bc6" class="sf-depth-2 sf-no-children"><a
+                href="/bsosterrapinstronghome" class="sf-depth-2">BSOS TerrapinSTRONG Together Home</a></li>
+            <li id="main-menu-link-content3ad4ef76-10de-45d9-9398-77696355e28a" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/priority-anti-black-racism" class="sf-depth-2">Priority: Anti-Black Racism</a>
+            </li>
+            <li id="main-menu-link-content0ffc8159-07bf-471d-bb1d-457120cee5b5" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/diversity-resources" class="sf-depth-2">Diversity Resources</a></li>
+            <li id="main-menu-link-contentaa5c2ca7-7b57-4ae4-b94f-18242c939449" class="sf-depth-2 sf-no-children"><a
+                href="/landingtopic/mission-principles-and" class="sf-depth-2">Mission, Principles and
+                Leadership</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+        <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+          <label for="edit-keys" class="control-label sr-only">Search</label>
+          <div class="input-group">
+            <input title="" data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search"
+              type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip"
+              data-original-title="Enter the terms you wish to search for.">
+            <span class="input-group-btn">
+              <button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only"
+                name=""><span class="sr-only">Search</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+
+              </button>
+            </span>
+          </div>
+        </div>
+      </form>
+    </nav>
+  </div><!-- .offcanvas-menu -->
 
 </header>
 {# Header End #}
+
+<div class="search-overlay" aria-hidden="true">
+  <button aria-label="Close search form" class="close-button"><span class="sr-only">close</span></button>
+  <div class="small container">
+    <p class="search-helper">Search our site:</p>
+    <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+      <div
+        class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+        <label for="edit-keys" class="control-label sr-only">Search</label>
+        <div class="input-group">
+          <input title="" data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search"
+            type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" data-toggle="tooltip"
+            data-original-title="Enter the terms you wish to search for.">
+          <span class="input-group-btn">
+            <button type="submit" value="Search" class="button js-form-submit form-submit btn-primary btn icon-only"
+              name=""><span class="sr-only">Search</span>
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+
+            </button>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

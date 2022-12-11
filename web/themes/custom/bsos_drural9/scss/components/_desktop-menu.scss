@@ -1,0 +1,167 @@
+// Desktop Menu
+
+/* Small Menu on Desktop  */
+ul.small-menu {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+ul.small-menu li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.small-menu li a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 18px;
+  color: #fff;
+}
+/* Desktop Menu  */
+.bottom-menu-n-search {
+  display: flex;
+  align-items: center;
+}
+.desktop-nav {
+  width: 100%;
+}
+.desktop-nav .container {
+  padding-left: 0;
+}
+.desktop-nav ul,
+.desktop-nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.desktop-nav .container > ul {
+  display: flex;
+  justify-content: center;
+}
+.desktop-nav .container > ul > li {
+  display: block;
+  flex: 1;
+}
+.desktop-nav a {
+  color: #fff;
+  line-height: 1;
+}
+.desktop-nav .container > ul > li > a {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 20px 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  width: 100%;
+}
+.desktop-nav .container > ul > li.menuparent > a {
+  padding-right: 27px;
+  position: relative;
+}
+.desktop-nav .container > ul > li.menuparent > a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  display: block;
+  width: 17px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.desktop-nav .container > ul > li.menuparent > a:hover:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23000000' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+}
+.desktop-nav .container > ul > li:hover > a {
+  background: #ffd302;
+  opacity: 1;
+  color: #000;
+}
+@media (min-width: 700px) {
+  body.light-header .site-header {
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+  body.light-header .site-header .white-logo {
+    display: none;
+  }
+  body.light-header .site-header .black-logo {
+    display: block;
+  }
+  body.light-header .desktop-nav a {
+    color: #333;
+  }
+  body.light-header ul.small-menu li a {
+    color: #333;
+  }
+  body.light-header .search-trigger-link {
+    color: #333;
+  }
+}
+/* Mega Menu  */
+.desktop-dropdown {
+  background: rgb(0 0 0 / 80%);
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  z-index: 10;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.desktop-nav li.menuparent:hover .desktop-dropdown {
+  z-index: 11;
+  max-height: 3000px;
+}
+.desktop-dropdown .desktop-dropdown-inner {
+  display: flex;
+  padding: 20px;
+}
+.desktop-dropdown ul.submenu {
+  display: block;
+  columns: 3;
+  column-gap: 15px;
+}
+.desktop-dropdown ul.submenu li {
+  display: block;
+}
+.desktop-dropdown ul.submenu li a {
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.125;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.desktop-dropdown ul.submenu li:last-of-type a {
+  border-bottom: none;
+}
+.desktop-dropdown ul.submenu ul li a {
+  padding-left: 25px;
+  font-weight: normal;
+  border-left: 3px solid #ffd400;
+  font-weight: normal;
+}
+.desktop-dropdown ul.submenu li.menuparent a {
+  color: #ffd400;
+}
+.menu-image {
+  margin-left: auto;
+  display: block;
+  max-width: 250px;
+}
+.menu-image img {
+  display: block;
+  width: 100%;
+}
