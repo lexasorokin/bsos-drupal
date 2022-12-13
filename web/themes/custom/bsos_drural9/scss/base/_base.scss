@@ -47,3 +47,10 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+
+// Fix Header when Admin Menu exist
+body.user-is-admin {
+  .layout-container.site {
+    position: relative;
+  }
+}

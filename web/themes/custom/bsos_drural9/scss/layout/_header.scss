@@ -68,6 +68,13 @@ body.nav-open .logo .white-logo {
   .site-header {
     top: 44px;
   }
+
+  // Fix Header when Admin Menu exist
+  body.user-is-admin {
+    .site-header {
+      top: 0;
+    }
+  }
 }
 
 .menu-toggle {
