@@ -1,0 +1,58 @@
+uuid: 7f67be21-31ad-4eba-8ff0-be33b7aacae3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_page.layout_builder__layout
+    - node.type.layout_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          670f4e6b-d5f9-465f-a957-7779b76a1843:
+            uuid: 670f4e6b-d5f9-465f-a957-7779b76a1843
+            region: content
+            configuration:
+              id: 'extra_field_block:node:layout_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories:
+        - 'Content fields'
+        - Forms
+        - Menus
+        - System
+        - core
+id: node.layout_page.default
+targetEntityType: node
+bundle: layout_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

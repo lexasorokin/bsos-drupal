@@ -1,0 +1,39 @@
+uuid: ac78bc83-d199-4e20-9d1e-5317c152e7d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_inside
+    - field.field.block_content.hero_inside.field_hero_image
+    - field.field.block_content.hero_inside.field_hero_title
+  module:
+    - svg_image
+    - text
+id: block_content.hero_inside.default
+targetEntityType: block_content
+bundle: hero_inside
+mode: default
+content:
+  field_hero_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
