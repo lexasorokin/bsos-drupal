@@ -5,6 +5,7 @@ description: 'BSOS New Drupal 9 Theme'
 core: 8.x
 core_version_requirement: ^8 || ^9 || ^10
 base theme: false
+logo: 'logo.png'
 screenshot: screenshot-min.png
 
 libraries:
