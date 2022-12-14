@@ -5,4 +5,4 @@ dependencies: {  }
 id: hero_inside
 label: 'Hero Inside'
 revision: 0
-description: 'Custom Block'
+description: '[LB] Custom Block'
