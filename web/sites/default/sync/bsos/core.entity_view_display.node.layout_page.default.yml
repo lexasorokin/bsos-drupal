@@ -36,7 +36,16 @@ third_party_settings:
     entity_view_mode_restriction:
       allowed_layouts:
         - layout_onecol
-      denylisted_blocks: {  }
+      denylisted_blocks:
+        'Custom block types':
+          - footer_contact
+          - header_logo
+        'Custom blocks':
+          - 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
+          - 'block_content:39a033ff-7f62-48f8-b19b-a79b1f4cca04'
+        'Inline blocks':
+          - 'inline_block:footer_contact'
+          - 'inline_block:header_logo'
       allowlisted_blocks: {  }
       restricted_categories:
         - 'Content fields'
