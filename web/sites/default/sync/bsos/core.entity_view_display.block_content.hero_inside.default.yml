@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.hero_inside
     - field.field.block_content.hero_inside.field_hero_image
     - field.field.block_content.hero_inside.field_hero_title
+    - field.field.block_content.hero_inside.field_show_breadcrumbs
   module:
     - svg_image
     - text
@@ -28,5 +29,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_show_breadcrumbs:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }
