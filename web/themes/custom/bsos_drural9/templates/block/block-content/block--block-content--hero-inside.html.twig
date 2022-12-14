@@ -58,13 +58,7 @@
   {% if show_breadcrumbs == 'True' %}
     <section class="section-breadcrumbs">
       <div class="container">
-        <ul class="breadcrumb__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Majors & Programs</a></li>
-          <li><a href="#">Undergraduate</a></li>
-          <li><a href="#">Accounting</a></li>
-        </ul>
-        {# {{ drupal_breadcrumb() }} #}
+        {{ drupal_breadcrumb() }}
       </div>
     </section>
   {% endif %}
