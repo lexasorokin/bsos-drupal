@@ -23,7 +23,9 @@ let gulp = require('gulp'),
 const paths = {
   scss: {
     src: './scss/style.scss',
+    libraries_src: './scss/libraries/*.scss',
     dest: './css',
+    libraries_dest: './css/libraries',
     watch: './scss/**/*.scss',
     bootstrap: './node_modules/bootstrap/scss/bootstrap.scss',
   },
@@ -64,6 +66,31 @@ function styles () {
     .pipe(browserSync.stream())
 }
 
+// Libraries Styles
+function libraries_styles () {
+  return gulp.src([paths.scss.libraries_src])
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe($.postcss(postcssProcessors))
+    .pipe(postcss([autoprefixer({
+      browsers: [
+        'Chrome >= 35',
+        'Firefox >= 38',
+        'Edge >= 12',
+        'Explorer >= 10',
+        'iOS >= 8',
+        'Safari >= 8',
+        'Android 2.3',
+        'Android >= 4',
+        'Opera >= 12']
+    })]))
+    .pipe(sourcemaps.write())
+    .pipe(cleanCss())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest(paths.scss.libraries_dest))
+    .pipe(browserSync.stream())
+}
+
 // Move the javascript files into our js folder
 function js () {
   return gulp.src([paths.js.bootstrap, paths.js.popper])
@@ -80,9 +107,10 @@ function serve () {
   gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
 }
 
-const build = gulp.series(styles, gulp.parallel(js, serve))
+const build = gulp.series(styles, libraries_styles, gulp.parallel(js, serve))
 
 exports.styles = styles
+exports.libraries_styles = libraries_styles
 exports.js = js
 exports.serve = serve
 
