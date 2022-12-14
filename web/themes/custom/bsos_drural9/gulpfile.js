@@ -105,6 +105,7 @@ function serve () {
   })
 
   gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
+  gulp.watch([paths.scss.watch], libraries_styles).on('change', browserSync.reload)
 }
 
 const build = gulp.series(styles, libraries_styles, gulp.parallel(js, serve))
