@@ -14,3 +14,19 @@ global-styling:
     - core/jquery
     - core/drupal
     - core/popperjs
+
+# Custom libraries.
+inside-hero:
+  css:
+    theme:
+      css/libraries/inside-hero.min.css: {}
+
+#blog-categories:
+#  css:
+#    theme:
+#      css/components/views/blog-categories.css: {}
+#  js:
+#    js/blog-categories.js: {}
+#  dependencies:
+#    - core/drupal
+#    - core/once
