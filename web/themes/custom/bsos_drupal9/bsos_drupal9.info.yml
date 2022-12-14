@@ -1,0 +1,38 @@
+name: BSOS Drupal Theme
+type: theme
+description: 'BSOS New Drupal 9 Theme'
+# version: VERSION
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+base theme: false
+logo: 'logo.png'
+screenshot: screenshot-min.png
+
+libraries:
+  - bsos_drupal9/global-styling
+#libraries-override:
+#  bsos_drural9/global-styling: false
+
+regions:
+  topbar: Topbar
+  # Header
+  header_logo: Header Logo
+  primary_menu: 'Primary menu'
+  # Mobile Menu
+  mobile_menu: 'Mobile menu'
+  # Content
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  page_title: Page Title
+  content: Content
+  sidebar_first: 'Sidebar first'
+  # Footer
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  # Hidden
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+regions_hidden:
+  page_top: 'Page Top'
+  page_bottom: 'Page bottom'

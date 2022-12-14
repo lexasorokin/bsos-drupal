@@ -11,7 +11,7 @@ _core:
 id: bsos_drupal9_content
 theme: bsos_drupal9
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92ae337e2f6c3ba559e4d0cd66c3c5dd",
+    "content-hash": "76c9bca0b006c50d2c4b663e93a8a8c4",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6922,6 +6922,98 @@
             "homepage": "https://www.drupal.org/project/jquery_ui_tabs",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui_tabs"
+            }
+        },
+        {
+            "name": "drupal/layout_builder_restrictions",
+            "version": "2.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
+                "reference": "8.x-2.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.17.zip",
+                "reference": "8.x-2.17",
+                "shasum": "6916564f2fd96c3d8e5fc66179bb2d26c4569b00"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "require-dev": {
+                "drupal/dashboards": "^2",
+                "drupal/layout_library": "dev-1.x",
+                "drupal/mini_layouts": "dev-2.0.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.17",
+                    "datestamp": "1668183343",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "homepage": "https://www.drupal.org/university-of-texas-at-austin",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Eirik Morland (eiriksm)",
+                    "homepage": "https://www.drupal.org/u/eiriksm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jeff Cardwell",
+                    "homepage": "https://www.drupal.org/user/2913129"
+                },
+                {
+                    "name": "lreynaga",
+                    "homepage": "https://www.drupal.org/user/3400232"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "texas_tater",
+                    "homepage": "https://www.drupal.org/user/753614"
+                },
+                {
+                    "name": "twfahey",
+                    "homepage": "https://www.drupal.org/user/3403722"
+                },
+                {
+                    "name": "utexas",
+                    "homepage": "https://www.drupal.org/user/3716409"
+                }
+            ],
+            "description": "Manage which fields & layouts are available in Layout Builder",
+            "homepage": "https://www.drupal.org/project/layout_builder_restrictions",
+            "keywords": [
+                "Drupal",
+                "Layout Builder Restrictions"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_restrictions",
+                "issues": "https://www.drupal.org/project/issues/layout_builder_restrictions"
             }
         },
         {

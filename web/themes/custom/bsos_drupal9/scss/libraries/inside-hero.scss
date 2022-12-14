@@ -1,0 +1,72 @@
+// Inside Hero Component
+
+.inside-hero {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.inside-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+}
+.inside-hero h1.page-title {
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .inside-hero {
+    height: 290px;
+  }
+  .inside-hero h1.page-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+}
+
+// Breadcrumbs
+.section-breadcrumbs {
+  margin-bottom: 50px;
+  background: #f5f5f5;
+  padding: 3px 0;
+}
+ul.breadcrumb__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #2d3236;
+  font-size: 14px;
+}
+ul.breadcrumb__list li {
+  display: inline-block;
+}
+.breadcrumb__list li:not(:last-child):after {
+  content: '>';
+}
+.breadcrumb__list li:not(:last-child) {
+  opacity: 0.6;
+}
+ul.breadcrumb__list li a,
+ul.breadcrumb__list li span {
+  display: inline-block;
+  padding: 6px 4px;
+  font-size: 17px;
+  color: #2d3236;
+}
+
+@media (min-width: 700px) {
+  ul.breadcrumb__list li a,
+  ul.breadcrumb__list li span {
+    padding: 10px 4px;
+  }
+}

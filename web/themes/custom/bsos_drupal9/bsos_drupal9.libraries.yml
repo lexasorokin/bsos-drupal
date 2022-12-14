@@ -1,0 +1,32 @@
+global-styling:
+  version: VERSION
+  js:
+    #js/bootstrap.min.js: { weight: -48 }
+    js/custom.js: {}
+  css:
+    component:
+      #css/bootstrap.min.css: {}
+      vendor/bootstrap-grid.css: {}
+      vendor/normalize.css: {}
+      vendor/owl-carousel.css: {}
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/popperjs
+
+# Custom libraries.
+inside-hero:
+  css:
+    theme:
+      css/libraries/inside-hero.min.css: {}
+
+#blog-categories:
+#  css:
+#    theme:
+#      css/components/views/blog-categories.css: {}
+#  js:
+#    js/blog-categories.js: {}
+#  dependencies:
+#    - core/drupal
+#    - core/once
