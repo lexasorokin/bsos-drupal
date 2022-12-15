@@ -14,17 +14,17 @@ libraries:
 #  bsos_drural9/global-styling: false
 
 regions:
-  topbar: Topbar
   # Header
-  header_logo: Header Logo
+  header_logo: 'Header Logo'
+  topbar_menu: 'Topbar Menu'
   primary_menu: 'Primary menu'
   # Mobile Menu
   mobile_menu: 'Mobile menu'
   # Content
-  highlighted: Highlighted
-  breadcrumb: Breadcrumb
-  page_title: Page Title
-  content: Content
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  page_title: 'Page Title'
+  content: 'Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   # Footer

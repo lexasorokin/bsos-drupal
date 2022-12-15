@@ -1,0 +1,25 @@
+uuid: c998f34c-693e-4214-8de8-bd63b3cc5221
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.topbar-menu
+  module:
+    - system
+  theme:
+    - bsos_drupal9
+id: topbarmenu
+theme: bsos_drupal9
+region: topbar_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:topbar-menu'
+settings:
+  id: 'system_menu_block:topbar-menu'
+  label: 'Topbar Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
