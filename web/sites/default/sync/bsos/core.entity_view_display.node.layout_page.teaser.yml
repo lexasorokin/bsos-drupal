@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.layout_page.field_meta_description
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
+    - field.field.node.layout_page.field_metatags
     - field.field.node.layout_page.layout_builder__layout
     - node.type.layout_page
   module:
@@ -25,4 +26,5 @@ hidden:
   field_meta_description: true
   field_meta_image: true
   field_meta_title: true
+  field_metatags: true
   layout_builder__layout: true

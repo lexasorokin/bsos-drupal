@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.layout_page.field_meta_description
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
+    - field.field.node.layout_page.field_metatags
     - field.field.node.layout_page.layout_builder__layout
     - node.type.layout_page
   module:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
+    - metatag
     - user
 third_party_settings:
   layout_builder:
@@ -81,6 +83,21 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
+          8711eab2-9372-4712-b85f-c7caf9408d22:
+            uuid: 8711eab2-9372-4712-b85f-c7caf9408d22
+            region: content
+            configuration:
+              id: 'field_block:node:layout_page:field_metatags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -132,6 +149,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }

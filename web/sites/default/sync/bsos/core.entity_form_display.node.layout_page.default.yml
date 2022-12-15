@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.layout_page.field_meta_description
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
+    - field.field.node.layout_page.field_metatags
     - field.field.node.layout_page.layout_builder__layout
     - node.type.layout_page
   module:
     - field_group
     - media_library
+    - metatag
     - path
 third_party_settings:
   field_group:
@@ -64,6 +66,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   path:
     type: path
