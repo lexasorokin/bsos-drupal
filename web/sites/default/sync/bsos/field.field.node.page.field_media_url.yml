@@ -1,0 +1,29 @@
+uuid: cf8c4309-0358-4619-8ec4-b757abe035f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_url
+    - media.type.image
+    - node.type.page
+id: node.page.field_media_url
+field_name: field_media_url
+entity_type: node
+bundle: page
+label: 'Hero Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

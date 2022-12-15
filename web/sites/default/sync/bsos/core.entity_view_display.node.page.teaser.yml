@@ -1,10 +1,13 @@
 uuid: e05d1004-0f2a-45d4-85fb-252a8525fabb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_hero_title
+    - field.field.node.page.field_media_url
+    - field.field.node.page.field_show_breadcrumbs
     - node.type.page
   module:
     - text
@@ -27,4 +30,7 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_hero_title: true
+  field_media_url: true
+  field_show_breadcrumbs: true
