@@ -1,0 +1,20 @@
+uuid: c3aa1701-6960-4d21-b552-9f2663690105
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_meta_image
+field_name: field_meta_image
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
