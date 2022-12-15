@@ -1,0 +1,19 @@
+uuid: 60417751-d0a0-48ca-a169-b7c870a7cab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_title
+    - node.type.layout_page
+id: node.layout_page.field_meta_title
+field_name: field_meta_title
+entity_type: node
+bundle: layout_page
+label: 'Meta Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
