@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.hero_inside
     - field.field.node.layout_page.field_meta_description
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
@@ -13,7 +14,6 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
-    - metatag
     - user
 third_party_settings:
   layout_builder:
@@ -25,78 +25,19 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          670f4e6b-d5f9-465f-a957-7779b76a1843:
-            uuid: 670f4e6b-d5f9-465f-a957-7779b76a1843
+          ea39b2dc-4d71-46c6-bbf0-25aed7d6f5ce:
+            uuid: ea39b2dc-4d71-46c6-bbf0-25aed7d6f5ce
             region: content
             configuration:
-              id: 'extra_field_block:node:layout_page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
+              id: 'inline_block:hero_inside'
+              label: 'Basic Hero'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 35
+              block_serialized: null
             weight: 0
-            additional: {  }
-          54ef3fd7-a0be-42a9-bd89-1feb2e97ada8:
-            uuid: 54ef3fd7-a0be-42a9-bd89-1feb2e97ada8
-            region: content
-            configuration:
-              id: 'field_block:node:layout_page:field_meta_title'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          32ae59b5-3161-427a-b555-8b08bda8284f:
-            uuid: 32ae59b5-3161-427a-b555-8b08bda8284f
-            region: content
-            configuration:
-              id: 'field_block:node:layout_page:field_meta_description'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: basic_string
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          dc8df84c-2bf9-4a35-a95c-6dab2000790a:
-            uuid: dc8df84c-2bf9-4a35-a95c-6dab2000790a
-            region: content
-            configuration:
-              id: 'field_block:node:layout_page:field_meta_image'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: false
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          8711eab2-9372-4712-b85f-c7caf9408d22:
-            uuid: 8711eab2-9372-4712-b85f-c7caf9408d22
-            region: content
-            configuration:
-              id: 'field_block:node:layout_page:field_metatags'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: metatag_empty_formatter
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 4
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
@@ -126,41 +67,14 @@ targetEntityType: node
 bundle: layout_page
 mode: default
 content:
-  field_meta_description:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_meta_image:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_meta_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_metatags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_meta_description: true
+  field_meta_image: true
+  field_meta_title: true
+  field_metatags: true
   layout_builder__layout: true
