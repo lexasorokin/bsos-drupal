@@ -42,33 +42,25 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container site">
+
+{{ attach_library('bsos_drupal9/layout-page') }}
+
+<div class="layout-container site layout-page-edit">
 
   {# Header #}
   {% include '@bsos_drupal9/includes/header.html.twig' %}
+
+  {# Inside Hero Placeholder for Page Edit #}
+  {% include '@bsos_drupal9/includes/inside-hero--placeholder.html.twig' %}
 
   {# Messages #}
   {{ page.highlighted }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
     <div class="layout-content">
       {{ page.content }}
     </div>
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
   </main>
 
   {# Footer #}

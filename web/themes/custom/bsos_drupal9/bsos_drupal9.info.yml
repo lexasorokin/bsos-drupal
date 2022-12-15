@@ -26,6 +26,7 @@ regions:
   page_title: Page Title
   content: Content
   sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
   # Footer
   footer_first: 'Footer first'
   footer_second: 'Footer second'

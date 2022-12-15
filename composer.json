@@ -85,6 +85,7 @@
         "drupal/jquery_ui": "^1.6",
         "drupal/jquery_ui_draggable": "^1.5",
         "drupal/jquery_ui_droppable": "^1.5",
+        "drupal/layout_builder_iframe_modal": "^1.2",
         "drupal/layout_builder_restrictions": "^2.17",
         "drupal/libraries": "^4.0",
         "drupal/linked_field": "^1.3",

@@ -1,6 +1,6 @@
 uuid: f8506343-c476-4482-b20b-d4da42a43102
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.image_url
@@ -22,7 +22,7 @@ mode: image_url
 content:
   field_media_image:
     type: image_url
-    label: visually_hidden
+    label: hidden
     settings:
       image_style: ''
     third_party_settings: {  }

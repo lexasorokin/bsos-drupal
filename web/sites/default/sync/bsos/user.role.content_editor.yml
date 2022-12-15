@@ -10,6 +10,7 @@ dependencies:
     - comment
     - contextual
     - file
+    - layout_builder_iframe_modal
     - node
     - path
     - system
@@ -30,6 +31,7 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
+  - 'configure layout builder iframe modal'
   - 'create article content'
   - 'create page content'
   - 'create terms in tags'
