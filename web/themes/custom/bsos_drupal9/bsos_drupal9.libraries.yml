@@ -16,6 +16,11 @@ global-styling:
     - core/popperjs
 
 # Custom libraries.
+layout-page:
+  css:
+    theme:
+      css/libraries/layout-page.min.css: {}
+
 inside-hero:
   css:
     theme:

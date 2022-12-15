@@ -1,0 +1,30 @@
+// Layout Page Style Fixes
+
+.layout-page-edit {
+  .block-help-block {
+    padding: 20px;
+    background: #d5d5d5;
+  }
+
+  .layout-builder-form {
+    padding: 20px;
+
+    .form-actions input.button {
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.6;
+      }
+    }
+
+    .form-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .form-wrapper {
+      margin: 15px 0;
+    }
+  }
+}
