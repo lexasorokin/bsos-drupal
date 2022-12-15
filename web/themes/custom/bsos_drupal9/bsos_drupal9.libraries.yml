@@ -2,6 +2,11 @@ global-styling:
   version: VERSION
   js:
     #js/bootstrap.min.js: { weight: -48 }
+    vendor/js/plugin.js: {}
+    vendor/js/owl-carousel.js: {}
+    vendor/js/fitvids.js: {}
+    vendor/js/magnific-popup.js: {}
+    js/main.js: {}
     js/custom.js: {}
   css:
     component:
