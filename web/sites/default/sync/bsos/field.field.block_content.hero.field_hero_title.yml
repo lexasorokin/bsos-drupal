@@ -1,0 +1,21 @@
+uuid: 6f58eae6-3eff-4e9f-80a5-8534443e1581
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_title
+  module:
+    - text
+id: block_content.hero.field_hero_title
+field_name: field_hero_title
+entity_type: block_content
+bundle: hero
+label: 'Hero Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

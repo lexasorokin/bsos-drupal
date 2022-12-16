@@ -1,0 +1,8 @@
+uuid: 9b9d2ac7-7128-4a81-ac8d-6823e17c6d5c
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 0
+description: '[LB] Custom Block'
