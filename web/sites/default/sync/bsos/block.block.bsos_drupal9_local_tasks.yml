@@ -2,6 +2,8 @@ uuid: 77df828c-c310-4c49-b6ae-ea9fc6b5bd2b
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   theme:
     - bsos_drupal9
 _core:
@@ -19,4 +21,11 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      layout_page: layout_page

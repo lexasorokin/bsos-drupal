@@ -110,6 +110,9 @@
     </section>
   {% endif %}
 
+  {# Local Task #}
+  {{ drupal_entity('block', 'bsos_drupal9_local_tasks', check_access=false) }}
+
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content|without('field_media_url', 'field_hero_title', 'field_show_breadcrumbs') }}
   </div>
