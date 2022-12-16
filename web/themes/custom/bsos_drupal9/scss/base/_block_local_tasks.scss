@@ -1,0 +1,63 @@
+// Local Tasks Menu Block
+
+.layout-page {
+  .block-local-tasks-block {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    z-index: 99999;
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      background: #ddd;
+
+      li {
+        background: #fff;
+        padding: 10px 15px;
+        margin-right: 15px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Base Pages Local Tasks
+.block-local-tasks-block {
+  position: relative;
+  margin-bottom: 50px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+
+    li {
+      border: 1px solid red;
+      background: #fff;
+      padding: 10px 15px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
