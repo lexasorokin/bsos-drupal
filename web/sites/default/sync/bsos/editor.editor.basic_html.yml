@@ -20,6 +20,7 @@ settings:
             - Bold
             - Italic
             - widgetbreaktag
+            - Styles
         -
           name: Linking
           items:
@@ -43,7 +44,9 @@ settings:
           name: Tools
           items:
             - Source
-  plugins: {  }
+  plugins:
+    stylescombo:
+      styles: "span.yellow--text|Yellow Text\r\nspan.red--text|Red Text"
 image_upload:
   status: true
   scheme: public
