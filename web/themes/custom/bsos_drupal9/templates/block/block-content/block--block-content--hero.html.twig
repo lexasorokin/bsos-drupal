@@ -37,16 +37,81 @@
 
 {{ attach_library('bsos_drupal9/hero') }}
 
+{# Variables #}
+{% set hero_type = content.field_hero_type.0|render|striptags|spaceless %}
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
 {% set title = content.field_hero_title.0 %}
 {% set video_link = content.field_video_link.0['#url'] %}
 
+{# Two Card Slider Variables #}
+{% set hero_card_left_title = content.field_hero_card_left_title.0 %}
+{% set hero_card_right_title = content.field_hero_card_right_title.0 %}
+{% set hero_card_left_link = content.field_hero_card_left_link.0['#url'] %}
+{% set hero_card_right_link = content.field_hero_card_right_link.0['#url'] %}
+{% set hero_card_left_icon = content.field_hero_card_left_icon.0|render|striptags|spaceless %}
+{% set hero_card_right_icon = content.field_hero_card_right_icon.0|render|striptags|spaceless %}
+
+{% if hero_type == 'single_image_hero' %}
+  THIS single-image-hero
+{% elseif hero_type == 'lightbox_hero' %}
+  THIS lightbox_hero
+{% elseif hero_type == 'video_hero' %}
+  THIS video-hero
+{% elseif hero_type == 'carousel_hero' %}
+  THIS carousel-hero
+{% endif %}
+
+
+{# Content #}
 <div{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {{ title_suffix }}
 
   {% block content %}
+
+  {# check Type #}
+  {% if hero_type == 'single_image_hero' %}
+
+    <div class="single-image-hero inview-element" style="background-color:#0f1520;background-image: url({{ media_url }});">
+      <div class="hero-overlay"></div>
+      <div class="hero-container justify-end">
+        <h1 class="hero-h1 animated fade-in-bottom">{{ title }}</h1>
+        {# two-card-slider start #}
+        <section class="section-twocardslider">
+          <div id="two-card-slider" class="two-card-slider owl-carousel owl-theme">
+            <div class="item">
+              <div class="hero-card left">
+                {% if hero_card_left_link %}<a href="{{ hero_card_left_link }}" tabindex="0">{% endif %}
+                  <div class="small-icon">
+                    <img decoding="async" width="62" height="52"
+                      src="{{ hero_card_left_icon }}"
+                      class="attachment-full size-full" alt="" loading="lazy">
+                  </div>
+                  <span class="hero-card-title">{{ hero_card_left_title }}</span>
+                {% if hero_card_left_link %}</a>{% endif %}
+              </div>
+            </div>
+            <div class="item">
+              <div class="hero-card right">
+                {% if hero_card_right_link %}<a href="{{ hero_card_right_link }}" tabindex="0">{% endif %}
+                  <div class="small-icon">
+                    <img decoding="async" width="62" height="52"
+                      src="{{ hero_card_right_icon }}" class="attachment-full size-full"
+                      alt="" loading="lazy">
+                  </div>
+                  <span class="hero-card-title">{{ hero_card_right_title }}</span>
+                {% if hero_card_right_link %}</a>{% endif %}
+              </div>
+            </div>
+          </div>
+        </section>
+        {# two-card-slider end #}
+      </div>
+    </div>
+
+  {% elseif hero_type == 'lightbox_hero' %}
+
     <div class="lightbox-hero inview-element" style="background-color:#0f1520;background-image: url({{ media_url }});">
       <div class="hero-overlay"></div>
       <div class="hero-container justify-end text-center">
@@ -65,6 +130,25 @@
 
       </div>
     </div>
+
+  {% elseif hero_type == 'video_hero' %}
+
+    <div class="video-hero inview-element">
+      <div class="video-container">
+        <div class="video-bg" data-vbg="{{ video_link }}"></div>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="hero-container justify-end">
+        <h1 class="hero-h1 animated fade-in-bottom">{{ title }}</h1>
+      </div>
+    </div>
+
+  {% elseif hero_type == 'carousel_hero' %}
+
+    THIS carousel-hero
+
+  {% endif %}
+
   {% endblock %}
 
 </div>

@@ -267,3 +267,101 @@ h1.hero-h1 span {
   }
 }
 /* Lightbox Hero End */
+
+/* Under Hero Section (with 2 cards)  */
+.section-twocardslider {
+  margin-bottom: -130px;
+}
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 224px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 40px 20px 40px;
+  text-align: center;
+}
+.hero-card a {
+  display: block;
+}
+.hero-card.left {
+  background: url(https://bsosdev.arbedigital.com/wp-content/uploads/2022/10/left-card-bg.png)
+    no-repeat center bottom;
+  background-size: contain;
+}
+.hero-card.right {
+  background: url(https://bsosdev.arbedigital.com/wp-content/uploads/2022/10/card-two-bg.png)
+    no-repeat center bottom;
+  background-size: contain;
+  padding: 0 66px 20px 66px;
+}
+.hero-card .small-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #e32237;
+  border-radius: 100%;
+  padding: 18px;
+  top: 11px;
+  left: calc(50% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-card .small-icon img {
+  display: block;
+}
+.hero-card.left .small-icon {
+  background: #ffd302;
+}
+.hero-card .hero-card-title {
+  color: #ffffff;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+}
+.hero-card.right .hero-card-title {
+  color: #000;
+}
+.slick-dots {
+  display: none;
+}
+@media (max-width: 767px) {
+  .hero-card {
+    height: 164px;
+  }
+  .hero-card .small-icon {
+    width: 56px;
+    height: 56px;
+    padding: 13px;
+    top: 12px;
+    left: calc(50% - 28px);
+  }
+  .hero-card.right {
+    padding: 0 40px 20px 40px;
+  }
+  .hero-card .hero-card-title {
+    font-size: 20px;
+  }
+  .slick-dots li button {
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .slick-dots {
+    display: block;
+    bottom: -35px !important;
+  }
+}
+/* Under Hero Section (with 2 cards) END */

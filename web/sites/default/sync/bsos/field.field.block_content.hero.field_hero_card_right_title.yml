@@ -1,0 +1,21 @@
+uuid: 34949817-e1c8-44da-9831-1aed2ac5487c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_card_right_title
+  module:
+    - text
+id: block_content.hero.field_hero_card_right_title
+field_name: field_hero_card_right_title
+entity_type: block_content
+bundle: hero
+label: 'Hero Card Right Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

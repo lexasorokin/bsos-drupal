@@ -4,23 +4,94 @@ status: true
 dependencies:
   config:
     - block_content.type.hero
+    - field.field.block_content.hero.field_hero_card_left_icon
+    - field.field.block_content.hero.field_hero_card_left_link
+    - field.field.block_content.hero.field_hero_card_left_title
+    - field.field.block_content.hero.field_hero_card_right_icon
+    - field.field.block_content.hero.field_hero_card_right_link
+    - field.field.block_content.hero.field_hero_card_right_title
     - field.field.block_content.hero.field_hero_title
+    - field.field.block_content.hero.field_hero_type
     - field.field.block_content.hero.field_media_url
     - field.field.block_content.hero.field_video_link
   module:
     - link
+    - options
     - text
 id: block_content.hero.default
 targetEntityType: block_content
 bundle: hero
 mode: default
 content:
+  field_hero_card_left_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_hero_card_left_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_hero_card_left_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_hero_card_right_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_hero_card_right_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_hero_card_right_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_hero_title:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_hero_type:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_media_url:
     type: entity_reference_entity_view
@@ -41,6 +112,6 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
 hidden: {  }
