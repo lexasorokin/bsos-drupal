@@ -7,6 +7,14 @@
   left: 0;
   z-index: 10;
 }
+
+// Fix Header when Admin Menu exist
+body.user-is-admin {
+  .site-header {
+    top: 0;
+  }
+}
+
 .top-header {
   padding: 10px 0;
   position: relative;
