@@ -1,0 +1,23 @@
+uuid: 585d828f-469a-465e-b927-9f9d11bf0136
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_type
+  module:
+    - options
+id: block_content.hero.field_hero_type
+field_name: field_hero_type
+entity_type: block_content
+bundle: hero
+label: 'Hero Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: lightbox_hero
+default_value_callback: ''
+settings: {  }
+field_type: list_string

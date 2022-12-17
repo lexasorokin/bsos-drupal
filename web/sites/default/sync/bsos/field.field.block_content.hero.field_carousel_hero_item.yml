@@ -1,0 +1,31 @@
+uuid: a60ab54a-5a93-4bfa-8606-418c1b8de878
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_carousel_hero_item
+    - paragraphs.paragraphs_type.carousel_hero_slider_item
+  module:
+    - entity_reference_revisions
+id: block_content.hero.field_carousel_hero_item
+field_name: field_carousel_hero_item
+entity_type: block_content
+bundle: hero
+label: 'Carousel Hero Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel_hero_slider_item: carousel_hero_slider_item
+    negate: 0
+    target_bundles_drag_drop:
+      carousel_hero_slider_item:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

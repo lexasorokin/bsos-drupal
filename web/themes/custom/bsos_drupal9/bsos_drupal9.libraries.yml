@@ -27,6 +27,11 @@ layout-page:
     theme:
       css/libraries/layout-page.min.css: {}
 
+hero:
+  css:
+    theme:
+      css/libraries/hero.min.css: {}
+
 inside-hero:
   css:
     theme:

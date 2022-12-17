@@ -1,0 +1,33 @@
+uuid: 7c1e0e59-490d-4cac-8e75-fbcae44ec249
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_hero_type
+field_name: field_hero_type
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: single_image_hero
+      label: 'Single Image Hero'
+    -
+      value: lightbox_hero
+      label: 'Lightbox Hero'
+    -
+      value: video_hero
+      label: Video-Hero
+    -
+      value: carousel_hero
+      label: 'Carousel Hero'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

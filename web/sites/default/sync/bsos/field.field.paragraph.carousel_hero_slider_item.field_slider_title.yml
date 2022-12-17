@@ -1,0 +1,21 @@
+uuid: eb564495-5364-4ddb-bcf2-ebcc9ec83cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_title
+    - paragraphs.paragraphs_type.carousel_hero_slider_item
+  module:
+    - text
+id: paragraph.carousel_hero_slider_item.field_slider_title
+field_name: field_slider_title
+entity_type: paragraph
+bundle: carousel_hero_slider_item
+label: 'Slider Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

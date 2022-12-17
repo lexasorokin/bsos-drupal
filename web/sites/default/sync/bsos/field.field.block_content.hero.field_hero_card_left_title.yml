@@ -1,0 +1,21 @@
+uuid: 27cd3a66-2bbc-4d6a-ab15-20be24b68a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_hero_card_left_title
+  module:
+    - text
+id: block_content.hero.field_hero_card_left_title
+field_name: field_hero_card_left_title
+entity_type: block_content
+bundle: hero
+label: 'Hero Card Left Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

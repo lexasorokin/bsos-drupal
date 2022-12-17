@@ -25,6 +25,7 @@ settings:
             - '-'
             - RemoveFormat
             - widgetbreaktag
+            - Styles
         -
           name: Linking
           items:
@@ -51,7 +52,9 @@ settings:
           items:
             - ShowBlocks
             - Source
-  plugins: {  }
+  plugins:
+    stylescombo:
+      styles: "span.yellow--text|Yellow Text\r\nspan.red--text|Red Text"
 image_upload:
   status: true
   scheme: public

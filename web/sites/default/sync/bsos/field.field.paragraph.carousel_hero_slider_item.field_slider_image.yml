@@ -1,0 +1,29 @@
+uuid: dd9b601a-f411-4c14-918b-56b2f5b98ae3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_image
+    - media.type.image
+    - paragraphs.paragraphs_type.carousel_hero_slider_item
+id: paragraph.carousel_hero_slider_item.field_slider_image
+field_name: field_slider_image
+entity_type: paragraph
+bundle: carousel_hero_slider_item
+label: 'Slider Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

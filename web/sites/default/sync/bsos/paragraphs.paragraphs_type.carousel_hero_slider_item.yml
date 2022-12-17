@@ -1,0 +1,10 @@
+uuid: db13142f-bc5d-4a3d-872c-6c8f9ad0eb4e
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_hero_slider_item
+label: 'Carousel Hero Slider Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Carousel Hero Block'
+behavior_plugins: {  }

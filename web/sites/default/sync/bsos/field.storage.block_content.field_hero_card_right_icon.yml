@@ -1,0 +1,20 @@
+uuid: 24763fa4-7f5e-4267-979c-a801f8ba8f53
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_hero_card_right_icon
+field_name: field_hero_card_right_icon
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

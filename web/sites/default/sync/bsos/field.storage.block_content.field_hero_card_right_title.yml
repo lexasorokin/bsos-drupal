@@ -1,0 +1,19 @@
+uuid: eb07afda-01eb-41c7-9b9b-9e1183eae259
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_hero_card_right_title
+field_name: field_hero_card_right_title
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
