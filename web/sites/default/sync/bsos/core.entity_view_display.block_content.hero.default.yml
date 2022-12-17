@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.hero
+    - field.field.block_content.hero.field_carousel_hero_item
     - field.field.block_content.hero.field_hero_card_left_icon
     - field.field.block_content.hero.field_hero_card_left_link
     - field.field.block_content.hero.field_hero_card_left_title
@@ -15,6 +16,7 @@ dependencies:
     - field.field.block_content.hero.field_media_url
     - field.field.block_content.hero.field_video_link
   module:
+    - entity_reference_revisions
     - link
     - options
     - text
@@ -23,6 +25,15 @@ targetEntityType: block_content
 bundle: hero
 mode: default
 content:
+  field_carousel_hero_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_hero_card_left_icon:
     type: entity_reference_entity_view
     label: hidden

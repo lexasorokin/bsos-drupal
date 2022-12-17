@@ -198,6 +198,10 @@ h1.hero-h1 {
 }
 .carousel-hero .slide-content h1.hero-h1 {
   margin-bottom: 20px;
+
+  p {
+    font-size: inherit;
+  }
 }
 h1.hero-h1 span {
   color: #ffd302;

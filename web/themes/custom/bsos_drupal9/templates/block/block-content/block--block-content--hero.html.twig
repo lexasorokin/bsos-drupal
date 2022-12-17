@@ -51,17 +51,6 @@
 {% set hero_card_left_icon = content.field_hero_card_left_icon.0|render|striptags|spaceless %}
 {% set hero_card_right_icon = content.field_hero_card_right_icon.0|render|striptags|spaceless %}
 
-{% if hero_type == 'single_image_hero' %}
-  THIS single-image-hero
-{% elseif hero_type == 'lightbox_hero' %}
-  THIS lightbox_hero
-{% elseif hero_type == 'video_hero' %}
-  THIS video-hero
-{% elseif hero_type == 'carousel_hero' %}
-  THIS carousel-hero
-{% endif %}
-
-
 {# Content #}
 <div{{ attributes.addClass(classes) }}>
 
@@ -145,7 +134,11 @@
 
   {% elseif hero_type == 'carousel_hero' %}
 
-    THIS carousel-hero
+    <div class="carousel-hero">
+      <div id="hero-carousel" class="owl-carousel owl-theme">
+        {{ content.field_carousel_hero_item }}
+      </div>
+    </div>
 
   {% endif %}
 

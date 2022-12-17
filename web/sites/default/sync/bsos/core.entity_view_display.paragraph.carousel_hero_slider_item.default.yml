@@ -1,0 +1,54 @@
+uuid: 1ab72610-5b36-485c-af73-4f3c5fa84bfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_hero_slider_item.field_slider_button
+    - field.field.paragraph.carousel_hero_slider_item.field_slider_image
+    - field.field.paragraph.carousel_hero_slider_item.field_slider_text
+    - field.field.paragraph.carousel_hero_slider_item.field_slider_title
+    - paragraphs.paragraphs_type.carousel_hero_slider_item
+  module:
+    - link
+    - text
+id: paragraph.carousel_hero_slider_item.default
+targetEntityType: paragraph
+bundle: carousel_hero_slider_item
+mode: default
+content:
+  field_slider_button:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slider_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_slider_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_slider_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

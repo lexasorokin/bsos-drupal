@@ -1,0 +1,21 @@
+uuid: bb30bedf-ae4b-4135-8d62-152d25a2f0e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_text
+    - paragraphs.paragraphs_type.carousel_hero_slider_item
+  module:
+    - text
+id: paragraph.carousel_hero_slider_item.field_slider_text
+field_name: field_slider_text
+entity_type: paragraph
+bundle: carousel_hero_slider_item
+label: 'Slider Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
