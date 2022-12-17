@@ -1,0 +1,8 @@
+uuid: a292c980-5bb8-4f92-b629-5da4321921b2
+langcode: en
+status: true
+dependencies: {  }
+id: cards_grid
+label: 'Cards Grid (image, link, icon)'
+revision: 0
+description: '[LB] Custom Block'

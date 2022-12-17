@@ -37,6 +37,11 @@ inside-hero:
     theme:
       css/libraries/inside-hero.min.css: {}
 
+cards-grid:
+  css:
+    theme:
+      css/libraries/cards-grid.min.css: {}
+
 #blog-categories:
 #  css:
 #    theme:

@@ -1,0 +1,21 @@
+uuid: bebcbf75-b7e2-439d-8230-addd3206377b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cards_grid
+    - field.storage.block_content.field_hero_title
+  module:
+    - text
+id: block_content.cards_grid.field_hero_title
+field_name: field_hero_title
+entity_type: block_content
+bundle: cards_grid
+label: 'Section Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

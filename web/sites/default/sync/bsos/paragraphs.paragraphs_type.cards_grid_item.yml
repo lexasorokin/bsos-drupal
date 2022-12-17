@@ -1,0 +1,10 @@
+uuid: 97c7fed4-f606-4d7c-886d-5b68a61e0841
+langcode: en
+status: true
+dependencies: {  }
+id: cards_grid_item
+label: 'Cards Grid Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Cards Grid Block'
+behavior_plugins: {  }

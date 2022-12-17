@@ -1,0 +1,29 @@
+uuid: 5e26c109-0797-42ea-9f30-439a93d32be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.cards_grid_item
+id: paragraph.cards_grid_item.field_item_icon
+field_name: field_item_icon
+entity_type: paragraph
+bundle: cards_grid_item
+label: 'Item Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
