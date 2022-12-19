@@ -1,0 +1,42 @@
+uuid: 9e58cd11-e715-4287-b14d-109aa9c6ea01
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.field.block_content.socialtabs.field_hero_title
+    - field.field.block_content.socialtabs.field_media_url
+  module:
+    - fences
+    - text
+id: block_content.socialtabs.default
+targetEntityType: block_content
+bundle: socialtabs
+mode: default
+content:
+  field_hero_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_url:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden: {  }

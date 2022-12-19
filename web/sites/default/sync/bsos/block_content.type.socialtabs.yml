@@ -1,0 +1,8 @@
+uuid: ec149464-851c-4f73-925d-93e672546618
+langcode: en
+status: true
+dependencies: {  }
+id: socialtabs
+label: Socialtabs
+revision: 0
+description: '[LB] Custom Block'

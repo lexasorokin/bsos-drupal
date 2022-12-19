@@ -42,6 +42,16 @@ cards-grid:
     theme:
       css/libraries/cards-grid.min.css: {}
 
+socialtabs:
+  css:
+    theme:
+      css/libraries/socialtabs.min.css: {}
+  js:
+    https://platform.twitter.com/widgets.js: { type: external, attributes: { defer: true, async: true } }
+    https://instagram.com/embed.js: { type: external }
+  dependencies:
+      - core/drupalSettings
+
 #blog-categories:
 #  css:
 #    theme:

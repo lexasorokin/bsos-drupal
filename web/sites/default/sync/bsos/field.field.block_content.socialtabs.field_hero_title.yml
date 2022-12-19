@@ -1,0 +1,21 @@
+uuid: 7cd2cda3-2cfd-460e-99dc-69b1400a6f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_hero_title
+  module:
+    - text
+id: block_content.socialtabs.field_hero_title
+field_name: field_hero_title
+entity_type: block_content
+bundle: socialtabs
+label: 'Section Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

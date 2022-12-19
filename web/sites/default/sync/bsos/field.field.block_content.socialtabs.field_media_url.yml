@@ -1,0 +1,29 @@
+uuid: b6f48c4b-e68e-48a4-96eb-6adfc50752a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_media_url
+    - media.type.image
+id: block_content.socialtabs.field_media_url
+field_name: field_media_url
+entity_type: block_content
+bundle: socialtabs
+label: 'Section BG'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
