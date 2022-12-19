@@ -1,0 +1,29 @@
+uuid: f2012322-ffa0-4227-8644-bb0f76a3ad90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_image
+    - media.type.image
+    - paragraphs.paragraphs_type.cards_grid_item
+id: paragraph.cards_grid_item.field_item_image
+field_name: field_item_image
+entity_type: paragraph
+bundle: cards_grid_item
+label: 'Item Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

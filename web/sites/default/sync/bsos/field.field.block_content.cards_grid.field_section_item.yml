@@ -1,0 +1,34 @@
+uuid: 14dae01c-df4c-4f9e-815e-a07396622f50
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cards_grid
+    - field.storage.block_content.field_section_item
+    - paragraphs.paragraphs_type.cards_grid_item
+  module:
+    - entity_reference_revisions
+id: block_content.cards_grid.field_section_item
+field_name: field_section_item
+entity_type: block_content
+bundle: cards_grid
+label: 'Section Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      cards_grid_item: cards_grid_item
+    negate: 0
+    target_bundles_drag_drop:
+      cards_grid_item:
+        weight: 3
+        enabled: true
+      carousel_hero_slider_item:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

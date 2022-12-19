@@ -1,0 +1,56 @@
+uuid: f0b61b04-00e7-406d-80a0-e62d54b97478
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards_grid_item.field_item_icon
+    - field.field.paragraph.cards_grid_item.field_item_image
+    - field.field.paragraph.cards_grid_item.field_item_link
+    - field.field.paragraph.cards_grid_item.field_item_title
+    - paragraphs.paragraphs_type.cards_grid_item
+  module:
+    - link
+id: paragraph.cards_grid_item.default
+targetEntityType: paragraph
+bundle: cards_grid_item
+mode: default
+content:
+  field_item_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_item_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_url
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_item_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_item_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

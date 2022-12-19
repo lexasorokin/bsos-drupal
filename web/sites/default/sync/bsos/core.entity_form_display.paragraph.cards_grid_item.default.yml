@@ -1,0 +1,51 @@
+uuid: dfa41882-edb1-4950-9ea6-e226d32a2d2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards_grid_item.field_item_icon
+    - field.field.paragraph.cards_grid_item.field_item_image
+    - field.field.paragraph.cards_grid_item.field_item_link
+    - field.field.paragraph.cards_grid_item.field_item_title
+    - paragraphs.paragraphs_type.cards_grid_item
+  module:
+    - link
+    - media_library
+id: paragraph.cards_grid_item.default
+targetEntityType: paragraph
+bundle: cards_grid_item
+mode: default
+content:
+  field_item_icon:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_item_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_item_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_item_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
