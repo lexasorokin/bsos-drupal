@@ -1,0 +1,36 @@
+uuid: c51daa4f-0989-4ce0-9cfc-4f75dc3583d7
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_hero_title
+    - field.field.node.profile_showcase.field_media_url
+    - field.field.node.profile_showcase.field_show_breadcrumbs
+    - node.type.profile_showcase
+  module:
+    - text
+    - user
+id: node.profile_showcase.teaser
+targetEntityType: node
+bundle: profile_showcase
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_title: true
+  field_media_url: true
+  field_show_breadcrumbs: true
