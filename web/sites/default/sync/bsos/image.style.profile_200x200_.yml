@@ -1,0 +1,15 @@
+uuid: f8a52582-1ee6-4668-8a2b-7284f9558f7d
+langcode: en
+status: true
+dependencies: {  }
+name: profile_200x200_
+label: 'Profile (200x200)'
+effects:
+  f730baa5-3370-45f6-9f19-8a351d2a2786:
+    uuid: f730baa5-3370-45f6-9f19-8a351d2a2786
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

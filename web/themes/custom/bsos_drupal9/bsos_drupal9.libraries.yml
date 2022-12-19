@@ -52,6 +52,11 @@ socialtabs:
   dependencies:
       - core/drupalSettings
 
+profile-showcase:
+  css:
+    theme:
+      css/libraries/profile-showcase.min.css: {}
+
 #blog-categories:
 #  css:
 #    theme:

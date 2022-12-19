@@ -1,0 +1,50 @@
+uuid: c51daa4f-0989-4ce0-9cfc-4f75dc3583d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_display_text
+    - field.field.node.profile_showcase.field_hero_title
+    - field.field.node.profile_showcase.field_media_url
+    - field.field.node.profile_showcase.field_profile_image
+    - field.field.node.profile_showcase.field_show_breadcrumbs
+    - image.style.profile_200x200_
+    - node.type.profile_showcase
+  module:
+    - image_class
+    - media
+    - user
+id: node.profile_showcase.teaser
+targetEntityType: node
+bundle: profile_showcase
+mode: teaser
+content:
+  field_display_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_profile_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: profile_200x200_
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      image_class:
+        class: slide-image
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_hero_title: true
+  field_media_url: true
+  field_show_breadcrumbs: true
+  links: true

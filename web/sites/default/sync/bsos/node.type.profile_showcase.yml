@@ -1,0 +1,17 @@
+uuid: 0cbd9461-5942-46b7-89b3-501d6db6625e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Profile Showcase'
+type: profile_showcase
+description: 'Profile for the front page Profiles showcase'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
