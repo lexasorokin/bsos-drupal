@@ -38,7 +38,6 @@
 
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
 {% set title = content.field_hero_title.0 %}
-{# content.field_section_item #}
 
 <div{{ attributes.addClass(classes) }}>
 
@@ -49,14 +48,20 @@
     <section class="section-departments inview-element" style="background-image: url({{ media_url }});">
       <div class="section-background-overlay"></div>
       <div class="container">
+
         <div class="section-header text-center inview-element">
           <h3 class="section-title animated fade-in-bottom ">{{ title }}</h3>
           <div class="fearless-divider"></div>
         </div>
+
+        {# section cards grid items #}
+        <div class="departments-grid grid-row two-col sm-five-col">
+          {{ content.field_section_item }}
+        </div>
+
       </div>
     </section>
   {% endblock %}
 
 </div>
-
 

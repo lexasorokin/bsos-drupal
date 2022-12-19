@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_item_icon
     - media.type.image
+    - media.type.svg_image
     - paragraphs.paragraphs_type.cards_grid_item
 id: paragraph.cards_grid_item.field_item_icon
 field_name: field_item_icon
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      svg_image: svg_image
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference
