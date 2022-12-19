@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793e8cd361189fe4af7ed394c67c62d4",
+    "content-hash": "484cd51d115ebc9b412c37353a44f144",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2532,6 +2532,62 @@
                 "source": "https://git.drupalcode.org/project/backup_migrate",
                 "issues": "https://www.drupal.org/project/issues/backup_migrate",
                 "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
+            }
+        },
+        {
+            "name": "drupal/better_messages",
+            "version": "2.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/better_messages.git",
+                "reference": "2.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_messages-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "e93618447a97e90d95b7242cc6398be4346b59b4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1644241962",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammed J. Razem",
+                    "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
+                    "name": "UsingSession",
+                    "homepage": "https://www.drupal.org/user/3582050"
+                },
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
+                },
+                {
+                    "name": "le72",
+                    "homepage": "https://www.drupal.org/user/1866896"
+                }
+            ],
+            "description": "This module adds simple functions to make Drupal messages look and act better.",
+            "homepage": "https://www.drupal.org/project/better_messages",
+            "support": {
+                "source": "https://git.drupalcode.org/project/better_messages"
             }
         },
         {
@@ -17047,6 +17103,7 @@
     "stability-flags": {
         "drupal/auto_entitylabel": 10,
         "drupal/auto_height": 20,
+        "drupal/better_messages": 15,
         "drupal/computed_field": 20,
         "drupal/content_sync": 10,
         "drupal/entity_clone": 15,
