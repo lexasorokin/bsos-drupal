@@ -23,7 +23,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_hero_title:
     type: text_default
@@ -34,7 +34,7 @@ content:
     region: content
   field_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -45,7 +45,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 7
+    weight: 4
     region: content
   field_media_url:
     type: entity_reference_entity_view
