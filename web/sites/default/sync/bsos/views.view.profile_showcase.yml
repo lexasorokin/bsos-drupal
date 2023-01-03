@@ -11,7 +11,7 @@ dependencies:
 id: profile_showcase
 label: 'Profile Showcase'
 module: views
-description: ''
+description: 'Custom View - Profile Showcases Block'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -189,7 +189,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "  <div class=\"container\">\r\n    <div class=\"section-header text-center inview-element\">\r\n      <h3 class=\"section-title animated fade-in-bottom\">Profiles Showcase</h3>\r\n      <div class=\"fearless-divider mb-10\"></div>\r\n      <div class=\"section-header__details\">\r\n        Our students, faculty, and alumni are making a difference in the world.\r\n      </div>\r\n    </div>\r\n  </div>\r\n"
+          content: "  <div class=\"container\">\r\n    <div class=\"section-header text-center inview-element\">\r\n      <h3 class=\"section-title animated fade-in-bottom\">Profiles Showcase</h3>\r\n      <div class=\"fearless-divider mb-10\"></div>\r\n      <div class=\"section-header__details\">\r\n        <p>Our students, faculty, and alumni are making a difference in the world.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n"
           tokenize: false
       footer:
         area_text_custom:

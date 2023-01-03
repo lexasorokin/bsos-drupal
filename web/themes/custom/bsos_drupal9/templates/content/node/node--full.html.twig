@@ -75,18 +75,46 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'item'
   ]
 %}
 
-<div{{ attributes.addClass(classes) }}>
+{{ attach_library('bsos_drupal9/inside-hero') }}
 
-  <figure class="item-inner">
-    <a href="{{ url }}">
-      {{ content.field_image }}
-      <figcaption>{{ label }}</figcaption>
-    </a>
-  </figure>
+{% set media_url = content.field_media_url.0|render|striptags|spaceless %}
+{% set show_breadcrumbs = content.field_show_breadcrumbs.0['#markup'] %}
+{% set title = content.field_hero_title.0 %}
 
-</div>
+<article{{ attributes.addClass(classes) }}>
 
+  {# Inside Hero #}
+  <section class="inside-hero" style="background-color:#0f1520;background-image: url({{ media_url }})">
+    <div class="container">
+      <div class="title-holder">
+        <h1{{ title_attributes.addClass('page-title') }}>
+          {% if title %}
+            {{ title }}
+          {% else %}
+            {{ label }}
+          {% endif %}
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  {# Breadcrumbs #}
+  {% if show_breadcrumbs == 'True' %}
+    <section class="section-breadcrumbs">
+      <div class="container">
+        {{ drupal_breadcrumb() }}
+      </div>
+    </section>
+  {% endif %}
+
+  {# Local Task #}
+  {{ drupal_entity('block', 'bsos_drupal9_local_tasks', check_access=false) }}
+
+  <div{{ content_attributes.addClass('node__content', 'container') }}>
+    {{ content|without('field_media_url', 'field_hero_title', 'field_show_breadcrumbs') }}
+  </div>
+
+</article>
