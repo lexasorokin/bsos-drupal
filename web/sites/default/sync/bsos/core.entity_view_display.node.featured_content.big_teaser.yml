@@ -1,9 +1,9 @@
-uuid: 08a0aae2-5d3e-4241-b772-0de6203c5954
+uuid: 63a94674-c32f-4d9f-8436-1f6d03f34bae
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.big_teaser
     - field.field.node.featured_content.body
     - field.field.node.featured_content.field_fc_weight
     - field.field.node.featured_content.field_hero_title
@@ -13,12 +13,17 @@ dependencies:
     - image.style.featured_stories
     - node.type.featured_content
   module:
+    - layout_builder
     - svg_image
     - user
-id: node.featured_content.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.featured_content.big_teaser
 targetEntityType: node
 bundle: featured_content
-mode: teaser
+mode: big_teaser
 content:
   field_image:
     type: image_url

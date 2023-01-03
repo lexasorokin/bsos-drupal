@@ -5,10 +5,10 @@ dependencies: {  }
 name: featured_stories
 label: 'Featured Stories (W350)'
 effects:
-  600bd6dd-bea1-419c-abc0-4e7cdf23ab04:
-    uuid: 600bd6dd-bea1-419c-abc0-4e7cdf23ab04
+  8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3:
+    uuid: 8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3
     id: image_scale
-    weight: 2
+    weight: 3
     data:
       width: 350
       height: null
