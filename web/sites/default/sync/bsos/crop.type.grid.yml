@@ -2,7 +2,7 @@ uuid: aa45d77f-4298-4356-84e7-05240c53290f
 langcode: en
 status: true
 dependencies: {  }
-label: Grid
+label: 'Grid 3:2'
 id: grid
 description: ''
 aspect_ratio: '3:2'

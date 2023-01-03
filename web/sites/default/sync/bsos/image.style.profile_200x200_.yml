@@ -1,15 +1,26 @@
 uuid: f8a52582-1ee6-4668-8a2b-7284f9558f7d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.square
+  module:
+    - crop
 name: profile_200x200_
 label: 'Profile (200x200)'
 effects:
   f730baa5-3370-45f6-9f19-8a351d2a2786:
     uuid: f730baa5-3370-45f6-9f19-8a351d2a2786
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 200
       height: 200
       anchor: center-center
+  a6b9ac47-1e36-4e30-a851-d3f1efa4b18f:
+    uuid: a6b9ac47-1e36-4e30-a851-d3f1efa4b18f
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: square
+      automatic_crop_provider: null

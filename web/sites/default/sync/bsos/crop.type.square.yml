@@ -2,7 +2,7 @@ uuid: f9bf84b7-861e-4284-a7b4-30d61c0e732b
 langcode: en
 status: true
 dependencies: {  }
-label: Square
+label: 'Square 1:1'
 id: square
 description: ''
 aspect_ratio: '1:1'

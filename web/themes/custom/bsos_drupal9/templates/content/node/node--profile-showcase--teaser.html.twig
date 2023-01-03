@@ -79,18 +79,12 @@
   ]
 %}
 
-{% set media_url = content.field_profile_image.0|render|striptags|spaceless %}
-{% set title = content.field_display_text.0 %}
-
 <div{{ attributes.addClass(classes) }}>
 
   <figure class="item-inner">
     <a href="{{ url }}">
-      {#<img decoding="async" class="slide-image"
-        src="{{ media_url }}"
-        alt="{{ title }}">#}
-      {{ content.field_profile_image }}
-      <figcaption>{{ title }}</figcaption>
+      {{ content.field_image }}
+      <figcaption>{{ label }}</figcaption>
     </a>
   </figure>
 
