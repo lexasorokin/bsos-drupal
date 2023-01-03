@@ -45,6 +45,7 @@ third_party_settings:
     entity_view_mode_restriction:
       allowed_layouts:
         - layout_onecol
+        - content-with-sidebar
       denylisted_blocks:
         'Custom block types':
           - footer_contact
@@ -58,11 +59,7 @@ third_party_settings:
           - 'inline_block:footer_contact'
           - 'inline_block:header_logo'
         'Lists (Views)':
-          - 'views_block:comments_recent-block_1'
           - 'views_block:content_recent-block_1'
-          - 'views_block:who_s_online-who_s_online_block'
-        User:
-          - 'views_block:who_s_new-block_1'
       allowlisted_blocks: {  }
       restricted_categories:
         - 'Content fields'

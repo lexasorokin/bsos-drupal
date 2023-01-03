@@ -1,0 +1,12 @@
+content-with-sidebar:
+  label: Content with Sidebar
+  category: Content
+  template: layout/content-with-sidebar/content-with-sidebar
+  default_region: second
+  icon_map:
+    - [ first, second ]
+  regions:
+    first:
+      label: Sidebar
+    second:
+      label: Content
