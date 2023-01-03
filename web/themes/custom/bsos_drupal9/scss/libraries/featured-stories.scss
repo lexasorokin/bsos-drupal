@@ -1,0 +1,131 @@
+/* Featured Stories */
+
+.news-section {
+  padding: 100px 0 150px;
+  background-color: #f5f5f5;
+  background-image: url(../../img/left-angle.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 133px auto;
+}
+.big-article-wrapper {
+  border: 2px solid #e32237;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.small-article-wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.news-article {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 40px 20px 20px;
+  transition: 0.4s ease-out all;
+}
+.big.news-article {
+  height: 445px;
+}
+.small.news-article {
+  padding: 20px;
+  background-size: cover;
+}
+.news-article * {
+  position: relative;
+  z-index: 3;
+  transition: 0.4s ease-out all;
+}
+.news-article h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  font-family: 'Stag Sans', Sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+.small-article-wrapper .news-article h3 {
+  font-size: 16px;
+  /*font-weight: 400;*/
+}
+.news-article:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  content: '';
+  z-index: 1;
+}
+.big-article-wrapper:hover .news-article {
+  /*transform: scale(.95);*/
+}
+.news-article:hover h3 {
+  transform: translateY(-10px);
+}
+.big-article-wrapper .news-article:before {
+  content: '→';
+  width: 50px;
+  height: 50px;
+  background: #e32237;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  line-height: 1;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  z-index: 2;
+  font-size: 22px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .news-section {
+    background-size: 85px auto;
+    padding: 80px 0 100px;
+  }
+  .big.news-article {
+    height: 240px;
+  }
+  .big-article-wrapper {
+    margin-bottom: 30px;
+  }
+  .small-article-wrapper {
+    border-radius: 0;
+  }
+  .small.news-article {
+    background: none !important;
+    height: inherit;
+    padding: 10px 0 15px;
+  }
+  .small.news-article:after {
+    height: 2px;
+    width: 80px;
+    bottom: 0px;
+    top: inherit;
+    background: #ccc;
+  }
+  .small.news-article h3 {
+    color: #000;
+  }
+}

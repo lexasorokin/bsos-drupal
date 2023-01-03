@@ -1,0 +1,12 @@
+uuid: 4bc66a75-dd24-4ce5-ba88-3791800bf61c
+langcode: en
+status: true
+dependencies: {  }
+label: 'Grid 3:4'
+id: grid_3_4
+description: ''
+aspect_ratio: '3:4'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

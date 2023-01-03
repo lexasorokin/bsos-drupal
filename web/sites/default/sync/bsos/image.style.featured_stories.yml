@@ -1,0 +1,15 @@
+uuid: 1bf915bb-eb99-4578-a4a2-f5305b44f4ce
+langcode: en
+status: true
+dependencies: {  }
+name: featured_stories
+label: 'Featured Stories (W350)'
+effects:
+  8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3:
+    uuid: 8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3
+    id: image_scale
+    weight: 3
+    data:
+      width: 350
+      height: null
+      upscale: false

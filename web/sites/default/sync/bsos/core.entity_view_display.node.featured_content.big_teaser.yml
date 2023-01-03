@@ -1,0 +1,42 @@
+uuid: 63a94674-c32f-4d9f-8436-1f6d03f34bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.big_teaser
+    - field.field.node.featured_content.body
+    - field.field.node.featured_content.field_fc_weight
+    - field.field.node.featured_content.field_hero_title
+    - field.field.node.featured_content.field_image
+    - field.field.node.featured_content.field_media_url
+    - field.field.node.featured_content.field_show_breadcrumbs
+    - image.style.featured_stories
+    - node.type.featured_content
+  module:
+    - layout_builder
+    - svg_image
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.featured_content.big_teaser
+targetEntityType: node
+bundle: featured_content
+mode: big_teaser
+content:
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: featured_stories
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_fc_weight: true
+  field_hero_title: true
+  field_media_url: true
+  field_show_breadcrumbs: true
+  links: true
