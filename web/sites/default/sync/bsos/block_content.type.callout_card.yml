@@ -1,0 +1,8 @@
+uuid: 66f36209-82d1-461a-a215-7ba2f4e620df
+langcode: en
+status: true
+dependencies: {  }
+id: callout_card
+label: 'Callout Card'
+revision: 0
+description: '[LB] Custom Block'

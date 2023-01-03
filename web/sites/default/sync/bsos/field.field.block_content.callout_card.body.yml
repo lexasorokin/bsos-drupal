@@ -1,0 +1,23 @@
+uuid: bfc3f78f-fbce-4b44-b960-29ce11c81ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.callout_card.body
+field_name: body
+entity_type: block_content
+bundle: callout_card
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

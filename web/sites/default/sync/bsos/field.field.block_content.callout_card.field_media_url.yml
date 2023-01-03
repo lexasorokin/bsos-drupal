@@ -1,0 +1,31 @@
+uuid: bc579e8a-1cb4-4ae9-939d-28a176e2411a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_media_url
+    - media.type.image
+    - media.type.svg_image
+id: block_content.callout_card.field_media_url
+field_name: field_media_url
+entity_type: block_content
+bundle: callout_card
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_image: svg_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

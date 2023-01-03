@@ -60,6 +60,10 @@ featured-stories:
   css:
     theme:
       css/libraries/featured-stories.min.css: {}
+callout-card:
+  css:
+    theme:
+      css/libraries/callout-card.min.css: {}
 
 #blog-categories:
 #  css:
