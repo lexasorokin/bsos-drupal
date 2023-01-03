@@ -1,0 +1,48 @@
+/* Basic Inside pages  */
+
+.basic-page-builder {
+  background: url(../img/left-angle.png) no-repeat bottom left;
+  background-size: 80px auto;
+}
+.sidebar {
+  display: none;
+  flex: 0 0 260px;
+  border-right: 1px solid #ccc;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+}
+.sidebar ul li a {
+  display: block;
+  color: #333;
+  font-size: 17px;
+  padding: 8px 3px;
+  font-weight: 600;
+  color: #e21833;
+  transition: 0.3s ease color;
+}
+.sidebar ul li a.is-active {
+  color: #fff;
+  padding: 14px 3px 14px 12px;
+  background: #e21833 url(../img/fearless-triangle.png) no-repeat bottom right;
+  background-size: 30px auto;
+}
+.sidebar ul li a:hover {
+  color: #fff;
+  background: #e21833 url(../img/fearless-triangle.png) no-repeat bottom right;
+  background-size: 30px auto;
+  opacity: 1;
+  padding-left: 6px;
+}
+.sidebar ul li a.is-active:hover {
+  padding-left: 12px;
+}
+
+.main-content {
+  position: relative;
+  padding-bottom: 80px;
+}
