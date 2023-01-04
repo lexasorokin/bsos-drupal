@@ -1,0 +1,27 @@
+uuid: f7701114-21bd-4228-b883-54e9c4a012ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.field.block_content.topic_links.field_topic_link_item
+  module:
+    - link
+id: block_content.topic_links.default
+targetEntityType: block_content
+bundle: topic_links
+mode: default
+content:
+  field_topic_link_item:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

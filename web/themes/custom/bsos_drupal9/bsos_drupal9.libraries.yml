@@ -64,6 +64,10 @@ callout-card:
   css:
     theme:
       css/libraries/callout-card.min.css: {}
+topic-links:
+  css:
+    theme:
+      css/libraries/topic-links.min.css: {}
 
 #blog-categories:
 #  css:
