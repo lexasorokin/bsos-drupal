@@ -1,0 +1,43 @@
+uuid: f56ef455-cdd3-46ba-bd60-cd632dc41f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_grid_row_item.field_item_image
+    - field.field.paragraph.card_grid_row_item.field_item_link
+    - field.field.paragraph.card_grid_row_item.field_item_title
+    - paragraphs.paragraphs_type.card_grid_row_item
+  module:
+    - link
+    - media_library
+id: paragraph.card_grid_row_item.default
+targetEntityType: paragraph
+bundle: card_grid_row_item
+mode: default
+content:
+  field_item_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_item_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_item_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

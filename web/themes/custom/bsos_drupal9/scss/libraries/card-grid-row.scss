@@ -1,0 +1,24 @@
+/* Card Grid  */
+
+.card-grid {
+  display: grid;
+  margin: 0 0 30px;
+  width: 100%;
+}
+.card-grid .card-grid-item {
+  min-width: 200px;
+  display: block;
+}
+.card-grid-item .card-grid-item__media img {
+  display: block;
+  width: 100%;
+}
+.card-grid-item__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+@media (min-width: 700px) {
+  .card-grid {
+  }
+}

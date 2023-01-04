@@ -68,6 +68,10 @@ topic-links:
   css:
     theme:
       css/libraries/topic-links.min.css: {}
+card-grid-row:
+  css:
+    theme:
+      css/libraries/card-grid-row.min.css: {}
 
 #blog-categories:
 #  css:

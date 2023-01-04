@@ -1,0 +1,46 @@
+uuid: 0434bcac-aba8-41a3-b2e4-29f9c8ad857b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card_grid_row
+    - field.field.media.image.field_media_image
+    - image.style.card_grid_row
+    - media.type.image
+  module:
+    - image_class
+    - layout_builder
+    - svg_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.card_grid_row
+targetEntityType: media
+bundle: image
+mode: card_grid_row
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: card_grid_row
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      image_class:
+        class: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

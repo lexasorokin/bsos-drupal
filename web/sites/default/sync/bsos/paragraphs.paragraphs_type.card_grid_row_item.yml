@@ -1,0 +1,10 @@
+uuid: 3a818136-7021-4ef4-9d26-d457a1b79332
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row_item
+label: 'Card Grid Row Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Card Grid Row Block'
+behavior_plugins: {  }
