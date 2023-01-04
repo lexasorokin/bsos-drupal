@@ -137,7 +137,8 @@ textarea {
 .row.align-center {
   align-items: center;
 }
-p.callout {
+p.callout,
+.callout p {
   font-weight: 600;
   font-size: 1.3em;
 }

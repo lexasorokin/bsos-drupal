@@ -62,9 +62,11 @@ third_party_settings:
           - 'views_block:content_recent-block_1'
         Menus:
           - 'system_menu_block:admin'
+          - 'system_menu_block:footer'
           - 'system_menu_block:main'
           - shortcuts
           - 'system_menu_block:tools'
+          - 'system_menu_block:topbar-menu'
           - 'system_menu_block:account'
       allowlisted_blocks: {  }
       restricted_categories:
