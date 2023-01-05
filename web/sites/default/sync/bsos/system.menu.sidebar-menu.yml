@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: sidebar-menu
 label: 'Sidebar Menu'
-description: ''
+description: 'Custom Menu. Used in Layout Sidebar'
 locked: false
