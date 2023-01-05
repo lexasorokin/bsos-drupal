@@ -72,6 +72,10 @@ card-grid-row:
   css:
     theme:
       css/libraries/card-grid-row.min.css: {}
+accordion-block:
+  css:
+    theme:
+      css/libraries/accordion-block.min.css: {}
 
 #blog-categories:
 #  css:

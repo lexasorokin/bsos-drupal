@@ -1,18 +1,18 @@
-uuid: 84f9bedc-fcbb-414c-8141-20b43005e64b
+uuid: ce10a9e9-e0bb-4d95-841e-81fb4cb51907
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.card_grid_row
+    - block_content.type.accordion_block
     - field.storage.block_content.field_section_item
-    - paragraphs.paragraphs_type.card_grid_row_item
+    - paragraphs.paragraphs_type.accordion_item
   module:
     - entity_reference_revisions
-id: block_content.card_grid_row.field_section_item
+id: block_content.accordion_block.field_section_item
 field_name: field_section_item
 entity_type: block_content
-bundle: card_grid_row
-label: 'Card Items'
+bundle: accordion_block
+label: 'Accordion Items'
 description: ''
 required: false
 translatable: true
@@ -22,19 +22,19 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      card_grid_row_item: card_grid_row_item
+      accordion_item: accordion_item
     negate: 0
     target_bundles_drag_drop:
       accordion_item:
         weight: 5
-        enabled: false
-      card_grid_row_item:
-        weight: 5
         enabled: true
+      card_grid_row_item:
+        weight: 7
+        enabled: false
       cards_grid_item:
-        weight: 4
+        weight: 6
         enabled: false
       carousel_hero_slider_item:
-        weight: 6
+        weight: 8
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: 6806ba20-d1a9-4f28-953d-1ef1d13967a5
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_item
+label: 'Accordion Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Accordion Block'
+behavior_plugins: {  }
