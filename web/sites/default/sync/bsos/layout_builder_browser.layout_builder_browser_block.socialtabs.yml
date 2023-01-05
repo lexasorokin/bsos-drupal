@@ -1,0 +1,11 @@
+uuid: 4ebc0688-5e51-4aae-a49a-f527f0bba9ba
+langcode: en
+status: true
+dependencies: {  }
+id: socialtabs
+block_id: 'inline_block:socialtabs'
+category: layout_builder_components
+label: Socialtabs
+image_path: /themes/custom/bsos_drupal9/img/block-images/socialtabs.png
+image_alt: ''
+weight: -1

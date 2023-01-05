@@ -1,0 +1,11 @@
+uuid: 6aebbf75-a24d-4f75-8543-ed0490e8eae2
+langcode: en
+status: true
+dependencies: {  }
+id: basic_block
+block_id: 'inline_block:basic'
+category: layout_builder_components
+label: 'Basic Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/basic-block.png
+image_alt: ''
+weight: -4

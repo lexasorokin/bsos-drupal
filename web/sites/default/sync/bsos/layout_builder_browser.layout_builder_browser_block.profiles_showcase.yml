@@ -1,0 +1,11 @@
+uuid: 20243c0e-d071-4059-a19c-f69735e25f72
+langcode: en
+status: true
+dependencies: {  }
+id: profiles_showcase
+block_id: 'views_block:profile_showcase-frontpage_block'
+category: views_blocks
+label: 'Profiles Showcase'
+image_path: /themes/custom/bsos_drupal9/img/block-images/profiles-showcase.png
+image_alt: ''
+weight: -100

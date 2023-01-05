@@ -1,0 +1,11 @@
+uuid: c44dcd42-9fe5-4930-8224-f3a0f2f05ccf
+langcode: en
+status: true
+dependencies: {  }
+id: cards_grid
+block_id: 'inline_block:cards_grid'
+category: layout_builder_components
+label: 'Cards Grid'
+image_path: /themes/custom/bsos_drupal9/img/block-images/cards-grid.png
+image_alt: ''
+weight: 3
