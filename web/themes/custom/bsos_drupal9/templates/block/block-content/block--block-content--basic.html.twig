@@ -35,16 +35,27 @@
   ]
 %}
 
+{% set show_container = content.field_container.0['#markup'] %}
+
 <div{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% if show_container == 'True' %}
+  <div class="container">
   {% endif %}
-  {{ title_suffix }}
 
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+    {{ title_prefix }}
+    {% if label %}
+      <h2{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% block content %}
+      {{ content|without('field_container') }}
+    {% endblock %}
+
+  {% if show_container == 'True' %}
+  </div>
+  {% endif %}
 
 </div>
+
