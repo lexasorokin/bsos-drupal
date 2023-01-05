@@ -34,6 +34,7 @@ module:
   image_class: 0
   image_widget_crop: 0
   layout_builder: 0
+  layout_builder_browser: 0
   layout_builder_iframe_modal: 0
   layout_builder_restrictions: 0
   layout_discovery: 0
