@@ -1,0 +1,11 @@
+uuid: e0d40f73-f4ef-4c71-b8f8-1d77b124272f
+langcode: en
+status: true
+dependencies: {  }
+id: video_block
+block_id: 'inline_block:video_block'
+category: layout_builder_components
+label: 'Video Block (Insert Youtube Link)'
+image_path: /themes/custom/bsos_drupal9/img/block-images/video-block.png
+image_alt: ''
+weight: 1

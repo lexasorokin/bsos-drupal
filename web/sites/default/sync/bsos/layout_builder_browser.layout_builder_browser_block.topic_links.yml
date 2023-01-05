@@ -1,0 +1,11 @@
+uuid: 09df9da9-e8c7-49c4-8aff-816df23a727e
+langcode: en
+status: true
+dependencies: {  }
+id: topic_links
+block_id: 'inline_block:topic_links'
+category: layout_builder_components
+label: 'Topic Links'
+image_path: /themes/custom/bsos_drupal9/img/block-images/topic-links.png
+image_alt: ''
+weight: 0

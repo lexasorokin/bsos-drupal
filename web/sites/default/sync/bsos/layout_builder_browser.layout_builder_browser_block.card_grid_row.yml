@@ -1,0 +1,11 @@
+uuid: 1870ba4a-7d25-4ec9-9778-ad56ece76f4c
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row
+block_id: 'inline_block:card_grid_row'
+category: layout_builder_components
+label: 'Card Grid Row'
+image_path: /themes/custom/bsos_drupal9/img/block-images/card-grid-row.png
+image_alt: ''
+weight: 4

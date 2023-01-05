@@ -64,6 +64,18 @@ callout-card:
   css:
     theme:
       css/libraries/callout-card.min.css: {}
+topic-links:
+  css:
+    theme:
+      css/libraries/topic-links.min.css: {}
+card-grid-row:
+  css:
+    theme:
+      css/libraries/card-grid-row.min.css: {}
+accordion-block:
+  css:
+    theme:
+      css/libraries/accordion-block.min.css: {}
 
 #blog-categories:
 #  css:

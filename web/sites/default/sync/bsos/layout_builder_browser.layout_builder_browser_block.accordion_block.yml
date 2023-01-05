@@ -1,0 +1,11 @@
+uuid: ef636955-ebc2-434a-bbca-55b4961a9c8c
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_block
+block_id: 'inline_block:accordion_block'
+category: layout_builder_components
+label: 'Accordion Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/accordion-block.png
+image_alt: ''
+weight: -2

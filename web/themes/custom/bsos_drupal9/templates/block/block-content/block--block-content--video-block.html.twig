@@ -31,31 +31,28 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'block--content',
-    'basic-content'
+    'block--video'
   ]
 %}
 
-{% set show_container = content.field_container.0['#markup'] %}
+{% set video_link = content.field_video_link.0['#url'] %}
 
 <div{{ attributes.addClass(classes) }}>
 
-  {% if show_container == 'True' %}
-  <div class="container">
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
+  {{ title_suffix }}
 
-    {{ title_prefix }}
-    {% if label %}
-      <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
+  {% block content %}
+    <div class="callout">{{ content.field_callout.0 }}</div>
 
-    {% block content %}
-      {{ content|without('field_container') }}
-    {% endblock %}
+    <iframe width="560" height="315" src="{{ video_link }}" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
-  {% if show_container == 'True' %}
-  </div>
-  {% endif %}
+    {{ content.body.0 }}
+  {% endblock %}
 
 </div>
-

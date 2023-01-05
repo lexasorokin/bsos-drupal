@@ -1,0 +1,7 @@
+uuid: 8858f8be-f64b-4baf-96f7-e5f5f09747f4
+langcode: en
+status: true
+dependencies: {  }
+id: views_blocks
+label: 'Views Blocks (Made Automatically)'
+weight: null

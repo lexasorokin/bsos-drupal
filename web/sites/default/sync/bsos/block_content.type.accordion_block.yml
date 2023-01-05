@@ -1,0 +1,8 @@
+uuid: ad957e98-b84b-4f91-b110-242bc115a156
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_block
+label: 'Accordion Block'
+revision: 0
+description: '[LB] Custom Block'

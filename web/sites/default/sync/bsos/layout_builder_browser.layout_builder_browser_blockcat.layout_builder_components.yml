@@ -1,0 +1,7 @@
+uuid: 3cd74b95-5c05-4326-9f86-590f944d6719
+langcode: en
+status: true
+dependencies: {  }
+id: layout_builder_components
+label: 'Layout Builder Components (Custom)'
+weight: -10

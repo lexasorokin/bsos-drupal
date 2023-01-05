@@ -1,0 +1,23 @@
+uuid: 23e753f8-4b01-48fb-8293-4d605fee6d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.storage.block_content.field_topic_link_item
+  module:
+    - link
+id: block_content.topic_links.field_topic_link_item
+field_name: field_topic_link_item
+entity_type: block_content
+bundle: topic_links
+label: 'Topic Link Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

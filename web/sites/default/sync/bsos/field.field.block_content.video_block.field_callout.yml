@@ -1,0 +1,21 @@
+uuid: 3f2e339c-ddbc-40f2-a3b4-9e3869e53570
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_block
+    - field.storage.block_content.field_callout
+  module:
+    - text
+id: block_content.video_block.field_callout
+field_name: field_callout
+entity_type: block_content
+bundle: video_block
+label: Callout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: a6f00ac6-fd39-435a-ae80-ffc97a5f4904
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row
+label: 'Card Grid Row (Media, Title, Link)'
+revision: 0
+description: '[LB] Custom Block'

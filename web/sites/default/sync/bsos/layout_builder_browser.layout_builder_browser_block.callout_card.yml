@@ -1,0 +1,11 @@
+uuid: e5dec436-d22b-451b-a6c1-88f052ebe6c5
+langcode: en
+status: true
+dependencies: {  }
+id: callout_card
+block_id: 'inline_block:callout_card'
+category: layout_builder_components
+label: 'Callout Card'
+image_path: /themes/custom/bsos_drupal9/img/block-images/callout-card.png
+image_alt: ''
+weight: 2

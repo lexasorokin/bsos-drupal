@@ -1,0 +1,10 @@
+uuid: 182dd242-ddad-4a33-a388-18f337847541
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_grid_row
+label: 'Card Grid Row'
+targetEntityType: media
+cache: true

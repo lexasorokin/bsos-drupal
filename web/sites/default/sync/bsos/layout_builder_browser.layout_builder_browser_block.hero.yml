@@ -1,0 +1,11 @@
+uuid: 220d72fd-8c52-42db-a4ac-5877bf9efe45
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+block_id: 'inline_block:hero'
+category: layout_builder_components
+label: 'Hero (Various Types)'
+image_path: /themes/custom/bsos_drupal9/img/block-images/hero.png
+image_alt: ''
+weight: -5

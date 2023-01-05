@@ -1,0 +1,11 @@
+uuid: eb5f6466-2dda-4606-9511-87742589f29a
+langcode: en
+status: true
+dependencies: {  }
+id: featured_stories
+block_id: 'views_block:featured_stories-featured_stories'
+category: views_blocks
+label: 'Featured Stories'
+image_path: /themes/custom/bsos_drupal9/img/block-images/featured-stories.png
+image_alt: ''
+weight: -100

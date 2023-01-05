@@ -1,0 +1,8 @@
+uuid: 29ba3d70-1cc3-4f14-ba8a-19cd53804336
+langcode: en
+status: true
+dependencies: {  }
+id: video_block
+label: 'Video Block'
+revision: 0
+description: '[LB] Custom Block'

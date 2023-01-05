@@ -31,31 +31,23 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'block--content',
-    'basic-content'
+    'block--accordion'
   ]
 %}
 
-{% set show_container = content.field_container.0['#markup'] %}
+{{ attach_library('bsos_drupal9/accordion-block') }}
 
 <div{{ attributes.addClass(classes) }}>
 
-  {% if show_container == 'True' %}
-  <div class="container">
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
+  {{ title_suffix }}
 
-    {{ title_prefix }}
-    {% if label %}
-      <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-
-    {% block content %}
-      {{ content|without('field_container') }}
-    {% endblock %}
-
-  {% if show_container == 'True' %}
-  </div>
-  {% endif %}
+  {% block content %}
+    {{ content|without('field_section_item') }}
+    <div class="card panel panel-default">{{ content.field_section_item }}</div>
+  {% endblock %}
 
 </div>
-
