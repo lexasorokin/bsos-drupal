@@ -17,6 +17,7 @@ module:
   contextual: 0
   crop: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
@@ -70,6 +71,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
   pathauto: 1
   views: 10
   paragraphs: 11

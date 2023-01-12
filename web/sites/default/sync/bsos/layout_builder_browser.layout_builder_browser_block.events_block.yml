@@ -1,0 +1,11 @@
+uuid: 5ea5d65f-5585-4c2d-b16b-64e39fa583ea
+langcode: en
+status: true
+dependencies: {  }
+id: events_block
+block_id: 'inline_block:events_block'
+category: layout_builder_components
+label: 'Events Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/events-block.png
+image_alt: ''
+weight: -2
