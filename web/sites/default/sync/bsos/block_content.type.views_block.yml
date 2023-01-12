@@ -1,0 +1,8 @@
+uuid: bbe9feb4-e45c-4c1c-830d-ace0994a8650
+langcode: en
+status: true
+dependencies: {  }
+id: views_block
+label: 'Views Block'
+revision: 0
+description: '[LB] Custom Block - You can insert View'
