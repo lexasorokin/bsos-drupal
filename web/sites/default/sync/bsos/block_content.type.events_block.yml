@@ -1,0 +1,8 @@
+uuid: 2b9e9275-fee2-4188-a163-8af1ec2df841
+langcode: en
+status: true
+dependencies: {  }
+id: events_block
+label: 'Events Block'
+revision: 0
+description: '[LB] Custom Block'

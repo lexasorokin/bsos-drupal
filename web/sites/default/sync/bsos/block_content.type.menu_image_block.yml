@@ -1,0 +1,8 @@
+uuid: 59f45a91-0192-4227-b639-757f01100375
+langcode: en
+status: true
+dependencies: {  }
+id: menu_image_block
+label: 'Menu Image Block'
+revision: 0
+description: 'Custom Block for TB Mega Menu'

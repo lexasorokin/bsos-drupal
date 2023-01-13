@@ -1,0 +1,169 @@
+/* Events Module  */
+
+.section-events {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.events-grid {
+  pointer-events: none;
+}
+
+.events-grid > * {
+  pointer-events: auto;
+  transition: 300ms opacity, 300ms transform;
+}
+
+.events-grid:hover > * {
+  opacity: 0.4;
+}
+
+.events-grid:hover > *:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.event-card {
+  background: #fff;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.event-card:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.event-card * {
+  position: relative;
+  z-index: 2;
+}
+
+.event-card .event-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card .event-details {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  border-bottom: 5px solid #b9b9b9;
+}
+
+.event-card time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: #f5f5f5;
+  color: #222;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.event-card .event-title {
+  font-size: 21px;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 500;
+  max-height: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.event-card .event-card-triangle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  opacity: 0.3;
+}
+
+.event-card:hover .event-card-triangle {
+  opacity: 1;
+}
+
+.event-card.tr .event-card-triangle {
+  bottom: inherit;
+  top: 2px;
+  right: -2px;
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+
+.event-card.bl .event-card-triangle {
+  bottom: 0;
+  left: -2px;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.event-card.tl .event-card-triangle {
+  bottom: inherit;
+  left: -2px;
+  top: 0;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+@media screen and (max-width: 700px) {
+  .events-grid {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    pointer-events: all;
+  }
+
+  .event-card {
+    grid-template-columns: 30% 70%;
+    display: inline-grid;
+    width: 80%;
+    margin-right: 15px;
+  }
+
+  .event-card .event-title {
+    font-size: 16px;
+    white-space: break-spaces;
+  }
+}
+
+.event-card .date-holder {
+  text-align: center;
+  border-bottom: 5px solid #ccc;
+  background: #f4f4f4;
+}
+
+.event-card .date-holder .month {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  padding: 10px 0;
+  background: #e21833;
+  color: #fff;
+}
+
+.event-card .date-holder .day {
+  font-size: 60px;
+  font-weight: bold;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1;
+  padding: 25px 0;
+}

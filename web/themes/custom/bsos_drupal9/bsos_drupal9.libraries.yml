@@ -76,6 +76,10 @@ accordion-block:
   css:
     theme:
       css/libraries/accordion-block.min.css: {}
+events-block:
+  css:
+    theme:
+      css/libraries/events-block.min.css: {}
 
 #blog-categories:
 #  css:
