@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87234eadc7051e5ee926ae14bb5ad13d",
+    "content-hash": "fe514f5b0632b88948b45060cec0e85d",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -7190,26 +7190,26 @@
         },
         {
             "name": "drupal/layout_builder_iframe_modal",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_iframe_modal.git",
-                "reference": "1.2.0"
+                "reference": "1.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_iframe_modal-1.2.0.zip",
-                "reference": "1.2.0",
-                "shasum": "d97aa65b358f775eee53a37b3d5f3e928c3d6c8e"
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_iframe_modal-1.3.0.zip",
+                "reference": "1.3.0",
+                "shasum": "c52c7c0ed91e747b49183dae911f6b640344fded"
             },
             "require": {
-                "drupal/core": "^8.8.0 || ^9.0"
+                "drupal/core": "^8.8.0 || ^9.0 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.2.0",
-                    "datestamp": "1648110032",
+                    "version": "1.3.0",
+                    "datestamp": "1671889303",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
