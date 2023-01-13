@@ -1,0 +1,7 @@
+uuid: ec27280e-3208-47ba-9b2c-6f174c00274c
+langcode: en
+status: true
+dependencies: {  }
+id: menu
+label: 'Menu Block'
+weight: null

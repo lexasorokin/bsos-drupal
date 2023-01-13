@@ -1,0 +1,11 @@
+uuid: f1aaaa7d-53c0-460c-84ce-ab54d0aaee20
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar_menu
+block_id: 'system_menu_block:sidebar-menu'
+category: menu
+label: 'Sidebar Menu'
+image_path: ''
+image_alt: ''
+weight: -100
