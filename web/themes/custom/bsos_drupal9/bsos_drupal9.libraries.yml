@@ -16,6 +16,7 @@ global-styling:
       vendor/magnific-popup.css: {}
       vendor/owl-carousel.css: {}
       css/style.css: {}
+      css/custom.css: {}
   dependencies:
     - core/jquery
     - core/drupal
