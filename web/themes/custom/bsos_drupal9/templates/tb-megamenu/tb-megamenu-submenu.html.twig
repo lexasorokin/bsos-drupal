@@ -1,7 +1,14 @@
-<div {{ attributes }}>
-  <div class="mega-dropdown-inner">
-    {% for row in rows %}
-      {{ row }}
-    {% endfor %}
+{% if level == 1 %}
+  <div {{ attributes.addClass('desktop-dropdown') }}>
+    <div class="mega-dropdown-inner desktop-dropdown-inner">
+      {% for row in rows %}
+        {{ row }}
+      {% endfor %}
+    </div>
   </div>
-</div>
+{% else %}
+  {% for row in rows %}
+    {{ row }}
+  {% endfor %}
+{% endif %}
+

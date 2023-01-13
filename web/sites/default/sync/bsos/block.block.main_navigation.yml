@@ -1,0 +1,20 @@
+uuid: 0137d75d-c532-499a-8d52-0f9c9d9540ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - bsos_drupal9
+id: main_navigation
+theme: bsos_drupal9
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:main'
+settings:
+  id: 'tb_megamenu_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

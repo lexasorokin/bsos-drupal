@@ -1,4 +1,5 @@
 {% set linkAttributes = link['attributes'] %}
+
 {% if ( link['url'] is defined and link['url'] is not empty ) %}
   {% set tag = "a" %}
 {% else  %}
@@ -8,7 +9,13 @@
     {% set linkAttributes = linkAttributes.addClass('tb-megamenu-no-submenu') %}
   {% endif %}
 {% endif %}
-<li {{ attributes }} >
+
+{% if submenu is not empty %}
+  {% set menuparent = 'menuparent' %}
+  {% set linkAttributes = linkAttributes.addClass('menuparent') %}
+{% endif %}
+
+<li {{ attributes.addClass(menuparent) }} >
   {% if tag == 'a' %}
     <{{ tag }} href="{{ link['url'] }}" {{ link['attributes'] }}>
   {% else %}

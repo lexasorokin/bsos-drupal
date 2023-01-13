@@ -24,7 +24,7 @@ content:
     region: content
   field_container:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: true-false
       format_custom_false: ''

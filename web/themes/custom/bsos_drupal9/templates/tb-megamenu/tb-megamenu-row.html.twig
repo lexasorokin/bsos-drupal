@@ -1,5 +1,15 @@
-<div {{ attributes }}>
+{% if level == 2 %}
+
   {% for column in columns %}
     {{ column }}
   {% endfor %}
-</div>
+
+{% else %}
+
+  <div {{ attributes }}>
+    {% for column in columns %}
+      {{ column }}
+    {% endfor %}
+  </div>
+
+{% endif %}

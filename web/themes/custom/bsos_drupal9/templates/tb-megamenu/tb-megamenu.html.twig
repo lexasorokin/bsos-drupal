@@ -15,7 +15,9 @@
     <div class="desktop-nav nav-collapse {{ block_config['always-show-submenu'] ? ' always-show' : '' }}">
   {% endif %}
 
-  {{ content }}
+  <div class="container">
+    {{ content }}
+  </div>
 
   {% if section == 'frontend' %}
     </div>

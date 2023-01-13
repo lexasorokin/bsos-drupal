@@ -1,0 +1,25 @@
+uuid: 8a45ebca-1c16-4234-9e92-076588e621cb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:menu_image_block:32dc3e9f-de85-4ae9-855e-ee1407240932'
+  module:
+    - block_content
+  theme:
+    - bsos_drupal9
+id: mainmenuimageundergraduate
+theme: bsos_drupal9
+region: hidden_block
+weight: 0
+provider: null
+plugin: 'block_content:32dc3e9f-de85-4ae9-855e-ee1407240932'
+settings:
+  id: 'block_content:32dc3e9f-de85-4ae9-855e-ee1407240932'
+  label: 'Main Menu Image (Undergraduate)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -32,6 +32,7 @@ regions:
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   # Hidden
+  hidden_block: 'Hidden Block (System Required)'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 regions_hidden:

@@ -1,0 +1,23 @@
+uuid: 8e8570bf-6a51-4c4b-b858-efa4e5c8be10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_image_block
+    - field.storage.block_content.field_container
+id: block_content.basic_image_block.field_container
+field_name: field_container
+entity_type: block_content
+bundle: basic_image_block
+label: Container
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
