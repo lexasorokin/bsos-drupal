@@ -1,15 +1,15 @@
-uuid: a43055fe-fa6f-41a9-b7dd-c7130014793c
+uuid: bba786e8-4ead-4805-841d-f704243fa4d4
 langcode: en
 status: true
 dependencies:
   theme:
-    - bsos_drural9
+    - claro
 _core:
-  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
-id: bsos_drural9_local_actions
-theme: bsos_drural9
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: claro_local_actions
+theme: claro
 region: content
-weight: -3
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

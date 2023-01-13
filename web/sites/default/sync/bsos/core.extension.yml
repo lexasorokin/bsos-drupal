@@ -77,7 +77,6 @@ module:
   paragraphs: 11
   standard: 1000
 theme:
-  seven: 0
-  bsos_drural9: 0
   bsos_drupal9: 0
+  claro: 0
 profile: standard
