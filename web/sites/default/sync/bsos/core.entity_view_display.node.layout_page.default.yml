@@ -46,6 +46,7 @@ third_party_settings:
       allowed_layouts:
         - layout_onecol
         - content-with-sidebar
+        - content-with-container
       denylisted_blocks:
         'Custom block types':
           - footer_contact

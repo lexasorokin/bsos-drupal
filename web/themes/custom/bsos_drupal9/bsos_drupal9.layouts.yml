@@ -10,3 +10,13 @@ content-with-sidebar:
       label: Sidebar
     second:
       label: Content
+content-with-container:
+  label: Content with Container
+  category: Content
+  template: layout/content-with-sidebar/content-with-container
+  default_region: first
+  icon_map:
+    - [ first ]
+  regions:
+    first:
+      label: Content inside Container
