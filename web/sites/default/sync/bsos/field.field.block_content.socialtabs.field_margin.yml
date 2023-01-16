@@ -1,0 +1,21 @@
+uuid: 0b96b8ed-8a38-4b92-b65d-bbb129f0bdd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.socialtabs.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: socialtabs
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
