@@ -36,8 +36,9 @@
 %}
 
 {% set show_container = content.field_container.0['#markup'] %}
+{% set margin = content.field_margin.0['#markup'] %}
 
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes, margin) }}>
 
   {% if show_container == 'True' %}
   <div class="container">
@@ -50,7 +51,7 @@
     {{ title_suffix }}
 
     {% block content %}
-      {{ content|without('field_container') }}
+      {{ content|without('field_container', 'field_margin') }}
     {% endblock %}
 
   {% if show_container == 'True' %}
