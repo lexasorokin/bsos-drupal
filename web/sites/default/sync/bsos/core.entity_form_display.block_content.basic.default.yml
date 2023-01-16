@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.basic.body
     - field.field.block_content.basic.field_container
     - field.field.block_content.basic.field_margin
+    - field.field.block_content.basic.field_padding
   module:
     - field_group
     - text
@@ -15,6 +16,7 @@ third_party_settings:
     group_block_settings:
       children:
         - field_margin
+        - field_padding
         - field_container
       label: 'Block Settings'
       region: content
@@ -47,7 +49,7 @@ content:
     third_party_settings: {  }
   field_container:
     type: boolean_checkbox
-    weight: 3
+    weight: 4
     region: content
     settings:
       display_label: true
@@ -55,6 +57,12 @@ content:
   field_margin:
     type: options_select
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

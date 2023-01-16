@@ -1,0 +1,21 @@
+uuid: 85f34b44-47c8-41f3-a2c0-37e7c87816cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.basic.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: basic
+label: Padding
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
