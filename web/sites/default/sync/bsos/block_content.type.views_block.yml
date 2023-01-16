@@ -5,4 +5,4 @@ dependencies: {  }
 id: views_block
 label: 'Views Block'
 revision: 0
-description: '[LB] Custom Block - You can insert View'
+description: '[LB] Custom Block - You can insert View (Not ready to use yet)'
