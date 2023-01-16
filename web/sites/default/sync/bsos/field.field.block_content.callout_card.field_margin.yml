@@ -1,0 +1,21 @@
+uuid: 64dd1bde-b8e9-4419-aec0-3cd49c7a4539
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.callout_card.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: callout_card
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

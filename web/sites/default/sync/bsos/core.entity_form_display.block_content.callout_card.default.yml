@@ -5,10 +5,31 @@ dependencies:
   config:
     - block_content.type.callout_card
     - field.field.block_content.callout_card.body
+    - field.field.block_content.callout_card.field_margin
     - field.field.block_content.callout_card.field_media_url
+    - field.field.block_content.callout_card.field_padding
   module:
+    - field_group
     - media_library
     - text
+third_party_settings:
+  field_group:
+    group_block_settings:
+      children:
+        - field_margin
+        - field_padding
+      label: 'Block Settings'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 id: block_content.callout_card.default
 targetEntityType: block_content
 bundle: callout_card
@@ -16,7 +37,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 9
@@ -24,12 +45,24 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_margin:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_media_url:
     type: media_library_widget
-    weight: 1
+    weight: 2
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

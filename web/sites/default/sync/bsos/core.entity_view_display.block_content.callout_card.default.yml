@@ -5,8 +5,11 @@ dependencies:
   config:
     - block_content.type.callout_card
     - field.field.block_content.callout_card.body
+    - field.field.block_content.callout_card.field_margin
     - field.field.block_content.callout_card.field_media_url
+    - field.field.block_content.callout_card.field_padding
   module:
+    - options
     - text
 id: block_content.callout_card.default
 targetEntityType: block_content
@@ -20,6 +23,13 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_media_url:
     type: entity_reference_entity_view
     label: hidden
@@ -28,5 +38,12 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }
