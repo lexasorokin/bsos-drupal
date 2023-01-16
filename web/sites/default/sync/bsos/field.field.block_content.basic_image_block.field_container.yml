@@ -10,7 +10,7 @@ field_name: field_container
 entity_type: block_content
 bundle: basic_image_block
 label: Container
-description: ''
+description: 'The block will be displayed in the container If checked.'
 required: false
 translatable: true
 default_value:
