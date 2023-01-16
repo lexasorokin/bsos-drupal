@@ -1,0 +1,15 @@
+uuid: 118c7111-7a9e-4b1d-9595-b4f03bef9026
+langcode: en
+status: true
+dependencies: {  }
+name: card_grid_row_rounded
+label: 'Card Grid Row Rounded (W390 H312)'
+effects:
+  ac0ff105-80ba-4879-a515-3df58db82c0e:
+    uuid: ac0ff105-80ba-4879-a515-3df58db82c0e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 390
+      height: 312
+      anchor: center-center

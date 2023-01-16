@@ -1,0 +1,11 @@
+uuid: e80b0ecc-d3e5-492a-b340-87f70e73fe3d
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row_rounded
+block_id: 'inline_block:card_grid_row_rounded'
+category: layout_builder_components
+label: 'Card Grid Row Rounded'
+image_path: ''
+image_alt: ''
+weight: 4

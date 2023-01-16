@@ -1,0 +1,75 @@
+uuid: 41798782-e752-45c7-86e3-ac7ab2c37490
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row_rounded
+    - field.field.block_content.card_grid_row_rounded.field_margin
+    - field.field.block_content.card_grid_row_rounded.field_padding
+    - field.field.block_content.card_grid_row_rounded.field_section_item
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_block_settings:
+      children:
+        - field_margin
+        - field_padding
+      label: 'Block Settings'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: block_content.card_grid_row_rounded.default
+targetEntityType: block_content
+bundle: card_grid_row_rounded
+mode: default
+content:
+  field_margin:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_section_item:
+    type: paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: card_grid_row_rounded_item
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

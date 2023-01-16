@@ -1,0 +1,10 @@
+uuid: f36f3813-ad83-4768-98e1-25168885fdf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_grid_row_rounded
+label: 'Card Grid Row Rounded'
+targetEntityType: media
+cache: true

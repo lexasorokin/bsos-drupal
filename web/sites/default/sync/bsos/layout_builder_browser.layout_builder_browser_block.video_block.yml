@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Video Block (Insert Youtube Link)'
 image_path: /themes/custom/bsos_drupal9/img/block-images/video-block.png
 image_alt: ''
-weight: 1
+weight: 0

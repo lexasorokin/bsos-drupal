@@ -1,0 +1,21 @@
+uuid: 364c609a-a4cb-4604-b9f6-af70b3a5ba04
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row_rounded
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.card_grid_row_rounded.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: card_grid_row_rounded
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

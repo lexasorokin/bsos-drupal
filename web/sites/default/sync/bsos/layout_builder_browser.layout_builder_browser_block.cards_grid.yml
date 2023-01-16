@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Cards Grid'
 image_path: /themes/custom/bsos_drupal9/img/block-images/cards-grid.png
 image_alt: ''
-weight: 3
+weight: 2

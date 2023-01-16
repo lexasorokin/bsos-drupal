@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Topic Links'
 image_path: /themes/custom/bsos_drupal9/img/block-images/topic-links.png
 image_alt: ''
-weight: 0
+weight: -1

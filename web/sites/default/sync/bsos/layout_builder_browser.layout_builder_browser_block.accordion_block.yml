@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Accordion Block'
 image_path: /themes/custom/bsos_drupal9/img/block-images/accordion-block.png
 image_alt: ''
-weight: -3
+weight: -4

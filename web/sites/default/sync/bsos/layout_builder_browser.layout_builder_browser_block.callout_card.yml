@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Callout Card'
 image_path: /themes/custom/bsos_drupal9/img/block-images/callout-card.png
 image_alt: ''
-weight: 2
+weight: 1
