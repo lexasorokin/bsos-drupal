@@ -34,12 +34,15 @@
   ]
 %}
 
+{% set margin = content.field_margin.0['#markup'] %}
+{% set padding = content.field_padding.0['#markup'] %}
+
 {{ attach_library('bsos_drupal9/cards-grid') }}
 
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
 {% set title = content.field_hero_title.0 %}
 
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes, margin, padding) }}>
 
   {{ title_prefix }}
   {{ title_suffix }}
