@@ -1,0 +1,17 @@
+uuid: 8777c8f2-8908-462f-a285-4ff3cd40289a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Overview Page'
+type: overview_page
+description: 'Custom Content type for Layout Builder'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

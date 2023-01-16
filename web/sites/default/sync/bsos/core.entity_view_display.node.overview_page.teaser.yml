@@ -1,0 +1,30 @@
+uuid: 4818e8f2-8fbf-4975-a185-9e15b61b41bb
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.overview_page.field_meta_description
+    - field.field.node.overview_page.field_meta_image
+    - field.field.node.overview_page.field_meta_title
+    - field.field.node.overview_page.field_metatags
+    - field.field.node.overview_page.layout_builder__layout
+    - node.type.overview_page
+  module:
+    - user
+id: node.overview_page.teaser
+targetEntityType: node
+bundle: overview_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_meta_description: true
+  field_meta_image: true
+  field_meta_title: true
+  field_metatags: true
+  layout_builder__layout: true
