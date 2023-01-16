@@ -1,0 +1,10 @@
+uuid: 1fbc1f43-13e8-4732-b16a-da967f87811c
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row_rounded_item
+label: 'Card Grid Row Rounded Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Card Grid Row Rounded Block'
+behavior_plugins: {  }

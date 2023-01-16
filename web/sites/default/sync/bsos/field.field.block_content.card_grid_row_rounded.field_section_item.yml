@@ -1,0 +1,43 @@
+uuid: 9696709f-7abb-412c-87ff-a431f82347cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row_rounded
+    - field.storage.block_content.field_section_item
+    - paragraphs.paragraphs_type.card_grid_row_rounded_item
+  module:
+    - entity_reference_revisions
+id: block_content.card_grid_row_rounded.field_section_item
+field_name: field_section_item
+entity_type: block_content
+bundle: card_grid_row_rounded
+label: 'Card Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_grid_row_rounded_item: card_grid_row_rounded_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 6
+        enabled: false
+      card_grid_row_item:
+        weight: 8
+        enabled: false
+      card_grid_row_rounded_item:
+        weight: 9
+        enabled: true
+      cards_grid_item:
+        weight: 7
+        enabled: false
+      carousel_hero_slider_item:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

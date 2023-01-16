@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Events Block'
 image_path: /themes/custom/bsos_drupal9/img/block-images/events-block.png
 image_alt: ''
-weight: -2
+weight: -3

@@ -1,0 +1,8 @@
+uuid: 81db9f65-e3da-4e59-9075-3fa9d4d59eed
+langcode: en
+status: true
+dependencies: {  }
+id: card_grid_row_rounded
+label: 'Card Grid Row Rounded (Media, Title, Link)'
+revision: 0
+description: '[LB] Custom Block'

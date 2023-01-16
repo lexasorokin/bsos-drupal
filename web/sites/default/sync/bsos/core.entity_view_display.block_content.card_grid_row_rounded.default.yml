@@ -1,0 +1,41 @@
+uuid: c751bb88-56d1-4164-a674-93ade3ae58a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row_rounded
+    - field.field.block_content.card_grid_row_rounded.field_margin
+    - field.field.block_content.card_grid_row_rounded.field_padding
+    - field.field.block_content.card_grid_row_rounded.field_section_item
+  module:
+    - entity_reference_revisions
+    - options
+id: block_content.card_grid_row_rounded.default
+targetEntityType: block_content
+bundle: card_grid_row_rounded
+mode: default
+content:
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_section_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
