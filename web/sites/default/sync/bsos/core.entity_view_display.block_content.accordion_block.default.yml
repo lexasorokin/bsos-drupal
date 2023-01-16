@@ -5,9 +5,12 @@ dependencies:
   config:
     - block_content.type.accordion_block
     - field.field.block_content.accordion_block.body
+    - field.field.block_content.accordion_block.field_margin
+    - field.field.block_content.accordion_block.field_padding
     - field.field.block_content.accordion_block.field_section_item
   module:
     - entity_reference_revisions
+    - options
     - text
 id: block_content.accordion_block.default
 targetEntityType: block_content
@@ -20,6 +23,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_section_item:
     type: entity_reference_revisions_entity_view

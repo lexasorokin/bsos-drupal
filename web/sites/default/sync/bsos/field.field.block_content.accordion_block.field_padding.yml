@@ -1,0 +1,21 @@
+uuid: 0ea881f4-1f1f-4f60-9b6b-cfd5f8407c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_block
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.accordion_block.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: accordion_block
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
