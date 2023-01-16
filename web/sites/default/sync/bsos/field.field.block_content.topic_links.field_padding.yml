@@ -1,0 +1,21 @@
+uuid: eabedae7-5c56-4e0a-ba5f-02c020442dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.topic_links.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: topic_links
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

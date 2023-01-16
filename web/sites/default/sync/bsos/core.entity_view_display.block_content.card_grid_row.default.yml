@@ -4,14 +4,31 @@ status: true
 dependencies:
   config:
     - block_content.type.card_grid_row
+    - field.field.block_content.card_grid_row.field_margin
+    - field.field.block_content.card_grid_row.field_padding
     - field.field.block_content.card_grid_row.field_section_item
   module:
     - entity_reference_revisions
+    - options
 id: block_content.card_grid_row.default
 targetEntityType: block_content
 bundle: card_grid_row
 mode: default
 content:
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_section_item:
     type: entity_reference_revisions_entity_view
     label: hidden

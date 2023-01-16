@@ -1,0 +1,21 @@
+uuid: 942a9d2d-5f7a-4798-9ed7-6d8935f05462
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.callout_card.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: callout_card
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

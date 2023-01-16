@@ -6,7 +6,10 @@ dependencies:
     - block_content.type.basic
     - field.field.block_content.basic.body
     - field.field.block_content.basic.field_container
+    - field.field.block_content.basic.field_margin
+    - field.field.block_content.basic.field_padding
   module:
+    - options
     - text
 _core:
   default_config_hash: hBNNDTFwakREOTa6GGMqN899Iyrii0hInwSJtQ7Kj30
@@ -31,5 +34,19 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }

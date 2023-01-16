@@ -6,8 +6,30 @@ dependencies:
     - block_content.type.basic
     - field.field.block_content.basic.body
     - field.field.block_content.basic.field_container
+    - field.field.block_content.basic.field_margin
+    - field.field.block_content.basic.field_padding
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_block_settings:
+      children:
+        - field_margin
+        - field_padding
+        - field_container
+      label: 'Block Settings'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
 id: block_content.basic.default
@@ -27,10 +49,22 @@ content:
     third_party_settings: {  }
   field_container:
     type: boolean_checkbox
-    weight: 1
+    weight: 4
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  field_margin:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

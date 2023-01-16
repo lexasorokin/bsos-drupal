@@ -1,0 +1,21 @@
+uuid: 2f13b0dc-efcd-4d5c-9e30-4d27a8ddbaac
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_block
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.video_block.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: video_block
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: a7d50bd7-471c-4b90-81de-cafa6c2b62c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_block
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.accordion_block.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: accordion_block
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

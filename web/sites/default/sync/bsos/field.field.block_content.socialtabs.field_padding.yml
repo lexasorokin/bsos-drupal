@@ -1,0 +1,21 @@
+uuid: 2b98fb8f-5551-47eb-b5bc-1dd0683d14eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.socialtabs.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: socialtabs
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 61eb44a0-efa1-4d99-9a42-b6c8b87acf86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.events_block
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.events_block.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: events_block
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

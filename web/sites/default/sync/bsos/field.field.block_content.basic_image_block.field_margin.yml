@@ -1,0 +1,21 @@
+uuid: a28090b3-b9cd-412e-a88a-e8105814e1ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_image_block
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.basic_image_block.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: basic_image_block
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

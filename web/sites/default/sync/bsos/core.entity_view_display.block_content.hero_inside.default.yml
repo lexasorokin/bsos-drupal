@@ -5,9 +5,12 @@ dependencies:
   config:
     - block_content.type.hero_inside
     - field.field.block_content.hero_inside.field_hero_title
+    - field.field.block_content.hero_inside.field_margin
     - field.field.block_content.hero_inside.field_media_url
+    - field.field.block_content.hero_inside.field_padding
     - field.field.block_content.hero_inside.field_show_breadcrumbs
   module:
+    - options
     - text
 id: block_content.hero_inside.default
 targetEntityType: block_content
@@ -21,6 +24,13 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_media_url:
     type: entity_reference_entity_view
     label: hidden
@@ -29,6 +39,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_show_breadcrumbs:
     type: boolean

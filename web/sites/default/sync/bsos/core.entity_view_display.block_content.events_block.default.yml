@@ -4,12 +4,23 @@ status: true
 dependencies:
   config:
     - block_content.type.events_block
+    - field.field.block_content.events_block.field_margin
     - field.field.block_content.events_block.field_media_url
+    - field.field.block_content.events_block.field_padding
+  module:
+    - options
 id: block_content.events_block.default
 targetEntityType: block_content
 bundle: events_block
 mode: default
 content:
+  field_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_media_url:
     type: entity_reference_entity_view
     label: hidden
@@ -18,5 +29,12 @@ content:
       link: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 2e30248e-b4c2-48a3-9802-f7df3812a291
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cards_grid
+    - field.storage.block_content.field_padding
+  module:
+    - options
+id: block_content.cards_grid.field_padding
+field_name: field_padding
+entity_type: block_content
+bundle: cards_grid
+label: Padding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
