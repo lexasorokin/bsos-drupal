@@ -1,0 +1,21 @@
+uuid: 447e4c75-12d6-489c-80ae-390b3dd06d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.topic_links.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: topic_links
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

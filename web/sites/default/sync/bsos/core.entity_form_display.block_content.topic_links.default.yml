@@ -4,17 +4,50 @@ status: true
 dependencies:
   config:
     - block_content.type.topic_links
+    - field.field.block_content.topic_links.field_margin
+    - field.field.block_content.topic_links.field_padding
     - field.field.block_content.topic_links.field_topic_link_item
   module:
+    - field_group
     - link
+third_party_settings:
+  field_group:
+    group_block_settings:
+      children:
+        - field_margin
+        - field_padding
+      label: 'Block Settings'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 id: block_content.topic_links.default
 targetEntityType: block_content
 bundle: topic_links
 mode: default
 content:
+  field_margin:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_topic_link_item:
     type: link_default
-    weight: 27
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
@@ -22,7 +55,7 @@ content:
     third_party_settings: {  }
   info:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
