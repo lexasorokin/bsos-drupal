@@ -10,6 +10,7 @@ content-with-sidebar:
       label: Sidebar
     second:
       label: Content
+
 content-with-container:
   label: Content with Container
   category: Content
@@ -20,3 +21,16 @@ content-with-container:
   regions:
     first:
       label: Content inside Container
+
+two-column-overview-grid:
+  label: Two Column Overview Grid
+  category: Content
+  template: layout/content-with-sidebar/two-column-overview-grid
+  default_region: first
+  icon_map:
+    - [ first, second ]
+  regions:
+    first:
+      label: Left
+    second:
+      label: Right
