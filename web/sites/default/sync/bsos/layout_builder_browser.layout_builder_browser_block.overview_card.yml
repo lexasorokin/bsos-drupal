@@ -6,6 +6,6 @@ id: overview_card
 block_id: 'inline_block:overview_card'
 category: layout_builder_components
 label: 'Overview Card'
-image_path: ''
+image_path: /themes/custom/bsos_drupal9/img/block-images/overview-card.png
 image_alt: ''
 weight: 5

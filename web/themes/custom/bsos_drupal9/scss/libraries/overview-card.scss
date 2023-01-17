@@ -10,7 +10,8 @@
   background-position: bottom left;
   background-size: 80px auto;
 }
-.section-breadcrumbs + .site-main > .overview-grid {
+.section-breadcrumbs + .site-main > .overview-grid,
+.block--inside-hero + .site-main > .overview-grid {
   margin-top: -50px;
 }
 .overview-card {
