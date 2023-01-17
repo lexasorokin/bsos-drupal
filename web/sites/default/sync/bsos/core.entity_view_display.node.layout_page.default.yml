@@ -47,6 +47,7 @@ third_party_settings:
         - layout_onecol
         - content-with-sidebar
         - content-with-container
+        - two-column-overview-grid
       denylisted_blocks:
         'Custom block types':
           - footer_contact
@@ -54,6 +55,7 @@ third_party_settings:
         'Custom blocks':
           - 'block_content:6a5d6b1f-ee2c-4bc7-9110-33e703491037'
           - 'block_content:39a033ff-7f62-48f8-b19b-a79b1f4cca04'
+          - 'block_content:32dc3e9f-de85-4ae9-855e-ee1407240932'
         Help:
           - help_block
         'Inline blocks':

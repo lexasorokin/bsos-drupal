@@ -81,6 +81,10 @@ events-block:
   css:
     theme:
       css/libraries/events-block.min.css: {}
+overview-card:
+  css:
+    theme:
+      css/libraries/overview-card.min.css: {}
 
 #blog-categories:
 #  css:

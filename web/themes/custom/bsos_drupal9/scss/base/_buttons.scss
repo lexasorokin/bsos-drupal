@@ -71,6 +71,42 @@
   transform: translateX(4px);
 }
 
+.text-button.sans-serif {
+  font-family: var(--sans-serif);
+}
+.overview-card__links li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  transition: 0.2s ease-out background-color, 0.2s ease-out color,
+    0.2s ease-out padding;
+}
+.overview-card__links li a:after {
+  content: '';
+  position: relative;
+  right: 0;
+  width: 22px;
+  margin-left: 10px;
+  transition: 0.2s ease-out all;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23e32237' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3' /%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-size: 100% auto;
+  display: inline-block;
+  height: 22px;
+}
+.overview-card__links li a:hover {
+  color: #fff;
+  background: #e21833 url(../img/fearless-triangle.png) no-repeat bottom right;
+  background-size: 30px auto;
+  opacity: 1;
+  padding-left: 6px;
+}
+.overview-card__links li a:hover:after {
+  transform: translateX(4px);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23ffffff' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3' /%3E%3C/svg%3E%0A");
+}
+
 .twitter.button,
 .instagram.button {
   border-color: #fff;

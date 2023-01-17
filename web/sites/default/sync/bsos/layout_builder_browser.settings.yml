@@ -3,4 +3,16 @@ _core:
 enabled_section_storages:
   - overrides
 use_modal: true
-auto_added_reusable_block_content_bundles: {  }
+auto_added_reusable_block_content_bundles:
+  accordion_block: accordion_block
+  basic: basic
+  basic_image_block: basic_image_block
+  callout_card: callout_card
+  cards_grid: cards_grid
+  card_grid_row: card_grid_row
+  card_grid_row_rounded: card_grid_row_rounded
+  overview_card: overview_card
+  socialtabs: socialtabs
+  topic_links: topic_links
+  video_block: video_block
+  views_block: views_block

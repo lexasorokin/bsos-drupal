@@ -1,0 +1,15 @@
+uuid: a57e6f4e-425b-4f3f-8ef6-335ee5bab901
+langcode: en
+status: true
+dependencies: {  }
+name: overview_card
+label: 'Overview Card (W214 H345)'
+effects:
+  e7ec3db2-5eb9-4e3e-b116-940e6693dcf4:
+    uuid: e7ec3db2-5eb9-4e3e-b116-940e6693dcf4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 214
+      height: 345
+      anchor: center-center

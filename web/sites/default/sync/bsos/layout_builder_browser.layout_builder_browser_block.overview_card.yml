@@ -1,0 +1,11 @@
+uuid: 3bb40255-0443-4de4-931f-dce5d01d71a3
+langcode: en
+status: true
+dependencies: {  }
+id: overview_card
+block_id: 'inline_block:overview_card'
+category: layout_builder_components
+label: 'Overview Card'
+image_path: /themes/custom/bsos_drupal9/img/block-images/overview-card.png
+image_alt: ''
+weight: 5
