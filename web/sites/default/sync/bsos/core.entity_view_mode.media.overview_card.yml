@@ -1,0 +1,10 @@
+uuid: f58c1f25-259b-4850-bd69-00ba7e3d0514
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.overview_card
+label: 'Overview Card'
+targetEntityType: media
+cache: true

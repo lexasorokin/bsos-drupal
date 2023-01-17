@@ -1,0 +1,8 @@
+uuid: c0477d64-6d99-4030-8937-20e4cbf6ab83
+langcode: en
+status: true
+dependencies: {  }
+id: overview_card
+label: 'Overview Card'
+revision: 0
+description: '[LB] Custom Block'

@@ -39,8 +39,10 @@ third_party_settings:
       allowlisted_blocks:
         'Custom block types':
           - basic
+          - overview_card
         'Inline blocks':
           - 'inline_block:basic'
+          - 'inline_block:overview_card'
       restricted_categories:
         - 'Content fields'
         - 'Custom blocks'

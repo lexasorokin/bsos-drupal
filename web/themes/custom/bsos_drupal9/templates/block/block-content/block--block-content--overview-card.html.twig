@@ -31,34 +31,37 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'block--content',
-    'basic-content',
-    'block--basic'
+    'block--overview-card',
+    'overview-card'
   ]
 %}
 
 {% set margin = content.field_margin.0['#markup'] %}
 {% set padding = content.field_padding.0['#markup'] %}
-{% set show_container = content.field_container.0['#markup'] %}
+
+{{ attach_library('bsos_drupal9/overview-card') }}
 
 <div{{ attributes.addClass(classes, margin, padding) }}>
 
-  {% if show_container == 'True' %}
-  <div class="container">
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
+  {{ title_suffix }}
 
-    {{ title_prefix }}
-    {% if label %}
-      <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-
-    {% block content %}
-      {{ content|without('field_container', 'field_margin', 'field_padding') }}
-    {% endblock %}
-
-  {% if show_container == 'True' %}
-  </div>
-  {% endif %}
+  {% block content %}
+    <div class="overview-card__image">
+      {{ content.field_media_url.0 }}
+    </div>
+    <div class="overview-card__links">
+      <h3>{{ content.field_title.0 }}</h3>
+      <div class="landing-description">
+        <p class="lead">{{ content.body|render|striptags }}</p>
+      </div>
+      {# links #}
+      {{ content.field_topic_link_item }}
+    </div>
+  {% endblock %}
 
 </div>
 

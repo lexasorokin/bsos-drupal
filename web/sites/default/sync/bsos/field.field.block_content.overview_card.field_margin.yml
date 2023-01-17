@@ -1,0 +1,21 @@
+uuid: faf897c6-3740-4fdd-9b8a-debf4f6a0f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.overview_card
+    - field.storage.block_content.field_margin
+  module:
+    - options
+id: block_content.overview_card.field_margin
+field_name: field_margin
+entity_type: block_content
+bundle: overview_card
+label: Margin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
