@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - block_content.type.card_grid_row_rounded
-    - field.field.block_content.card_grid_row_rounded.field_margin
-    - field.field.block_content.card_grid_row_rounded.field_padding
+    - field.field.block_content.card_grid_row_rounded.field_padding_bottom
+    - field.field.block_content.card_grid_row_rounded.field_padding_top
     - field.field.block_content.card_grid_row_rounded.field_section_item
   module:
     - entity_reference_revisions
@@ -15,19 +15,19 @@ targetEntityType: block_content
 bundle: card_grid_row_rounded
 mode: default
 content:
-  field_margin:
+  field_padding_bottom:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
-  field_padding:
+  field_padding_top:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_section_item:
     type: entity_reference_revisions_entity_view
