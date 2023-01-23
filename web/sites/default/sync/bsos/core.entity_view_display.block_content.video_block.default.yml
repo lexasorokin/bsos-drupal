@@ -6,8 +6,8 @@ dependencies:
     - block_content.type.video_block
     - field.field.block_content.video_block.body
     - field.field.block_content.video_block.field_callout
-    - field.field.block_content.video_block.field_margin
-    - field.field.block_content.video_block.field_padding
+    - field.field.block_content.video_block.field_padding_bottom
+    - field.field.block_content.video_block.field_padding_top
     - field.field.block_content.video_block.field_video_link
   module:
     - link
@@ -32,19 +32,19 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_margin:
+  field_padding_bottom:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
-  field_padding:
+  field_padding_top:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_video_link:
     type: link

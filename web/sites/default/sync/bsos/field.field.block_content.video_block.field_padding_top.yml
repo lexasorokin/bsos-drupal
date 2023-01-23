@@ -1,17 +1,17 @@
-uuid: 2f13b0dc-efcd-4d5c-9e30-4d27a8ddbaac
+uuid: d013c644-aa1f-4900-bcb6-ac21d98518b3
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.video_block
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.video_block.field_padding
-field_name: field_padding
+id: block_content.video_block.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: video_block
-label: Padding
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true
