@@ -1,0 +1,30 @@
+uuid: 7ae36322-091e-4ef7-a9fa-20ab9347a399
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_padding_top
+field_name: field_padding_top
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pt-1
+      label: 'Padding Top 1'
+    -
+      value: pt-2
+      label: 'Padding Top  2'
+    -
+      value: pt-3
+      label: 'Padding Top  3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

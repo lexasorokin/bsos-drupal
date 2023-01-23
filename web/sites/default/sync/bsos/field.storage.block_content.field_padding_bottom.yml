@@ -1,0 +1,30 @@
+uuid: 891e05a0-d55b-41c0-add0-0e19d6345675
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_padding_bottom
+field_name: field_padding_bottom
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pb-1
+      label: 'Padding Bottom 1'
+    -
+      value: pb-2
+      label: 'Padding Bottom  2'
+    -
+      value: pb-3
+      label: 'Padding Bottom  3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

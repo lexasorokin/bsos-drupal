@@ -1,20 +1,20 @@
-uuid: a7d50bd7-471c-4b90-81de-cafa6c2b62c7
+uuid: 03059c91-2a0b-410f-a64c-3878e9168cf5
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.accordion_block
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.accordion_block.field_margin
-field_name: field_margin
+id: block_content.accordion_block.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: accordion_block
-label: Margin
+label: 'Padding Bottom'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

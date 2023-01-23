@@ -1,20 +1,20 @@
-uuid: 85f34b44-47c8-41f3-a2c0-37e7c87816cb
+uuid: a72c56e3-a6f6-4a51-87c3-2c24fd2b1c82
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.basic
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.basic.field_padding
-field_name: field_padding
+id: block_content.basic.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: basic
-label: Padding
+label: 'Padding Top'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

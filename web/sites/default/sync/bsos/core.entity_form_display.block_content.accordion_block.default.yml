@@ -5,8 +5,8 @@ dependencies:
   config:
     - block_content.type.accordion_block
     - field.field.block_content.accordion_block.body
-    - field.field.block_content.accordion_block.field_margin
-    - field.field.block_content.accordion_block.field_padding
+    - field.field.block_content.accordion_block.field_padding_bottom
+    - field.field.block_content.accordion_block.field_padding_top
     - field.field.block_content.accordion_block.field_section_item
   module:
     - field_group
@@ -18,6 +18,8 @@ third_party_settings:
       children:
         - field_margin
         - field_padding
+        - field_padding_top
+        - field_padding_bottom
       label: 'Block Settings'
       region: content
       parent_name: ''
@@ -45,15 +47,15 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_margin:
+  field_padding_bottom:
     type: options_select
-    weight: 4
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_padding:
+  field_padding_top:
     type: options_select
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
