@@ -1,17 +1,17 @@
-uuid: 076f20a7-ed3c-49cf-9d68-26bdcb4f8eaa
+uuid: 2256db65-c16f-4674-b89e-949654ec46e3
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.events_block
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.events_block.field_margin
-field_name: field_margin
+id: block_content.events_block.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: events_block
-label: Margin
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true
