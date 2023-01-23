@@ -1,17 +1,17 @@
-uuid: 94836087-85be-48ae-9ef5-eb8aacfbac80
+uuid: 4d5c398d-16f2-4070-be4a-13fe553b995d
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.hero_inside
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.hero_inside.field_margin
-field_name: field_margin
+id: block_content.hero_inside.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: hero_inside
-label: Margin
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true

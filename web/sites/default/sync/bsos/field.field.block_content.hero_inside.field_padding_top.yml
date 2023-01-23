@@ -1,17 +1,17 @@
-uuid: df753994-79a2-4e45-90d7-4990fb7cc179
+uuid: fb97adf5-cddf-4f7b-8748-e9a22b5c98ce
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.hero_inside
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.hero_inside.field_padding
-field_name: field_padding
+id: block_content.hero_inside.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: hero_inside
-label: Padding
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

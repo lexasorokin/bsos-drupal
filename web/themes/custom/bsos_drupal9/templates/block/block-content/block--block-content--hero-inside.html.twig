@@ -34,8 +34,8 @@
   ]
 %}
 
-{% set margin = content.field_margin.0['#markup'] %}
-{% set padding = content.field_padding.0['#markup'] %}
+{% set padding_top = content.field_padding_top.0['#markup'] %}
+{% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 
 {{ attach_library('bsos_drupal9/inside-hero') }}
 
@@ -43,7 +43,7 @@
 {% set show_breadcrumbs = content.field_show_breadcrumbs.0['#markup'] %}
 {% set title = content.field_hero_title.0 %}
 
-<div{{ attributes.addClass(classes, margin, padding) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
 
   {{ title_prefix }}
   {{ title_suffix }}
