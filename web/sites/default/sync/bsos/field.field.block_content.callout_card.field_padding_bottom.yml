@@ -1,17 +1,17 @@
-uuid: 942a9d2d-5f7a-4798-9ed7-6d8935f05462
+uuid: 0fc15de7-eae5-4874-83df-98085d0ee796
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.callout_card
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.callout_card.field_padding
-field_name: field_padding
+id: block_content.callout_card.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: callout_card
-label: Padding
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true
