@@ -34,15 +34,15 @@
   ]
 %}
 
-{% set margin = content.field_margin.0['#markup'] %}
-{% set padding = content.field_padding.0['#markup'] %}
+{% set padding_top = content.field_padding_top.0['#markup'] %}
+{% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 
 {{ attach_library('bsos_drupal9/socialtabs') }}
 
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
 {% set title = content.field_hero_title.0 %}
 
-<div{{ attributes.addClass(classes, margin, padding) }} style="background-image: url({{ media_url }})">
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }} style="background-image: url({{ media_url }})">
 
   {{ title_prefix }}
   {{ title_suffix }}

@@ -5,9 +5,9 @@ dependencies:
   config:
     - block_content.type.socialtabs
     - field.field.block_content.socialtabs.field_hero_title
-    - field.field.block_content.socialtabs.field_margin
     - field.field.block_content.socialtabs.field_media_url
-    - field.field.block_content.socialtabs.field_padding
+    - field.field.block_content.socialtabs.field_padding_bottom
+    - field.field.block_content.socialtabs.field_padding_top
   module:
     - field_group
     - media_library
@@ -18,6 +18,8 @@ third_party_settings:
       children:
         - field_margin
         - field_padding
+        - field_padding_top
+        - field_padding_bottom
       label: 'Block Settings'
       region: content
       parent_name: ''
@@ -43,12 +45,6 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_margin:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_media_url:
     type: media_library_widget
     weight: 2
@@ -56,9 +52,15 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_padding:
+  field_padding_bottom:
     type: options_select
-    weight: 5
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding_top:
+    type: options_select
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
