@@ -51,20 +51,31 @@
 {% set media_url = content.field_item_image.0|render|striptags|spaceless %}
 {% set media_item = content.field_item_image.0 %}
 {% set title = content.field_item_title.0 %}
-{% set content = content.field_item_content.0 %}
+{% set content_var = content.field_item_content.0 %}
 {% set link = content.field_item_link.0['#url'] %}
+{% set link_uri = content.field_item_link.0['#title'] %}
 
 {% block paragraph %}
   {% block content %}
 
+  {% if link_uri %}
   <a href="{{ link }}" class="rounded-card">
+  {% else %}
+  <div href="{{ link }}" class="rounded-card">
+  {% endif %}
+
     <div class="card-grid-item__media">{{ media_item }}</div>
     <div class="card-grid-item__title">{{ title }}</div>
-    <div class="card-grid-item__content">{{ content }}</div>
+    <div class="card-grid-item__content">{{ content_var }}</div>
+
+  {% if link_uri %}
     <div class="card-grid-item__link">
       <span class="text-button with-arrow">Learn More</span>
     </div>
   </a>
+  {% else %}
+  </div>
+  {% endif %}
 
   {% endblock %}
 {% endblock paragraph %}
