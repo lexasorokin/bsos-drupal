@@ -2,3 +2,111 @@
 /*********/
 /* Please add comments for each fix */
 
+/* Pagination on the search results page (This is all NEW) */
+.pager {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+ul.pager__items {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+}
+ul.pager__items li {
+  margin: 0;
+  padding: 0;
+}
+ul.pager__items li a {
+  display: block;
+  padding: 8px 12px;
+  line-height: 1;
+}
+li.pager__item.is-active a {
+  background: #e5e5e5;
+}
+
+/* This is NEW  */
+.block-layout-builder.block--content {
+  margin-bottom: 30px;
+}
+
+/* This is existing for the .card__media in the min-width media query */
+@media (min-width: 700px) {
+  .card__media {
+    max-width: 250px;
+  }
+}
+
+/* This is the existing hover-box for the homepage and it's NEW: you don't need to add it to existing classes  */
+.hover-box:hover {
+  opacity: 1;
+}
+.hover-box:hover:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  background: rgb(15 21 32 / 63%);
+  z-index: 1;
+}
+
+/* This is all NEW - it's for the search results page  */
+form#search-form {
+  max-width: 560px;
+  width: 96%;
+  margin: 20px auto 40px;
+  padding: 10px 30px;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+#search-form .form-wrapper {
+  display: flex;
+}
+#search-form input[type="submit"] {
+  align-self: center;
+  margin-top: 21px;
+}
+#search-form label[for="edit-keys"] {
+  font-size: 16px;
+}
+#search-form .search-help-link {
+  font-size: 12px;
+}
+
+/* This is NEW: it's for the user login form  */
+form.user-login-form {
+  padding: 60px 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+form.user-login-form #edit-name--description,
+form.user-login-form #edit-pass--description {
+  font-size: 14px;
+}
+form.user-login-form .form-item {
+  margin-bottom: 20px;
+}
+
+/* This is modifying the existing page titles  */
+@media (min-width: 700px) {
+  .inside-hero h1.page-title {
+    text-transform: none !important;
+  }
+}
+
+/* This is modifying the existing card content  */
+.rounded-card .card-grid-item__content {
+  font-size: 1em;
+}
+
+/* Global Adjustment to make  */
+strong {
+  font-weight: 600;
+}
