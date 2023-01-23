@@ -35,12 +35,12 @@
   ]
 %}
 
-{% set margin = content.field_margin.0['#markup'] %}
-{% set padding = content.field_padding.0['#markup'] %}
+{% set padding_top = content.field_padding_top.0['#markup'] %}
+{% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 
 {{ attach_library('bsos_drupal9/topic-links') }}
 
-<div{{ attributes.addClass(classes, margin, padding) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
 
   {{ title_prefix }}
   {% if label %}
@@ -49,7 +49,7 @@
   {{ title_suffix }}
 
   {% block content %}
-    {{ content|without('field_container', 'field_margin', 'field_padding') }}
+    {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom') }}
   {% endblock %}
 
 </div>
