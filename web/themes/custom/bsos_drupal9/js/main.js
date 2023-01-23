@@ -20,6 +20,15 @@ targets.forEach(function (target) {
 });
 
 jQuery(document).ready(function ($) {
+  // Sticky header
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 190) {
+      $(".site-header").addClass("site-header--sticky");
+    } else {
+      $(".site-header").removeClass("site-header--sticky");
+    }
+  });
+
   // FitVids
   $(".main-content").fitVids();
   // $(".video-hero").fitVids();

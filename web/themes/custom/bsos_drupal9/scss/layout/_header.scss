@@ -30,6 +30,7 @@ body.user-is-admin {
   width: 66%;
   margin-right: auto;
   max-width: 260px;
+  transition: 0.3s ease-out all;
 }
 .logo img {
   display: block;
@@ -56,9 +57,60 @@ body.nav-open .logo .white-logo {
   display: none;
 }
 
+/* Sticky Header  */
+.site-header--sticky {
+  -webkit-animation: stickySlideDown 0.4s;
+  animation: stickySlideDown 0.4s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+.site-header--sticky .top-header {
+  background-color: #0f1520;
+}
+.site-header--sticky .logo {
+  max-width: 200px;
+}
+.site-header--sticky .top-small-menu {
+  display: none;
+}
+.site-header--sticky .desktop-nav .container > ul > li > a {
+  font-size: 15px;
+}
+
+@-webkit-keyframes stickySlideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes stickySlideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 1000px) {
   .top-header {
     padding: 20px 0;
+  }
+  .site-header--sticky .top-header {
+    padding: 10px 0;
   }
   .search-n-socials {
     display: flex;
