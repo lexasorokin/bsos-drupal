@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b4385878a12f658f95b78b047ed0b71",
+    "content-hash": "ce428598496977d7ec06463e07215868",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -5008,6 +5008,54 @@
             "homepage": "https://www.drupal.org/project/editor_advanced_link",
             "support": {
                 "source": "https://git.drupalcode.org/project/editor_advanced_link"
+            }
+        },
+        {
+            "name": "drupal/editor_button_link",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/editor_button_link.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_button_link-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "04fe841137f15811f5bd7d1c5ea5a4ebe8a8ce1a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1661523087",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "beljaako",
+                    "homepage": "https://www.drupal.org/user/1031430"
+                },
+                {
+                    "name": "Martijn de Wit",
+                    "homepage": "https://www.drupal.org/user/83953"
+                }
+            ],
+            "description": "Transform a link into a button via text Editor's link dialog if the text format allows them.",
+            "homepage": "https://www.drupal.org/project/editor_button_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/editor_button_link"
             }
         },
         {
