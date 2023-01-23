@@ -1,17 +1,17 @@
-uuid: a28090b3-b9cd-412e-a88a-e8105814e1ce
+uuid: 0aa89a2c-d400-49a6-88ca-b7a8d9f309b0
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.basic_image_block
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.basic_image_block.field_margin
-field_name: field_margin
+id: block_content.basic_image_block.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: basic_image_block
-label: Margin
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

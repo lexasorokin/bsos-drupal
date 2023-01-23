@@ -6,9 +6,9 @@ dependencies:
     - block_content.type.basic_image_block
     - field.field.block_content.basic_image_block.body
     - field.field.block_content.basic_image_block.field_container
-    - field.field.block_content.basic_image_block.field_margin
     - field.field.block_content.basic_image_block.field_media_url
-    - field.field.block_content.basic_image_block.field_padding
+    - field.field.block_content.basic_image_block.field_padding_bottom
+    - field.field.block_content.basic_image_block.field_padding_top
   module:
     - options
     - text
@@ -34,13 +34,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_margin:
-    type: list_key
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_media_url:
     type: entity_reference_entity_view
     label: hidden
@@ -50,11 +43,18 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_padding:
+  field_padding_bottom:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 6
+    region: content
+  field_padding_top:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden: {  }
