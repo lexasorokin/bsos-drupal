@@ -1,17 +1,17 @@
-uuid: 725f43eb-525c-4550-9d7f-7568a8babfbe
+uuid: f4d41579-55a2-4aa9-a20d-5194c303439c
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.video_block
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.video_block.field_margin
-field_name: field_margin
+id: block_content.video_block.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: video_block
-label: Margin
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true

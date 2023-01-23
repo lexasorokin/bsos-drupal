@@ -1,17 +1,17 @@
-uuid: eabedae7-5c56-4e0a-ba5f-02c020442dee
+uuid: 1a9c2729-b1ec-4ee3-9b74-9e7971b647a9
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.topic_links
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.topic_links.field_padding
-field_name: field_padding
+id: block_content.topic_links.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: topic_links
-label: Padding
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

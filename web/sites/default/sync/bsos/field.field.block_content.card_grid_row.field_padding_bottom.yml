@@ -1,17 +1,17 @@
-uuid: 400da9a8-0190-427b-9637-265e877eedc4
+uuid: 6f4cb002-9bc5-43d3-928c-e9089364f6d9
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.card_grid_row
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.card_grid_row.field_margin
-field_name: field_margin
+id: block_content.card_grid_row.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: card_grid_row
-label: Margin
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true

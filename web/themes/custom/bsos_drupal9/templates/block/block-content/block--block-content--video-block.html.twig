@@ -35,11 +35,11 @@
   ]
 %}
 
-{% set margin = content.field_margin.0['#markup'] %}
-{% set padding = content.field_padding.0['#markup'] %}
+{% set padding_top = content.field_padding_top.0['#markup'] %}
+{% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 {% set video_link = content.field_video_link.0['#url'] %}
 
-<div{{ attributes.addClass(classes, margin, padding) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
 
   {{ title_prefix }}
   {% if label %}

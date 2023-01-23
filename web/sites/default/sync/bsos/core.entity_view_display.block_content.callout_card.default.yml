@@ -5,9 +5,9 @@ dependencies:
   config:
     - block_content.type.callout_card
     - field.field.block_content.callout_card.body
-    - field.field.block_content.callout_card.field_margin
     - field.field.block_content.callout_card.field_media_url
-    - field.field.block_content.callout_card.field_padding
+    - field.field.block_content.callout_card.field_padding_bottom
+    - field.field.block_content.callout_card.field_padding_top
   module:
     - options
     - text
@@ -23,13 +23,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_margin:
-    type: list_key
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_media_url:
     type: entity_reference_entity_view
     label: hidden
@@ -39,11 +32,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_padding:
+  field_padding_bottom:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 5
+    region: content
+  field_padding_top:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden: {  }

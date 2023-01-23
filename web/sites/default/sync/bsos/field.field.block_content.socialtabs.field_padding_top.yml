@@ -1,17 +1,17 @@
-uuid: 0b96b8ed-8a38-4b92-b65d-bbb129f0bdd1
+uuid: e1c2d853-34c8-44ec-ba98-7eb36ca8588e
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.socialtabs
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.socialtabs.field_margin
-field_name: field_margin
+id: block_content.socialtabs.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: socialtabs
-label: Margin
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

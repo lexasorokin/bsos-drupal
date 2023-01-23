@@ -5,9 +5,9 @@ dependencies:
   config:
     - block_content.type.overview_card
     - field.field.block_content.overview_card.body
-    - field.field.block_content.overview_card.field_margin
     - field.field.block_content.overview_card.field_media_url
-    - field.field.block_content.overview_card.field_padding
+    - field.field.block_content.overview_card.field_padding_bottom
+    - field.field.block_content.overview_card.field_padding_top
     - field.field.block_content.overview_card.field_title
     - field.field.block_content.overview_card.field_topic_link_item
   module:
@@ -21,6 +21,8 @@ third_party_settings:
       children:
         - field_margin
         - field_padding
+        - field_padding_top
+        - field_padding_bottom
       label: 'Block Settings'
       region: content
       parent_name: ''
@@ -48,12 +50,6 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_margin:
-    type: options_select
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_media_url:
     type: media_library_widget
     weight: 3
@@ -61,9 +57,15 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_padding:
+  field_padding_bottom:
     type: options_select
-    weight: 4
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding_top:
+    type: options_select
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

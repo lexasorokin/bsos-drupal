@@ -1,17 +1,17 @@
-uuid: faf897c6-3740-4fdd-9b8a-debf4f6a0f2a
+uuid: 7ff70719-467d-45ff-bb0a-8de58b09f49f
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.overview_card
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.overview_card.field_margin
-field_name: field_margin
+id: block_content.overview_card.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: overview_card
-label: Margin
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

@@ -1,17 +1,17 @@
-uuid: 3aa18622-020b-4582-a939-5e0b61806336
+uuid: 5612090a-f1dc-45d0-aa0a-11bfeabb1242
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.overview_card
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.overview_card.field_padding
-field_name: field_padding
+id: block_content.overview_card.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: overview_card
-label: Padding
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true

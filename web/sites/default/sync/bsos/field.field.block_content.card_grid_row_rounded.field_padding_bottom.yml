@@ -1,17 +1,17 @@
-uuid: 75d65612-1c61-4e98-a7f2-bbd44b96ac71
+uuid: e20e9e79-cd7c-45f4-8393-013aae358a22
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.card_grid_row_rounded
-    - field.storage.block_content.field_padding
+    - field.storage.block_content.field_padding_bottom
   module:
     - options
-id: block_content.card_grid_row_rounded.field_padding
-field_name: field_padding
+id: block_content.card_grid_row_rounded.field_padding_bottom
+field_name: field_padding_bottom
 entity_type: block_content
 bundle: card_grid_row_rounded
-label: Padding
+label: 'Padding Bottom'
 description: ''
 required: false
 translatable: true

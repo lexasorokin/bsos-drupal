@@ -1,17 +1,17 @@
-uuid: 364c609a-a4cb-4604-b9f6-af70b3a5ba04
+uuid: 73c9af40-ef7d-4827-8fc1-8332478396f9
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.card_grid_row_rounded
-    - field.storage.block_content.field_margin
+    - field.storage.block_content.field_padding_top
   module:
     - options
-id: block_content.card_grid_row_rounded.field_margin
-field_name: field_margin
+id: block_content.card_grid_row_rounded.field_padding_top
+field_name: field_padding_top
 entity_type: block_content
 bundle: card_grid_row_rounded
-label: Margin
+label: 'Padding Top'
 description: ''
 required: false
 translatable: true

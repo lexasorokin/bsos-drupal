@@ -35,11 +35,11 @@
   ]
 %}
 
-{% set margin = content.field_margin.0['#markup'] %}
-{% set padding = content.field_padding.0['#markup'] %}
+{% set padding_top = content.field_padding_top.0['#markup'] %}
+{% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 {% set show_container = content.field_container.0['#markup'] %}
 
-<div{{ attributes.addClass(classes, margin, padding) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
 
   {% if show_container == 'True' %}
   <div class="container">
@@ -52,7 +52,7 @@
     {{ title_suffix }}
 
     {% block content %}
-      {{ content|without('field_container', 'field_margin', 'field_padding') }}
+      {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom') }}
     {% endblock %}
 
   {% if show_container == 'True' %}
