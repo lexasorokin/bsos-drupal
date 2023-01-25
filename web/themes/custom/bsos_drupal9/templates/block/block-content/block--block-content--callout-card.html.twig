@@ -37,10 +37,11 @@
 
 {% set padding_top = content.field_padding_top.0['#markup'] %}
 {% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
+{% set image_position = content.field_position.0['#markup'] %}
 
 {{ attach_library('bsos_drupal9/callout-card') }}
 
-<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom, 'image-' ~ image_position|clean_class) }}>
 
   {{ title_prefix }}
   {% if label %}

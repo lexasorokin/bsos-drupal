@@ -1,0 +1,23 @@
+uuid: f7b54496-f01f-4a2c-85b5-d25d54e28d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_position
+  module:
+    - options
+id: block_content.callout_card.field_position
+field_name: field_position
+entity_type: block_content
+bundle: callout_card
+label: 'Image Position'
+description: 'Choose Image Position'
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

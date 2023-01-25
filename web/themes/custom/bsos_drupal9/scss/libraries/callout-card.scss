@@ -37,4 +37,15 @@
     font-size: 20px;
     line-height: 1.8;
   }
+
+  // Image Right
+  .image-right {
+    .callout-card {
+      flex-direction: row-reverse;
+    }
+
+    .card__content {
+      padding: 0 20px 0 0;
+    }
+  }
 }
