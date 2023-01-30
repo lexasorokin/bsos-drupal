@@ -62,7 +62,7 @@
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <div class="container">
-          <h1 class="hero-h1">{{ title }}</h1>
+          <h1 class="hero-h1">{{ title|render|check_markup('striptags_html') }}</h1>
           <p class="leadin">{{ text }}</p>
           <a href="{{ link }}" class="button red">{{ link_text }}</a>
         </div>

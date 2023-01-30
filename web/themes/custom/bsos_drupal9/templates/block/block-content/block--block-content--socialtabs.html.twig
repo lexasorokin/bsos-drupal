@@ -55,6 +55,7 @@
       <div class="col-12 col-sm-5">
         <div class="section-header inview-element">
           <h3 class="section-title mb-0 animated fade-in-bottom">{{ title }}</h3>
+          <h3 class="section-title mb-0 animated fade-in-bottom">{{ title|render|check_markup('striptags_html') }}</h3>
         </div>
         <p>
           <a href="https://twitter.com/bsosumd" target="_blank" class="twitter button">Follow on Twitter</a>
