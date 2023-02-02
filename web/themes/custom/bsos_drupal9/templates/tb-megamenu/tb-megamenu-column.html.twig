@@ -1,4 +1,4 @@
-{% if level == 1 %}
+{#{% if level == 1 %}
   <div {{ attributes }}>
     <div class="tb-megamenu-column-inner mega-inner clearfix">
       {% if close_button %}
@@ -13,5 +13,12 @@
   {% for item in tb_items %}
     {{ item }}
   {% endfor %}
+{% endif %}#}
+
+{% if close_button %}
+  {{ close_button }}
 {% endif %}
 
+{% for item in tb_items %}
+  {{ item }}
+{% endfor %}
