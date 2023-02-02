@@ -67,7 +67,15 @@ function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $
   // Block by Region
   if (!empty($variables['elements']['#id'])) {
     $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
-    $region = $block->getRegion();
+
+    // $region = $block->getRegion();
+    // Check if methid exist in var
+    // https://www.php.net/manual/en/function.method-exists.php
+    // Need to check after
+    if( method_exists($block, 'getRegion') ) {
+      $region = $block->getRegion();
+    }
+
     $regionParts = explode('_', $region);
     array_pop($regionParts);
     if($regionParts){
