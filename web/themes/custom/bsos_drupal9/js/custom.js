@@ -15,4 +15,16 @@
     }
   };
 
+  // Status Messages
+  Drupal.behaviors.status_messages = {
+    attach: function(context, settings) {
+      const removeButtonsHighlighted = document.querySelectorAll(".highlighted .btn-close");
+      removeButtonsHighlighted.forEach((btn) => {
+        btn.addEventListener('click', function(){
+          btn.parentElement.remove();
+        });
+      })
+    }
+  };
+
 })(jQuery, Drupal);

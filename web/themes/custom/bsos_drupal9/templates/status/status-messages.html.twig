@@ -1,0 +1,190 @@
+{#
+/**
+ * @file
+ * Default theme implementation for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * An invisible heading identifies the messages for assistive technology.
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
+ * for info.
+ *
+ * Add an ARIA label to the contentinfo area so that assistive technology
+ * user agents will better describe this landmark.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ *
+ * @ingroup themeable
+ */
+#}
+{#<div data-drupal-messages>
+{% for type, messages in message_list %}
+  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }}>
+    {% if type == 'error' %}
+      <div role="alert">
+    {% endif %}
+    {% if status_headings[type] %}
+      <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+    {% endif %}
+    {% if messages|length > 1 %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ messages|first }}
+    {% endif %}
+    {% if type == 'error' %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>#}
+
+<div class="highlighted">
+  <div class="alert-wrapper" data-drupal-messages>
+  {% for type, messages in message_list %}
+
+    {% set classes = [
+      'alert',
+      'alert-dismissible',
+      'fade',
+      'show',
+      'col-12',
+      type == 'status' ? 'alert-success',
+      type == 'warning' ? 'alert-warning',
+      type == 'error' ? 'alert-danger',
+      type == 'info' ? 'alert-info',
+    ] %}
+
+    {% set role = {
+      'status': 'status',
+      'error': 'alert',
+      'warning': 'alert',
+      'info': 'status',
+    } %}
+
+    <div aria-label="{{ status_headings[type] }}" {{ attributes|without('role', 'aria-label').addClass(classes).setAttribute('role', role[type]) }}>
+
+      <div class="container">
+        {% if is_message_with_title or is_message_with_icon %}
+          {% if is_message_with_title %}
+            <h4 id="{{ title_ids[type] }}" class="alert-heading">
+              {{ status_headings[type] }}
+            </h4>
+          {% endif %}
+        {% endif %}
+
+        {% for message in messages %}
+          {% if loop.last %}
+            {{ message }}
+          {% else %}
+            {{ message }}
+            <hr>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+
+  {% endfor %}
+
+  </div>
+</div>
+
+<style>
+.highlighted .alert-wrapper {
+  width: 100%;
+  font-size: 16px;
+}
+
+.highlighted .alert {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.highlighted .alert.alert-success {
+  background: rgba(54, 183, 104, 0.9);
+}
+
+.highlighted .alert.alert-success:hover {
+  background: #36b768;
+}
+
+.highlighted .alert.alert-info {
+  background: rgba(10, 70, 122, 0.9);
+}
+
+.highlighted .alert.alert-info:hover {
+  background: #0a467a;
+}
+
+.highlighted .alert.alert-danger {
+  background: rgba(215, 78, 68, 0.9);
+}
+
+.highlighted .alert.alert-danger:hover {
+  background: #d74e44;
+}
+
+.highlighted .alert.alert-warning {
+  background: rgba(244, 130, 32, 0.9);
+}
+
+.highlighted .alert.alert-warning:hover {
+  background: #f48220;
+}
+
+.highlighted .alert.alert-dismissible {
+  padding-right: 40px;
+}
+
+.highlighted .alert a {
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.highlighted .alert-dismissible .close {
+  font-weight: 400;
+  padding: calc(0.5rem + 2px) 0.75rem;
+  opacity: 0.9;
+}
+
+.highlighted .alert-dismissible .close:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.highlighted .btn-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.highlighted .btn-close:after {
+  width: 24px;
+  height: 24px;
+  content: '\2717';
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+}
+</style>

@@ -45,6 +45,9 @@
 
 {{ attach_library('bsos_drupal9/layout-page') }}
 
+{# Messages #}
+{{ page.highlighted }}
+
 <div class="layout-page layout-container site layout-page-edit">
 
   {# Header #}
@@ -52,9 +55,6 @@
 
   {# Inside Hero Placeholder for Page Edit #}
   {% include '@bsos_drupal9/includes/inside-hero--placeholder.html.twig' %}
-
-  {# Messages #}
-  {{ page.highlighted }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
