@@ -42,13 +42,14 @@
  * @see html.html.twig
  */
 #}
+
+{# Messages #}
+{{ page.highlighted }}
+
 <div class="layout-page layout-container site">
 
   {# Header #}
   {% include '@bsos_drupal9/includes/header.html.twig' %}
-
-  {# Messages #}
-  {{ page.highlighted }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

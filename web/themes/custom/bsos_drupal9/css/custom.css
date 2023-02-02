@@ -57,50 +57,6 @@ li.pager__item.is-active a {
   z-index: 1;
 }
 
-/* This is all NEW - it's for the search results page  */
-form#search-form {
-  max-width: 560px;
-  width: 96%;
-  margin: 20px auto 40px;
-  padding: 10px 30px;
-  background: #f4f4f4;
-  border-radius: 5px;
-}
-#search-form .form-wrapper {
-  display: flex;
-}
-#search-form input[type="submit"] {
-  align-self: center;
-  margin-top: 21px;
-}
-#search-form label[for="edit-keys"] {
-  font-size: 16px;
-}
-#search-form .search-help-link {
-  font-size: 12px;
-}
-
-/* This is NEW: it's for the user login form  */
-form.user-login-form {
-  padding: 60px 0;
-  margin: 0 auto;
-  max-width: 500px;
-}
-form.user-login-form #edit-name--description,
-form.user-login-form #edit-pass--description {
-  font-size: 14px;
-}
-form.user-login-form .form-item {
-  margin-bottom: 20px;
-}
-
-/* This is modifying the existing page titles  */
-@media (min-width: 700px) {
-  .inside-hero h1.page-title {
-    text-transform: none !important;
-  }
-}
-
 /* This is modifying the existing card content  */
 .rounded-card .card-grid-item__content {
   font-size: 1em;

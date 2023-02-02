@@ -53,7 +53,7 @@
       <div class="container">
 
         <div class="section-header text-center inview-element">
-          <h3 class="section-title animated fade-in-bottom ">{{ title }}</h3>
+          <h3 class="section-title animated fade-in-bottom">{{ title|render|check_markup('striptags_html') }}</h3>
           <div class="fearless-divider"></div>
         </div>
 

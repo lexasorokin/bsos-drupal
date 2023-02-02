@@ -1,5 +1,15 @@
-<ul {{ attributes.addClass('submenu') }}>
+{#<ul {{ attributes.addClass('submenu') }}>
   {% for li in lis %}
     {{ li }}
   {% endfor %}
-</ul>
+</ul>#}
+
+{% if level == 1 %}
+  <ul {{ attributes.addClass('submenu') }}>
+{% else %}
+  <ul {{ attributes }}>
+{% endif %}
+    {% for li in lis %}
+      {{ li }}
+    {% endfor %}
+  </ul>

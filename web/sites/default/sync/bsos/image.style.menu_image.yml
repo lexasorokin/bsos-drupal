@@ -1,0 +1,15 @@
+uuid: 1996cd69-1b0c-4d1a-935c-38594997542a
+langcode: en
+status: true
+dependencies: {  }
+name: menu_image
+label: 'Menu Image (W250 H363)'
+effects:
+  4a352203-731f-425a-8f31-782faf78ad4d:
+    uuid: 4a352203-731f-425a-8f31-782faf78ad4d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 363
+      anchor: center-center

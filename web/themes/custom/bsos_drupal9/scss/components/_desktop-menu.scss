@@ -126,6 +126,13 @@ ul.small-menu li a {
   display: flex;
   padding: 20px;
 }
+
+.tb-megamenu-row {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
 .desktop-dropdown ul.submenu {
   display: block;
   columns: 3;

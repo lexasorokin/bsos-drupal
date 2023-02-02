@@ -42,6 +42,10 @@
  * @see html.html.twig
  */
 #}
+
+{# Messages #}
+{{ page.highlighted }}
+
 <div class="layout-container site">
 
   {# Header #}
@@ -49,9 +53,6 @@
 
   {# Inside Hero Base for Page Edit #}
   {% include '@bsos_drupal9/includes/inside-hero--base.html.twig' %}
-
-  {# Messages #}
-  {{ page.highlighted }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
