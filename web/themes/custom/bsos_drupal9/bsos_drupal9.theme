@@ -137,6 +137,7 @@ function bsos_drupal9_theme_suggestions_menu_alter(array &$suggestions, array $v
   if (isset($variables['attributes']['block'])) {
     $block = \Drupal\block\Entity\Block::load($variables['attributes']['block']);
     $region = $block->getRegion();
+    $suggestions[] = 'menu__' . $region;
     $suggestions[] = 'menu__' . $region . '__' . $menu_name;
   }
   // If menu name contains the word mobile, create common template suggestion.
