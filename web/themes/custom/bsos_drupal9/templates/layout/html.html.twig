@@ -40,6 +40,19 @@
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
 
+    {# Favicon #}
+    <link rel="apple-touch-icon" sizes="180x180" href="/{{ directory }}/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/{{ directory }}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/{{ directory }}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/{{ directory }}/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/{{ directory }}/favicon/safari-pinned-tab.svg" color="#e21833">
+    <link rel="shortcut icon" href="/{{ directory }}/favicon/favicon.ico">
+    <link rel="icon" href="/{{ directory }}/favicon/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/{{ directory }}/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    {# Favicon End #}
+
     <script>
       window.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('has-dom-loaded')
