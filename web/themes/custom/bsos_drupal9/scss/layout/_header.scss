@@ -130,6 +130,10 @@ body.nav-open .top-header {
     top: 44px;
   }
 
+  .site-header.site-header--sticky {
+    top: 0;
+  }
+
   // Fix Header when Admin Menu exist
   body.user-is-admin {
     .site-header {
