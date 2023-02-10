@@ -145,3 +145,23 @@ function bsos_drupal9_theme_suggestions_menu_alter(array &$suggestions, array $v
     $suggestions[] = 'menu__' . $region . '__mobile-menus';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function bsos_drupal9_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+
+  // Suggesstions by entity type
+  if (!empty($variables['element']['#entity_type'])) {
+    $entityType = $variables['element']['#entity_type'];
+    if (!empty($entityType)) {
+      $suggestions[] = 'form__' . $entityType;
+    }
+  }
+
+  // Element ID Form Suggesstions
+  $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+
+  // General Form Suggesstions
+  $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#form_id']);
+}
