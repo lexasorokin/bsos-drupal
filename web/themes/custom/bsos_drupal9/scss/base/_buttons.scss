@@ -7,14 +7,16 @@
   color: #e32237;
   border: 2px solid #e32237;
   font-size: 15px;
-  padding: 9px 24px;
+  padding: 10px 24px;
   border-radius: 3px;
   text-align: center;
   transition: all 0.3s;
   font-weight: 600;
+  animation: opacity 0.3s ease-out all;
 }
 .button:hover {
-  opacity: 0.3s ease-out all;
+  opacity: 0.7;
+  cursor: pointer;
 }
 .button.red {
   background-color: #e32237;
