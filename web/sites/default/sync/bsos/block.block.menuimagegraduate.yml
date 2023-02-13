@@ -1,0 +1,25 @@
+uuid: 3fcb386c-da4a-4a07-986d-2a4e56018be6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:menu_image_block:a9bbc14f-e304-49ed-a3f7-02b04d3227b7'
+  module:
+    - block_content
+  theme:
+    - bsos_drupal9
+id: menuimagegraduate
+theme: bsos_drupal9
+region: hidden_block
+weight: 0
+provider: null
+plugin: 'block_content:a9bbc14f-e304-49ed-a3f7-02b04d3227b7'
+settings:
+  id: 'block_content:a9bbc14f-e304-49ed-a3f7-02b04d3227b7'
+  label: 'Menu Image (Graduate)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
