@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.profile_showcase.field_hero_title
     - field.field.node.profile_showcase.field_image
     - field.field.node.profile_showcase.field_media_url
+    - field.field.node.profile_showcase.field_satelllite_profiles
     - field.field.node.profile_showcase.field_show_breadcrumbs
     - image.style.profile_200x200_
     - node.type.profile_showcase
@@ -41,5 +42,6 @@ hidden:
   body: true
   field_hero_title: true
   field_media_url: true
+  field_satelllite_profiles: true
   field_show_breadcrumbs: true
   links: true

@@ -1,0 +1,22 @@
+uuid: d51b77e1-e200-45cf-be98-0e9b187a194e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: profile_showcase
+label: 'Profile Showcase'
+type: 'canonical_entities:node'
+pattern: 'profile-showcase/[node:title]'
+selection_criteria:
+  cdb5a7b8-97f2-42c6-afdd-bce3251663b1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cdb5a7b8-97f2-42c6-afdd-bce3251663b1
+    context_mapping:
+      node: node
+    bundles:
+      profile_showcase: profile_showcase
+selection_logic: and
+weight: -7
+relationships: {  }

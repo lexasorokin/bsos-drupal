@@ -1,0 +1,8 @@
+uuid: 6fc277c2-d8ea-46b3-b863-8a2d8162a46b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Graduate Student Category'
+vid: graduate_student_category
+description: ''
+weight: 0

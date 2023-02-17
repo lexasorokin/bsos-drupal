@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_exclude_from_all_bsos_emai
+    - field.field.node.event.field_faculty_staff_categ_import
     - field.field.node.event.field_hero_title
     - field.field.node.event.field_host
     - field.field.node.event.field_media_url
@@ -89,6 +90,16 @@ content:
     weight: 16
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_faculty_staff_categ_import:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_hero_title:
     type: text_textarea

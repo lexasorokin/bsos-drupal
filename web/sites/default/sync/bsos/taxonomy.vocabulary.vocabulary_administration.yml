@@ -1,0 +1,8 @@
+uuid: b7be705a-22d9-4f00-aaff-589f20962c04
+langcode: en
+status: true
+dependencies: {  }
+name: Administration
+vid: vocabulary_administration
+description: 'Persons who are part of the department Administration'
+weight: 0

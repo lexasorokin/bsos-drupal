@@ -1,0 +1,8 @@
+uuid: faca60ec-d557-4fe7-85f5-716d0f72a003
+langcode: en
+status: true
+dependencies: {  }
+name: 'Faculty/Staff Category'
+vid: vocabulary_faculty_staff_categor
+description: ''
+weight: 0

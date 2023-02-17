@@ -1,0 +1,8 @@
+uuid: 1f51baa0-1dee-424d-97cf-b9984b4e7298
+langcode: en
+status: true
+dependencies: {  }
+name: 'Focus Area'
+vid: focus_area
+description: ''
+weight: 0

@@ -1,0 +1,8 @@
+uuid: eb20aa63-7840-4fb8-9b31-8a1f2c3152ea
+langcode: en
+status: true
+dependencies: {  }
+name: 'BSOS Drupal Sites'
+vid: bsos_drupal_sites
+description: ''
+weight: 0

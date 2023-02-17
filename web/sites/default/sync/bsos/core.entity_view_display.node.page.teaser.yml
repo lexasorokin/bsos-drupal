@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_hero_title
     - field.field.node.page.field_media_url
     - field.field.node.page.field_show_breadcrumbs
+    - field.field.node.page.field_taxonomy_vocabulary_2
     - node.type.page
   module:
     - text
@@ -34,3 +35,4 @@ hidden:
   field_hero_title: true
   field_media_url: true
   field_show_breadcrumbs: true
+  field_taxonomy_vocabulary_2: true

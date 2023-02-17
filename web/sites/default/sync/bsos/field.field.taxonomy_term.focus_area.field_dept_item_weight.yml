@@ -1,0 +1,23 @@
+uuid: 0daf8efa-6f56-493d-b8c0-50d33f158ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_dept_item_weight
+    - taxonomy.vocabulary.focus_area
+id: taxonomy_term.focus_area.field_dept_item_weight
+field_name: field_dept_item_weight
+entity_type: taxonomy_term
+bundle: focus_area
+label: 'Order / Weight'
+description: 'Select the order/weight for the item, relative to order/weight applied to similar items. Lower numbers appear first.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

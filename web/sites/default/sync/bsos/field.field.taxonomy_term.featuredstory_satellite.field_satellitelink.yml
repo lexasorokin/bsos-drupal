@@ -1,0 +1,23 @@
+uuid: 21b0c7b9-a208-4a66-9693-dca78f038ee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_satellitelink
+    - taxonomy.vocabulary.featuredstory_satellite
+  module:
+    - link
+id: taxonomy_term.featuredstory_satellite.field_satellitelink
+field_name: field_satellitelink
+entity_type: taxonomy_term
+bundle: featuredstory_satellite
+label: SatelliteLink
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

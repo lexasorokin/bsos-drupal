@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.featured_content.field_hero_title
     - field.field.node.featured_content.field_image
     - field.field.node.featured_content.field_media_url
+    - field.field.node.featured_content.field_satellite_featured_stories
     - field.field.node.featured_content.field_show_breadcrumbs
     - image.style.thumbnail
     - node.type.featured_content
@@ -59,7 +60,7 @@ content:
     third_party_settings: {  }
   field_fc_weight:
     type: number
-    weight: 10
+    weight: 11
     region: content
     settings:
       placeholder: ''
@@ -86,6 +87,12 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_satellite_featured_stories:
+    type: options_buttons
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_show_breadcrumbs:
     type: boolean_checkbox

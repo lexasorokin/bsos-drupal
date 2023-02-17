@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_exclude_from_all_bsos_emai
+    - field.field.node.event.field_faculty_staff_categ_import
     - field.field.node.event.field_hero_title
     - field.field.node.event.field_host
     - field.field.node.event.field_media_url
@@ -59,16 +60,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
-    region: content
-  field_exclude_from_all_bsos_emai:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 12
     region: content
   field_hero_title:
     type: text_default
@@ -133,4 +124,6 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-hidden: {  }
+hidden:
+  field_exclude_from_all_bsos_emai: true
+  field_faculty_staff_categ_import: true
