@@ -1,0 +1,8 @@
+uuid: f3ad8b81-9327-4b75-b0a1-42666684b6ac
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Satellite'
+vid: news_satellite
+description: ''
+weight: 0

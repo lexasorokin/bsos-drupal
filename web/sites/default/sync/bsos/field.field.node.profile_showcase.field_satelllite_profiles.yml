@@ -1,0 +1,29 @@
+uuid: 2329e02e-26e0-4673-9ef6-5ee88946bb9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_satelllite_profiles
+    - node.type.profile_showcase
+    - taxonomy.vocabulary.profileshowcase_satellite
+id: node.profile_showcase.field_satelllite_profiles
+field_name: field_satelllite_profiles
+entity_type: node
+bundle: profile_showcase
+label: 'Satelllite Profiles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      profileshowcase_satellite: profileshowcase_satellite
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,52 @@
+uuid: 12a184f7-ce50-4f43-84a7-8ec5d7977867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.focus_area.field_dept_item_weight
+    - taxonomy.vocabulary.focus_area
+  module:
+    - path
+    - text
+id: taxonomy_term.focus_area.default
+targetEntityType: taxonomy_term
+bundle: focus_area
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_dept_item_weight:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

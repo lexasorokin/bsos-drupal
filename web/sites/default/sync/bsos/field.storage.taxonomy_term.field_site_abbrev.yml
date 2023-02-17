@@ -1,0 +1,21 @@
+uuid: c9c4a702-1ed7-43e2-9aa6-19a95dc57993
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_site_abbrev
+field_name: field_site_abbrev
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

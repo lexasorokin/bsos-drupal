@@ -1,7 +1,7 @@
 _core:
   default_config_hash: i76EDs9aAKdrR4nZfe_woXsD0yihn4avDej8uClXES8
-applies_admin_routes: true
-include_invalid_paths: false
+applies_admin_routes: false
+include_invalid_paths: true
 excluded_paths: ''
 replaced_titles: ''
 custom_paths: ''

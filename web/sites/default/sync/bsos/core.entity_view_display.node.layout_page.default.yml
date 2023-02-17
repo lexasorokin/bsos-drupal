@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
     - field.field.node.layout_page.field_metatags
+    - field.field.node.layout_page.field_taxonomy_vocabulary_2
     - field.field.node.layout_page.layout_builder__layout
     - node.type.layout_page
   module:
@@ -38,6 +39,22 @@ third_party_settings:
               block_revision_id: 35
               block_serialized: null
             weight: 0
+            additional: {  }
+          41ee35a9-c76c-4736-b68b-09507bc6ea23:
+            uuid: 41ee35a9-c76c-4736-b68b-09507bc6ea23
+            region: content
+            configuration:
+              id: 'field_block:node:layout_page:field_taxonomy_vocabulary_2'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
@@ -82,6 +99,14 @@ targetEntityType: node
 bundle: layout_page
 mode: default
 content:
+  field_taxonomy_vocabulary_2:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }

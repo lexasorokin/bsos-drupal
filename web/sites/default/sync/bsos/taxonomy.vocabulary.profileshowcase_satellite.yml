@@ -1,0 +1,8 @@
+uuid: 37abecdc-fdf7-40b3-88c3-9e3bed2d7796
+langcode: en
+status: true
+dependencies: {  }
+name: 'ProfileShowcase Satellite'
+vid: profileshowcase_satellite
+description: ''
+weight: 0

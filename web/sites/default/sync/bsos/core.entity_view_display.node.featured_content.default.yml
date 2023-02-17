@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.featured_content.field_hero_title
     - field.field.node.featured_content.field_image
     - field.field.node.featured_content.field_media_url
+    - field.field.node.featured_content.field_satellite_featured_stories
     - field.field.node.featured_content.field_show_breadcrumbs
     - node.type.featured_content
   module:
@@ -74,3 +75,4 @@ content:
     region: content
 hidden:
   field_fc_weight: true
+  field_satellite_featured_stories: true

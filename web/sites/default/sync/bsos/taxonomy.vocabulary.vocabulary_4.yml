@@ -1,0 +1,8 @@
+uuid: 5faff43e-0c88-4082-aabf-397bc08d06f7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Research Topics'
+vid: vocabulary_4
+description: ''
+weight: 0

@@ -1,0 +1,22 @@
+uuid: 317fc496-d5c9-456d-8270-498246f2a8f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: landing_topic_alias
+label: 'Landing Topic Alias (Layout Pages)'
+type: 'canonical_entities:node'
+pattern: '[node:field_taxonomy_vocabulary_2]/[node:title]'
+selection_criteria:
+  d0778ad0-9b17-49a5-9284-8bd683f0ed2d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d0778ad0-9b17-49a5-9284-8bd683f0ed2d
+    context_mapping:
+      node: node
+    bundles:
+      layout_page: layout_page
+selection_logic: and
+weight: -6
+relationships: {  }

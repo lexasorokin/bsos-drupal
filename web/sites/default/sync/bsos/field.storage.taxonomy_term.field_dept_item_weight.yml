@@ -1,0 +1,20 @@
+uuid: a2c3befb-1f79-4331-8d24-80843113a09f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_dept_item_weight
+field_name: field_dept_item_weight
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
