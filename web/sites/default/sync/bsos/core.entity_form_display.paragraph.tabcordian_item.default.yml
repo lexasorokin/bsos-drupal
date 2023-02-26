@@ -1,0 +1,34 @@
+uuid: c6380c0f-d35e-41aa-b57d-ae349b9a52fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabcordian_item.field_item_content
+    - field.field.paragraph.tabcordian_item.field_item_title
+    - paragraphs.paragraphs_type.tabcordian_item
+  module:
+    - text
+id: paragraph.tabcordian_item.default
+targetEntityType: paragraph
+bundle: tabcordian_item
+mode: default
+content:
+  field_item_content:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
