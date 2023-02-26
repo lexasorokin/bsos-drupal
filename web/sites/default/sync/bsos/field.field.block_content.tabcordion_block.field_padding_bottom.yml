@@ -1,0 +1,21 @@
+uuid: 77684293-c349-4987-b5e1-d236f3611980
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabcordion_block
+    - field.storage.block_content.field_padding_bottom
+  module:
+    - options
+id: block_content.tabcordion_block.field_padding_bottom
+field_name: field_padding_bottom
+entity_type: block_content
+bundle: tabcordion_block
+label: 'Padding Bottom'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

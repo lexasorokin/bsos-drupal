@@ -1,0 +1,8 @@
+uuid: 1b816112-4d06-4c83-82c4-ce7046ed52c9
+langcode: en
+status: true
+dependencies: {  }
+id: tabcordion_block
+label: 'Tabcordion Block'
+revision: 0
+description: '[LB] Custom Block'

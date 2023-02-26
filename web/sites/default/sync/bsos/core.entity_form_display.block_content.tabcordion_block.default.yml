@@ -1,0 +1,66 @@
+uuid: d9e4c0a2-17fe-490d-a7af-d4a0447dbd0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabcordion_block
+    - field.field.block_content.tabcordion_block.body
+    - field.field.block_content.tabcordion_block.field_padding_bottom
+    - field.field.block_content.tabcordion_block.field_padding_top
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_block_settings:
+      children:
+        - field_padding_top
+        - field_padding_bottom
+      label: 'Block Settings'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: block_content.tabcordion_block.default
+targetEntityType: block_content
+bundle: tabcordion_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_padding_bottom:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_padding_top:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
