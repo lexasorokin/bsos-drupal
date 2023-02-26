@@ -318,8 +318,19 @@ h1.hero-h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 15px solid rgb(0 0 0 / 76%);
 }
+
+.hero-card .small-icon:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 100%;
+  border: 10px solid rgb(0 0 0 / 76%);
+  left: -10px;
+  bottom: -10px;
+}
+
 .hero-card .small-icon img {
   display: block;
 }
@@ -359,7 +370,6 @@ h1.hero-h1 span {
     padding: 13px;
     top: 12px;
     left: calc(50% - 28px);
-    outline: 10px solid rgb(0 0 0 / 76%);
   }
   .hero-card.right {
     padding: 0 40px 20px 40px;
