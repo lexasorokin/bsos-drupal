@@ -85,6 +85,10 @@ overview-card:
   css:
     theme:
       css/libraries/overview-card.min.css: {}
+quote-block:
+  css:
+    theme:
+      css/libraries/quote-block.min.css: {}
 
 #blog-categories:
 #  css:
