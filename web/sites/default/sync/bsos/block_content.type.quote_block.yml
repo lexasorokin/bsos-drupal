@@ -1,0 +1,8 @@
+uuid: a6012cb2-4354-425d-b0df-7cd497ba901e
+langcode: en
+status: true
+dependencies: {  }
+id: quote_block
+label: 'Quote Block'
+revision: 0
+description: '[LB] Custom Block'

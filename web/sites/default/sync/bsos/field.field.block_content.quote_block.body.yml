@@ -1,0 +1,23 @@
+uuid: ea30b64a-3e99-4bbb-82f5-2456a5947f65
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.quote_block.body
+field_name: body
+entity_type: block_content
+bundle: quote_block
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

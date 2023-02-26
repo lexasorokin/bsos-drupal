@@ -40,7 +40,9 @@
 {{ attach_library('bsos_drupal9/quote-block') }}
 
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
-{% set title = content.field_hero_title.0 %}
+{% set opacity_bg_color = content.field_opacity.0 %}
+{% set quote_bg_color = content.field_text_bg_color.0 %}
+{% set quote_text_color = content.field_text_color.0 %}
 
 <div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
 
@@ -49,9 +51,9 @@
 
   {% block content %}
     <section class="block-quote-section full-blockquote">
-      <div class="bq-overlay" style="background: #000000; opacity: 0.5;"></div>
+      <div class="bq-overlay" style="background:{{ quote_bg_color }}; opacity:{{ opacity_bg_color }};"></div>
       <div class="bq-image" style="background-image: url('{{ media_url }}');"></div>
-      <div class="container" style="color: #fff;">
+      <div class="container" style="color:{{ quote_text_color }};">
         <blockquote>
           {{ content.body.0 }}
           <footer>{{ content.field_title.0 }}</footer>

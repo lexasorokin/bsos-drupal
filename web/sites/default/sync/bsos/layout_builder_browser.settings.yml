@@ -12,6 +12,7 @@ auto_added_reusable_block_content_bundles:
   card_grid_row: card_grid_row
   card_grid_row_rounded: card_grid_row_rounded
   overview_card: overview_card
+  quote_block: quote_block
   socialtabs: socialtabs
   topic_links: topic_links
   video_block: video_block

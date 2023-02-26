@@ -1,0 +1,25 @@
+uuid: be94c5a9-7a76-41e8-9a5b-de27b3803d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote_block
+    - field.storage.block_content.field_opacity
+id: block_content.quote_block.field_opacity
+field_name: field_opacity
+entity_type: block_content
+bundle: quote_block
+label: 'Opacity BG Color'
+description: 'Value from 0 to 1'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 1
+  prefix: ''
+  suffix: ''
+field_type: decimal

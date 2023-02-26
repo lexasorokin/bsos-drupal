@@ -1,0 +1,21 @@
+uuid: fab29d24-7149-4bae-afeb-90e6e272ac9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote_block
+    - field.storage.block_content.field_padding_bottom
+  module:
+    - options
+id: block_content.quote_block.field_padding_bottom
+field_name: field_padding_bottom
+entity_type: block_content
+bundle: quote_block
+label: 'Padding Bottom'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
