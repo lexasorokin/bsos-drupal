@@ -71,28 +71,24 @@
         <section class="section-twocardslider">
           <div id="two-card-slider" class="two-card-slider owl-carousel owl-theme">
             <div class="item">
-              <div class="hero-card left">
-                {% if hero_card_left_link %}<a href="{{ hero_card_left_link }}" tabindex="0">{% endif %}
-                  <div class="small-icon">
-                    <img decoding="async" width="62" height="52"
-                      src="{{ hero_card_left_icon }}"
-                      class="attachment-full size-full" alt="" loading="lazy">
-                  </div>
-                  <span class="hero-card-title">{{ hero_card_left_title }}</span>
-                {% if hero_card_left_link %}</a>{% endif %}
-              </div>
+              <a class="hero-card left" href="{{ hero_card_left_link }}" tabindex="0">
+                <div class="small-icon">
+                  <img decoding="async" width="62" height="52"
+                    src="{{ hero_card_left_icon }}"
+                    class="attachment-full size-full" alt="" loading="lazy">
+                </div>
+                <span class="hero-card-title">{{ hero_card_left_title }}</span>
+              </a>
             </div>
             <div class="item">
-              <div class="hero-card right">
-                {% if hero_card_right_link %}<a href="{{ hero_card_right_link }}" tabindex="0">{% endif %}
-                  <div class="small-icon">
-                    <img decoding="async" width="62" height="52"
-                      src="{{ hero_card_right_icon }}" class="attachment-full size-full"
-                      alt="" loading="lazy">
-                  </div>
-                  <span class="hero-card-title">{{ hero_card_right_title }}</span>
-                {% if hero_card_right_link %}</a>{% endif %}
-              </div>
+              <a class="hero-card right" href="{{ hero_card_right_link }}" tabindex="0">
+                <div class="small-icon">
+                  <img decoding="async" width="62" height="52"
+                    src="{{ hero_card_right_icon }}" class="attachment-full size-full"
+                    alt="" loading="lazy">
+                </div>
+                <span class="hero-card-title">{{ hero_card_right_title }}</span>
+              </a>
             </div>
           </div>
         </section>

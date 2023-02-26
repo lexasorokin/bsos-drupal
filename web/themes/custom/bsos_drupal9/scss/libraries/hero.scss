@@ -74,6 +74,9 @@ h1.hero-h1 {
     letter-spacing: -0.9px;
     margin-bottom: 30px;
   }
+  .single-image-hero h1.hero-h1 {
+    font-size: 60px;
+  }
 }
 
 .video-hero {
@@ -276,6 +279,9 @@ h1.hero-h1 span {
 .section-twocardslider {
   margin-bottom: -130px;
 }
+.two-card-slider .item {
+  padding: 20px 10px 0;
+}
 .hero-card {
   position: relative;
   width: 100%;
@@ -287,17 +293,16 @@ h1.hero-h1 span {
   padding: 0 40px 20px 40px;
   text-align: center;
 }
-.hero-card a {
-  display: block;
+.hero-card:hover {
+  opacity: 1;
+  transform: translateY(-5px);
 }
 .hero-card.left {
-  background: url(https://bsosdev.arbedigital.com/wp-content/uploads/2022/10/left-card-bg.png)
-    no-repeat center bottom;
+  background: url('../../img/left-card-bg.jpg') no-repeat center bottom;
   background-size: contain;
 }
 .hero-card.right {
-  background: url(https://bsosdev.arbedigital.com/wp-content/uploads/2022/10/card-two-bg.png)
-    no-repeat center bottom;
+  background: url('../../img/right-card-bg.jpg') no-repeat center bottom;
   background-size: contain;
   padding: 0 66px 20px 66px;
 }
@@ -313,6 +318,7 @@ h1.hero-h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 15px solid rgb(0 0 0 / 76%);
 }
 .hero-card .small-icon img {
   display: block;
@@ -341,6 +347,9 @@ h1.hero-h1 span {
   display: none;
 }
 @media (max-width: 767px) {
+  .two-card-slider .item {
+    padding: 20px 0 0 0;
+  }
   .hero-card {
     height: 164px;
   }
@@ -350,6 +359,7 @@ h1.hero-h1 span {
     padding: 13px;
     top: 12px;
     left: calc(50% - 28px);
+    outline: 10px solid rgb(0 0 0 / 76%);
   }
   .hero-card.right {
     padding: 0 40px 20px 40px;
