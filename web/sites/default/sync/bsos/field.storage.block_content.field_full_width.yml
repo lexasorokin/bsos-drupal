@@ -1,17 +1,14 @@
-uuid: 89a69e18-b9eb-416c-a291-7480b6c2df9d
+uuid: 5e1ff9e4-2dff-4023-a0e9-6107ff35ac41
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-id: block_content.field_text_bg_color
-field_name: field_text_bg_color
+id: block_content.field_full_width
+field_name: field_full_width
 entity_type: block_content
-type: string
-settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1
