@@ -73,6 +73,23 @@ h6 {
   margin: 0 0 0.4em 0;
 }
 
+h2.sans-serif,
+h3.sans-serif,
+h4.sans-serif {
+  font-family: var(--sans-serif);
+}
+.main-content h2.sans-serif {
+  font-weight: 600;
+}
+h2.no-border,
+.main-content h2.no-border {
+  padding-bottom: 0;
+}
+h2.no-border:after,
+.main-content h2.no-border:after {
+  display: none;
+}
+
 a {
   text-decoration: none;
   transition: 0.3s ease-out all;
@@ -146,6 +163,11 @@ p.callout,
 .main-content iframe {
   margin-bottom: 30px;
 }
+
+.spacer {
+  width: 100%;
+}
+
 @media screen and (min-width: 700px) {
   .md-text-right {
     text-align: right;
