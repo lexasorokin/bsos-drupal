@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.tabcordian_content
+    - field.storage.paragraph.field_item_content
     - paragraphs.paragraphs_type.tabcordian_item
   module:
+    - block_content
+    - eva
     - paragraphs
+    - text
 id: views_tabcordion_content
 label: 'TabCordion Content'
 module: views
@@ -87,6 +91,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_item_content:
+          id: field_item_content
+          table: paragraph__field_item_content
+          field: field_item_content
+          plugin_id: field
       pager:
         type: none
         options:
@@ -109,7 +118,15 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        field_section_item_target_id:
+          id: field_section_item_target_id
+          table: block_content__field_section_item
+          field: field_section_item_target_id
+          relationship: reverse__block_content__field_section_item
+          plugin_id: standard
+          expose:
+            field_identifier: field_section_item_target_id
       arguments: {  }
       filters:
         status:
@@ -156,7 +173,13 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        reverse__block_content__field_section_item:
+          id: reverse__block_content__field_section_item
+          table: paragraphs_item_field_data
+          field: reverse__block_content__field_section_item
+          entity_type: paragraph
+          plugin_id: entity_reverse
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -165,7 +188,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-      tags: {  }
+      tags:
+        - 'config:field.storage.paragraph.field_item_content'
   block_1:
     id: block_1
     display_title: Block
@@ -178,4 +202,216 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-      tags: {  }
+      tags:
+        - 'config:field.storage.paragraph.field_item_content'
+  entity_view_1:
+    id: entity_view_1
+    display_title: 'EVA - Content'
+    display_plugin: entity_view
+    position: 2
+    display_options:
+      fields:
+        id:
+          id: id
+          table: paragraphs_item_field_data
+          field: id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: id
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_item_content:
+          id: field_item_content
+          table: paragraph__field_item_content
+          field: field_item_content
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      sorts: {  }
+      arguments:
+        parent_id:
+          id: parent_id
+          table: paragraphs_item_field_data
+          field: parent_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: paragraph
+          entity_field: parent_id
+          plugin_id: string
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:paragraph'
+        options:
+          relationship: none
+          view_mode: tabcordian_content
+      defaults:
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+      relationships: {  }
+      display_description: ''
+      display_extenders: {  }
+      entity_type: block_content
+      bundles:
+        - tabcordion_block
+      show_title: true
+      argument_mode: token
+      default_argument: '[block_content:id]'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.paragraph.field_item_content'
