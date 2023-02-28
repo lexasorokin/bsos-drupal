@@ -1,0 +1,21 @@
+uuid: 4a1ed06c-9a0d-432d-8ced-0c1e71bec097
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_block
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.accordion_block.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: accordion_block
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
