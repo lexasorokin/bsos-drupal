@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: featured_stories
-label: 'Featured Stories (W350)'
+label: 'Featured Stories (W350 X2)'
 effects:
-  8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3:
-    uuid: 8e5bc10a-309e-4ce7-b29b-6fcd9ff712e3
+  5445cd3b-bfa4-4f0b-8bf5-9efe1e461362:
+    uuid: 5445cd3b-bfa4-4f0b-8bf5-9efe1e461362
     id: image_scale
-    weight: 3
+    weight: 2
     data:
-      width: 350
+      width: 700
       height: null
       upscale: false

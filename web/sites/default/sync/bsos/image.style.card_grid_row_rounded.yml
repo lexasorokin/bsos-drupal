@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: card_grid_row_rounded
-label: 'Card Grid Row Rounded (W390 H312)'
+label: 'Card Grid Row Rounded (W390 H312 X2)'
 effects:
-  ac0ff105-80ba-4879-a515-3df58db82c0e:
-    uuid: ac0ff105-80ba-4879-a515-3df58db82c0e
+  58a5864c-5451-47f2-b835-ecbc0e9a8986:
+    uuid: 58a5864c-5451-47f2-b835-ecbc0e9a8986
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 390
-      height: 312
+      width: 780
+      height: 624
       anchor: center-center

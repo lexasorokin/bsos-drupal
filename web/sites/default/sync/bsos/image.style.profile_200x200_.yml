@@ -7,16 +7,8 @@ dependencies:
   module:
     - crop
 name: profile_200x200_
-label: 'Profile (200x200)'
+label: 'Profile (200x200 X2)'
 effects:
-  f730baa5-3370-45f6-9f19-8a351d2a2786:
-    uuid: f730baa5-3370-45f6-9f19-8a351d2a2786
-    id: image_scale_and_crop
-    weight: -9
-    data:
-      width: 200
-      height: 200
-      anchor: center-center
   a6b9ac47-1e36-4e30-a851-d3f1efa4b18f:
     uuid: a6b9ac47-1e36-4e30-a851-d3f1efa4b18f
     id: crop_crop
@@ -24,3 +16,11 @@ effects:
     data:
       crop_type: square
       automatic_crop_provider: null
+  957a273a-d478-4700-8e88-f610a6f26e5f:
+    uuid: 957a273a-d478-4700-8e88-f610a6f26e5f
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 400
+      height: 400
+      anchor: center-center

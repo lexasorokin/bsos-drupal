@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: menu_image
-label: 'Menu Image (W250 H363)'
+label: 'Menu Image (W250 H363 X2)'
 effects:
-  4a352203-731f-425a-8f31-782faf78ad4d:
-    uuid: 4a352203-731f-425a-8f31-782faf78ad4d
+  136d4659-61bd-4faa-8a73-c1701c3832a7:
+    uuid: 136d4659-61bd-4faa-8a73-c1701c3832a7
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 250
-      height: 363
+      width: 500
+      height: 724
       anchor: center-center
