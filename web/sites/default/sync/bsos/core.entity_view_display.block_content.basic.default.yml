@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.basic.field_container
     - field.field.block_content.basic.field_padding_bottom
     - field.field.block_content.basic.field_padding_top
+    - field.field.block_content.basic.field_title_settings
+    - field.field.block_content.basic.field_title_tag
   module:
     - options
     - text
@@ -23,7 +25,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_container:
     type: boolean
@@ -33,7 +35,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_padding_bottom:
     type: list_key
@@ -48,5 +50,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_title_settings:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_tag:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden: {  }

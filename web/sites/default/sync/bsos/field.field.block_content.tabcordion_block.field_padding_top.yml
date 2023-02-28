@@ -1,0 +1,21 @@
+uuid: a30d1188-1a81-4640-a0bd-93aa68ed493d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabcordion_block
+    - field.storage.block_content.field_padding_top
+  module:
+    - options
+id: block_content.tabcordion_block.field_padding_top
+field_name: field_padding_top
+entity_type: block_content
+bundle: tabcordion_block
+label: 'Padding Top'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.basic.field_container
     - field.field.block_content.basic.field_padding_bottom
     - field.field.block_content.basic.field_padding_top
+    - field.field.block_content.basic.field_title_settings
+    - field.field.block_content.basic.field_title_tag
   module:
     - field_group
     - text
@@ -15,15 +17,13 @@ third_party_settings:
   field_group:
     group_block_settings:
       children:
-        - field_margin
-        - field_padding
         - field_padding_top
         - field_padding_bottom
         - field_container
       label: 'Block Settings'
       region: content
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -41,7 +41,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -65,6 +65,18 @@ content:
   field_padding_top:
     type: options_select
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_settings:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_tag:
+    type: options_select
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

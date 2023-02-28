@@ -1,0 +1,11 @@
+uuid: abb033f0-3f69-47da-a16e-6987263eaffd
+langcode: en
+status: true
+dependencies: {  }
+id: tabcordian_block
+block_id: 'inline_block:tabcordion_block'
+category: layout_builder_components
+label: 'Tabcordian Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/tabcordian-block.png
+image_alt: ''
+weight: -5

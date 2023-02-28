@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: card_grid_row
-label: 'Card Grid Row (W290 H230)'
+label: 'Card Grid Row (W290 H230 X2)'
 effects:
-  3ccb4f55-75a7-4688-921a-88d9437be0bb:
-    uuid: 3ccb4f55-75a7-4688-921a-88d9437be0bb
+  a9783f86-2469-4b6d-9aec-83431e075acb:
+    uuid: a9783f86-2469-4b6d-9aec-83431e075acb
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 290
-      height: 230
+      width: 580
+      height: 460
       anchor: center-center

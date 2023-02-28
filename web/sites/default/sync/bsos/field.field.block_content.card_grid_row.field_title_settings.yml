@@ -1,0 +1,21 @@
+uuid: 6efd19ee-732f-4404-baab-64aa183d2921
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.card_grid_row.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: card_grid_row
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

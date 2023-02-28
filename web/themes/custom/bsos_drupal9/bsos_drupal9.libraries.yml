@@ -57,34 +57,58 @@ profile-showcase:
   css:
     theme:
       css/libraries/profile-showcase.min.css: {}
+
 featured-stories:
   css:
     theme:
       css/libraries/featured-stories.min.css: {}
+
 callout-card:
   css:
     theme:
       css/libraries/callout-card.min.css: {}
+
 topic-links:
   css:
     theme:
       css/libraries/topic-links.min.css: {}
+
 card-grid-row:
   css:
     theme:
       css/libraries/card-grid-row.min.css: {}
+
 accordion-block:
   css:
     theme:
       css/libraries/accordion-block.min.css: {}
+
 events-block:
   css:
     theme:
       css/libraries/events-block.min.css: {}
+
 overview-card:
   css:
     theme:
       css/libraries/overview-card.min.css: {}
+
+quote-block:
+  css:
+    theme:
+      css/libraries/quote-block.min.css: {}
+
+tabcordian-block:
+  css:
+    theme:
+      css/libraries/tabcordian-block.min.css: {}
+  js:
+    js/tabcordian-block.js: {}
+
+publication-list:
+  css:
+    theme:
+      css/libraries/publication-list.min.css: {}
 
 #blog-categories:
 #  css:

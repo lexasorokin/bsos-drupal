@@ -1,0 +1,21 @@
+uuid: 38986832-53a3-41ec-97ad-f2ba845c5723
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_block
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.accordion_block.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: accordion_block
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

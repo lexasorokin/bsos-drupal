@@ -35,8 +35,16 @@
   ]
 %}
 
+{# Title Settings #}
+{% set title_settings = content.field_title_settings.0['#markup'] %}
+{% set title_tag = content.field_title_tag.0['#markup'] %}
+
+{# Block Settings #}
 {% set padding_top = content.field_padding_top.0['#markup'] %}
 {% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
+
+{% set col = content.field_grid_col.0['#markup'] %}
+{% set card_design = content.field_card_grid_row_design.0['#markup'] %}
 
 {{ attach_library('bsos_drupal9/card-grid-row') }}
 
@@ -44,13 +52,19 @@
 
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+
+    {% if title_tag %}
+      <{{title_tag}}{{ title_attributes.addClass(title_settings) }}>{{ label }}</{{title_tag}}>
+    {% else %}
+      <h2{{ title_attributes.addClass(title_settings) }}>{{ label }}</h2>
+    {% endif %}
+
   {% endif %}
   {{ title_suffix }}
 
   {% block content %}
-    <div class="card-grid grid-row three-col overflow-x-scroll">
-      {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom') }}
+    <div class="card-grid {{ card_design }} grid-row {{ col }} overflow-x-scroll">
+      {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom', 'field_grid_col', 'field_card_grid_row_design', 'field_title_settings', 'field_title_tag') }}
     </div>
   {% endblock %}
 

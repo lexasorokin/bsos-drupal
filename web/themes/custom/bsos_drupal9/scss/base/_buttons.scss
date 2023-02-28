@@ -77,6 +77,20 @@
   font-family: var(--sans-serif);
   font-size: 1em;
 }
+
+.button.fearless {
+  color: #fff;
+  background: #e21833 url(../img/fearless-triangle.png) no-repeat bottom right;
+  background-size: 30px auto;
+  opacity: 1;
+  padding: 14px 35px 14px 26px;
+  border-width: 1px;
+}
+.button.fearless:hover {
+  background-color: black;
+  border-color: #000;
+}
+
 .overview-card__links li a {
   position: relative;
   display: flex;

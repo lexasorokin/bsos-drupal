@@ -1,7 +1,7 @@
 /* Callout Card */
 
 .callout-card {
-  padding: 10px;
+  padding: 28px;
   background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   display: flex;
@@ -16,7 +16,7 @@
   width: 100%;
 }
 .card__content {
-  font-size: 18px;
+  /*font-size: 18px;*/
   line-height: 1.6;
   padding: 20px 0 0;
 }
@@ -33,8 +33,8 @@
   }
   .card__content {
     flex: 1 1 70%;
-    padding: 0 0 0 30px;
-    font-size: 20px;
+    padding: 0 0 0 36px;
+    /*font-size: 20px;*/
     line-height: 1.8;
   }
 
@@ -45,7 +45,7 @@
     }
 
     .card__content {
-      padding: 0 20px 0 0;
+      padding: 0 36px 0 0;
     }
   }
 }

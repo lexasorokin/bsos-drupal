@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: overview_card
-label: 'Overview Card (W214 H345)'
+label: 'Overview Card (W214 H345 X2)'
 effects:
-  e7ec3db2-5eb9-4e3e-b116-940e6693dcf4:
-    uuid: e7ec3db2-5eb9-4e3e-b116-940e6693dcf4
+  f3253580-02a5-49d7-922f-610cb4c4a3c2:
+    uuid: f3253580-02a5-49d7-922f-610cb4c4a3c2
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 214
-      height: 345
+      width: 428
+      height: 690
       anchor: center-center

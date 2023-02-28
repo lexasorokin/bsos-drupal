@@ -1,0 +1,21 @@
+uuid: 47dc5d0e-470a-451d-81a9-b0d20f2db677
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.topic_links.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: topic_links
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

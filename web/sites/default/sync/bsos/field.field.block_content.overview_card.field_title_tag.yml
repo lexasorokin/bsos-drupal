@@ -1,0 +1,21 @@
+uuid: 3378017b-e4b8-48a7-a3b9-3fecc1e7e431
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.overview_card
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.overview_card.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: overview_card
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

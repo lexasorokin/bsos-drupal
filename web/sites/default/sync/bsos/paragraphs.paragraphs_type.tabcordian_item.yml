@@ -1,0 +1,10 @@
+uuid: 64b2c992-356b-4cc0-bbd1-8bdafccb1af4
+langcode: en
+status: true
+dependencies: {  }
+id: tabcordian_item
+label: 'Tabcordian Item'
+icon_uuid: null
+icon_default: null
+description: 'Custom Paragraph type for Tabcordian Block'
+behavior_plugins: {  }

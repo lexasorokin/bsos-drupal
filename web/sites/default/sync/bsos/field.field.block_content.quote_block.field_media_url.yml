@@ -1,0 +1,29 @@
+uuid: 1aec9291-5ec1-4166-aa9f-ccf700f3e06a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote_block
+    - field.storage.block_content.field_media_url
+    - media.type.image
+id: block_content.quote_block.field_media_url
+field_name: field_media_url
+entity_type: block_content
+bundle: quote_block
+label: 'Quote BG Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 5e1ff9e4-2dff-4023-a0e9-6107ff35ac41
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_full_width
+field_name: field_full_width
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

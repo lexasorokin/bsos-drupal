@@ -9,6 +9,8 @@ dependencies:
     - field.field.block_content.overview_card.field_padding_bottom
     - field.field.block_content.overview_card.field_padding_top
     - field.field.block_content.overview_card.field_title
+    - field.field.block_content.overview_card.field_title_settings
+    - field.field.block_content.overview_card.field_title_tag
     - field.field.block_content.overview_card.field_topic_link_item
   module:
     - field_group
@@ -19,14 +21,12 @@ third_party_settings:
   field_group:
     group_block_settings:
       children:
-        - field_margin
-        - field_padding
         - field_padding_top
         - field_padding_bottom
       label: 'Block Settings'
       region: content
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -42,7 +42,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 6
     region: content
     settings:
       rows: 9
@@ -52,7 +52,7 @@ content:
     third_party_settings: {  }
   field_media_url:
     type: media_library_widget
-    weight: 3
+    weight: 5
     region: content
     settings:
       media_types: {  }
@@ -71,15 +71,27 @@ content:
     third_party_settings: {  }
   field_title:
     type: string_textfield
-    weight: 2
+    weight: 4
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_title_settings:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_tag:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_topic_link_item:
     type: link_default
-    weight: 5
+    weight: 7
     region: content
     settings:
       placeholder_url: ''

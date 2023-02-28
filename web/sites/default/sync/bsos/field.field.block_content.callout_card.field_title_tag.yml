@@ -1,0 +1,21 @@
+uuid: ad2b7125-1d25-46cb-97be-dd610aa85fec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.callout_card.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: callout_card
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

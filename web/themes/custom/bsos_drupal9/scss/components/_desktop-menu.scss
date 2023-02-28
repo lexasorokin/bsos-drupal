@@ -137,9 +137,11 @@ ul.small-menu li a {
   display: block;
   columns: 3;
   column-gap: 15px;
+  max-width: calc(100% - 275px);
 }
 .desktop-dropdown ul.submenu li {
   display: block;
+  -webkit-column-break-inside: avoid;
 }
 .desktop-dropdown ul.submenu li a {
   color: #fff;
@@ -167,6 +169,7 @@ ul.small-menu li a {
   margin-left: auto;
   display: block;
   max-width: 250px;
+  flex-shrink: 0;
 }
 .menu-image img {
   display: block;

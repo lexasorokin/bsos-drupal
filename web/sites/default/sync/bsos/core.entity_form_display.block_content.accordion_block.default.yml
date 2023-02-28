@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.accordion_block.field_padding_bottom
     - field.field.block_content.accordion_block.field_padding_top
     - field.field.block_content.accordion_block.field_section_item
+    - field.field.block_content.accordion_block.field_title_settings
+    - field.field.block_content.accordion_block.field_title_tag
   module:
     - field_group
     - paragraphs
@@ -16,14 +18,12 @@ third_party_settings:
   field_group:
     group_block_settings:
       children:
-        - field_margin
-        - field_padding
         - field_padding_top
         - field_padding_bottom
       label: 'Block Settings'
       region: content
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -39,7 +39,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -61,7 +61,7 @@ content:
     third_party_settings: {  }
   field_section_item:
     type: paragraphs
-    weight: 3
+    weight: 5
     region: content
     settings:
       title: Item
@@ -77,6 +77,18 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_title_settings:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_tag:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

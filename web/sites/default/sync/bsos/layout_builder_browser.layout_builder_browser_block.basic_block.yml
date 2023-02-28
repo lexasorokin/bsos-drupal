@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Basic Block'
 image_path: /themes/custom/bsos_drupal9/img/block-images/basic-block.png
 image_alt: ''
-weight: -6
+weight: -8

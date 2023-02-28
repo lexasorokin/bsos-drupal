@@ -1,0 +1,21 @@
+uuid: 7f733c39-c071-4831-b27b-e64dd68e8f20
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_block
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.video_block.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: video_block
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

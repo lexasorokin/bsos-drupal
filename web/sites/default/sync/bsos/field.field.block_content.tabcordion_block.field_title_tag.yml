@@ -1,0 +1,21 @@
+uuid: e0d34a8b-af1a-4a67-a039-db1bf722fdd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabcordion_block
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.tabcordion_block.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: tabcordion_block
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

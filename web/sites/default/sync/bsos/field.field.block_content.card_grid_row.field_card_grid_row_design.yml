@@ -1,0 +1,21 @@
+uuid: 3512cb48-9c88-4644-849f-6dde177f94f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row
+    - field.storage.block_content.field_card_grid_row_design
+  module:
+    - options
+id: block_content.card_grid_row.field_card_grid_row_design
+field_name: field_card_grid_row_design
+entity_type: block_content
+bundle: card_grid_row
+label: 'Card Design'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

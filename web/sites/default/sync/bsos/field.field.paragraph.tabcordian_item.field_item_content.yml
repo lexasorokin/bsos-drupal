@@ -1,0 +1,21 @@
+uuid: 0c3e9396-08ca-4ba8-aa93-4890ba4f5032
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_content
+    - paragraphs.paragraphs_type.tabcordian_item
+  module:
+    - text
+id: paragraph.tabcordian_item.field_item_content
+field_name: field_item_content
+entity_type: paragraph
+bundle: tabcordian_item
+label: 'Item Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

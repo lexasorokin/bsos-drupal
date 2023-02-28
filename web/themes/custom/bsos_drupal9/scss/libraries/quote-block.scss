@@ -1,0 +1,76 @@
+// Quote Block
+
+.block-quote-section {
+  position: relative;
+}
+
+.block-quote-section.full-blockquote {
+  padding: 80px 0;
+}
+
+.block-quote-section .bq-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.block-quote-section .bq-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.block-quote-section .container {
+  z-index: 3;
+  position: relative;
+}
+
+.block-quote-section blockquote {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1em 1em 2em 1em;
+  position: relative;
+}
+
+.block-quote-section blockquote:before {
+  font-size: 160px;
+  content: '\201C';
+  height: auto;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  display: block;
+  transform: translateY(-30%);
+}
+
+.block-quote-section blockquote footer {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+@media (min-width: 700px) {
+  .block-quote-section blockquote {
+    font-size: 34px;
+    margin: 0 30px 1em 30px;
+  }
+  .block-quote-section.full-blockquote blockquote {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .block-quote-section blockquote:before {
+    left: -33px;
+  }
+}

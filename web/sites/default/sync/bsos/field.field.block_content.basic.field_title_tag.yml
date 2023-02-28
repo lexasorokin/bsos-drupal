@@ -1,0 +1,23 @@
+uuid: 4c55bc5a-abad-4d0c-ae80-ac0bd3eb451e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.basic.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: basic
+label: 'Title Tag'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

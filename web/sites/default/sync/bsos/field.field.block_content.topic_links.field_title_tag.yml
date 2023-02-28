@@ -1,0 +1,21 @@
+uuid: 16d1e1d0-8b02-4658-9d91-921173eecd3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topic_links
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.topic_links.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: topic_links
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

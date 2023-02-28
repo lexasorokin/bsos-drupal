@@ -1,0 +1,21 @@
+uuid: ba2f1df3-f3f7-4bb1-b1b3-937e31a5a8ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.overview_card
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.overview_card.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: overview_card
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

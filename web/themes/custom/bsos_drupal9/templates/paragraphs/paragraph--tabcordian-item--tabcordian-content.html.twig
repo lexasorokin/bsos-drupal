@@ -1,0 +1,22 @@
+
+{# Variables #}
+{% set title = content.field_item_title.0 %}
+{% set item_content = content.field_item_content.0 %}
+{% set id = paragraph.id() %}
+{% set result_id = paragraph.view.result.0.id %}
+
+
+
+{% block paragraph %}
+  {% block content %}
+
+    <section id="tab{{ id }}-tab" class="ootb-tabcordion--entry" data-title="{{ title }}" tabindex="-1" role="tabpanel" aria-labelledby="tab{{ id }}" item-id="{{ id }}">
+      <div class="ootb-tabcordion--entry-container">
+        <div class="ootb-tabcordion--entry-content">
+          {{ item_content }}
+        </div>
+      </div>
+    </section>
+
+  {% endblock %}
+{% endblock paragraph %}

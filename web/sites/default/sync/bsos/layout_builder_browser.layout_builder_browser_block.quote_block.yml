@@ -1,0 +1,11 @@
+uuid: aacd9dc1-be1d-46f9-b602-33fa8b4af6d9
+langcode: en
+status: true
+dependencies: {  }
+id: quote_block
+block_id: 'inline_block:quote_block'
+category: layout_builder_components
+label: 'Quote Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/quote-block.png
+image_alt: ''
+weight: -2

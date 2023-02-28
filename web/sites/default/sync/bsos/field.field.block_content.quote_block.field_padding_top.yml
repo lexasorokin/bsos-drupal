@@ -1,0 +1,21 @@
+uuid: d68e0a52-df72-4a05-a705-ff593ec85760
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote_block
+    - field.storage.block_content.field_padding_top
+  module:
+    - options
+id: block_content.quote_block.field_padding_top
+field_name: field_padding_top
+entity_type: block_content
+bundle: quote_block
+label: 'Padding Top'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

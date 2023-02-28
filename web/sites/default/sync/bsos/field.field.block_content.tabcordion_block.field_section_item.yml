@@ -1,0 +1,46 @@
+uuid: 88f20e8f-4f29-4aee-b4d6-b85268fe9274
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabcordion_block
+    - field.storage.block_content.field_section_item
+    - paragraphs.paragraphs_type.tabcordian_item
+  module:
+    - entity_reference_revisions
+id: block_content.tabcordion_block.field_section_item
+field_name: field_section_item
+entity_type: block_content
+bundle: tabcordion_block
+label: 'Tabcordion Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tabcordian_item: tabcordian_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 7
+        enabled: false
+      card_grid_row_item:
+        weight: 9
+        enabled: false
+      card_grid_row_rounded_item:
+        weight: 10
+        enabled: false
+      cards_grid_item:
+        weight: 8
+        enabled: false
+      carousel_hero_slider_item:
+        weight: 11
+        enabled: false
+      tabcordian_item:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,14 @@
+
+{# Variables #}
+{% set title = content.field_item_title.0 %}
+{% set id = paragraph.id() %}
+
+{% block paragraph %}
+  {% block content %}
+
+    <button class="tab" role="tab" aria-selected="false" aria-controls="tab{{ id }}-tab" id="tab{{ id }}" tabindex="-1" item-id="{{ id }}">
+      Test - {{ title }}
+    </button>
+
+  {% endblock %}
+{% endblock paragraph %}
