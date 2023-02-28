@@ -7,6 +7,20 @@
   Drupal.behaviors.tabcordian = {
     attach: function(context, settings) {
 
+      // Init Active Tab
+      const tabs = document.querySelectorAll(".ootb-tabcordion--tabs .tab");
+      tabs.forEach((tab) => {
+        if (tab.index == 0) {
+          tab.classList.add('is-active');
+        }
+
+       //tab.NodeList.0.classList.add('is-active');
+
+        /*btn.addEventListener('click', function(){
+          btn.parentElement.remove();
+        });*/
+      })
+
       // Custom
       const keyboardSupport = function (container, hasTabs) {
         const tablist = container.querySelectorAll('[role="tablist"]')[0];

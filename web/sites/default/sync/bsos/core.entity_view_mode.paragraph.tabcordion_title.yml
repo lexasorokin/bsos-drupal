@@ -1,0 +1,10 @@
+uuid: d589fecc-30d0-464f-87ae-8643d936d524
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.tabcordion_title
+label: 'Tabcordion Title'
+targetEntityType: paragraph
+cache: true

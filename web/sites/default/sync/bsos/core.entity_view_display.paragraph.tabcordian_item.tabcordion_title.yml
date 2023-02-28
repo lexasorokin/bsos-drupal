@@ -1,0 +1,30 @@
+uuid: f88f2b07-a595-45db-ad49-f7d4cd0695ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.tabcordion_title
+    - field.field.paragraph.tabcordian_item.field_item_content
+    - field.field.paragraph.tabcordian_item.field_item_title
+    - paragraphs.paragraphs_type.tabcordian_item
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.tabcordian_item.tabcordion_title
+targetEntityType: paragraph
+bundle: tabcordian_item
+mode: tabcordion_title
+content:
+  field_item_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_item_content: true

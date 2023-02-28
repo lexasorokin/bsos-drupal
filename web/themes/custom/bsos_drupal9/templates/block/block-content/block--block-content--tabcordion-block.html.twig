@@ -48,12 +48,24 @@
   {% endif %}
   {{ title_suffix }}
 
-  {#{% block content %}
+  {% block content %}
     {{ content|without('field_section_item', 'field_padding_top', 'field_padding_bottom') }}
-    <div class="card panel panel-default">{{ content.field_section_item }}</div>
-  {% endblock %}#}
+    <section class="inside-tabs">
+      <div class="container">
+        <article class="ootb-tabcordion">
+          <div class="ootb-tabcordion--tabs" role="tablist" aria-label="TabCordion">
+            {{ content.field_section_item }}
+          </div>
+          {#{{ drupal_view('views_tabcordion_content', 'block_1') }}#}
+          {{ drupal_view('views_tabcordion_content', 'block_1', plugin_id, derivative_plugin_id) }}
+          {{ dd() }}
+        </article>
+      </div>
+    </section>
+  {% endblock %}
 
-  <section class="inside-tabs">
+
+  {#<section class="inside-tabs">
     <div class="container">
       <article class="ootb-tabcordion">
 
@@ -111,6 +123,6 @@
 
       </article>
     </div>
-  </section>
+  </section>#}
 
 </div>

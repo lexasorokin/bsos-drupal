@@ -1,0 +1,10 @@
+uuid: a99c015d-cc5c-41c5-b47b-5e6ec08a6434
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.tabcordian_content
+label: 'Tabcordian Content'
+targetEntityType: paragraph
+cache: true
