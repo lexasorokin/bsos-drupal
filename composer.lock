@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73a205969762599c24e501bf428427f9",
+    "content-hash": "69d4afd516512abf7c3b1abb4d308c51",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -5283,17 +5283,17 @@
         },
         {
             "name": "drupal/entity_clone",
-            "version": "2.0.0-alpha1",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_clone.git",
-                "reference": "2.0.0-alpha1"
+                "reference": "2.0.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_clone-2.0.0-alpha1.zip",
-                "reference": "2.0.0-alpha1",
-                "shasum": "35c53a8469c2e242cea9b1ce1340bdcebb7c6bd9"
+                "url": "https://ftp.drupal.org/files/projects/entity_clone-2.0.0-beta2.zip",
+                "reference": "2.0.0-beta2",
+                "shasum": "4045512a62cd203a0f2113aab4ce62d1da983a18"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -5307,11 +5307,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha1",
-                    "datestamp": "1665381824",
+                    "version": "2.0.0-beta2",
+                    "datestamp": "1676962618",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -9948,27 +9948,27 @@
         },
         {
             "name": "drupal/svg_image_field",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/svg_image_field.git",
-                "reference": "2.1.1"
+                "reference": "2.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/svg_image_field-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "72fb90cb6eadffab35a32b9b14e2ae22dd48c218"
+                "url": "https://ftp.drupal.org/files/projects/svg_image_field-2.2.0.zip",
+                "reference": "2.2.0",
+                "shasum": "f54fd34dec47bdce4600d824b52b4bd788cfb8ce"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^9.3 || ^10",
                 "enshrined/svg-sanitize": "~0.15"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1646078279",
+                    "version": "2.2.0",
+                    "datestamp": "1676832585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10420,17 +10420,17 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "3.2.0"
+                "reference": "3.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.2.0.zip",
-                "reference": "3.2.0",
-                "shasum": "2e5944a0705929f9db21a8684fdca0d1a0b001e4"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.2.1.zip",
+                "reference": "3.2.1",
+                "shasum": "89fc08b60f494a7d786251b6c2c493c536218222"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10.0",
@@ -10445,8 +10445,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.2.0",
-                    "datestamp": "1664084754",
+                    "version": "3.2.1",
+                    "datestamp": "1677404306",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -17467,7 +17467,7 @@
         "drupal/better_messages": 15,
         "drupal/computed_field": 20,
         "drupal/content_sync": 10,
-        "drupal/entity_clone": 15,
+        "drupal/entity_clone": 10,
         "drupal/entity_limit": 15,
         "drupal/feeds": 10,
         "drupal/fullcalendar": 15,
