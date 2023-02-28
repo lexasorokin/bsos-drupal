@@ -38,6 +38,9 @@
 {% set padding_top = content.field_padding_top.0['#markup'] %}
 {% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 
+{% set col = content.field_grid_col.0['#markup'] %}
+{% set card_design = content.field_card_grid_row_design.0['#markup'] %}
+
 {{ attach_library('bsos_drupal9/card-grid-row') }}
 
 <div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
@@ -49,8 +52,8 @@
   {{ title_suffix }}
 
   {% block content %}
-    <div class="card-grid grid-row three-col overflow-x-scroll">
-      {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom') }}
+    <div class="card-grid {{ card_design }} grid-row {{ col }} overflow-x-scroll">
+      {{ content|without('field_container', 'field_padding_top', 'field_padding_bottom', 'field_grid_col', 'field_card_grid_row_design') }}
     </div>
   {% endblock %}
 

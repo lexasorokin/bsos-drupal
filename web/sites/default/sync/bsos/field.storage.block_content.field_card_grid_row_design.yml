@@ -1,0 +1,27 @@
+uuid: b3b3c612-f59f-4bd2-8253-3c94c3870323
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_card_grid_row_design
+field_name: field_card_grid_row_design
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ''
+      label: Standart
+    -
+      value: alt-cards
+      label: 'Alternative Cards'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

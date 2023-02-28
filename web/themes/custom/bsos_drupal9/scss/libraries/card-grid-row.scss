@@ -41,6 +41,16 @@
   height: 18px;
 }
 
+.card-grid.alt-cards > div {
+  border-bottom: 4px solid #ffd200;
+  padding-bottom: 20px;
+  background: #f4f4f4;
+}
+.card-grid.alt-cards .card-grid-item__title,
+.card-grid.alt-cards .card-grid-item__link {
+  padding: 0 15px;
+}
+
 @media (min-width: 700px) {
   .card-grid {
     margin: 50px 0;

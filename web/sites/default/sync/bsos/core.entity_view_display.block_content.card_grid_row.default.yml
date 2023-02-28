@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - block_content.type.card_grid_row
+    - field.field.block_content.card_grid_row.field_card_grid_row_design
+    - field.field.block_content.card_grid_row.field_grid_col
     - field.field.block_content.card_grid_row.field_padding_bottom
     - field.field.block_content.card_grid_row.field_padding_top
     - field.field.block_content.card_grid_row.field_section_item
@@ -15,19 +17,33 @@ targetEntityType: block_content
 bundle: card_grid_row
 mode: default
 content:
+  field_card_grid_row_design:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_grid_col:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_padding_bottom:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   field_padding_top:
     type: list_key
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 0
     region: content
   field_section_item:
     type: entity_reference_revisions_entity_view
@@ -36,6 +52,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
 hidden: {  }

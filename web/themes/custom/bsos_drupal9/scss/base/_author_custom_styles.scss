@@ -234,6 +234,10 @@ ul.link-list li {
 .grid-row.three-col {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid-row.four-col {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 @media screen and (min-width: 700px) {
   .flex-container {
     display: flex;

@@ -1,0 +1,21 @@
+uuid: d7c25677-7382-43e5-ae51-ff0bb069fb8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row
+    - field.storage.block_content.field_grid_col
+  module:
+    - options
+id: block_content.card_grid_row.field_grid_col
+field_name: field_grid_col
+entity_type: block_content
+bundle: card_grid_row
+label: Columns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
