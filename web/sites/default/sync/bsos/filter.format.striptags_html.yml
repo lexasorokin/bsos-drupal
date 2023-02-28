@@ -87,4 +87,4 @@ filters:
     settings:
       button_link_options: "|None (Normal Link)\r\nbutton|Button\r\ntext-button|Text Button"
       button_link_size_options: ''
-      button_link_style_options: "button|Button\r\nred|Red Button\r\nwith-arrow|Button (Text) with Arrow\r\ntext-button|Text Button\r\nsans-serif|Text Button (sans-serif)"
+      button_link_style_options: "button|Button\r\nred|Red Button\r\nwith-arrow|Button (Text) with Arrow\r\ntext-button|Text Button\r\nsans-serif|Text Button (sans-serif)\r\nbutton fearless|Button Fearless"
