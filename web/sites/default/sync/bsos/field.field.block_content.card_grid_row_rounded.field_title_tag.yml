@@ -1,0 +1,21 @@
+uuid: f6beac10-d87d-48c5-bc13-54f59bd1617b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_grid_row_rounded
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.card_grid_row_rounded.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: card_grid_row_rounded
+label: 'Title Tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

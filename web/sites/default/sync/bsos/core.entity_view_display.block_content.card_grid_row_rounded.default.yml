@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.card_grid_row_rounded.field_padding_bottom
     - field.field.block_content.card_grid_row_rounded.field_padding_top
     - field.field.block_content.card_grid_row_rounded.field_section_item
+    - field.field.block_content.card_grid_row_rounded.field_title_settings
+    - field.field.block_content.card_grid_row_rounded.field_title_tag
   module:
     - entity_reference_revisions
     - options
@@ -36,6 +38,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_settings:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
+    region: content
+  field_title_tag:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }
