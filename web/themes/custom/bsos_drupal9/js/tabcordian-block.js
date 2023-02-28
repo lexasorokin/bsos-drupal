@@ -3,22 +3,26 @@
 
   'use strict';
 
-  // Status Messages
   Drupal.behaviors.tabcordian = {
     attach: function(context, settings) {
 
       // Init Active Tab
-      const tabs = document.querySelectorAll(".ootb-tabcordion--tabs .tab");
-      tabs.forEach((tab) => {
-        if (tab.index == 0) {
-          tab.classList.add('is-active');
-        }
+      const tabs = document.querySelectorAll(".ootb-tabcordion");
+      tabs.forEach((tabs) => {
+        const tab = tabs.querySelectorAll(".ootb-tabcordion--tabs .tab");
+        const firstTab = tab.item(0);
+        const itemId = firstTab.getAttribute('item-id');
+        const tabContent = tabs.querySelectorAll(".ootb-tabcordion--entry");
 
-       //tab.NodeList.0.classList.add('is-active');
+        firstTab.classList.add('is-active');
+        firstTab.setAttribute('aria-selected', true);
 
-        /*btn.addEventListener('click', function(){
-          btn.parentElement.remove();
-        });*/
+        tabContent.forEach(element => {
+          if (element.getAttribute('item-id') == itemId) {
+            element.classList.add('is-active');
+            element.setAttribute('tabindex', 0);
+          }
+        });
       })
 
       // Custom
