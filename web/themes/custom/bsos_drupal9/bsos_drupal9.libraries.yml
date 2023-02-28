@@ -105,6 +105,11 @@ tabcordian-block:
   js:
     js/tabcordian-block.js: {}
 
+publication-list:
+  css:
+    theme:
+      css/libraries/publication-list.min.css: {}
+
 #blog-categories:
 #  css:
 #    theme:
