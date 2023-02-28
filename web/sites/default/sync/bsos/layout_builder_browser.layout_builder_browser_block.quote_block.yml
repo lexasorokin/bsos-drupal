@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Quote Block'
 image_path: /themes/custom/bsos_drupal9/img/block-images/quote-block.png
 image_alt: ''
-weight: -100
+weight: -2

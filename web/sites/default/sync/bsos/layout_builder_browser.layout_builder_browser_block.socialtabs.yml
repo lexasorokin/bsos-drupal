@@ -8,4 +8,4 @@ category: layout_builder_components
 label: Socialtabs
 image_path: /themes/custom/bsos_drupal9/img/block-images/socialtabs.png
 image_alt: ''
-weight: -2
+weight: 5
