@@ -8,6 +8,8 @@ dependencies:
     - field.field.block_content.video_block.field_callout
     - field.field.block_content.video_block.field_padding_bottom
     - field.field.block_content.video_block.field_padding_top
+    - field.field.block_content.video_block.field_title_settings
+    - field.field.block_content.video_block.field_title_tag
     - field.field.block_content.video_block.field_video_link
   module:
     - link
@@ -23,14 +25,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_callout:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_padding_bottom:
     type: list_key
@@ -46,6 +48,20 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_title_settings:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title_tag:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_video_link:
     type: link
     label: hidden
@@ -56,6 +72,6 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden: {  }
