@@ -1,0 +1,21 @@
+uuid: 5ab53211-d309-4b39-931d-8718f266e5d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_card
+    - field.storage.block_content.field_title_settings
+  module:
+    - options
+id: block_content.callout_card.field_title_settings
+field_name: field_title_settings
+entity_type: block_content
+bundle: callout_card
+label: 'Title Settings'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
