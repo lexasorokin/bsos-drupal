@@ -7,6 +7,7 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
+      - about-us-menu
       - main
     parent: 'main:'
 name: 'Layout Page'
