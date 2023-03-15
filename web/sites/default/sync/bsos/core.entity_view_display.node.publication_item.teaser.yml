@@ -1,0 +1,28 @@
+uuid: 2a0941c8-c329-45d5-903c-c24996061d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publication_item.body
+    - field.field.node.publication_item.field_link
+    - field.field.node.publication_item.field_media_file
+    - field.field.node.publication_item.field_subtitle
+    - node.type.publication_item
+  module:
+    - user
+id: node.publication_item.teaser
+targetEntityType: node
+bundle: publication_item
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_link: true
+  field_media_file: true
+  field_subtitle: true
