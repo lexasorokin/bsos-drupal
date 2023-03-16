@@ -1,0 +1,11 @@
+uuid: 8dd7f0ed-9845-433a-a2ed-b853aa88d293
+langcode: en
+status: true
+dependencies: {  }
+id: publication_list
+block_id: 'views_block:publications_list-frontpage_block'
+category: views_blocks
+label: 'Publication List'
+image_path: /themes/custom/bsos_drupal9/img/block-images/publication-list.png
+image_alt: ''
+weight: -100
