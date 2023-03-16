@@ -1,0 +1,23 @@
+uuid: 1169c329-9db2-4520-9024-604f7459da76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publication_item
+  module:
+    - text
+id: node.publication_item.body
+field_name: body
+entity_type: node
+bundle: publication_item
+label: Abstract
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
