@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.publication_item.body
+    - field.field.node.publication_item.field_hero_title
     - field.field.node.publication_item.field_link
     - field.field.node.publication_item.field_media_file
+    - field.field.node.publication_item.field_media_url
+    - field.field.node.publication_item.field_show_breadcrumbs
     - field.field.node.publication_item.field_subtitle
     - node.type.publication_item
   module:
@@ -23,6 +26,9 @@ content:
     region: content
 hidden:
   body: true
+  field_hero_title: true
   field_link: true
   field_media_file: true
+  field_media_url: true
+  field_show_breadcrumbs: true
   field_subtitle: true
