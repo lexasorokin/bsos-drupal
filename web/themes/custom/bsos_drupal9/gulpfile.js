@@ -45,7 +45,7 @@ function styles () {
         './node_modules/bootstrap/scss',
       ]
     }).on('error', sass.logError))
-    .pipe($.postcss(postcssProcessors))
+    //.pipe($.postcss(postcssProcessors))
     .pipe(postcss([autoprefixer({
       browsers: [
         'Chrome >= 35',
@@ -71,7 +71,7 @@ function libraries_styles () {
   return gulp.src([paths.scss.libraries_src])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe($.postcss(postcssProcessors))
+    //.pipe($.postcss(postcssProcessors))
     .pipe(postcss([autoprefixer({
       browsers: [
         'Chrome >= 35',
