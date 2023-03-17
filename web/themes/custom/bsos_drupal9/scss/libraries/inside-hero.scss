@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+
+  &.hero-size--large {
+    height: 290px;
+  }
 }
 .inside-hero .container {
   height: 100%;
@@ -26,6 +30,10 @@
 @media (min-width: 700px) {
   .inside-hero {
     height: 290px;
+
+    &.hero-size--large {
+      height: 420px;
+    }
   }
   .inside-hero h1.page-title {
     font-size: 50px;

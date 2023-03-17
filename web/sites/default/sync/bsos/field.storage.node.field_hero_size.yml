@@ -1,0 +1,27 @@
+uuid: 7db24857-d771-44bc-a129-3f4f88621696
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_hero_size
+field_name: field_hero_size
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: normal
+      label: Normal
+    -
+      value: large
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
