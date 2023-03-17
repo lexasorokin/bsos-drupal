@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.big_teaser
     - field.field.node.featured_content.body
     - field.field.node.featured_content.field_fc_weight
+    - field.field.node.featured_content.field_hero_size
     - field.field.node.featured_content.field_hero_title
     - field.field.node.featured_content.field_image
     - field.field.node.featured_content.field_media_url
@@ -36,6 +37,7 @@ content:
 hidden:
   body: true
   field_fc_weight: true
+  field_hero_size: true
   field_hero_title: true
   field_media_url: true
   field_satellite_featured_stories: true
