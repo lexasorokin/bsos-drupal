@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_hero_size
     - field.field.node.page.field_hero_title
     - field.field.node.page.field_media_url
     - field.field.node.page.field_show_breadcrumbs
@@ -32,6 +33,7 @@ content:
     weight: 101
     region: content
 hidden:
+  field_hero_size: true
   field_hero_title: true
   field_media_url: true
   field_show_breadcrumbs: true
