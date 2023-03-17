@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_hero_size
     - field.field.node.profile_showcase.field_hero_title
     - field.field.node.profile_showcase.field_image
     - field.field.node.profile_showcase.field_media_url
@@ -40,6 +41,7 @@ content:
     region: content
 hidden:
   body: true
+  field_hero_size: true
   field_hero_title: true
   field_media_url: true
   field_satelllite_profiles: true

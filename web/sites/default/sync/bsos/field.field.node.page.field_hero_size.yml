@@ -1,0 +1,23 @@
+uuid: 9e914bf0-7500-4b22-9df3-d672247b24da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_size
+    - node.type.page
+  module:
+    - options
+id: node.page.field_hero_size
+field_name: field_hero_size
+entity_type: node
+bundle: page
+label: 'Hero Size'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: normal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

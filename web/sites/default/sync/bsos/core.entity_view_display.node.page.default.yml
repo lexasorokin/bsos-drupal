@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_hero_size
     - field.field.node.page.field_hero_title
     - field.field.node.page.field_media_url
     - field.field.node.page.field_show_breadcrumbs
     - field.field.node.page.field_taxonomy_vocabulary_2
     - node.type.page
   module:
+    - options
     - text
     - user
 _core:
@@ -24,7 +26,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
+    region: content
+  field_hero_size:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_hero_title:
     type: text_default
@@ -50,12 +59,12 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
 hidden:
   field_taxonomy_vocabulary_2: true

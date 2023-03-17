@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_hero_size
     - field.field.node.page.field_hero_title
     - field.field.node.page.field_media_url
     - field.field.node.page.field_show_breadcrumbs
@@ -20,6 +21,7 @@ third_party_settings:
       children:
         - field_media_url
         - field_hero_title
+        - field_hero_size
         - field_show_breadcrumbs
       label: 'Hero Block'
       region: content
@@ -57,6 +59,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_hero_size:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_hero_title:
     type: text_textarea
     weight: 8
@@ -74,7 +82,7 @@ content:
     third_party_settings: {  }
   field_show_breadcrumbs:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true

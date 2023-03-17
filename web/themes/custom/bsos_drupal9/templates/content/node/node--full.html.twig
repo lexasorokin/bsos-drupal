@@ -75,6 +75,7 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'node--full'
   ]
 %}
 
@@ -83,11 +84,12 @@
 {% set media_url = content.field_media_url.0|render|striptags|spaceless %}
 {% set show_breadcrumbs = content.field_show_breadcrumbs.0['#markup'] %}
 {% set title = content.field_hero_title.0 %}
+{% set hero_size = 'hero-size--' ~ content.field_hero_size.0|render|clean_class %}
 
 <article{{ attributes.addClass(classes) }}>
 
   {# Inside Hero #}
-  <section class="inside-hero" style="background-color:#0f1520;background-image: url({{ media_url }})">
+  <section class="inside-hero {{ hero_size }}" style="background-color:#0f1520;background-image: url({{ media_url }})">
     <div class="container">
       <div class="title-holder">
         <h1{{ title_attributes.addClass('page-title') }}>
@@ -114,7 +116,7 @@
   {{ drupal_entity('block', 'bsos_drupal9_local_tasks', check_access=false) }}
 
   <div{{ content_attributes.addClass('node__content', 'container') }}>
-    {{ content|without('field_media_url', 'field_hero_title', 'field_show_breadcrumbs') }}
+    {{ content|without('field_media_url', 'field_hero_title', 'field_hero_size', 'field_show_breadcrumbs') }}
   </div>
 
 </article>

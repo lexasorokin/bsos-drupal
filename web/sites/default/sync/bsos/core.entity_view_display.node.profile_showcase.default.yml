@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.profile_showcase.body
+    - field.field.node.profile_showcase.field_hero_size
     - field.field.node.profile_showcase.field_hero_title
     - field.field.node.profile_showcase.field_image
     - field.field.node.profile_showcase.field_media_url
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.profile_showcase.field_show_breadcrumbs
     - node.type.profile_showcase
   module:
+    - options
     - svg_image
     - text
     - user
@@ -24,7 +26,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
+    region: content
+  field_hero_size:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_hero_title:
     type: text_default
@@ -46,7 +55,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_media_url:
     type: entity_reference_entity_view
@@ -65,12 +74,12 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   field_satelllite_profiles: true
