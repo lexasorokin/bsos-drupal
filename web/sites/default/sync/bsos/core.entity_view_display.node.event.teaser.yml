@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_exclude_from_all_bsos_emai
     - field.field.node.event.field_faculty_staff_categ_import
+    - field.field.node.event.field_hero_size
     - field.field.node.event.field_hero_title
     - field.field.node.event.field_host
     - field.field.node.event.field_media_url
@@ -42,6 +43,7 @@ hidden:
   field_event_location: true
   field_exclude_from_all_bsos_emai: true
   field_faculty_staff_categ_import: true
+  field_hero_size: true
   field_hero_title: true
   field_host: true
   field_media_url: true
