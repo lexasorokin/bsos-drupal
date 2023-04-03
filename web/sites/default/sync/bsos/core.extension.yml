@@ -17,6 +17,7 @@ module:
   contact: 0
   contextual: 0
   crop: 0
+  cshs: 0
   datetime: 0
   datetime_range: 0
   dblog: 0

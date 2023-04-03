@@ -1,0 +1,17 @@
+uuid: eac19e0b-0b1b-4270-b5d3-9ac75f542ce6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: FSProfile
+type: fsprofile
+description: 'Faculty/Staff Profile'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false
