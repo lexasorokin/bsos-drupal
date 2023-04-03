@@ -475,7 +475,46 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      defaults:
+        footer: false
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: '<a href="/events" class="button with-arrow">View All Events</a>'
+          tokenize: false
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_event_date_and_time'
+  page:
+    id: page
+    display_title: Page
+    display_plugin: page
+    position: 2
+    display_options:
+      pager:
+        type: none
+        options:
+          offset: 0
+      defaults:
+        pager: false
+        footer: false
+      footer: {  }
+      display_extenders: {  }
+      path: events
     cache_metadata:
       max-age: -1
       contexts:
