@@ -42,6 +42,8 @@
   ]
 %}
 
+{{ attach_library('bsos_drupal9/publication-list') }}
+
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
 
@@ -56,6 +58,10 @@
         {{ header }}
         <div class="fearless-divider mb-10"></div>
       </div>
+    {% endif %}
+
+    {% if exposed %}
+      {{ exposed }}
     {% endif %}
 
     {% if rows %}
