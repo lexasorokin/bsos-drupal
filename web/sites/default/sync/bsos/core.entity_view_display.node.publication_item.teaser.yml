@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.publication_item.field_hero_size
     - field.field.node.publication_item.field_hero_title
     - field.field.node.publication_item.field_link
+    - field.field.node.publication_item.field_links_to_researchers
     - field.field.node.publication_item.field_media_file
     - field.field.node.publication_item.field_media_url
     - field.field.node.publication_item.field_show_breadcrumbs
@@ -30,6 +31,7 @@ hidden:
   field_hero_size: true
   field_hero_title: true
   field_link: true
+  field_links_to_researchers: true
   field_media_file: true
   field_media_url: true
   field_show_breadcrumbs: true

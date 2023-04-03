@@ -1,0 +1,22 @@
+uuid: ddb27226-16c5-415c-a48f-0b565be0756a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: fsprofile_url
+label: 'FSProfile URL'
+type: 'canonical_entities:node'
+pattern: 'facultyprofile/[node:field_last_name]/[node:field_first_name]'
+selection_criteria:
+  33b926fd-8d6a-4eba-be6d-8113b8a0e7dc:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 33b926fd-8d6a-4eba-be6d-8113b8a0e7dc
+    context_mapping:
+      node: node
+    bundles:
+      fsprofile: fsprofile
+selection_logic: and
+weight: -5
+relationships: {  }

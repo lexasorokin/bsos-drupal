@@ -1,0 +1,38 @@
+uuid: b1e20f40-3b35-46ae-85f1-3546dd87f7fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fsprofile.body
+    - field.field.node.fsprofile.field_faculty_staff_category
+    - field.field.node.fsprofile.field_first_name
+    - field.field.node.fsprofile.field_image_profile
+    - field.field.node.fsprofile.field_last_name
+    - node.type.fsprofile
+  module:
+    - text
+    - user
+id: node.fsprofile.teaser
+targetEntityType: node
+bundle: fsprofile
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_faculty_staff_category: true
+  field_first_name: true
+  field_image_profile: true
+  field_last_name: true

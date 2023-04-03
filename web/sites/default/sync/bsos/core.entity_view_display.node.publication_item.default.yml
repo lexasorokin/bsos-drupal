@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.publication_item.field_hero_size
     - field.field.node.publication_item.field_hero_title
     - field.field.node.publication_item.field_link
+    - field.field.node.publication_item.field_links_to_researchers
     - field.field.node.publication_item.field_media_file
     - field.field.node.publication_item.field_media_url
     - field.field.node.publication_item.field_show_breadcrumbs
@@ -54,6 +55,14 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_links_to_researchers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_media_file:
     type: entity_reference_entity_view
