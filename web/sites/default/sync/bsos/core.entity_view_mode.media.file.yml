@@ -1,0 +1,10 @@
+uuid: c80433f9-d1ac-4860-bef0-f8e8039c23a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.file
+label: 'File Download'
+targetEntityType: media
+cache: true
