@@ -37,50 +37,24 @@
     'view-id-' ~ id,
     'view-display-id-' ~ display_id,
     dom_id ? 'js-view-dom-id-' ~ dom_id,
+    'grid-row', 'gap-30', 'one-col', 'sm-two-col'
   ]
 %}
 
-<div{{ attributes.addClass(classes) }}>
-  <div class="container">
+{{ attach_library('bsos_drupal9/featured-stories') }}
 
-  {% if title %}
-    {{ title }}
-  {% endif %}
+<div class="container">
 
-  {% if header %}
-  <div class="section-header inview-element">
-    <h3 class="section-title mb-0 animated fade-in-bottom">{{ header }}</h3>
-    <div class="fearless-divider on-left"></div>
+  <div{{ attributes.addClass(classes) }}>
+    {% if rows %}
+      {{ rows }}
+    {% elseif empty %}
+      {{ empty }}
+    {% endif %}
   </div>
-  {% endif %}
-
-  <div class="row">
-
-    <div class="col-12 col-sm-4">
-      {% if rows %}
-        {{ rows }}
-      {% elseif empty %}
-        {{ empty }}
-      {% endif %}
-    </div>
-
-    <div class="col-12 col-sm-8">
-      {% if attachment_after %}
-        {{ attachment_after }}
-      {% endif %}
-    </div>
-
-  </div>
-
-  {% if footer %}
-    <div class="view-more text-right">
-      {{ footer }}
-    </div>
-  {% endif %}
 
   {% if pager %}
     {{ pager }}
   {% endif %}
 
-  </div>
 </div>

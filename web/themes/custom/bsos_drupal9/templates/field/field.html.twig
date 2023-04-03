@@ -41,10 +41,12 @@
 {%
   set title_classes = [
     label_display == 'visually_hidden' ? 'visually-hidden',
+    'label'
   ]
 %}
 
 {% if label_hidden %}
+
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
@@ -56,7 +58,9 @@
       <div{{ attributes }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
+
 {% else %}
+
   <div{{ attributes }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
@@ -69,4 +73,5 @@
       </div>
     {% endif %}
   </div>
+
 {% endif %}

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.profile_showcase.field_show_breadcrumbs
     - node.type.profile_showcase
   module:
+    - image_class
     - options
     - svg_image
     - text
@@ -54,7 +55,9 @@ content:
       svg_render_as_image: true
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      image_class:
+        class: profile-showcase-image
     weight: 5
     region: content
   field_media_url:

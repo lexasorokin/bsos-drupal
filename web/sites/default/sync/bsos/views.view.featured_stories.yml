@@ -257,9 +257,35 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<a href="/test" class="button with-arrow">Read all Stories</a>'
+          content: '<a href="/featured" class="button with-arrow">Read all Stories</a>'
           tokenize: false
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page:
+    id: page
+    display_title: Page
+    display_plugin: page
+    position: 3
+    display_options:
+      pager:
+        type: none
+        options:
+          offset: 0
+      defaults:
+        use_ajax: false
+        pager: false
+        header: false
+      use_ajax: true
+      header: {  }
+      display_extenders: {  }
+      path: featured
     cache_metadata:
       max-age: -1
       contexts:

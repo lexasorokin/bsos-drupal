@@ -40,47 +40,72 @@
   ]
 %}
 
+{{ attach_library('bsos_drupal9/events-block') }}
+
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
 
-  {% if title %}
-    {{ title }}
-  {% endif %}
+    {{ title_prefix }}
+    {% if title %}
+      {{ title }}
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if header %}
-  <div class="section-header inview-element">
-    <h3 class="section-title mb-0 animated fade-in-bottom">{{ header }}</h3>
-    <div class="fearless-divider on-left"></div>
-  </div>
-  {% endif %}
+    {% if header %}
+      <div class="view-header">
+        {{ header }}
+      </div>
+    {% endif %}
 
-  <div class="row">
+    {% if exposed %}
+      <div class="view-filters">
+        {{ exposed }}
+      </div>
+    {% endif %}
 
-    <div class="col-12 col-sm-4">
-      {% if rows %}
+    {% if attachment_before %}
+      <div class="attachment attachment-before">
+        {{ attachment_before }}
+      </div>
+    {% endif %}
+
+    {% if rows %}
+      <div class="events-grid grid-row sm-two-col gap-30">
         {{ rows }}
-      {% elseif empty %}
+      </div>
+    {% elseif empty %}
+      <div class="view-empty">
         {{ empty }}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
 
-    <div class="col-12 col-sm-8">
-      {% if attachment_after %}
+    {% if pager %}
+      {{ pager }}
+    {% endif %}
+
+    {% if attachment_after %}
+      <div class="attachment attachment-after">
         {{ attachment_after }}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
 
-  </div>
+    {% if more %}
+      {{ more }}
+    {% endif %}
 
-  {% if footer %}
-    <div class="view-more text-right">
-      {{ footer }}
-    </div>
-  {% endif %}
+    {% if footer %}
+      <div class="row mt-50">
+        <div class="col-12 text-center">
+          {{ footer }}
+        </div>
+      </div>
+    {% endif %}
 
-  {% if pager %}
-    {{ pager }}
-  {% endif %}
+    {% if feed_icons %}
+      <div class="feed-icons">
+        {{ feed_icons }}
+      </div>
+    {% endif %}
 
   </div>
 </div>

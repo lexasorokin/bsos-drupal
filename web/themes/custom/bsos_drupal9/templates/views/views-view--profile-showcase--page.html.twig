@@ -40,41 +40,35 @@
   ]
 %}
 
-<div{{ attributes.addClass(classes) }}>
-  <div class="container">
+{{ attach_library('bsos_drupal9/profile-showcase') }}
 
-  {% if title %}
-    {{ title }}
-  {% endif %}
+<div{{ attributes.addClass(classes) }}>
 
   {% if header %}
-  <div class="section-header inview-element">
-    <h3 class="section-title mb-0 animated fade-in-bottom">{{ header }}</h3>
-    <div class="fearless-divider on-left"></div>
-  </div>
+    {{ header }}
   {% endif %}
 
-  <div class="row">
+  {% if exposed %}
+    <div class="view-filters">
+      {{ exposed }}
+    </div>
+  {% endif %}
 
-    <div class="col-12 col-sm-4">
-      {% if rows %}
+  {% if attachment_before %}
+    <div class="attachment attachment-before">
+      {{ attachment_before }}
+    </div>
+  {% endif %}
+
+  {% if rows %}
+    <div class="profiles-carousel">
+      <div id="profiles-slider" class="owl-carousel owl-theme">
         {{ rows }}
-      {% elseif empty %}
-        {{ empty }}
-      {% endif %}
+      </div>
     </div>
-
-    <div class="col-12 col-sm-8">
-      {% if attachment_after %}
-        {{ attachment_after }}
-      {% endif %}
-    </div>
-
-  </div>
-
-  {% if footer %}
-    <div class="view-more text-right">
-      {{ footer }}
+  {% elseif empty %}
+    <div class="view-empty">
+      {{ empty }}
     </div>
   {% endif %}
 
@@ -82,5 +76,20 @@
     {{ pager }}
   {% endif %}
 
-  </div>
+  {% if attachment_after %}
+    <div class="attachment attachment-after">
+      {{ attachment_after }}
+    </div>
+  {% endif %}
+
+  {% if more %}
+    {{ more }}
+  {% endif %}
+
+  {% if footer %}
+    <div class="text-center view-more">
+      {{ footer }}
+    </div>
+  {% endif %}
+
 </div>
