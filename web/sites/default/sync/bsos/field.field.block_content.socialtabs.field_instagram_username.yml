@@ -1,0 +1,19 @@
+uuid: d4e8f8bd-925f-4596-a7b3-3771815900ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_instagram_username
+id: block_content.socialtabs.field_instagram_username
+field_name: field_instagram_username
+entity_type: block_content
+bundle: socialtabs
+label: 'Instagram Username'
+description: 'If empty, it will be disabled.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
