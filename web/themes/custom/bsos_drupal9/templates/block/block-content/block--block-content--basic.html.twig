@@ -41,13 +41,14 @@
 {% set title_tag = content.field_title_tag.0['#markup'] %}
 
 {# Block Settings #}
+{% set bg_color = content.field_bg_color.0 %}
 {% set padding_top = content.field_padding_top.0['#markup'] %}
 {% set padding_bottom = content.field_padding_bottom.0['#markup'] %}
 {% set show_container = content.field_container.0['#markup'] %}
 
 
 
-<div{{ attributes.addClass(classes, padding_top, padding_bottom) }}>
+<div{{ attributes.addClass(classes, padding_top, padding_bottom) }} style="background:{{ bg_color }}";>
 
   {% if show_container == 'True' %}
   <div class="container">

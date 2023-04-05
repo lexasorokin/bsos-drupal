@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_bg_color
     - field.field.block_content.basic.field_container
     - field.field.block_content.basic.field_padding_bottom
     - field.field.block_content.basic.field_padding_top
@@ -17,6 +18,7 @@ third_party_settings:
   field_group:
     group_block_settings:
       children:
+        - field_bg_color
         - field_padding_top
         - field_padding_bottom
         - field_container
@@ -49,22 +51,28 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_bg_color:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_container:
     type: boolean_checkbox
-    weight: 6
+    weight: 29
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_padding_bottom:
     type: options_select
-    weight: 5
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   field_padding_top:
     type: options_select
-    weight: 4
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
