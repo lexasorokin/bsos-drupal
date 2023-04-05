@@ -1,0 +1,19 @@
+uuid: 47bc0f5a-6667-419d-8acd-ab8ef62ac12d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.socialtabs
+    - field.storage.block_content.field_twitter_username
+id: block_content.socialtabs.field_twitter_username
+field_name: field_twitter_username
+entity_type: block_content
+bundle: socialtabs
+label: 'Twitter Username'
+description: 'If empty, it will be disabled.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
