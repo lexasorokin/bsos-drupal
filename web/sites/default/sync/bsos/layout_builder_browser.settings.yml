@@ -11,6 +11,7 @@ auto_added_reusable_block_content_bundles:
   cards_grid: cards_grid
   card_grid_row: card_grid_row
   card_grid_row_rounded: card_grid_row_rounded
+  half_content: half_content
   overview_card: overview_card
   quote_block: quote_block
   tabcordion_block: tabcordion_block
