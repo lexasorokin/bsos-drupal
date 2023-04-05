@@ -20,6 +20,12 @@ settings:
     -
       value: pt-3
       label: 'Padding Top  3'
+    -
+      value: pt-4
+      label: 'Padding Top  4'
+    -
+      value: pt-5
+      label: 'Padding Top  5'
   allowed_values_function: ''
 module: options
 locked: false

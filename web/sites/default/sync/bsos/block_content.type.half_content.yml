@@ -1,0 +1,8 @@
+uuid: 5f22bde8-37a5-49d5-9298-8af08b0173a0
+langcode: en
+status: true
+dependencies: {  }
+id: half_content
+label: 'Half Content'
+revision: 0
+description: '[LB] Custom Block'

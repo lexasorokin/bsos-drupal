@@ -1,0 +1,11 @@
+uuid: b4fa5a89-85dc-4697-a4da-a4d78a45ee33
+langcode: en
+status: true
+dependencies: {  }
+id: half_content_block
+block_id: 'inline_block:half_content'
+category: layout_builder_components
+label: 'Half Content Block'
+image_path: /themes/custom/bsos_drupal9/img/block-images/halfcontent.png
+image_alt: ''
+weight: -8

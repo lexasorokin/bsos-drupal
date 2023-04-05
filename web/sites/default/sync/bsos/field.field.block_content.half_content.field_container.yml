@@ -1,0 +1,23 @@
+uuid: de516497-85b6-4c94-928e-7b887ba237d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_content
+    - field.storage.block_content.field_container
+id: block_content.half_content.field_container
+field_name: field_container
+entity_type: block_content
+bundle: half_content
+label: Container
+description: 'The block will be displayed in the container If checked.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

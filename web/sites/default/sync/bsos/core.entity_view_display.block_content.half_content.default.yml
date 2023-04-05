@@ -1,0 +1,66 @@
+uuid: dfe29512-8541-48bc-9a3c-573511ceae40
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_content
+    - field.field.block_content.half_content.field_bg_color
+    - field.field.block_content.half_content.field_container
+    - field.field.block_content.half_content.field_left_content
+    - field.field.block_content.half_content.field_padding_bottom
+    - field.field.block_content.half_content.field_padding_top
+    - field.field.block_content.half_content.field_right_content
+  module:
+    - options
+    - text
+id: block_content.half_content.default
+targetEntityType: block_content
+bundle: half_content
+mode: default
+content:
+  field_bg_color:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_container:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_left_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_padding_bottom:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_padding_top:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_right_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

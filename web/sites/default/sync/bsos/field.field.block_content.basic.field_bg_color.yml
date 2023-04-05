@@ -1,0 +1,23 @@
+uuid: b893c28c-71d6-495e-9e6e-1ca38a9a6715
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_bg_color
+  module:
+    - options
+id: block_content.basic.field_bg_color
+field_name: field_bg_color
+entity_type: block_content
+bundle: basic
+label: 'BG Color'
+description: 'Choose Background Color (Optional)'
+required: false
+translatable: true
+default_value:
+  -
+    value: '#FFF'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

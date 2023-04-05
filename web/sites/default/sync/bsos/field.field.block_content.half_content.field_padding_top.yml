@@ -1,0 +1,21 @@
+uuid: 1f5c5f74-26ee-4eb2-8f08-e26aa06506b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_content
+    - field.storage.block_content.field_padding_top
+  module:
+    - options
+id: block_content.half_content.field_padding_top
+field_name: field_padding_top
+entity_type: block_content
+bundle: half_content
+label: 'Padding Top'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

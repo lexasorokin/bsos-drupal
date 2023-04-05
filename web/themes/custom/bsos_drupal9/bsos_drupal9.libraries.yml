@@ -110,6 +110,11 @@ publication-list:
     theme:
       css/libraries/publication-list.min.css: {}
 
+half-content:
+  css:
+    theme:
+      css/libraries/half-content.min.css: {}
+
 #blog-categories:
 #  css:
 #    theme:

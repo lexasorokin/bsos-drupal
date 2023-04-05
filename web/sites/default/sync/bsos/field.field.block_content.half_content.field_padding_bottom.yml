@@ -1,0 +1,21 @@
+uuid: 0cd72383-1482-4f28-95af-e9534fcc38b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_content
+    - field.storage.block_content.field_padding_bottom
+  module:
+    - options
+id: block_content.half_content.field_padding_bottom
+field_name: field_padding_bottom
+entity_type: block_content
+bundle: half_content
+label: 'Padding Bottom'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

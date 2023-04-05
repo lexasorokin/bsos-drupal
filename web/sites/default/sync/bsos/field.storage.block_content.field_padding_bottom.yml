@@ -20,6 +20,12 @@ settings:
     -
       value: pb-3
       label: 'Padding Bottom  3'
+    -
+      value: pb-4
+      label: 'Padding Bottom  4'
+    -
+      value: pb-5
+      label: 'Padding Bottom  5'
   allowed_values_function: ''
 module: options
 locked: false
