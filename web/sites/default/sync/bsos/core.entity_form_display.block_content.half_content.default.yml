@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.half_content
+    - field.field.block_content.half_content.field_bg_color
     - field.field.block_content.half_content.field_container
     - field.field.block_content.half_content.field_left_content
     - field.field.block_content.half_content.field_padding_bottom
@@ -16,6 +17,7 @@ third_party_settings:
   field_group:
     group_block_settings:
       children:
+        - field_bg_color
         - field_padding_top
         - field_padding_bottom
         - field_container
@@ -36,16 +38,22 @@ targetEntityType: block_content
 bundle: half_content
 mode: default
 content:
+  field_bg_color:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_container:
     type: boolean_checkbox
-    weight: 4
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_left_content:
     type: text_textarea
-    weight: 4
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -53,19 +61,19 @@ content:
     third_party_settings: {  }
   field_padding_bottom:
     type: options_select
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_padding_top:
     type: options_select
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_right_content:
     type: text_textarea
-    weight: 5
+    weight: 4
     region: content
     settings:
       rows: 5
