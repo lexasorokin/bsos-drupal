@@ -1,0 +1,21 @@
+uuid: 284eed2d-2704-4090-b88e-f87f414e9a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.half_content
+    - field.storage.block_content.field_left_content
+  module:
+    - text
+id: block_content.half_content.field_left_content
+field_name: field_left_content
+entity_type: block_content
+bundle: half_content
+label: 'Left Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

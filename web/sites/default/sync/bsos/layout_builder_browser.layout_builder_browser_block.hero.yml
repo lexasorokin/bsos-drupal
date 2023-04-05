@@ -8,4 +8,4 @@ category: layout_builder_components
 label: 'Hero (Various Types)'
 image_path: /themes/custom/bsos_drupal9/img/block-images/hero.png
 image_alt: ''
-weight: -9
+weight: -10

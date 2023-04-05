@@ -1,0 +1,15 @@
+// Half Content Block
+
+/*.half-content {
+  padding: 100px 0 150px;
+}
+
+@media screen and (max-width: 700px) {
+  .half-content {
+    padding: 80px 0;
+  }
+}*/
+
+.block--half-content.block--content {
+  margin-bottom: 0;
+}
