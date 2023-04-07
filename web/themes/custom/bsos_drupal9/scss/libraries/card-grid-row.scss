@@ -22,6 +22,7 @@
 .card-grid-item .card-grid-item__media img {
   display: block;
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .card-grid-item__title {
   font-size: 18px;
@@ -45,6 +46,7 @@
   border-bottom: 4px solid #ffd200;
   padding-bottom: 20px;
   background: #f4f4f4;
+  border-radius: 5px;
 }
 .card-grid.alt-cards .card-grid-item__title,
 .card-grid.alt-cards .card-grid-item__link {
