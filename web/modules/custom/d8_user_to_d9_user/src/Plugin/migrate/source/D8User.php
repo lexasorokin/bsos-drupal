@@ -28,9 +28,15 @@ class D8User extends SqlBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = 'd8_user_to_d9_user') {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = null) {
     // Set the default migration ID to the plugin ID if not provided.
     $migration_id = $migration_id ?: $plugin_id;
+
+    // Make sure that the migration configuration is correctly defined.
+    if (empty($configuration['source']) || empty($configuration['destination'])) {
+      throw new \InvalidArgumentException('Missing source or destination configuration in migration.');
+    }
+
     // Pass the correct migration ID to create the migration instance.
     return new static(
       $configuration,
@@ -40,8 +46,6 @@ class D8User extends SqlBase {
       $container->get('plugin.manager.migration')->createInstance($migration_id, $configuration)
     );
   }
-
-
 
   /**
    * Constructs a new D8User source plugin.
