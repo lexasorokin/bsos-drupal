@@ -28,13 +28,18 @@ class D8User extends SqlBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = null) {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = 'd8_user') {
     // Set the default migration ID to the plugin ID if not provided.
     $migration_id = $migration_id ?: $plugin_id;
 
     // Make sure that the migration configuration is correctly defined.
     if (empty($configuration['source']) || empty($configuration['destination'])) {
       throw new \InvalidArgumentException('Missing source or destination configuration in migration.');
+    }
+
+    // Skip the 'name' field in the process configuration.
+    if (isset($configuration['process']['name'])) {
+      unset($configuration['process']['name']);
     }
 
     // Pass the correct migration ID to create the migration instance.

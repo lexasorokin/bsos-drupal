@@ -7,9 +7,14 @@ destination:
   plugin: 'entity:user'
 process:
   uid: uid
-  name: name
   mail: mail
   created: created
   changed: changed
   status: status
+  # Skip the 'name' field if it is empty
+  name:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: name
 migration_dependencies: { }
