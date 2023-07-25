@@ -1,0 +1,24 @@
+id: d8_user_to_d9_user
+label: 'Drupal 8 User to Drupal 9 User'
+migration_group: custom_migrations
+source:
+  plugin: d8_user
+destination:
+  plugin: entity:user
+process:
+  uid: uid
+  name: name
+  pass:
+    plugin: migration_lookup
+    migration: d8_user_password
+    source: uid
+  mail: mail
+  created: created
+  changed: changed
+  status: status
+  # Add other user fields you want to migrate
+
+migration_dependencies:
+  optional:
+    - d8_user_password
+

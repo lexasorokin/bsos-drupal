@@ -1,0 +1,21 @@
+id: d8_user_to_d9_user
+label: 'Drupal 8 User Migration'
+migration_tags:
+  - 'Drupal 8'
+source:
+  plugin: d8_user
+  key: d8_user
+  source_db: bsos_d8
+destination:
+  plugin: 'entity:user'
+process:
+  uid: uid
+  name: name
+  mail: mail
+  created: created
+  changed: changed
+  status: status
+migration_dependencies:
+  enforced:
+    module:
+      - d8_user_to_d9_user
