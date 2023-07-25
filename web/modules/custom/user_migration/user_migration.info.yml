@@ -1,0 +1,8 @@
+name: 'User Migration'
+type: module
+description: 'Migrates users from Drupal 8 to Drupal 9.'
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - migrate
+  - migrate_plus
