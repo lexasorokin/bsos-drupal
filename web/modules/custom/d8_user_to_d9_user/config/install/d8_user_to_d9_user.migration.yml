@@ -5,7 +5,7 @@ migration_tags:
 source:
   plugin: d8_user
   key: d8_user
-  source_db: bsos_d8
+  source_db: d8db
 destination:
   plugin: 'entity:user'
 process:

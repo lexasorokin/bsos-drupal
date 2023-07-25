@@ -1,8 +1,8 @@
-name: d8_user_to_d9_user Migration
+name: 'd8_user_to_d9_user Migration'
 type: module
-description: Provides custom migration plans for BSOS D8 to D9.
+description: 'Provides custom migration plans for BSOS D8 to D9.'
 package: Custom
 core_version_requirement: ^8 || ^9 || ^10
 dependencies:
-  - drupal:migrate
-  - migrate_plus:migrate_plus
+  - migrate
+  - migrate_plus

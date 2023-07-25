@@ -21,4 +21,3 @@ process:
 migration_dependencies:
   optional:
     - d8_user_password
-

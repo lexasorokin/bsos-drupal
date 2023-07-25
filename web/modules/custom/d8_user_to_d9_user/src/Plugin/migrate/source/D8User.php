@@ -28,17 +28,20 @@ class D8User extends SqlBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = NULL) {
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition, $migration_id = 'd8_user_to_d9_user') {
     // Set the default migration ID to the plugin ID if not provided.
     $migration_id = $migration_id ?: $plugin_id;
+    // Pass the correct migration ID to create the migration instance.
     return new static(
       $configuration,
       $plugin_id,
       $plugin_definition,
       $container->get('database'),
-      $container->get('plugin.manager.migration')->createInstance($migration_id)
+      $container->get('plugin.manager.migration')->createInstance($migration_id, $configuration)
     );
   }
+
+
 
   /**
    * Constructs a new D8User source plugin.
