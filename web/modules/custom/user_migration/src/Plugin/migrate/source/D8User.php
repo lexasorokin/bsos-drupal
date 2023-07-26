@@ -20,6 +20,11 @@ class D8User extends SqlBase {
   public function query() {
     $query = $this->select('users_field_data', 'u')
       ->fields('u', ['uid', 'name', 'mail', 'created', 'changed', 'status']);
+
+    // Join the user roles from the "user_roles" table.
+    $query->leftJoin('user__roles', 'ur', 'u.uid = ur.entity_id');
+    $query->addField('ur', 'roles_target_id', 'roles');
+
     return $query;
   }
 
@@ -34,7 +39,10 @@ class D8User extends SqlBase {
       'created' => $this->t('Created timestamp'),
       'changed' => $this->t('Changed timestamp'),
       'status' => $this->t('User status (0 for blocked, 1 for active)'),
+      'roles' => $this->t('User roles (comma-separated)'),
       // Add other user fields you want to migrate
+      //'langcode' => $this->t('Langcode'),
+      //'timezone' => $this->t('Timezone'),
     ];
   }
 

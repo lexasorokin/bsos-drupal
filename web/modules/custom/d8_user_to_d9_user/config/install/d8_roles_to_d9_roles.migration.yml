@@ -1,0 +1,10 @@
+id: d8_roles_to_d9_roles
+label: 'Migrate Drupal 8 roles to Drupal 9'
+migration_group: custom_migrations
+source:
+  plugin: d8_user_role
+destination:
+  plugin: entity:user_role
+process:
+  id: rid
+  label: name

@@ -7,12 +7,19 @@ source:
   source_db: bsos_d8
 destination:
   plugin: 'entity:user'
+  source_key: uid
+  destination_key: uid
+  # Set the destination_module to 'user' so that the migration writes to the user__roles table.
+  destination_module: user
 process:
   uid: uid
   mail: mail
   created: created
   changed: changed
   status: status
+  roles:
+    plugin: user_role_process
+    source: roles
   # Skip the 'name' field if it is empty
   name:
     -
