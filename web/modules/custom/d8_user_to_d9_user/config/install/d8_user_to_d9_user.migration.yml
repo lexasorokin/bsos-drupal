@@ -1,5 +1,6 @@
 id: d8_user_to_d9_user
 label: 'Drupal 8 User Migration'
+migration_group: custom_migrations
 migration_tags:
   - 'Drupal 8'
 source:
