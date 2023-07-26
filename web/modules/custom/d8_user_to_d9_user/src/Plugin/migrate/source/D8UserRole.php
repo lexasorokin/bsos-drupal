@@ -29,7 +29,7 @@ class D8UserRole extends SqlBase {
   public function fields() {
     return [
       'entity_id' => $this->t('User ID'),
-      'roles_target_id' => $this->t('Role ID'),
+      'roles_target_id' => $this->t('Role ID')
     ];
   }
 
