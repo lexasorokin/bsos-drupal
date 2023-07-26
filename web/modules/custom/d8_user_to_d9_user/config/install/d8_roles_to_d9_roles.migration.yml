@@ -6,5 +6,12 @@ source:
 destination:
   plugin: entity:user_role
 process:
-  id: rid
+  id: roles_target_id
   label: name
+  roles_target_id:
+    -
+      plugin: user_role_process
+      source: roles_target_id
+migration_dependencies:
+  required:
+    - d8_user_role

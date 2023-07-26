@@ -1,33 +1,33 @@
 id: d8_user_to_d9_user
-label: 'Drupal 8 User Migration'
+label: 'Drupal 8 User to Drupal 9 User'
 migration_group: custom_migrations
-migration_tags:
-  - 'Drupal 8'
 source:
   plugin: d8_user
   source_db: bsos_d8
 destination:
-  plugin: 'entity:user'
+  plugin: entity:user
   source_key: uid
   destination_key: uid
   # Set the destination_module to 'user' so that the migration writes to the user__roles table.
   destination_module: user
 process:
   uid: uid
+  name: name
+  pass:
+    plugin: migration_lookup
+    migration: d8_user_password
+    source: uid
   mail: mail
   created: created
   changed: changed
   status: status
   roles:
-    plugin: user_role_process
+    plugin: migration_lookup
+    migration: d8_roles_to_d9_roles
     source: roles
-  # Skip the 'name' field if it is empty
-  name:
-    -
-      plugin: skip_on_empty
-      method: process
-      source: name
+
 migration_dependencies:
-  enforced:
-    module:
-      - d8_user_to_d9_user
+  required:
+    - d8_roles_to_d9_roles
+  optional:
+    - d8_user_password
