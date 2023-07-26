@@ -72,9 +72,9 @@ function bsos_drupal9_theme_suggestions_block_alter(array &$suggestions, array $
     // Check if methid exist in var
     // https://www.php.net/manual/en/function.method-exists.php
     // Need to check after
-    if( method_exists($block, 'getRegion') ) {
+    /*if( method_exists($block, 'getRegion') ) {
       $region = $block->getRegion();
-    }
+    }*/
 
     $regionParts = explode('_', $region);
     array_pop($regionParts);

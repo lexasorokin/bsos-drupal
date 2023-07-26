@@ -75,7 +75,7 @@ class D8User extends SqlBase {
    * {@inheritdoc}
    */
   public function query(): \Drupal\Core\Database\Query\SelectInterface {
-    $query = $this->select('users', 'u')
+    $query = $this->select('users_field_data', 'u')
       ->fields('u', ['uid', 'name', 'mail', 'created', 'changed', 'status']);
     return $query;
   }

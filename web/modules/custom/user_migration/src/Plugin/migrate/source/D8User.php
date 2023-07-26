@@ -18,7 +18,7 @@ class D8User extends SqlBase {
    * {@inheritdoc}
    */
   public function query() {
-    $query = $this->select('users', 'u')
+    $query = $this->select('users_field_data', 'u')
       ->fields('u', ['uid', 'name', 'mail', 'created', 'changed', 'status']);
     return $query;
   }
