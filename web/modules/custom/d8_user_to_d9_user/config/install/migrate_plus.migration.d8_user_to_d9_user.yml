@@ -21,17 +21,17 @@ process:
   created: created
   changed: changed
   status: status
-  roles:
-    -
-      plugin: migration_lookup
-      migration: d8_roles_to_d9_roles
-      source: roles_target_id
+  #roles:
+  #  -
+  #    plugin: migration_lookup
+  #    migration: d8_roles_to_d9_roles
+  #    source: roles_target_id
       # Use the new process plugin to convert role IDs to role names.
-      process: user_role_name
+  #    process: user_role_name
   # Add other user fields you want to migrate
 
 migration_dependencies:
-  required:
+  optional:
     - d8_roles_to_d9_roles
   optional:
     - d8_user_password
