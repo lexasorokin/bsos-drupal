@@ -33,5 +33,4 @@ process:
 migration_dependencies:
   optional:
     - d8_roles_to_d9_roles
-  optional:
     - d8_user_password
