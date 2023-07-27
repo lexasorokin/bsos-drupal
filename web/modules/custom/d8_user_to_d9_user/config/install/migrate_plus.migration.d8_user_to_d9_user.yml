@@ -3,6 +3,7 @@ label: 'Drupal 8 User to Drupal 9 User'
 migration_group: custom_migrations
 source:
   plugin: d8_user
+  source_db: bsos_d8
 destination:
   plugin: entity:user
   source_key: uid
