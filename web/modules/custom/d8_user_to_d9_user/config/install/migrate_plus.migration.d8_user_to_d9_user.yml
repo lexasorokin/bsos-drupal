@@ -5,6 +5,10 @@ source:
   plugin: d8_user
 destination:
   plugin: entity:user
+  source_key: uid
+  destination_key: uid
+  # Set the destination_module to 'user' so that the migration writes to the user__roles table.
+  destination_module: user
 process:
   uid: uid
   name: name
@@ -16,8 +20,17 @@ process:
   created: created
   changed: changed
   status: status
+  roles:
+    -
+      plugin: migration_lookup
+      migration: d8_roles_to_d9_roles
+      source: roles_target_id
+      # Use the new process plugin to convert role IDs to role names.
+      process: user_role_name
   # Add other user fields you want to migrate
 
 migration_dependencies:
+  required:
+    - d8_roles_to_d9_roles
   optional:
     - d8_user_password

@@ -11,5 +11,14 @@ dependencies:
 migrate_source:
   d8_user:
     class: \Drupal\d8_user_to_d9_user\Plugin\migrate\source\D8User
-    ids:   # Add the migration IDs (if any) for this source plugin
+    ids:
       - d8_user_to_d9_user
+
+# Define the process plugins
+migrate_process:
+  user_role_name:
+    class: \Drupal\d8_user_to_d9_user\Plugin\migrate\process\UserRoleNameProcessPlugin
+
+# Define the migration configuration
+migrate:
+  - ...
