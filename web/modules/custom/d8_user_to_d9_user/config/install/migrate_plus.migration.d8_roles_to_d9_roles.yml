@@ -1,5 +1,5 @@
 id: d8_roles_to_d9_roles
-label: 'Drupal 8 Migrate Drupal 8 roles to Drupal 9'
+label: 'Migrate Drupal 8 roles to Drupal 9'
 migration_group: custom_migrations
 source:
   plugin: d8_user_role
@@ -10,8 +10,13 @@ process:
   label: name
   roles_target_id:
     -
-      plugin: user_role_process
+      plugin: user_role_name_process
       source: roles_target_id
-migration_dependencies:
-  required:
-    - d8_user_role
+  role_name:
+    plugin: default_role_label_process
+    source: rid
+    role_source: role_name
+    role_target: id
+    role_label: name
+    no_stub: true
+migration_dependencies: {  }

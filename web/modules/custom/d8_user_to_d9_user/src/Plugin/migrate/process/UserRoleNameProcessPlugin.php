@@ -20,6 +20,11 @@ class UserRoleNameProcessPlugin extends ProcessPluginBase {
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
     // Load the role entity and get the role name.
+    if (empty($value)) {
+      // If the value is empty, return NULL to skip creating the role.
+      return NULL;
+    }
+
     $role = \Drupal::entityTypeManager()->getStorage('user_role')->load($value);
     if ($role) {
       return $role->label();

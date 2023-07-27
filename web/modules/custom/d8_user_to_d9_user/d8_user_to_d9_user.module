@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_migrate_plugins_alter().
+ */
+function d8_user_to_d9_user_migrate_plugins_alter(array &$plugins) {
+  // Add the process plugins to the list of discovered plugins.
+  $plugins['process']['user_role_process'] = [
+    'class' => \Drupal\d8_user_to_d9_user\Plugin\migrate\process\UserRoleProcessPlugin::class,
+  ];
+  $plugins['process']['user_role_name_process'] = [
+    'class' => \Drupal\d8_user_to_d9_user\Plugin\migrate\process\UserRoleNameProcessPlugin::class,
+  ];
+}
