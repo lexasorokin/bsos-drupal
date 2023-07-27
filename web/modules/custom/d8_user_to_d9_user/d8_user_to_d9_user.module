@@ -1,9 +1,24 @@
 <?php
 
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\migrate\MigrateSkipRowException;
+
 /**
  * Implements hook_migrate_plugins_alter().
  */
 function d8_user_to_d9_user_migrate_plugins_alter(array &$plugins) {
+
+  // Change 'custom_migrate' to the name of your custom module.
+  $module_path = drupal_get_path('module', 'd8_user_to_d9_user');
+  $class_loader = new \Composer\Autoload\ClassLoader();
+  $class_loader->addPsr4('Drupal\\d8_user_to_d9_user\\', $module_path . '/src');
+  $class_loader->register();
+
+  // Register the custom process plugin.
+  $plugins['process']['default_role_label_process'] = [
+    'class' => \Drupal\d8_user_to_d9_user\Plugin\migrate\process\DefaultRoleLabelProcessPlugin::class,
+  ];
+
   // Add the process plugins to the list of discovered plugins.
   $plugins['process']['user_role_process'] = [
     'class' => \Drupal\d8_user_to_d9_user\Plugin\migrate\process\UserRoleProcessPlugin::class,

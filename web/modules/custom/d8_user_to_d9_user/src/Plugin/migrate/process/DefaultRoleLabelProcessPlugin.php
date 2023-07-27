@@ -7,7 +7,7 @@ use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\Row;
 
 /**
- * Process plugin to set a default label for roles with an empty label.
+ * Provides a process plugin for setting a default label for user roles.
  *
  * @MigrateProcessPlugin(
  *   id = "default_role_label_process"
@@ -19,9 +19,14 @@ class DefaultRoleLabelProcessPlugin extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    // Set a default label for roles with an empty label.
+    // If the value is not a string, convert it to a string.
+    if (!is_string($value)) {
+      $value = (string) $value;
+    }
+
+    // If the value is still empty, set a default label.
     if (empty($value)) {
-      return 'Default Role';
+      $value = 'Default Role Label';
     }
 
     return $value;
