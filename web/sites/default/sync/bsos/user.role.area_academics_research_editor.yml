@@ -1,0 +1,26 @@
+uuid: 321bea59-9df5-4ddd-a8c9-7b1cfd49fca1
+langcode: en
+status: true
+dependencies: {  }
+id: area_academics_research_editor
+label: 'Area Academics Research Editor'
+weight: 0
+is_admin: null
+permissions:
+  - 'administer panelizer node page content'
+  - 'administer panelizer node page layout'
+  - 'administer panelizer node page overview'
+  - 'create landing_topic content'
+  - 'create page content'
+  - 'delete any landing_topic content'
+  - 'delete any page content'
+  - 'delete landing_topic revisions'
+  - 'delete page revisions'
+  - 'edit any landing_topic content'
+  - 'edit any page content'
+  - 'participate in workflow'
+  - 'revert landing_topic revisions'
+  - 'revert page revisions'
+  - 'use text format 1'
+  - 'view landing_topic revisions'
+  - 'view page revisions'

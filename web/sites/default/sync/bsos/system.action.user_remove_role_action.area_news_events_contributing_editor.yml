@@ -1,0 +1,14 @@
+uuid: 71fb4087-9e48-4509-9b1c-b21e35c270a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_news_events_contributing_editor
+  module:
+    - user
+id: user_remove_role_action.area_news_events_contributing_editor
+label: 'Remove the Area News Events Contributing Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_news_events_contributing_editor

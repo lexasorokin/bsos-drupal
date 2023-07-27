@@ -1,0 +1,14 @@
+uuid: b321bd2c-2645-485b-8db5-c8bdbfd476c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.facilities_manager
+  module:
+    - user
+id: user_add_role_action.facilities_manager
+label: 'Add the Facilities Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: facilities_manager

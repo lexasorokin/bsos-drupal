@@ -1,0 +1,15 @@
+uuid: 9f5f06f9-92b8-495d-af6d-fdeb9b9869ad
+langcode: en
+status: true
+dependencies: {  }
+id: publication_editor
+label: 'Publication Editor'
+weight: -8
+is_admin: null
+permissions:
+  - 'create publication_profile content'
+  - 'delete any publication_profile content'
+  - 'edit any publication_profile content'
+  - 'participate in workflow'
+  - 'use text format 1'
+  - 'view media'

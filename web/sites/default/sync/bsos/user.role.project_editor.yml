@@ -1,0 +1,15 @@
+uuid: 3f0460a5-9eab-4458-a7a9-d3d6807e0615
+langcode: en
+status: true
+dependencies: {  }
+id: project_editor
+label: 'Project Editor'
+weight: -10
+is_admin: null
+permissions:
+  - 'create project_profile content'
+  - 'delete any project_profile content'
+  - 'edit any project_profile content'
+  - 'participate in workflow'
+  - 'use text format 1'
+  - 'view media'

@@ -1,0 +1,14 @@
+uuid: 2c361779-6585-4ee0-b45e-a350bd1029d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.user_profile_editor
+  module:
+    - user
+id: user_add_role_action.user_profile_editor
+label: 'Add the User Profile Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: user_profile_editor

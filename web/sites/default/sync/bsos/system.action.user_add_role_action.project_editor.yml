@@ -1,0 +1,14 @@
+uuid: c4b6d7cc-4355-404a-90be-988a8d2165ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.project_editor
+  module:
+    - user
+id: user_add_role_action.project_editor
+label: 'Add the Project Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: project_editor

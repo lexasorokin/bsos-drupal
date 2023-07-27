@@ -1,0 +1,26 @@
+uuid: 54b6cd5b-65b6-492f-9d14-514737942009
+langcode: en
+status: true
+dependencies: {  }
+id: user_profile_editor
+label: 'User Profile Editor'
+weight: 11
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer profiles'
+  - 'create fsprofile content'
+  - 'delete any fsprofile content'
+  - 'edit any fsprofile content'
+  - 'edit any grad_student_profile profile'
+  - 'edit any profile_faculty profile'
+  - 'enter fsprofile revision log entry'
+  - 'override fsprofile authored by option'
+  - 'override fsprofile authored on option'
+  - 'override profile authored by option'
+  - 'participate in workflow'
+  - 'revert fsprofile revisions'
+  - 'use text format 1'
+  - 'view any grad_student_profile profile'
+  - 'view any profile_faculty profile'
+  - 'view fsprofile revisions'

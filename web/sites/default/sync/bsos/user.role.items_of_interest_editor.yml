@@ -1,0 +1,18 @@
+uuid: 0de43126-ba34-481b-86e7-0d64dd6b734a
+langcode: en
+status: true
+dependencies: {  }
+id: items_of_interest_editor
+label: 'Items of Interest Editor'
+weight: 6
+is_admin: null
+permissions:
+  - 'create dept_items_of_interest content'
+  - 'delete any dept_items_of_interest content'
+  - 'delete dept_items_of_interest revisions'
+  - 'edit any dept_items_of_interest content'
+  - 'participate in workflow'
+  - 'revert dept_items_of_interest revisions'
+  - 'use text format 1'
+  - 'view dept_items_of_interest revisions'
+  - 'view media'

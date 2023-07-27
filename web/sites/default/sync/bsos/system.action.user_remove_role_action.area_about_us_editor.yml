@@ -1,0 +1,14 @@
+uuid: a10395d5-bfca-4d30-8d3b-944757105a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_about_us_editor
+  module:
+    - user
+id: user_remove_role_action.area_about_us_editor
+label: 'Remove the Area About Us Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_about_us_editor

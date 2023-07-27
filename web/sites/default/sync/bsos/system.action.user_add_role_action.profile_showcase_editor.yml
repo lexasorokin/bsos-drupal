@@ -1,0 +1,14 @@
+uuid: ee8d9593-3b21-4956-8e00-52935094c139
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.profile_showcase_editor
+  module:
+    - user
+id: user_add_role_action.profile_showcase_editor
+label: 'Add the Profile Showcase Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: profile_showcase_editor

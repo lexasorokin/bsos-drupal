@@ -1,0 +1,14 @@
+uuid: 98dbec11-df62-462c-89c5-2b2c36223350
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.bsos_communications
+  module:
+    - user
+id: user_remove_role_action.bsos_communications
+label: 'Remove the BSOS Communications role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: bsos_communications

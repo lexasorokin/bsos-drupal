@@ -1,0 +1,14 @@
+uuid: 5f207f27-ce26-4149-a2e0-1d726bd8cc80
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_graduate_editor
+  module:
+    - user
+id: user_add_role_action.area_graduate_editor
+label: 'Add the Area Graduate Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: area_graduate_editor

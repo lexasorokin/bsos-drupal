@@ -1,0 +1,15 @@
+uuid: 07a24417-3b21-454b-a362-46dd9a5dbca8
+langcode: en
+status: true
+dependencies: {  }
+id: webform_viewer
+label: 'Webform Viewer'
+weight: -12
+is_admin: null
+permissions:
+  - 'access all webform results'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'participate in workflow'
+  - 'use text format 1'
+  - 'view any webform submission'

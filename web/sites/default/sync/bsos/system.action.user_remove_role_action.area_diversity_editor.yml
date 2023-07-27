@@ -1,0 +1,14 @@
+uuid: 70dda8ac-3d94-4d6b-8fc2-f24666610f15
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_diversity_editor
+  module:
+    - user
+id: user_remove_role_action.area_diversity_editor
+label: 'Remove the Area Diversity Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_diversity_editor

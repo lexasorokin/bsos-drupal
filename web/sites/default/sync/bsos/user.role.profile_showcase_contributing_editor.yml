@@ -1,0 +1,17 @@
+uuid: 46cd92f6-b7c5-4db7-a4d1-cb621d447840
+langcode: en
+status: true
+dependencies: {  }
+id: profile_showcase_contributing_editor
+label: 'Profile Showcase Contributing Editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'create profile_showcase content'
+  - 'edit revisions'
+  - 'participate in workflow'
+  - 'use text format 1'
+  - 'view revision status messages'
+  - 'view revisions'
+  - 'view revisions of any profile_showcase content'
+  - 'view revisions of own profile_showcase content'

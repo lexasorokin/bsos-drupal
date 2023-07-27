@@ -1,0 +1,14 @@
+uuid: b10f3fd1-3ea6-4b20-ab63-a08ae02c129c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.area_about_us_contributing_editor
+  module:
+    - user
+id: user_remove_role_action.area_about_us_contributing_editor
+label: 'Remove the Area About Us Contributing Editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: area_about_us_contributing_editor

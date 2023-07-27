@@ -1,0 +1,31 @@
+uuid: 44d7bbce-6ed6-48fb-bdaf-79d0bb46164e
+langcode: en
+status: true
+dependencies: {  }
+id: area_about_us_editor
+label: 'Area About Us Editor'
+weight: -4
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'access workflow summary views'
+  - 'administer panelizer node page content'
+  - 'administer panelizer node page layout'
+  - 'administer panelizer node page overview'
+  - 'assign Area About Us Contributing Editor role'
+  - 'create landing_topic content'
+  - 'create page content'
+  - 'delete any landing_topic content'
+  - 'delete any page content'
+  - 'delete landing_topic revisions'
+  - 'delete page revisions'
+  - 'edit any landing_topic content'
+  - 'edit any page content'
+  - 'override page authored by option'
+  - 'participate in workflow'
+  - 'revert landing_topic revisions'
+  - 'revert page revisions'
+  - 'use text format 1'
+  - 'view landing_topic revisions'
+  - 'view media'
+  - 'view page revisions'

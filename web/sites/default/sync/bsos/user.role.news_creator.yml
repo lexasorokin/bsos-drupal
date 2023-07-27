@@ -1,0 +1,15 @@
+uuid: 95454d10-b2f8-4dde-b31a-dcb31245c79e
+langcode: en
+status: true
+dependencies: {  }
+id: news_creator
+label: 'News Creator'
+weight: 7
+is_admin: null
+permissions:
+  - 'create news content'
+  - 'participate in workflow'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition send_for_review'
+  - 'use text format 1'
+  - 'view media'
