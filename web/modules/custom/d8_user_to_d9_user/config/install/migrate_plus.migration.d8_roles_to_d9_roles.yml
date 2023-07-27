@@ -7,16 +7,14 @@ destination:
   plugin: entity:user_role
 process:
   id: roles_target_id
-  label: role_name
-  role_name:
+  label:
     plugin: default_role_label_process
-    source: rid
-    role_source: role_name
-    role_target: id
-    role_label: name
-    no_stub: true
+    source: role_name
   roles_target_id:
     -
-      plugin: user_role_name_process
+      plugin: user_role_process
       source: roles_target_id
-migration_dependencies: {  }
+  role_name:
+    plugin: user_role_name_process
+    source: roles_target_id
+migration_dependencies: { }

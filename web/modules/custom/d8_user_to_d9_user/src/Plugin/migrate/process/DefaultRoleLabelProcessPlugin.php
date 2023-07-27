@@ -19,13 +19,8 @@ class DefaultRoleLabelProcessPlugin extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    // If the value is not a string, convert it to a string.
-    if (!is_string($value)) {
-      $value = (string) $value;
-    }
-
-    // If the value is still empty, set a default label.
-    if (empty($value)) {
+    // If the value is not a string or is empty, set a default label.
+    if (!is_string($value) || empty($value)) {
       $value = 'Default Role Label';
     }
 

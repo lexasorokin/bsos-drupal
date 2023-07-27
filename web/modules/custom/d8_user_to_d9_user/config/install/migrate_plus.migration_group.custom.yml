@@ -1,6 +1,0 @@
-# File: migrate_plus.migration_group.custom.yml
-id: custom_migrations
-label: Custom Migrations
-dependencies:
-  module:
-    - d8_user_to_d9_user
