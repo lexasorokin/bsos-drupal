@@ -19,7 +19,7 @@ class D8UserRole extends SqlBase {
    */
   public function query() {
     $query = $this->select('user__roles', 'ur')
-      ->fields('ur', ['entity_id', 'roles_target_id']);
+      ->fields('ur', ['bundle', 'entity_id', 'revision_id', 'langcode', 'delta', 'roles_target_id']);
     return $query;
   }
 
@@ -28,7 +28,11 @@ class D8UserRole extends SqlBase {
    */
   public function fields() {
     return [
+      'bundle' => $this->t('Bundle'),
       'entity_id' => $this->t('User ID'),
+      'revision_id' => $this->t('Revision ID'),
+      'langcode' => $this->t('Langcode'),
+      'delta' => $this->t('Delta'),
       'roles_target_id' => $this->t('Role ID')
     ];
   }
