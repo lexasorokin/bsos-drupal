@@ -13,6 +13,10 @@ migrate_source:
     class: \Drupal\d8_user_to_d9_user\Plugin\migrate\source\D8User
     ids:
       - d8_user_to_d9_user
+  d8_user_role:
+    class: \Drupal\d8_user_to_d9_user\Plugin\migrate\source\D8UserRole
+    ids:
+      - d8_roles_to_d9_roles
 
 # Define the process plugins
 migrate_process:
@@ -20,5 +24,5 @@ migrate_process:
     class: \Drupal\d8_user_to_d9_user\Plugin\migrate\process\UserRoleNameProcessPlugin
 
 # Define the migration configuration
-migrate:
-  - ...
+#migrate:
+#  - ...
