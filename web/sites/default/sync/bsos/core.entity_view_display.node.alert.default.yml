@@ -1,0 +1,24 @@
+uuid: fdb34e5c-f8a3-404b-ad5b-09223b099345
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alert.body
+    - node.type.alert
+  module:
+    - text
+    - user
+id: node.alert.default
+targetEntityType: node
+bundle: alert
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

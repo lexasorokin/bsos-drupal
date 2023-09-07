@@ -1,0 +1,17 @@
+uuid: a5d1f2d9-ec83-467f-9370-04aac09b88eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Alert
+type: alert
+description: 'Alert to be used on the home page or in other "news" locations to alert users of important maintenance or other notices'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
