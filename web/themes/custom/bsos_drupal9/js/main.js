@@ -24,8 +24,10 @@ jQuery(document).ready(function ($) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 190) {
       $(".site-header").addClass("site-header--sticky");
+      $("body").addClass("sticky-header");
     } else {
       $(".site-header").removeClass("site-header--sticky");
+      $("body").removeClass("sticky-header");
     }
   });
 
@@ -145,20 +147,20 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  // Get the header
-  var header = document.getElementById("masthead");
+  // Get the header (To-do, temporary disabled from github html)
+  //var header = document.getElementById("masthead");
 
   // Get the offset position of the navbar
-  var sticky = header.offsetTop;
+  //var sticky = header.offsetTop;
 
   // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
+  /*function myFunction() {
     if (window.pageYOffset > sticky) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
     }
-  }
+  }*/
 
   // Owl Slider for homepage profiles
   $("#profiles-slider").owlCarousel({
