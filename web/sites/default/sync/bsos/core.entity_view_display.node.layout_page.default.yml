@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.layout_page.field_meta_image
     - field.field.node.layout_page.field_meta_title
     - field.field.node.layout_page.field_metatags
+    - field.field.node.layout_page.field_show_alert_bar
     - field.field.node.layout_page.field_taxonomy_vocabulary_2
     - field.field.node.layout_page.layout_builder__layout
     - node.type.layout_page
@@ -56,6 +57,24 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
+          50d7f157-1f4e-4d5e-b8da-dcf7e36673dc:
+            uuid: 50d7f157-1f4e-4d5e-b8da-dcf7e36673dc
+            region: content
+            configuration:
+              id: 'field_block:node:layout_page:field_show_alert_bar'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories: {  }
@@ -99,6 +118,16 @@ targetEntityType: node
 bundle: layout_page
 mode: default
 content:
+  field_show_alert_bar:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
   field_taxonomy_vocabulary_2:
     type: entity_reference_label
     label: above

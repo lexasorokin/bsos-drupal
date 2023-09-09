@@ -18,6 +18,11 @@
   display: flex;
   align-items: center;
 }
+.alert-bar .item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
 .alert-bar .alert-bar--icon {
   margin-right: 10px;
 }
