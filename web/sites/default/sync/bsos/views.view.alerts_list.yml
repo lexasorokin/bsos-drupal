@@ -1,17 +1,17 @@
-uuid: 3b891dbf-9fd5-45e6-a615-e2b294f3b0bf
+uuid: bd325390-3143-4ddb-9bae-793dc48903c6
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.publication_item
+    - core.entity_view_mode.node.big_teaser
+    - node.type.alert
   module:
     - node
     - user
-id: publications_list
-label: 'Publications List'
+id: alerts_list
+label: 'Alerts List'
 module: views
-description: 'Render automatucally Publication list'
+description: 'Render automatucally Alerts List in Block'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Publications List'
+      title: 'Alerts List'
       fields:
         title:
           id: title
@@ -91,7 +91,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 6
+          items_per_page: 4
       exposed_form:
         type: basic
         options:
@@ -146,21 +146,51 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
-            publication_item: publication_item
+            alert: alert
+          group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: big_teaser
       query:
         type: views_query
         options:
@@ -180,7 +210,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: '<h3 class="section-title animated fade-in-bottom">Publications</h3>'
+          content: '<h3 class="section-title animated fade-in-bottom">Alerts</h3>'
           tokenize: false
       footer:
         area_text_custom:
@@ -192,7 +222,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: '<p class="text-center"><a href="/all-publications" class="button fearless">View all publications</a></p>'
+          content: '<p class="text-center"><a href="/all-alerts" class="button fearless">View all alerts</a></p>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -210,7 +240,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      block_description: 'Publication List'
+      block_description: 'Alert List'
     cache_metadata:
       max-age: -1
       contexts:
@@ -221,11 +251,11 @@ display:
       tags: {  }
   page:
     id: page
-    display_title: 'Page - All Publications'
+    display_title: 'Page - All Alerts'
     display_plugin: page
     position: 2
     display_options:
-      title: 'All Publications'
+      title: 'All Alerts'
       fields:
         title:
           id: title
@@ -449,15 +479,44 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
-            publication_item: publication_item
+            alert: alert
           group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -494,7 +553,7 @@ display:
       header: {  }
       footer: {  }
       display_extenders: {  }
-      path: all-publications
+      path: all-alerts
     cache_metadata:
       max-age: -1
       contexts:

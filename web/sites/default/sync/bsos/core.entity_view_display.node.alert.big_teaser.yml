@@ -1,0 +1,33 @@
+uuid: d64aebd9-5fb8-4c95-8263-028de7f15c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.big_teaser
+    - field.field.node.alert.body
+    - field.field.node.alert.field_hero_size
+    - field.field.node.alert.field_hero_title
+    - field.field.node.alert.field_important_alert
+    - field.field.node.alert.field_media_url
+    - field.field.node.alert.field_show_breadcrumbs
+    - node.type.alert
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.alert.big_teaser
+targetEntityType: node
+bundle: alert
+mode: big_teaser
+content: {  }
+hidden:
+  body: true
+  field_hero_size: true
+  field_hero_title: true
+  field_important_alert: true
+  field_media_url: true
+  field_show_breadcrumbs: true
+  links: true
