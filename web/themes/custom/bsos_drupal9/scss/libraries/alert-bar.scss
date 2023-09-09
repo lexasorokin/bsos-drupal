@@ -1,4 +1,8 @@
 /* Alert Bar (used right now on the OACS website.. in the header) */
+.layout-page.layout-page-edit .view-alert-bar {
+  display: none;
+}
+
 .alert-bar {
   position: absolute;
   top: 137px;
