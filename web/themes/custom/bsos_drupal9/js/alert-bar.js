@@ -5,7 +5,8 @@
   // Owl Slider for OACS Alerts section
   Drupal.behaviors.alert_bar = {
     attach: function(context, settings) {
-      $("#alert-slider").owlCarousel({
+      var owl = $("#alert-slider");
+      owl.owlCarousel({
         items: 1,
         nav: false,
         dots: false,

@@ -18,6 +18,13 @@
   display: flex;
   align-items: center;
 }
+.alert-bar .owl-item {
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
 .alert-bar .item {
   display: flex;
   align-content: center;
