@@ -1,0 +1,23 @@
+uuid: 88121ee7-281f-4e44-aa60-e218e06808e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_breadcrumbs
+    - node.type.alert
+id: node.alert.field_show_breadcrumbs
+field_name: field_show_breadcrumbs
+entity_type: node
+bundle: alert
+label: 'Show Breadcrumbs'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

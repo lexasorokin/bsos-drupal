@@ -1,0 +1,21 @@
+uuid: 26ef404c-1e1a-47ae-b1bf-efb7a3e650f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_title
+    - node.type.alert
+  module:
+    - text
+id: node.alert.field_hero_title
+field_name: field_hero_title
+entity_type: node
+bundle: alert
+label: 'Hero Title'
+description: 'Fill, in if you need a custom hero title (not the same as Page Title)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
