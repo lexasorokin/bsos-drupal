@@ -1,0 +1,23 @@
+uuid: 25717cdb-1d76-4ffb-bcfb-2134fddcd717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_alert_bar
+    - node.type.layout_page
+id: node.layout_page.field_show_alert_bar
+field_name: field_show_alert_bar
+entity_type: node
+bundle: layout_page
+label: 'Show Alert Bar'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

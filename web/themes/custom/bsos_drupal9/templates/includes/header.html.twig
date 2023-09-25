@@ -4,6 +4,9 @@
 {{ page.mobile_menu }}
 #}
 
+{# Variables #}
+{% set show_alert_bar = node.field_show_alert_bar.value %}
+
 {# Header #}
 <header id="masthead" class="site-header">
 
@@ -76,3 +79,9 @@
     </form>
   </div>
 </div>
+
+{# Alert Bar #}
+{% if show_alert_bar %}
+  {{ drupal_view('alert_bar', 'block_1') }}
+{% endif %}
+{# Alert Bar End #}

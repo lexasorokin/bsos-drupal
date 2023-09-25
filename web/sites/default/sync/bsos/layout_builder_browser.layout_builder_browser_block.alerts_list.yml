@@ -1,0 +1,11 @@
+uuid: 7b307b8d-10fb-4267-ba84-c77e23b9639a
+langcode: en
+status: true
+dependencies: {  }
+id: alerts_list
+block_id: 'views_block:alerts_list-frontpage_block'
+category: views_blocks
+label: 'Alerts List'
+image_path: /themes/custom/bsos_drupal9/img/block-images/alerts-list.png
+image_alt: ''
+weight: -100

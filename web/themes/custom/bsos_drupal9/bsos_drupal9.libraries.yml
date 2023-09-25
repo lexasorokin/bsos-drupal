@@ -115,6 +115,13 @@ half-content:
     theme:
       css/libraries/half-content.min.css: {}
 
+alert-bar:
+  css:
+    theme:
+      css/libraries/alert-bar.min.css: {}
+  js:
+    js/alert-bar.js: {}
+
 #blog-categories:
 #  css:
 #    theme:

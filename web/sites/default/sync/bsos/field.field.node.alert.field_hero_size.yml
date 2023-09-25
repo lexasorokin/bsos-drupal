@@ -1,0 +1,23 @@
+uuid: f6cbcad2-4e91-42aa-81b4-3cd25f5700f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_size
+    - node.type.alert
+  module:
+    - options
+id: node.alert.field_hero_size
+field_name: field_hero_size
+entity_type: node
+bundle: alert
+label: 'Hero Size'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: normal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

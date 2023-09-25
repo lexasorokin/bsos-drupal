@@ -1,0 +1,74 @@
+/* Alert Bar (used right now on the OACS website.. in the header) */
+.layout-page.layout-page-edit .view-alert-bar {
+  display: none;
+}
+
+.alert-bar {
+  position: absolute;
+  top: 137px;
+  left: 15px;
+  z-index: 9;
+  background: rgb(255 255 255 / 24%);
+  padding: 10px;
+  font-size: 15px;
+  right: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+.alert-bar .container {
+  display: flex;
+  align-items: center;
+}
+.alert-bar .owl-item {
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
+.alert-bar .item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.alert-bar .alert-bar--icon {
+  margin-right: 10px;
+}
+.alert-bar .alert-bar--icon svg {
+  display: block;
+  width: 22px;
+  height: auto;
+  color: #fff;
+}
+.alert-bar--text:last-child p {
+  margin-bottom: 0;
+}
+.alert-bar a {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 15%);
+}
+body.sticky-header .alert-bar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background: #e21833;
+  border-radius: 0;
+}
+
+@media (min-width: 1000px) {
+  .alert-bar {
+    left: calc((100% - 960px) / 2);
+    right: calc((100% - 960px) / 2);
+    top: 175px;
+    background: rgb(255 211 2 / 73%);
+  }
+  body.sticky-header .alert-bar {
+    top: 75px;
+  }
+}
